@@ -1,0 +1,34 @@
+.tabulator {
+    border: 1px solid #5A79B5 ;
+    background-color: rgb(222, 222, 222);
+}
+
+.tabulator .tabulator-header{
+    min-height: 40px;
+}
+
+.tabulator-header{
+    font-weight: 500;
+    background-color: #5A79B5;
+}
+
+.tabulator-headers{
+    min-height: 40px;
+
+}
+
+.tabulator-col{
+    min-height: 40px;
+}
+
+.tabulator .tabulator-header .tabulator-col .tabulator-col-content{
+    padding: 14px;
+    background-color: #DFEBEE;
+}
+
+.tabulator-row{
+    min-height: 40px;
+}
+.tabulator-row .tabulator-cell{
+    padding:14px ;
+}

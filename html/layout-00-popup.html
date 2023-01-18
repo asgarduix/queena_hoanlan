@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../hoanIan/bootstrap-4.6.2-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../hoanIan/bootstrap-4.6.2-dist/css/bootstrap.css">
+    <script src="../html/bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+    <!-- Material CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- material_icon -->
+    <link rel="stylesheet" href="css/material-icons.css">
+    <link rel="stylesheet" href="css/material-icons-ie.css">
+    <!-- element-plus -->
+    <link rel="stylesheet" href="../html/css/index.css" />
+    <!-- tabulator -->
+    <script type="text/javascript" src="https://unpkg.com/tabulator-tables@5.4.3/dist/js/tabulator.min.js"></script> 
+    <link href="https://unpkg.com/tabulator-tables@5.4.3/dist/css/tabulator.min.css" rel="stylesheet"> 
+    <!-- 以我的為主 -->
+    <link rel="stylesheet" href="../html/type.css">
+    <link rel="stylesheet" href="../hoanIan/tabulator_ment.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- 左側選單 -->
+            <div class="col-2">
+                <div class="scroll-box">
+                    <div class="hide-box">
+                        <div class="scroll-hidden">
+                            <nav id="menu-nav ">
+                                <!-- 左側logo -->
+                                <div class="item_logo">
+                                    <a href="">
+                                    <img src="../hoanIan/img/item_logo.png" alt="">
+                                    </a>
+                                </div>
+                                <!-- 左側選單 -->
+                                <div class="list_layer">
+                                    <ul>
+                                        <h3>佣金作業</h3>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <div class="item_title">
+                                                    <span class="mFont material-symbols-outlined">
+                                                        feed
+                                                        </span>
+                                                    <span>要保書作業</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!-- <li class="off">
+                                            <ul>
+                                                <li>
+                                                    <a href="Rin1101.html">
+                                                        <div>再保人基本資料設定</div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="Rin1107.html">
+                                                        <div>同險代號維護</div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li> -->
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <div class="item_title">
+                                                    <span class="mFont material-symbols-outlined">list_alt</span>
+                                                    <span>批單作業</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <div class="item_title">
+                                                    <span class="mFont material-symbols-outlined">paid</span>
+                                                    <span>獎金佣金報表</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 右側選單 -->
+            <div class="col-10 infobox">
+                <div class="top_info">
+                    <div class="row">
+                    <div class="sn_col_A">
+                        <div class="functionboxA">
+                            <a href="" class="sn_col_A sFont">佣金作業</a>
+                            <a href="" class="sn_col_A sFont">法遵稽核</a>
+                            <a href="" class="sn_col_A sFont">角色權限</a>
+                        </div>
+                    </div>
+                    <div class="sn_col_A"></div>
+                    <div class="sn_col_A">
+                        <div class="functionboxB">
+                            <span class=" sFont">和安保代：廖家祥 行政專員</span>
+                            <span class=" sFont">A123456</span>
+                        </div>
+                    </div>
+                    <div class="an_col_06">
+                        <div class="top_logout">
+                        <button class="btn">
+                            <span class="sFont">登出</span>
+                            <span class="mFont sFont material-symbols-outlined">
+                                logout
+                            </span>
+                        </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="sec_breadcrumb">
+                    <div class="row">
+                        <p class="xsFont">
+                            <span class="mFont text-danger material-symbols-outlined">location_on</span>佣金作業 / 要保書作業</p>
+                    </div>
+                </div>
+                <div class="thr_title">
+                    <div class="row">
+                        <p class="h2">要保書作業</p>
+                    </div>
+                    
+                </div>
+                <div class="querybox">
+                    <!-- 統一編號碼/ID /投保編號 /保單號碼 /客戶名稱 /要保書輸入日期區間-->
+                    <div class="row">
+                        <div class="an_col_01 querylist">
+                            <div class="query_title"> <span class="note">*</span>統一編號碼/ID</div>
+                            <div class="query_input an_col_01">
+                                <input class="queryInputone" type="text" placeholder="請輸入值">
+                            </div>
+                        </div>
+                        <div class="an_col_01 querylist">
+                            <div class="query_title">投保編號</div>
+                            <div class="query_input an_col_01">
+                                <input class="queryInputone" type="text" placeholder="請輸入值">
+                            </div>
+                        </div>
+                        <div class="an_col_01 querylist">
+                            <div class="query_title">保單號碼</div>
+                            <div class="query_input an_col_01">
+                                <input class="queryInputone" type="text" placeholder="請輸入值">
+                            </div>
+                        </div>
+                        <div class="an_col_01 querylist">
+                            <div class="query_title">客戶名稱</div>
+                            <div class="query_input an_col_01">
+                                <input class="queryInputone" type="text" placeholder="請輸入值">
+                            </div>
+                        </div>
+                        <div class="an_col_01 querylist">
+                            <div class="query_title">要保書輸入日期區間</div>
+                            <div class="query_input  sn_col_B2">
+                                <div class="doublequery">
+                                    <input class="sn_col_B" type="text" placeholder="請輸入值">
+                                    <button> <span class="material-symbols-outlined">calendar_month</span></button>
+                                    ~<input class="sn_col_B" type="text" placeholder="請輸入值"> <button> <span class="material-symbols-outlined">calendar_month</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="an_col_01 querylist">
+                            <div class="query_title">下拉選單</div>
+                            <div class="query_input sn_col_B2">
+                                <div class="doublequery">
+                                    <select class="sn_col_B2" name="" id="">
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="an_col_01 querylist">
+                            <div class="query_title">投保編號</div>
+                            <div class="query_input an_col_01">
+                                <input class="queryInputone" type="text" placeholder="請輸入值">
+                            </div>
+                        </div>
+                        <div class="an_col_01 querylist">
+                            <div class="query_title">保單號碼</div>
+                            <div class="query_input an_col_01">
+                                <input class="queryInputone" type="text" placeholder="請輸入值">
+                            </div>
+                        </div>
+                        <div class="an_col_01 querylist">
+                            <div class="query_title">客戶名稱</div>
+                            <div class="query_input an_col_01">
+                                <input class="queryInputone" type="text" placeholder="請輸入值">
+                            </div>
+                        </div>
+                        <div class="an_col_01 querylist">
+                            <div class="query_title">要保書輸入日期區間</div>
+                            <div class="query_input an_col_01">
+                                <input class="queryInputone" type="text" placeholder="請輸入值">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="query_record">
+                    <div class="recordword">
+                    <p class="sFont">共 <span>0</span> 筆資料</p> 
+                    </div>
+                </div>
+                <hr>
+                <div class="tableinfo_btngroup">
+                    <button type="button" class="btn btn-primary">新增</button>
+                    <button type="button" class="btn btn-primary">編輯</button>
+                    <button type="button" class="btn btn-primary">刪除</button>
+                </div>
+                <div class="tableinfo_content">
+                    <div id="table01"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- pop彈窗 -->
+    <!-- popup-add -->
+    <div class="content-component content-popup">
+        <div class="popup-dialog popup-dialog-add">
+            <form action="">
+                <div class="dialog-header">
+                    <div class="dialog-header-inner">
+                        <div class="dialog-header-item dialog-title">新增</div>
+                        <div class="dialog-header-item dialog-cancel">
+                            <a href="#"><span class="material-icons">highlight_off</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dialog-content">
+                    <!-- customize-form -->
+                    <div class="customize-form">
+                        <div class="customize-form-row">
+                            <div class="customize-form-header">
+                                <span>承攬人員</span>
+                            </div>
+                        </div>
+                        <!-- 業務來源-->
+                        <div class="customize-form-row">
+                            <div class="customize-form-inner">
+                                <div class="customize-form-field customize-form-field-1 required-field">
+                                    <div class="customize-field-inner">
+                                        <div class="customize-form-title">業務來源</div>
+                                        <div class="customize-form-entry">
+                                            <ul>
+                                                <li><input type="checkbox" id="frd01" name="作業項目"><label for="frd01">一般件</label></li>
+                                                <li><input type="checkbox" id="frd02" name="作業項目"><label for="frd02">介紹件</label></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 按鈕列 -->
+                        <div class="customize-form-row-btnClumn">
+                            <button class="btn buttonAdd">新增</button>
+                        </div>
+                        <!-- 單位別/承攬身份/保險/服務業代 /佣金比例-->
+                        <div class="customize-form-row">
+                            <div class="customize-form-inner">
+                                <div class="customize-form-field customize-form-field-1">
+                                    <div class="customize-field-inner">
+                                        <div class="customize-form-title"><span class="material-icons popMeterfont">highlight_off</span>單位別</div>
+                                        <div class="customize-form-entry">
+                                            <input type="text" name="憑證費用" value="" placeholder="請輸入值" data-toggle="tooltip" data-placement="left">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="customize-form-field customize-form-field-1">
+                                    <div class="customize-field-inner">
+                                        <div class="customize-form-title">承攬身份</div>
+                                        <div class="customize-form-entry">
+                                            <select name="匯率進位" id="" value="" title="" data-toggle="tooltip" data-placement="left">
+                                                <option value="" disabled="" hidden="" selected="">請選擇</option>
+                                                <option value="">業務員</option>
+                                                <option value="">服務業代</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="customize-form-field customize-form-field-1">
+                                    <div class="customize-field-inner">
+                                        <div class="customize-form-title">保險/服務業代</div>
+                                        <div class="customize-form-entry">
+                                            <div class="customize-form-entry-container">
+                                                <div class="page-customize-form-double">
+                                                    <div class="customize-form-entry-col customize-form-entry-4">
+                                                        <input type="text" name="經手人" value="" title="" data-toggle="tooltip" data-placement="left" placeholder="請輸入值">
+                                                    </div>
+                                                    <div class="customize-form-entry-col customize-form-entry-6">
+                                                        <input type="text" name="經手人" value="" title="" data-toggle="tooltip" data-placement="left" placeholder="" attr="readonly" disabled="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="customize-form-field customize-form-field-1">
+                                    <div class="customize-field-inner">
+                                        <div class="customize-form-title">佣金比例</div>
+                                        <div class="customize-form-entry">
+                                            <div class="customize-form-entry-container">
+                                                <div class="page-customize-form-double">
+                                                    <div class="customize-form-entry-col customize-form-entry-4">
+                                                        <select name="" id="">
+                                                            <option value="">比例</option>
+                                                            <option value="">定額</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="customize-form-entry-col customize-form-entry-6">
+                                                        <input type="text" name="經手人" value="" title="" data-toggle="tooltip" data-placement="left" placeholder="" attr="readonly" disabled="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 薪資狀況 / 二代健保身份-->
+                        <div class="customize-form-row">
+                            <div class="customize-form-inner">
+                                <div class="customize-form-field customize-form-field-1">
+                                    <div class="customize-field-inner">
+                                        <div class="customize-form-title">薪資狀況</div>
+                                        <div class="customize-form-entry">
+                                            <select name="薪資狀況" id="" value="" title="" data-toggle="tooltip" data-placement="left">
+                                                <option value="" disabled="" hidden="" selected="">請選擇</option>
+                                                <option value="">有底薪</option>
+                                                <option value="">無底薪</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="customize-form-field customize-form-field-1">
+                                    <div class="customize-field-inner">
+                                        <div class="customize-form-title">業務來源</div>
+                                        <div class="customize-form-entry">
+                                            <ul>
+                                                <li><input type="checkbox" id="frd01" name="二代健保身份"><label for="frd01">二代健保身份</label></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customize-form-inner-hr"></div>
+                        <!-- 單位別/承攬身份/保險/服務業代 /佣金比例-->
+                        <div class="customize-form-row">
+                            <div class="customize-form-inner">
+                                <div class="customize-form-field customize-form-field-1">
+                                    <div class="customize-field-inner">
+                                        <div class="customize-form-title"><span class="material-icons popMeterfont">highlight_off</span>單位別</div>
+                                        <div class="customize-form-entry">
+                                            <input type="text" name="憑證費用" value="" placeholder="請輸入值" data-toggle="tooltip" data-placement="left">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="customize-form-field customize-form-field-1">
+                                    <div class="customize-field-inner">
+                                        <div class="customize-form-title">承攬身份</div>
+                                        <div class="customize-form-entry">
+                                            <select name="匯率進位" id="" value="" title="" data-toggle="tooltip" data-placement="left">
+                                                <option value="" disabled="" hidden="" selected="">請選擇</option>
+                                                <option value="">業務員</option>
+                                                <option value="">服務業代</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="customize-form-field customize-form-field-1">
+                                    <div class="customize-field-inner">
+                                        <div class="customize-form-title">保險/服務業代</div>
+                                        <div class="customize-form-entry">
+                                            <div class="customize-form-entry-container">
+                                                <div class="customize-form-entry-col customize-form-entry-4">
+                                                    <input type="text" name="經手人" value="" title="" data-toggle="tooltip" data-placement="left" placeholder="請輸入值">
+                                                </div>
+                                                <div class="customize-form-entry-col customize-form-entry-6">
+                                                    <input type="text" name="經手人" value="" title="" data-toggle="tooltip" data-placement="left" placeholder="" attr="readonly" disabled="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="customize-form-field customize-form-field-1">
+                                    <div class="customize-field-inner">
+                                        <div class="customize-form-title">佣金比例</div>
+                                        <div class="customize-form-entry">
+                                            <div class="customize-form-entry-container">
+                                                <div class="customize-form-entry-col customize-form-entry-4">
+                                                    <select name="" id="">
+                                                        <option value="">比例</option>
+                                                        <option value="">定額</option>
+                                                    </select>
+                                                </div>
+                                                <div class="customize-form-entry-col customize-form-entry-6">
+                                                    <input type="text" name="經手人" value="" title="" data-toggle="tooltip" data-placement="left" placeholder="" attr="readonly" disabled="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 薪資狀況 / 二代健保身份-->
+                        <div class="customize-form-row">
+                            <div class="customize-form-inner">
+                                <div class="customize-form-field customize-form-field-1">
+                                    <div class="customize-field-inner">
+                                        <div class="customize-form-title">薪資狀況</div>
+                                        <div class="customize-form-entry">
+                                            <select name="薪資狀況" id="" value="" title="" data-toggle="tooltip" data-placement="left">
+                                                <option value="" disabled="" hidden="" selected="">請選擇</option>
+                                                <option value="">有底薪</option>
+                                                <option value="">無底薪</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="customize-form-field customize-form-field-1">
+                                    <div class="customize-field-inner">
+                                        <div class="customize-form-title">業務來源</div>
+                                        <div class="customize-form-entry">
+                                            <ul>
+                                                <li><input type="checkbox" id="frd01" name="二代健保身份"><label for="frd01">二代健保身份</label></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 跳窗頁籤 -->
+                    <div class="dialog-content-tab">
+                        <ul>
+                            <li class="tabA"><a href="#" class="tab-active">彙總檔</a></li>
+                            <li class="tabA"><a href="#">本地保單</a></li>
+                            <li class="tabA"><a href="#">跨區資料</a></li>
+                            <li class="tabA"><a href="#">暫收資料</a></li>
+                            <li class="tabA"><a href="#">暫收資料</a></li>
+                        </ul>
+                    </div>
+                    <div class="customize-formB">
+                        <!-- 統一編號/ID 要保人 E-mail 手機號碼-->
+                        <div class="customize-form-row">
+                            <div class="customize-form-inner">
+                                <div class="customize-form-field customize-form-field-1">
+                                    <div class="customize-field-inner">
+                                        <div class="customize-form-title">統一編號/ID</div>
+                                        <div class="customize-form-entry">
+                                            <input type="text" name="憑證費用" value="" placeholder="請輸入值" data-toggle="tooltip" data-placement="left"><a href="#"><span class="material-icons searchIcon">search</span></a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="customize-form-field customize-form-field-1">
+                                    <div class="customize-field-inner">
+                                        <div class="customize-form-title">要保人</div>
+                                        <div class="customize-form-entry">
+                                            <input type="text" name="憑證費用" value="" placeholder="請輸入值" data-toggle="tooltip" data-placement="left">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="customize-form-field customize-form-field-1">
+                                    <div class="customize-field-inner">
+                                        <div class="customize-form-title">E-mail</div>
+                                        <div class="customize-form-entry">
+                                            <input type="text" name="經手人" value="" title="" data-toggle="tooltip" data-placement="left" placeholder="" attr="readonly" disabled="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="customize-form-field customize-form-field-1">
+                                    <div class="customize-field-inner">
+                                        <div class="customize-form-title">手機號碼</div>
+                                        <div class="customize-form-entry">
+                                            <input type="text" name="經手人" value="" title="" data-toggle="tooltip" data-placement="left" placeholder="" attr="readonly" disabled="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 出生年月日/負責人-->
+                        <div class="customize-form-row">
+                            <div class="customize-form-inner">
+                                <div class="customize-form-field customize-form-field-1">
+                                    <div class="customize-field-inner">
+                                        <div class="customize-form-title">出生年月日</div>
+                                        <div class="customize-form-entry">
+                                            <input type="text" name="憑證費用" value="" placeholder="請輸入值" data-toggle="tooltip" data-placement="left">
+                                            <a href="#">
+                                            <span class="material-icons dataIcon">calendar_month</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="customize-form-field customize-form-field-1">
+                                    <div class="customize-field-inner">
+                                        <div class="customize-form-title">負責人</div>
+                                        <div class="customize-form-entry">
+                                            <input type="text" name="憑證費用" value="" placeholder="請輸入值" data-toggle="tooltip" data-placement="left">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 住址/登記地址 /聯絡地址-->
+                        <div class="customize-form-row">
+                            <div class="customize-form-inner">
+                                <div class="customize-form-field customize-form-field-2">
+                                    <div class="customize-field-inner">
+                                        <div class="customize-form-title">住址/登記地址</div>
+                                        <div class="customize-form-entry">
+                                            <input type="text" name="憑證費用" value="" placeholder="請輸入值" data-toggle="tooltip" data-placement="left">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="customize-form-field customize-form-field-2">
+                                    <div class="customize-field-inner">
+                                        <div class="customize-form-title">聯絡地址</div>
+                                        <div class="customize-form-entry">
+                                            <input type="text" name="憑證費用" value="" placeholder="請輸入值" data-toggle="tooltip" data-placement="left">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 住址/登記地址 /聯絡地址-->
+                        <div class="customize-form-row">
+                            <div class="customize-form-inner">
+                                <div class="customize-form-field customize-form-field-1">
+                                    <div class="customize-field-inner">
+                                        <div class="customize-form-title">聯絡電話</div>
+                                        <div class="customize-form-entry">
+                                            <input type="text" name="憑證費用" value="" placeholder="請輸入值" data-toggle="tooltip" data-placement="left">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="customize-form-field customize-form-field-1">
+                                    <div class="customize-field-inner">
+                                        <div class="customize-form-title">聯絡窗口</div>
+                                        <div class="customize-form-entry">
+                                            <input type="text" name="憑證費用" value="" placeholder="請輸入值" data-toggle="tooltip" data-placement="left">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="customize-form-field customize-form-field-2">
+                                    <div class="customize-field-inner">
+                                        <div class="customize-form-title">國籍</div>
+                                        <div class="customize-form-entry">
+                                            <ul>
+                                                <li><input type="radio" id="frd01" name="作業項目"><label for="frd01">本國</label></li>
+                                                <li><input type="radio" id="frd02" name="作業項目"><label for="frd02">非本國</label></li>
+                                                <input class="thirdStyle" type="text" name="憑證費用" value="" placeholder="請輸入值" data-toggle="tooltip" data-placement="left">
+                                            </ul>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dialog-btn">
+                    <ul>
+                        <li><button class="btn-outline">取消</button></li>
+                        <li><button class="btn-prime">確定</button></li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+        <!-- customize-form-tooltip-content -->
+        <div class="tp-container">批單號碼：123456<br>批單號碼：246802<br>批單號碼：135791</div>
+    </div>
+</body>
+</html>
+
+<script>
+    let table01Data = [{
+        id: "b1",
+        總行代碼: "設計文字",
+        分行代碼: "設計文字",
+        名稱: "設計文字",
+        簡稱: "設計文字",
+        地址: "設計文字",
+        銀行統編: "設計文字",
+        電話號碼: "設計文字",
+        建檔日期: "設計文字",
+        更新日期: "設計文字",
+        作業人員: "設計文字"
+    }, ];
+    var table01 = new Tabulator("#table01", {
+        data: table01Data,
+        //autoColumns: true,
+        layout: "fitColumns",
+        height: "255px",
+        pagination: "local",
+        paginationSize: 5,
+        paginationSizeSelector: [5, 10, 30, 50, true],
+        movableColumns: true,
+        resizableRows: true,
+        tooltips: true,
+        tooltipsHeader: true,
+        tooltipGenerationMode: "hover",
+        selectable: true,
+        columns: [{
+                formatter: "rowSelection",
+                titleFormatter: "rowSelection",
+                headerHozAlign: "center",
+                hozAlign: "center",
+                headerSort: false,
+                maxWidth: 50,
+                minWidth: 50,
+                cellClick: function(e, cell) {
+                    cell.getRow().toggleSelect();
+                }
+            },
+            { title: "總行代碼", field: "總行代碼" },
+            { title: "分行代碼", field: "分行代碼" },
+            { title: "名稱", field: "名稱" },
+            { title: "簡稱", field: "簡稱" },
+            { title: "地址", field: "地址" },
+            { title: "銀行統編", field: "銀行統編" },
+            { title: "電話號碼", field: "電話號碼" },
+            { title: "建檔日期", field: "建檔日期" },
+            { title: "更新日期", field: "更新日期" },
+            { title: "作業人員", field: "作業人員" },
+        ],
+    });
+    // 選擇預設勾選row
+    table01.selectRow(["b1"]);
+    // 使用filter能精準指定欄位
+    //table.selectRow(table.setFilter("id","=","a1"));
+</script>
