@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/bootstrap-4.6.2-dist/css/bootstrap-grid.css">
     <link rel="stylesheet" href="/bootstrap-4.6.2-dist/css/bootstrap.css">
     <!-- Material -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <!-- <link rel="stylesheet" href="/material/material-icons-ie.css">
     <link rel="stylesheet" href="/material/material-icons.css"> -->
     <!-- element-plus -->
@@ -45,7 +45,7 @@
                                         <li>
                                             <a href="#">
                                                 <div class="item_title">
-                                                    <span class="material-icons-outlined mFont">
+                                                    <span class="mFont material-icons-outlined">
                                                         description
                                                         </span>
                                                         要保書作業</span>
@@ -71,7 +71,9 @@
                                         <li>
                                             <a href="#">
                                                 <div class="item_title">
-                                                    <span class="mFont material-symbols-outlined">list_alt</span>
+                                                    <span class="mFont material-icons-outlined">
+                                                        list_alt
+                                                        </span>
                                                     <span>批單作業</span>
                                                 </div>
                                             </a>
@@ -81,7 +83,9 @@
                                         <li>
                                             <a href="#">
                                                 <div class="item_title">
-                                                    <span class="mFont material-symbols-outlined">paid</span>
+                                                    <span class="mFont material-icons-outlined">
+                                                        monetization_on
+                                                        </span>
                                                     <span>獎金佣金報表</span>
                                                 </div>
                                             </a>
@@ -115,9 +119,9 @@
                         <div class="top_logout">
                         <button class="btn">
                             <span class="sFont">登出</span>
-                            <span class="mFont sFont material-symbols-outlined">
+                            <span class="mFont material-icons-outlined">
                                 logout
-                            </span>
+                                </span>
                         </button>
                         </div>
                     </div>
@@ -126,7 +130,9 @@
                 <div class="sec_breadcrumb">
                     <div class="row">
                         <p class="xsFont">
-                            <span class="mFont text-danger material-symbols-outlined">location_on</span>佣金作業 / 要保書作業</p>
+                            <span class="mFont material-icons-outlined">
+                                location_on
+                                </span>佣金作業 / 要保書作業</p>
                     </div>
                 </div>
                 <div class="thr_title">
@@ -167,8 +173,12 @@
                             <div class="query_input  sn_col_B2">
                                 <div class="doublequery">
                                     <input class="sn_col_B" type="text" placeholder="請輸入值">
-                                    <button> <span class="material-symbols-outlined">calendar_month</span></button>
-                                    ~<input class="sn_col_B" type="text" placeholder="請輸入值"> <button> <span class="material-symbols-outlined">calendar_month</span></button>
+                                    <button><span class="mFont material-icons-outlined">
+                                        calendar_month
+                                        </span></button>
+                                    ~<input class="sn_col_B" type="text" placeholder="請輸入值"> <button><span class="mFont material-icons-outlined">
+                                        calendar_month
+                                        </span></button>
                                 </div>
                             </div>
                         </div>
@@ -212,7 +222,15 @@
                 </div>
                 <div class="query_record">
                     <div class="recordword">
-                    <p class="sFont">共 <span>0</span> 筆資料</p> 
+                        <div class="row">
+                            <div class="col-4"><p class="sFont">共 <span>0</span> 筆資料</p></div>
+                            <div class="col-4"></div>
+                            <div class="col-4 text-right">
+                                <button class="btn-cleaner">清除</button>
+                                <button class="btn-search ">搜尋</button>
+                            </div>
+                            
+                        </div>
                     </div>
                 </div>
                 <hr>

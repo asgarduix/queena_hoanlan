@@ -27,7 +27,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	font-size: 18px;
+	font-size:.8rem;
 }
 a,ol, ul {
 	list-style: none;
@@ -58,6 +58,27 @@ button{
 	background-color: transparent;
 }
 
+/* 按鈕綜合設定 */
+.btn-search{
+    padding: 0px 30px;
+    color: #ffffff;
+    background-color:#5A79B5 ;
+    font-size: .9rem;
+    border-radius: 5px;
+    line-height: 30px;
+    letter-spacing: 5px;
+}
+
+.btn-cleaner{
+    padding: 0px 30px;
+    color: #5A79B5;
+    background-color:transparent ;
+    font-size: .9rem;
+    border-radius: 5px;
+    line-height: 30px;
+    letter-spacing: 5px;
+}
+
 /* ---------------------------------- */
 .scroll-box{
     background-color: #fff;
@@ -84,7 +105,7 @@ button{
 }
 
 .item_title{
-	font-size: 18px;
+	font-size:1rem;
 }
 
 .list_layer h3 {
