@@ -1,0 +1,439 @@
+/* css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video,button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;margin: 0;padding: 0;
+}
+body {
+	line-height: 1;
+	font-size:.8rem;
+    margin: 0;
+    padding: 0;
+}
+a,ol, ul {
+	list-style: none;
+	text-decoration: none;
+}
+button {
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+/* 左邊選單外框 */
+.left-clumn{
+    flex-direction: row;
+    width: 20%;
+    border: 1px solid #5A79B5;
+    margin: 5px;
+}
+
+.left-clumn-row a{
+    text-decoration:none ;
+}
+
+.left-clumn-row{
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    line-height: 2rem;
+}
+
+.left-clumn-row .title{
+	font-size:.5rem;
+    font-weight: 500;
+}
+
+.left-clumn-row .secList{
+	font-size:1rem;
+}
+
+.left-clumn-row a{
+    display:flex;
+    width: 100%;
+	font-size:1rem;
+    border-radius: 5px;
+    padding: 5px 0;
+    border: 1px solid #5A79B5;
+}
+
+
+/* 字體大小設定 */
+/* material */
+.materialSize{
+    font-size: 18px;
+    line-height: 2rem;
+    padding: 0 10px;
+}
+
+.materialSize-s{
+    font-size: 18px;
+    line-height: 2rem;
+    position: relative;
+    top: 4px;
+}
+
+.materialSize-m{
+    font-size: 20px;
+    position: relative;
+    top: 4px;
+}
+
+.materialSize-m-r{
+    position: relative;
+    top:5px ;
+}
+
+.unitH1{
+    font-size:23px ;
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+/* ul解除display:inline-flex間距 */
+.lifteflex{
+    display: flex;
+}
+
+/* column寬度設定 */
+.columnOne{
+    display:inline-flex;
+    width: 30%;
+    border: 1px solid black;
+}
+
+.columnTwo{
+    display: inline-flex;
+    width: 60%;
+    border: 1px solid black;
+}
+
+.columnThree{
+    display: inline-flex;
+    width: 90%;
+    border: 1px solid black;
+}
+.columnFour{
+    display: inline-flex;
+    width: 50%;
+    border: 1px solid black;
+}
+
+.columnFive-right{
+    display: inline-flex;
+    justify-content: end;
+    width: 40%;
+    border: 1px solid black;
+}
+.columnFive-left{
+    display: inline-flex;
+    justify-content: start;
+    width: 40%;
+    border: 1px solid black;
+}
+
+.columnTen-right{
+    display: inline-flex;
+    justify-content: end;
+    width: 10%;
+    border: 1px solid black;
+}
+
+.columnTen-left{
+    display: inline-flex;
+    justify-content: start;
+    width: 10%;
+    border: 1px solid black;
+}
+
+/* 左邊選單logo */
+.left-clumn-item_logo{
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+    border: 1px solid #7E96C4;
+    border-radius: 40px;
+
+}
+
+.left-clumn-item_logo img {
+	display: block;
+	width: 80%;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+/* 右側選單外誆 */
+.right-clumn{
+    flex-direction: row;
+    width: 80%;
+    border: 1px solid #5A79B5;
+    margin: 5px;
+}
+
+.right-clumn-row{
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    line-height: 2rem;
+}
+
+/* 工作項目選擇 */
+.workShop{
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+.workShop ul{
+    display: flex;
+    background-color: #ebf0f6;
+    border: 1px solid #5B7CBD;
+    border-radius: 50px;
+}
+
+.workShop ul li{
+    padding: 5px 0px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.workShop ul li:first-child{
+    padding-left: 7px;
+}
+.workShop ul li:last-child{
+    padding-right: 7px;
+}
+
+.workShop ul li a{
+    width: 100%;
+    padding: 5px 10px;
+    color: #ffffff;
+    background-color: #5A79B5;
+    border-radius: 18px;
+    padding: 5px 20px;
+}
+
+.workName{
+
+}
+
+.workName ul{
+    display: flex;
+    justify-content: end;
+    border: 1px solid #5B7CBD;
+    border-radius: 50px;
+    padding: 5px 15px;
+}
+
+.workName ul li{
+    font-size: 14px;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.workCode::before{
+    content: "|";
+    padding: 0 5px;
+    font-weight: 500;
+}
+
+.logOut{
+    font-size: 15px;
+    margin-top: 3px;
+}
+
+.breadCrumb{
+
+}
+
+.breadCrumb a{
+    color:#555555 ;
+    font-size: 12px;
+}
+
+/* 輸入欄位基本設定 */
+
+input[type=text] {
+    width: calc(100% - .5rem);
+    border: none;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    padding: 0.3rem 1.2rem;
+    margin: -1px;
+    margin-left: -5px;
+    font-size: .7rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/* 搜尋用按鈕 */
+.btn-search{
+    border: 1px solid #8D99AE;
+	border-radius: 8px;
+    padding:3px 30px;
+    font-size: .9rem;
+}
+
+.btn-clear{
+    border: 1px solid #8D99AE;
+	border-radius: 8px;
+    padding:3px 30px;
+    font-size: .9rem;
+}
+
+
+/* 搜尋欄位 */
+.query-unit{
+    display: inline-flex;
+    border: 3px solid #5A79B5;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.query-unit-info{
+    display:flow-root;
+    width: auto;
+    border: 3px solid #5A79B5;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: -1px;
+    justify-content: end;
+}
+
+.query-unit-infolist{
+    float: left;
+    border: 1px solid blue;
+    color: #075D8E;
+    letter-spacing: 2px;
+    margin-left: 10px;
+}
+
+.query-unit-infolist span{
+    border: 1px solid yellow;
+    display: inline-block;
+    color: #075D8E;
+    font-weight: 500;
+    padding: 0 3px;
+}
+
+.query-unit-infobutton{
+    float: right;
+    border: 1px solid blue;
+    margin-right: 10px;
+}
+
+.query-unit-group{
+    width: calc(100% / 5);
+    border: 1px solid red;
+    padding: 5px;
+}
+
+.query-unit-title{
+    padding-left: 8px;
+}
+
+.query-unit-button{
+    padding-left: 8px;
+}
+
+.query-unit-input {
+    display: flex;
+    padding: 7px ;
+}
+
+.tableInfo{
+    border: 1px solid #7E96C4;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.tableWork{
+    border-radius: 10px;
+    line-height: 1.5rem;
+}
+
+.tableWork button:first-child{
+    margin-left: -1px;
+    border-top-left-radius: 10px;
+}
+
+.tableBody{
+    border: 1px solid #7E96C4;
+    padding: 5px;
+}
+
+.tablePage{
+    border: 1px solid #aaaaaa;
+    background-color:#eef1f7 ;
+    line-height: 1.2rem;
+}
+
+.tablePage ul{
+    display: flex;
+    justify-content: end;
+}
+
+.tablePage li{
+    line-height: 1.2rem;
+    padding-top: 5px;
+}
+
+.bulenote{
+    display: block;
+    font-size: 8px;
+    color:#075D8E ;
+    margin: 3px;
+    line-height: 1.2rem;
+}
+
+select {
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	border:1px solid #aaaaaa;
+    border-radius: 2px;
+	width:calc(100% - 1px);
+	padding-left:2px;
+	padding-right:30px;
+	background:url(../img/arrow_drop_down_black_24dp.svg) no-repeat right center transparent;
+    line-height: 1.3rem;
+
+}
+
