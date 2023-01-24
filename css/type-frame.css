@@ -43,6 +43,11 @@ button {
     margin: 0;
     padding: 0;
 }
+
+::placeholder {
+    color: #e2e2e2;
+    font-size: 9px;
+  }
 /* 左邊選單外框 */
 .left-clumn{
     flex-direction: row;
@@ -87,6 +92,13 @@ button {
     font-size: 18px;
     line-height: 2rem;
     padding: 0 10px;
+}
+
+.materialSize-xs{
+    font-size: 9px;
+    line-height: .9rem;
+    position: relative;
+    top: 2px;
 }
 
 .materialSize-s{
@@ -377,6 +389,11 @@ input[type=text] {
     padding: 7px ;
 }
 
+.query-unit-double-input{
+    display: inline-flex;
+    border: 1px solid blue;
+}
+
 .tableInfo{
     border: 1px solid #7E96C4;
     border-radius: 10px;
@@ -437,3 +454,9 @@ select {
 
 }
 
+.zigzagLine{
+    display: block;
+    line-height: .9rem;
+    margin: 0 3px;
+    padding-top: 4px;
+}
