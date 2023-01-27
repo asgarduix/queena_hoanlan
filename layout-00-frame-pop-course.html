@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <!-- Material -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/material/material-icons-ie.css">
+    <link rel="stylesheet" href="/material/material-icons.css"> -->
+    <!-- element-plus -->
+    <!-- <link rel="stylesheet" href="/unpkg.com/element-plus/dist/index.css" /> -->
+    <!-- tabulator -->
+    <link rel="stylesheet" href="/tabulator/tabulator-master/dist/css/tabulator.min.css">
+    <script type="text/javascript" src="/tabulator/tabulator-master/dist/js/tabulator.min.js"></script> 
+    <!-- 以我的為主 -->
+    <link rel="stylesheet" href="css/type-frame.css">
+    <link rel="stylesheet" href="css/type-frame-color.css">
+    <link rel="stylesheet" href="css/tabulator_ment.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-clumn">
+            <div class="left-clumn-item_logo">
+                <a href="#"><img src="./img/item_logo.png" alt=""></a>
+            </div>
+            <div class="left-clumn-row">
+                <div class="title">佣金作業</div>
+            </div>
+            <div class="left-clumn-row">
+                <a href="#"><span class="materialSize material-icons-outlined">description</span><div class="secList">要保書作業</div></a>
+            </div>
+            <div class="left-clumn-row">
+                <a href="#"><span class="materialSize material-icons-outlined">list_alt</span><div class="secList">批單作業</div></a>
+            </div>
+            <div class="left-clumn-row">
+                <a href="#"><span class="materialSize material-icons-outlined">paid</span><div class="secList">獎金佣金報表</div></a>
+            </div>
+        </div>
+        <div class="right-clumn">
+            <div class="right-clumn-row">
+                <ul class="lifteflex">
+                    <div class="columnFour">
+                        <div class="workShop">
+                            <ul>
+                                <li><a href="#">佣金作業</a></li>
+                                <li><a href="#">法遵稽核</a></li>
+                                <li><a href="#">角色權限</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="columnFive-right">
+                        <div class="workName">
+                            <ul>
+                                <li>和安保代：<span>廖家祥</span></li>
+                                <li>行政專員<span class="workCode">A123456</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="columnTen-right">
+                        <div class="logOut">
+                            <button>登出</button>
+                            <span class="materialSize-s material-icons-outlined">logout</span>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <div class="right-clumn-row">
+                <div class="breadCrumb">
+                    <span class="materialSize-m-r material-icons-outlined">location_on</span>
+                    <!-- &nbsp;不換行空格 -->
+                    <a href="#">佣金作業</a>&nbsp;/&nbsp;<a href="#">要保書作業</a> 
+                </div>
+            </div>
+            <div class="right-clumn-row">
+                <h1 class="unitH1">要保書作業</h1>
+            </div>
+            <div class="right-clumn-row">
+                <div class="query-unit">
+                    <div class="query-unit-group">
+                        <div class="query-unit-title">統一編號/ID</div>
+                        <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
+                    </div>
+                    <div class="query-unit-group">
+                        <div class="query-unit-title">投保編號</div>
+                        <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
+                    </div>
+                    <div class="query-unit-group">
+                        <div class="query-unit-title">保單號碼</div>
+                        <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
+                    </div>
+                    <div class="query-unit-group">
+                        <div class="query-unit-title">客戶名稱</div>
+                        <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
+                    </div>
+                    <div class="query-unit-group">
+                        <div class="query-unit-title">要保書輸入日期區間</div>
+                        <div class="query-unit-input">
+                            <div class="query-unit-double-input">
+                                <div class="columnFive-left">
+                                <input type="text" value="" placeholder="請輸入值">
+                                <span class=" materialSize-xs material-icons-outlined">calendar_month</span>
+                                </div>
+                                <span class="zigzagLine">～</span>
+                                <div class="columnFive-left">
+                                <input type="text" value="" placeholder="請輸入值"><span class=" materialSize-xs material-icons-outlined">calendar_month</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="query-unit-info">
+                    <div class="query-unit-infolist">
+                        共<span>0</span>項資料
+                    </div>
+                    <div class="query-unit-infobutton">
+                        <button class="btn btn-clear">清除</button>
+                        <button class="btn btn-search">搜尋</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="right-clumn-row">
+                <div class="tableInfo">
+                    <div class="tableWork">
+                        <button class="active btn btn-add ">新增</button>
+                        <button class="btn btn-edit">編輯</button>
+                        <button class="btn btn-del">刪除</button>
+                    </div>
+                    <div class="tableBody">
+                        <div id="table01"></div>
+                        <div class="tablePage">
+                            <ul>
+                                <li><button class="btn btn-prev">上一頁</button></li>
+                                <li><button class="btn btn-next">下一頁</button></li>
+                                <li class="bulenote">每頁筆數</li>
+                                <li>
+                                    <select name="" id="">
+                                        <option value="">1000</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                </li>
+                                <li class="bulenote">目前頁數</li>
+                                <li>
+                                    <select name="" id="">
+                                        <option value="">1000</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- course視窗 -->
+    <div class="blackBackground">
+        <div class="courseWindow">
+            <div class="courseWindow-header">
+                <p class="courseTitle">投保編號：<span>T222333000</span></p>
+                <div class="courseClose">
+                    <button>
+                        <span class="material-icons-outlined">clear</span>
+                    </button>
+                </div>
+            </div>
+            <div class="courseWindow-body">
+                <div class="course-unit-label"><span class="course-materialSize-xs material-icons-outlined">indeterminate_check_box</span>保單狀態</div>
+                <!-- 包裹欄位外框 -->
+                <div class="course-unit">
+                    <div class="course-unit-colum">
+                        <div class="course-unit-colum-title">保單號碼</div>
+                        <div class="course-unit-colum-info">A123456789</div>
+                    </div>
+                    <div class="course-unit-colum">
+                        <div class="course-unit-colum-title">投保狀態</div>
+                        <div class="course-unit-colum-info">續保</div>
+                    </div>
+                    <div class="course-unit-colum">
+                        <div class="course-unit-colum-title">合約起日</div>
+                        <div class="course-unit-colum-info">111/1/1</div>
+                    </div>
+                    <div class="course-unit-colum">
+                        <div class="course-unit-colum-title">合約迄日</div>
+                        <div class="course-unit-colum-info">111/12/31</div>
+                    </div>
+                    <div class="course-unit-colum">
+                        <div class="course-unit-colum-title">保額</div>
+                        <div class="course-unit-colum-info">$1,000,000</div>
+                    </div>
+                    <div class="course-unit-colum">
+                        <div class="course-unit-colum-title">佣金率</div>
+                        <div class="course-unit-colum-info">12%</div>
+                    </div>
+                </div>
+                <hr>
+                <div class="course-unit-label"><span class="course-materialSize-xs material-icons-outlined">indeterminate_check_box</span>批單歷程<span>(12)</span></div>
+                <!-- 包裹欄位外框 -->
+                <div class="course-unit">
+                    <ul>
+                        <li>
+                            <span class="materialSize-xs material-icons-outlined">sort </span>
+                            <select name="" id="">
+                                <option value="">由新到舊</option>
+                                <option value="">由舊到新</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 時間軸外框 -->
+                <div class="unit-time-group">
+                <div class="unit-time">
+                    <div class="unit-time-oder">
+                        <div class="time-oder-layer">
+                            <p class="oderpoint"><span class="material-icons-outlined">adjust</span>
+                            </p>
+                            <p class="oderpoint-word">111/10/27</p>
+                            <hr class="oderpoint-line">
+                        </div>
+                        <div class="time-oder-layer-unit">
+                            <div class="layer-unit-doit"><hr></div>
+                            <div class="layer-unit-word">
+                            <span>續保</span>
+                            <p>111/10/27日完成續保作業，合約起訖變更為111/10/28 - 111/10/29</p>
+                            </div>
+                        </div>
+                        <div class="time-oder-layer">
+                            <p class="oderpoint"><span class="material-icons-outlined">adjust</span>
+                            </p>
+                            <p class="oderpoint-word">111/10/27</p>
+                            <hr class="oderpoint-line">
+                        </div>
+                        <div class="time-oder-layer-unit">
+                            <div class="layer-unit-doit"><hr></div>
+                            <div class="layer-unit-word">
+                            <span>續保</span>
+                            <p>111/10/27日完成續保作業，合約起訖變更為111/10/28 - 111/10/29</p>
+                            </div>
+                        </div>
+                        <div class="time-oder-layer">
+                            <p class="oderpoint"><span class="material-icons-outlined">adjust</span>
+                            </p>
+                            <p class="oderpoint-word">111/10/27</p>
+                            <hr class="oderpoint-line">
+                        </div>
+                        <div class="time-oder-layer-unit">
+                            <div class="layer-unit-doit"><hr></div>
+                            <div class="layer-unit-word">
+                            <span>續保</span>
+                            <p>111/10/27日完成續保作業，合約起訖變更為111/10/28 - 111/10/29</p>
+                            </div>
+                        </div>
+                        <div class="time-oder-layer">
+                            <p class="oderpoint"><span class="material-icons-outlined">adjust</span>
+                            </p>
+                            <p class="oderpoint-word">111/10/27</p>
+                            <hr class="oderpoint-line">
+                        </div>
+                        <div class="time-oder-layer-unit">
+                            <div class="layer-unit-doit"><hr></div>
+                            <div class="layer-unit-word">
+                            <span>續保</span>
+                            <p>111/10/27日完成續保作業，合約起訖變更為111/10/28 - 111/10/29</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="courseWindow-footer">
+                <div class="coursefooter-button-group">
+                    <button class="btn btn-close">關閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    let table01Data = [{
+        id: "b1",
+        總行代碼: "設計文字",
+        分行代碼: "設計文字",
+        名稱: "設計文字",
+        簡稱: "設計文字",
+        地址: "設計文字",
+        銀行統編: "設計文字",
+        電話號碼: "設計文字",
+        建檔日期: "設計文字",
+        更新日期: "設計文字",
+        作業人員: "設計文字"
+    }, ];
+    var table01 = new Tabulator("#table01", {
+        data: table01Data,
+        //autoColumns: true,
+        layout: "fitColumns",// 表格風格
+        height: "250px",
+        movableColumns: true,// 移動欄位
+        resizableRows: true,// 可縮放欄位
+        tooltips: true,// 提示
+        tooltipsHeader: true,
+        tooltipGenerationMode: "hover",
+        selectable: false,
+        columns: [{
+                formatter: "rowSelection",
+                titleFormatter: "rowSelection",
+                headerHozAlign: "center",
+                hozAlign: "center",
+                headerSort: false,
+                maxWidth: 50,
+                minWidth: 50,
+                cellClick: function(e, cell) {
+                    cell.getRow().toggleSelect();
+                }
+            },
+            { title: "總行代碼", field: "總行代碼" },
+            { title: "分行代碼", field: "分行代碼" },
+            { title: "名稱", field: "名稱" },
+            { title: "簡稱", field: "簡稱" },
+            { title: "地址", field: "地址" },
+            { title: "銀行統編", field: "銀行統編" },
+            { title: "電話號碼", field: "電話號碼" },
+            { title: "建檔日期", field: "建檔日期" },
+            { title: "更新日期", field: "更新日期" },
+            { title: "作業人員", field: "作業人員" },
+        ],
+    });
+    // 選擇預設勾選row
+    table01.selectRow(["b1"]);
+    // 使用filter能精準指定欄位
+    //table.selectRow(table.setFilter("id","=","a1"));
+    </script>
