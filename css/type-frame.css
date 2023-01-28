@@ -94,7 +94,7 @@ button {
 }
 
 .materialSize-xs{
-    font-size: 9px;
+    font-size: .5rem;
     line-height: .9rem;
     position: relative;
     top: 2px;
@@ -105,7 +105,7 @@ button {
     line-height: .9rem;
     position: relative;
     top: 2px;
-    left: -10px;
+    left: -.3rem;
 }
 
 .course-unit .materialSize-xs{
@@ -404,6 +404,14 @@ input[type="checkbox"] {
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
+textarea{
+    display:block;
+    width:98% ;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid #aaaaaa;
+}
+
 /* 搜尋用按鈕 */
 .btn-search{
     border: 1px solid #8D99AE;
@@ -439,6 +447,16 @@ input[type="checkbox"] {
     margin: 0 auto;
 }
 
+.btn-choose{
+    border: 1px solid #7E96C4;
+    background-color: #5A79B5;
+    color: #ffffff;
+	border-radius: 5px;
+    padding:1px 8px;
+    font-size: .5rem;
+    margin-left: 5px;
+}
+
 .btn-close{
     border: 1px solid #777777;
     background-color: #555555;
@@ -461,6 +479,14 @@ input[type="checkbox"] {
 
 
 /* 搜尋欄位 */
+
+.right-clumn-row .query-unit{
+    display:flex;
+    border: 3px solid #5A79B5;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
 .query-unit{
     display:flex;
     border: 3px solid #5A79B5;
@@ -469,7 +495,7 @@ input[type="checkbox"] {
 }
 
 .query-unit-info{
-    display:flow-root;
+    display: flow-root;
     width: auto;
     border: 3px solid #5A79B5;
     border-bottom-left-radius: 10px;
@@ -685,7 +711,7 @@ select {
 }
 
 .pop-unit-two{
-    display: inline-flex;
+    display:flex;
     width: 50%;
     line-height: 1.2rem;
 }
@@ -705,7 +731,7 @@ select {
 }
 
 .pop-unit-title-two{
-    width:14.5%;
+    width:15%;
     border-right: none;
     text-align: right;
     padding-right: 5px;
@@ -794,29 +820,57 @@ select {
 }
 
 .pop-tab-header ul{
+    display: flex;
     line-height: 1.5rem;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-color: #dce7fa;
-    display:flex;
 
 }
 
 .pop-tab-header li{
-
+    display: inline;
+    line-height: 2rem;
+    font-size: 10px;
+    color: #075D8E;
+    padding-top: 1px;
+    margin-left: -1px;
 }
 
 .pop-tab-header li a{
-    border-left: 1px solid #5A79B5;
+    display: inline;
     border-right: 1px solid #5A79B5;
-    line-height: 1.5rem;
-    padding: 5px 15px;
+    line-height: 2rem;
+    padding:9px 15px;
     font-size: 10px;
     color: #075D8E;
 }
 
+.pop-tab-header li a:hover{
+    border-right: 1px solid #5A79B5;
+    line-height: 2rem;
+    padding:9px 15px;
+    font-size: 10px;
+    color: #ffffff;
+    background-color:#075D8E ;
+}
+
+.pop-tab-header li:first-child a:hover {
+    border-right: 1px solid #5A79B5;
+    line-height: 2rem;
+    padding:9px 15px;
+    font-size: 10px;
+    color: #ffffff;
+    background-color:#075D8E ;
+    border-top-left-radius: 10px;
+}
+
 .pop-tab-header li:first-child a{
     border-top-left-radius: 10px;
+    margin-left: 0;
+}
+.pop-tab-header li:last-child a{
+    border-top-right-radius: 10px;
     margin-left: 0;
 }
 
@@ -1166,4 +1220,111 @@ select {
     margin: 0 auto;
     text-align: center;
     line-height: 4rem;
+}
+
+/* upload */
+.uploadCase{
+    background-color: #e3ecf1;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+.upload-row{
+    display:inline-flex;
+    line-height:1.2rem;
+    width:100%;
+    margin: 5px 0;
+    overflow-x: scroll;
+}
+
+.upload-row-sec{
+    display:block;
+    line-height:1.2rem;
+    width:100%;
+    margin: 5px 0;
+    overflow-x: scroll;
+}
+
+.upload-row-sec p{
+    font-size: .7rem;
+    color:#7F7F7F ;
+    margin-left: 5px;
+    line-height: 1.2rem;
+}
+
+.upload-row p{
+    font-size: .7rem;
+    color:#7F7F7F ;
+    margin-left: 5px;
+    line-height: 1.2rem;
+}
+
+.btn-upload{
+    border: 1px solid #075D8E;
+    background-color: #ffffff;
+    color: #333333;
+	border-radius: 5px;
+    padding:5px 15px;
+    margin-left:5px;
+    font-size: .5rem;
+    box-shadow: 0px 2px 2px rgb(231, 231, 231);
+}
+
+.uploadCase hr.case{
+    border: .1% solid #075D8E;
+}
+
+.upload-tabulate{
+    display: block;
+    margin: 0 auto;
+    margin-top: -1px;
+}
+
+.upload-tabulate-header{
+    line-height: 1.5rem;
+    display: flex;
+    border: 1px solid #aaaaaa;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #e3ecf1;
+}
+
+.upload-tabulate-header ul{
+    display: flex;
+    line-height: 1.5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #e3ecf1;
+
+}
+
+.upload-tabulate-header li{
+    display: inline;
+    line-height: 1.5rem;
+    font-size: 10px;
+    color: #075D8E;
+    margin-left: -1px;
+}
+
+.upload-tabulate-header li a{
+    display: inline;
+    line-height: 1.5rem;
+    padding:0px 10px;
+    font-size: 10px;
+    color: #075D8E;
+    border-left: 1px solid #075D8E;
+}
+
+.upload-tabulate-header li:first-child a{
+    border-left: none;
+}
+
+.upload-tabulate-footer{
+    background-color: #e3ecf1;
+    height: 1rem;
+    border: 1px solid #aaaaaa;
+    margin-top: -1px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 1rem;
 }
