@@ -61,8 +61,6 @@ button {
 }
 
 .left-clumn-row{
-    border: 1px solid black;
-    margin: 5px;
     padding: 5px;
     line-height: 2rem;
 }
@@ -221,8 +219,6 @@ button {
 }
 
 .right-clumn-row{
-    border: 1px solid black;
-    margin: 5px;
     padding: 5px;
     line-height: 2rem;
 }
@@ -231,10 +227,11 @@ button {
 .workShop{
     border-radius: 20px;
     background-color: #ffffff;
+    height: 2.5rem;
 }
 
 .workShop ul{
-    display: flex;
+    display: inline-flex;
     background-color: #ebf0f6;
     border: 1px solid #5B7CBD;
     border-radius: 50px;
@@ -243,7 +240,7 @@ button {
 .workShop ul li{
     padding: 5px 0px;
     letter-spacing: 1px;
-    font-size: 14px;
+    font-size: .8rem;
     text-align: center;
 }
 
@@ -256,7 +253,6 @@ button {
 
 .workShop ul li a{
     width: 100%;
-    padding: 5px 10px;
     color: #ffffff;
     background-color: #5A79B5;
     border-radius: 18px;
@@ -276,7 +272,7 @@ button {
 }
 
 .workName ul li{
-    font-size: 14px;
+    font-size: .7rem;
     text-align: center;
     margin: 0 5px;
 }
@@ -506,7 +502,6 @@ textarea{
 
 .query-unit-infolist{
     float: left;
-    border: 1px solid blue;
     color: #075D8E;
     letter-spacing: 2px;
     margin-left: 10px;
@@ -522,13 +517,12 @@ textarea{
 
 .query-unit-infobutton{
     float: right;
-    border: 1px solid blue;
     margin-right: 10px;
 }
 
 .query-unit-group{
     width: calc(100% / 5);
-    border: 1px solid red;
+    border-right:1px solid #aaaaaa ;
     padding: 5px;
 }
 
@@ -547,7 +541,6 @@ textarea{
 
 .query-unit-double-input{
     display: inline-flex;
-    border: 1px solid blue;
 }
 
 .tableInfo{

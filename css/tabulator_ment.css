@@ -1,12 +1,16 @@
-.tabulator{
-    background-color:#eef1f7 ;
+.tabulator-calcs-holder{
+    height: calc(100% - 50px);
 }
 
 .tabulator .tabulator-header{
-    background-color:#dfebee ;
-    font-weight: 400;
+    height: 30px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: .7rem;
+    font-weight: 500;
 }
 
-.tabulator-row{
-    border-bottom: 1px solid #aaaaaa;
+.tabulator-col{
+    height: 30px;
 }
