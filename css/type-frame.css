@@ -47,11 +47,11 @@ button {
 ::placeholder {
     color: #e2e2e2;
     font-size: 9px;
-  }
+}
 /* 左邊選單外框 */
 .left-clumn{
     flex-direction: row;
-    width: 20%;
+    width: 15%;
     border: 1px solid #5A79B5;
     margin: 5px;
 }
@@ -181,6 +181,12 @@ button {
     width: 40%;
 }
 
+.columnFive-left-37{
+    display: inline-flex;
+    justify-content: start;
+    width: 37%;
+}
+
 .columnTen-right{
     display: inline-flex;
     justify-content: end;
@@ -213,7 +219,7 @@ button {
 /* 右側選單外誆 */
 .right-clumn{
     flex-direction: row;
-    width: 80%;
+    width: 85%;
     border: 1px solid #5A79B5;
     margin: 5px;
 }
@@ -323,6 +329,21 @@ input[type=text] {
     margin-left: 5px;
     margin-right: 5px;
     border-radius: 3px;
+}
+
+input[type="date" i] {
+    align-items: center;
+    display:block;
+    font-family: monospace;
+    padding-inline-start: 1px;
+    cursor: default;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid #aaaaaa;
+    margin-top: -5px;
 }
 
 .pop-unit-input > select {
@@ -552,7 +573,7 @@ textarea{
 
 .tableWork{
     border-radius: 10px;
-    line-height: 1.5rem;
+    line-height: 1.6rem;
 }
 
 .tableWork button:first-child{
@@ -606,7 +627,7 @@ select {
 .zigzagLine{
     display: block;
     line-height: .9rem;
-    margin: 0 3px;
+    margin: 0 2px;
     padding-top: 4px;
 }
 

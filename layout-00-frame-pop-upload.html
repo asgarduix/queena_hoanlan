@@ -398,7 +398,6 @@
         tooltipsHeader: true,
         tooltipGenerationMode: "hover",
         selectable: false,
-        rowHeight:30,
         columns: [{
                 formatter: "rowSelection",
                 titleFormatter: "rowSelection",
@@ -409,7 +408,7 @@
                 minWidth: 30,
                 cellClick: function(e, cell) {
                     cell.getRow().toggleSelect();
-                }
+                },
             },
             { title: "總行代碼", field: "總行代碼" },
             { title: "分行代碼", field: "分行代碼" },
@@ -445,8 +444,6 @@
         tooltipsHeader: true,
         tooltipGenerationMode: "hover",
         selectable: false,
-        rowHeight:30,
-        colHeight:30,
         columns: [{
                 formatter: "rowSelection",
                 titleFormatter: "rowSelection",
@@ -459,7 +456,7 @@
                     cell.getRow().toggleSelect();
                 }
             },
-            { title: "上傳時間", field: "上傳時間", widthGrow:1 },
+            { title: "上傳時間", field: "上傳時間", widthGrow:1},
             { title: "檔案", field: "檔案", widthGrow:2},
             { title: "備註", field: "備註",  widthGrow:3 },
         ],
