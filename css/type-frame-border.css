@@ -82,6 +82,7 @@ button {
 	font-size:1rem;
     border-radius: 5px;
     padding: 5px 0;
+    border: 1px solid #5A79B5;
 }
 
 
@@ -221,6 +222,7 @@ button {
 .right-clumn{
     flex-direction: row;
     width: 85%;
+    border: 1px solid #5A79B5;
     margin: 5px;
 }
 
@@ -437,29 +439,11 @@ textarea{
     font-size: .9rem;
 }
 
-.btn-search:hover{
+.btn-clear{
     border: 1px solid #8D99AE;
 	border-radius: 8px;
     padding:3px 30px;
     font-size: .9rem;
-    color:#5A79B5 ;
-    background-color: #ffffff;
-}
-
-.btn-clear{
-    border: 1px solid #ffffff;
-	border-radius: 8px;
-    padding:3px 30px;
-    font-size: .9rem;
-}
-
-.btn-clear:hover{
-    border: 1px solid #ebebeb;
-	border-radius: 8px;
-    padding:3px 30px;
-    font-size: .9rem;
-    color: #ffffff;
-    background-color: #5A79B5;
 }
 
 .btn-cancel{
@@ -524,7 +508,7 @@ textarea{
 
 .query-unit{
     display:flex;
-    border: 1px solid #5A79B5;
+    border: 3px solid #5A79B5;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -532,7 +516,7 @@ textarea{
 .query-unit-info{
     display: flow-root;
     width: auto;
-    border: 1px solid #5A79B5;
+    border: 3px solid #5A79B5;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     margin-top: -1px;
