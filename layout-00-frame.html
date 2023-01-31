@@ -164,15 +164,38 @@
 <script>
     let table01Data = [{
         id: "b1",
-        總行代碼: "設計文字",
-        分行代碼: "設計文字",
-        名稱: "設計文字",
-        簡稱: "設計文字",
-        地址: "設計文字",
-        銀行統編: "設計文字",
-        電話號碼: "設計文字",
-        建檔日期: "設計文字",
-    }, ];
+        投保編號: "設計文字",
+        保險公司: "設計文字",
+        險別: "設計文字",
+        保單號碼: "設計文字",
+        保費: "設計文字",
+        統一編號: "設計文字",
+        狀態: "設計文字",
+        相關資料: "設計文字",
+    },
+    {
+        id: "b1",
+        投保編號: "設計文字",
+        保險公司: "設計文字",
+        險別: "設計文字",
+        保單號碼: "設計文字",
+        保費: "設計文字",
+        統一編號: "設計文字",
+        狀態: "設計文字",
+        相關資料: "設計文字",
+    }, 
+    {
+        id: "b1",
+        投保編號: "設計文字",
+        保險公司: "設計文字",
+        險別: "設計文字",
+        保單號碼: "設計文字",
+        保費: "設計文字",
+        統一編號: "設計文字",
+        狀態: "設計文字",
+        相關資料: "設計文字",
+    }, 
+];
     var table01 = new Tabulator("#table01", {
         data: table01Data,
         //autoColumns: true,
@@ -184,6 +207,7 @@
         tooltipsHeader: true,
         tooltipGenerationMode: "hover",
         selectable: false,
+        rowHeight:30,
         columns: [{
                 formatter: "rowSelection",
                 titleFormatter: "rowSelection",
@@ -196,7 +220,7 @@
                     cell.getRow().toggleSelect();
                 }
             },
-            { title: "投保編號", field: "投保編號" },
+            { title: "投保編號", field: "投保編號"},
             { title: "保險公司", field: "保險公司" },
             { title: "險別", field: "險別" },
             { title: "保單號碼", field: "保單號碼" },
@@ -210,4 +234,4 @@
     table01.selectRow(["b1"]);
     // 使用filter能精準指定欄位
     //table.selectRow(table.setFilter("id","=","a1"));
-    </script>
+</script>

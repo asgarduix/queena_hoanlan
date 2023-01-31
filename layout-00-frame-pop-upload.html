@@ -358,6 +358,28 @@
                         </div>
                         <div class="upload-tabulate">
                             <div id="table02"></div>
+                            <div class="tablePage">
+                                <ul>
+                                    <li><button class="btn btn-prev">上一頁</button></li>
+                                    <li><button class="btn btn-next">下一頁</button></li>
+                                    <li class="bulenote">每頁筆數</li>
+                                    <li>
+                                        <select name="" id="">
+                                            <option value="">1000</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                        </select>
+                                    </li>
+                                    <li class="bulenote">目前頁數</li>
+                                    <li>
+                                        <select name="" id="">
+                                            <option value="">1000</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="upload-tabulate-footer"></div>
                 </div>
@@ -376,17 +398,16 @@
 <script>
     let table01Data = [{
         id: "b1",
-        總行代碼: "設計文字",
-        分行代碼: "設計文字",
-        名稱: "設計文字",
-        簡稱: "設計文字",
-        地址: "設計文字",
-        銀行統編: "設計文字",
-        電話號碼: "設計文字",
-        建檔日期: "設計文字",
-        更新日期: "設計文字",
-        作業人員: "設計文字"
-    }, ];
+        投保編號: "設計文字",
+        保險公司: "設計文字",
+        險別: "設計文字",
+        保單號碼: "設計文字",
+        保費: "設計文字",
+        統一編號: "設計文字",
+        狀態: "設計文字",
+        相關資料: "設計文字",
+    }, 
+    ];
     var table01 = new Tabulator("#table01", {
         data: table01Data,
         //autoColumns: true,
@@ -398,6 +419,7 @@
         tooltipsHeader: true,
         tooltipGenerationMode: "hover",
         selectable: false,
+        rowHeight:30,
         columns: [{
                 formatter: "rowSelection",
                 titleFormatter: "rowSelection",
@@ -408,18 +430,16 @@
                 minWidth: 30,
                 cellClick: function(e, cell) {
                     cell.getRow().toggleSelect();
-                },
+                }
             },
-            { title: "總行代碼", field: "總行代碼" },
-            { title: "分行代碼", field: "分行代碼" },
-            { title: "名稱", field: "名稱" },
-            { title: "簡稱", field: "簡稱" },
-            { title: "地址", field: "地址" },
-            { title: "銀行統編", field: "銀行統編" },
-            { title: "電話號碼", field: "電話號碼" },
-            { title: "建檔日期", field: "建檔日期" },
-            { title: "更新日期", field: "更新日期" },
-            { title: "作業人員", field: "作業人員" },
+            { title: "投保編號", field: "投保編號" },
+            { title: "保險公司", field: "保險公司" },
+            { title: "險別", field: "險別" },
+            { title: "保單號碼", field: "保單號碼" },
+            { title: "保費", field: "保費" },
+            { title: "統一編號", field: "統一編號" },
+            { title: "狀態", field: "狀態" },
+            { title: "相關資料", field: "相關資料" },
         ],
     });
     // 選擇預設勾選row
@@ -444,6 +464,7 @@
         tooltipsHeader: true,
         tooltipGenerationMode: "hover",
         selectable: false,
+        rowHeight:30,
         columns: [{
                 formatter: "rowSelection",
                 titleFormatter: "rowSelection",
