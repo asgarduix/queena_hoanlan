@@ -38,6 +38,11 @@ a,ol, ul {
 button {
     cursor: pointer;
 }
+
+label{
+    padding: 0 10px;
+}
+
 .container{
     display: flex;
     margin: 0;
@@ -46,7 +51,7 @@ button {
 
 ::placeholder {
     color: #e2e2e2;
-    font-size: 9px;
+    font-size: 0.625rem;
 }
 /* 左邊選單外框 */
 .left-clumn{
@@ -321,6 +326,16 @@ input[type=text] {
     border-radius: 3px;
 }
 
+.pop-unit-input input[type=date] {
+    width: calc(100% - 15px);
+    border: 1px solid #aaaaaa;
+    height: 20px;
+    margin-top: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+
 .pop-unit-input-two input[type=text] {
     width: calc(100% - 15px);
     border: 1px solid #aaaaaa;
@@ -372,7 +387,25 @@ input[type="date" i] {
     height:1.5rem;
 }
 
+.pop-double-unit-input .columnTwo{
+    margin-right: -5px;
+}
+
 .course-unit select {
+    width: calc(100% - 10px);
+    border: none;
+    height: 23px;
+    margin-top: 3px;
+    margin-left: 5px;
+    margin-right: 3px;
+    border-radius: 3px;
+    font-size: .8rem;
+	background:url(../img/arrow_drop_down_black_24dp2.svg) no-repeat right center transparent;
+    line-height: 1.2rem;
+    color: #797979;
+}
+
+.poprow-nonborder select {
     width: calc(100% - 10px);
     border: none;
     height: 23px;
@@ -715,6 +748,13 @@ select {
     margin-top: -1px;
 }
 
+.poprow-nonborder{
+    display:flex;
+    padding: 10px 0;
+    width: 100%;
+    background-color: #ffffff;
+}
+
 .popTitle{
     width: 100%;
     font-size: .8rem;
@@ -765,6 +805,17 @@ select {
     margin-left: -1px;
 }
 
+.pop-unit-title-bgnone{
+    width:30%;
+    text-align: right;
+    padding-right: 5px;
+    font-size: .7rem;
+    padding: 5px 3px;
+    color: #333333;
+    margin-left: -1px;
+    background-color:#ffffff;
+}
+
 .pop-unit-title-two{
     width:15%;
     border-right: none;
@@ -792,11 +843,11 @@ select {
 }
 
 .poprow .pop-unit-input{
-    border-right: 1px solid #333333;
+    border-right: none;
 }
 
-.poprow .pop-unit-title:last-child{
-
+.poprow .pop-unit-input-last {
+    border-right: 1px solid #333333;
 }
 
 .pop-unit-input{
@@ -909,6 +960,13 @@ select {
     margin-left: 0;
 }
 
+.pop-inside-border{
+    border: 1px solid #797979;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #F7F7F7;
+}
+
 .tab-body{
     border: 1px solid #111111;
     padding: 10px 10px 10px 10px;
@@ -928,6 +986,87 @@ select {
     margin: 0 auto;
     text-align: center;
     line-height: 4rem;
+}
+
+.pop-table{
+    border: 1px solid #797979;
+    padding: 5px;
+}
+
+.pop-table-header{
+    display: inline-flex;
+    width: 100%;
+    line-height: 2rem;
+    background-color: #F2F2F2;
+    border: 1px solid #797979;
+    margin-top: -6px;
+    margin-left: -6px;
+    padding-left: 10px;
+}
+
+.pop-table-header ul{
+    display: inline-flex;
+    margin-left: -8px;
+}
+
+.pop-table-header li{
+    padding-top: 8px;
+    line-height: 1.2rem;
+    margin: 0 8px;
+}
+
+.pop-table-header:first-child li{
+    margin-left: 0px;
+}
+
+.pop-table-header .pop-table-header-btn{
+    background-color: #c6c6c6;
+    line-height: 1rem;
+    border-radius: 5px;
+    border: 1px solid #888888;
+    position: relative;
+    top: -2px;
+    padding: 2px 5px;
+    margin-left: 5px;
+}
+
+.pop-table-body{
+    margin-left: -6px;
+    margin-right: -4px;
+}
+
+.pop-table-body ul{
+    display: inline-flex;
+    width:100% ;
+
+}
+
+.pop-table-body ul li{
+    width: calc(100% / 8);
+    border: 1px solid #797979;
+    margin-top: -1px;
+    margin-right: -1px;
+    padding: 5px 1px;
+}
+
+
+.pop-table-body ul li:last-child{
+    border-right: none;
+
+}
+
+.pop-table-label{
+    display: inline-flex;
+}
+
+.pop-table-label-input{
+    padding: 1px 0;
+}
+
+.pop-table-label-input .inputstar{
+    display: inline-flex;
+    position: relative;
+    top: -3px;
 }
 
 /* pop視窗alert */
