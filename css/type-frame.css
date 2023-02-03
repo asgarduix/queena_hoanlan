@@ -843,6 +843,7 @@ select {
 }
 
 .poprow .pop-unit-input{
+    display: flex;
     border-right: none;
 }
 
@@ -1067,6 +1068,21 @@ select {
     display: inline-flex;
     position: relative;
     top: -3px;
+}
+
+.pop-btn-3{
+    background-color:#ffffff;
+    color: #7F7F7F;
+    position: relative;
+    top: 3px;
+    left: -3px;
+    font-size:0.5rem;
+    border: 1px solid #aaaaaa;
+    height: 24px;
+    margin-left: -8px;
+    margin-right: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 /* pop視窗alert */
