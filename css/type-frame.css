@@ -135,6 +135,14 @@ label{
     left: -.3rem;
 }
 
+.materialSize-xs-grey{
+    font-size: .5rem;
+    line-height: .9rem;
+    position: relative;
+    top: 2px;
+    color:#ffffff ;
+}
+
 .course-unit .materialSize-xs{
     font-size:1rem;
     position: relative;
@@ -1359,7 +1367,7 @@ select {
 .courseWindow-header{
     display:flex;
     width: 100%;
-    line-height: 1.2rem;
+    line-height: 2rem;
     background-color:#cccccc;
     color: #000;
     border-top-left-radius: 15px;
@@ -1373,7 +1381,7 @@ select {
     font-size: .8rem;
     color: #000;
     padding-left: 15px;
-    padding-top: 8px;
+    padding-top: 5px;
 }
 
 .courseClose{
@@ -1722,4 +1730,99 @@ select {
 
 .search-list-unit a:hover {
     color: #2080b8;
+}
+
+/* 雙欄位設定 */
+.double-clumn{
+    display: flex;
+    border: 1px solid #000;
+    margin: 5px;
+
+}
+
+.double-clumn-left{
+    display:inline-flex;
+    border: 1px solid red;
+    width: 30%;
+
+}
+
+.double-clumn-right{
+    display:inline-flex;
+    border: 1px solid plum;
+    width: 70%;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+/* 雙欄位時間軸 */
+.unit-time-s{
+        display: block;
+        border: 1px solid #797979;
+        background-color:#F7F7F7 ;
+        padding: 8px;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        border-radius: 5px;
+}
+
+.unit-time-s-header{
+    display: inline-flex;
+    background-color: #5A79B5;
+    width: 100%;
+    padding: 5px 0;
+    margin-bottom:8px;
+}
+
+.course-unit-s{
+    background-color: #5A79B5;
+}
+
+.course-unit-s ul{
+    display: flex;
+    padding-left: .8rem;
+
+}
+
+.course-unit-s li{
+    display:inline-flex;
+}
+
+.unit-time-s-body{
+    padding: 8px;
+}
+
+.unit-time-oder-s{
+    padding: 3px;
+}
+
+.time-oder-layer .oderpoint{
+    display: inline-flex;
+    height: 1rem;
+    font-size: 0.875rem;
+    border: 1px solid red;
+    color:#555555 ;
+    width:5%;
+    align-items: center;
+
+}
+
+.time-oder-layer .oderpoint-word{
+    display: inline-flex;
+    height: 1rem;
+    font-size: .3rem;
+    color:#555555 ;
+    padding-top: 3px;
+    padding-left: 5px;
+}
+
+.time-oder-layer .layer-unit-doit{
+    display: inline-flex;
+    width: 5%;
+    color: black;
+    margin-left: -.1%;
+    margin-top: -15px;
+    margin-bottom: -15px;
 }
