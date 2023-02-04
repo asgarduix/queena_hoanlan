@@ -50,11 +50,6 @@ a,ol, ul {
 	background-color: #ffffff;
 }
 
-.left-clumn-row a:hover{
-    color: #ffffff;
-	background-color: #5A79B5;
-}
-
 /* 工作項目選擇 */
 .workShop{
     background-color: #5A79B5;
