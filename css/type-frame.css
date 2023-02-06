@@ -380,7 +380,7 @@ input[type=text] {
     border-bottom: 1px solid #aaaaaa;
 }
 
-.pop-unit-input input[type=text] input[type=radio] {
+.pop-unit-input input[type=text] , input[type=radio] {
     width: calc(100% - 15px);
     border: 1px solid #aaaaaa;
     height: 20px;
@@ -389,6 +389,7 @@ input[type=text] {
     margin-right: 5px;
     border-radius: 3px;
 }
+
 
 /* input靠右 */
 .pop-unit-input-right input[type=text] {
@@ -413,7 +414,7 @@ input[type=text] {
 }
 
 .pop-unit-input-two input[type=text] {
-    width: calc(100% - 15px);
+    width: calc(100% - 120px);
     border: 1px solid #aaaaaa;
     height: 20px;
     margin-top: 3px;
@@ -440,6 +441,22 @@ input[type="date" i] {
 .pop-unit-input > select {
     width: calc(100% - 10px);
     border: 1px solid #aaaaaa;
+    height: 23px;
+    margin-top: 3px;
+    margin-left: 5px;
+    margin-right: 3px;
+    border-radius: 3px;
+    font-size: 10px;
+	background:url(../img/arrow_drop_down_black_24dp2.svg) no-repeat right center transparent;
+    line-height: 1.2rem;
+}
+
+.content-unit select {
+    width: calc(100% - 10px);
+    border: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #aaaaaa;
     height: 23px;
     margin-top: 3px;
     margin-left: 5px;
@@ -550,7 +567,29 @@ textarea{
     border-bottom-right-radius: 0;
 }
 
-/* 搜尋用按鈕 */
+/* 按鈕設定 */
+.title-button-group .btn-title-active {
+    border-bottom: 2px solid #666666;
+    padding: 8px 25px;
+}
+
+.btn-title:first-child{
+    margin-left: 0px;
+}
+
+.btn-title{
+    padding: 8px 25px;
+    margin-left: -5px;
+    background-color: #f7f7f7;
+    border-radius: 1px;
+}
+
+.btn-title:hover{
+    border-bottom: 2px solid #666666;
+    padding: 8px 25px;
+    background-color: transparent;
+}
+
 .btn-search{
     border: 1px solid #8D99AE;
 	border-radius: 8px;
@@ -659,20 +698,19 @@ textarea{
 
 }
 
-/* 搜尋欄位 */
-
-.right-clumn-row .query-unit{
-    display:flex;
-    border: 3px solid #5A79B5;
+.query-unit{
+    border: 1px solid #5A79B5;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.query-unit{
-    display:flex;
-    border: 1px solid #5A79B5;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+.content-unit{
+    display: inline-flex;
+    width: calc(100% / 5);
+    width: 100%;
+    border-bottom: 1px solid rgb(244, 244, 244);
+
+
 }
 
 .query-unit-info{
@@ -708,7 +746,7 @@ textarea{
 
 .query-unit-group{
     width: calc(100% / 5);
-    border-right:1px solid #aaaaaa ;
+    border-right:1px solid rgb(244, 244, 244);
     padding: 5px;
 }
 
@@ -796,6 +834,14 @@ select {
     line-height: .9rem;
     margin: 0 2px;
     padding-top: 4px;
+}
+
+.title-button-group{
+    display: inline-block;
+    width: 100%;
+    border-bottom:1px solid #aaaaaa;
+    margin-bottom: 8px;
+    margin-left: 8px;
 }
 
 /* pop視窗 */
@@ -1090,6 +1136,7 @@ select {
 }
 
 .pop-unit-input-two{
+    display: inline-flex;
     width:86.5%;
     border-right: none;
     background-color: #ffffff;
@@ -1123,7 +1170,6 @@ select {
     padding: 3px;
     border-bottom: none;
     margin-top: -1px;
-
 }
 
 .pop-double-unit-input{
