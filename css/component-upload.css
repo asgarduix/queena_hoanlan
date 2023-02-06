@@ -1,0 +1,107 @@
+/*
+【FONT-SIZE】
+10px: 0.625rem
+12px: 0.75rem
+14px: 0.875rem
+16px: 1rem
+18px: 1.125rem
+21px: 1.3125rem
+24px: 1.5rem
+26px: 1.6125rem
+28px: 1.75rem
+30px: 1.875rem
+32px: 2rem 
+*/
+/* START: global */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input,
+textarea {
+    outline: none;
+}
+
+.sec-popup {
+    margin-top: 3.5rem;
+}
+
+/* END: global */
+
+/* START: component-upload */
+.component-upload {
+    width: 540px;
+    max-width: 540px;
+}
+
+/* popup-upload-header */
+
+
+/* popup-upload-body */
+.component-upload-body {
+    width: auto;
+    padding: 25px 15px;
+}
+
+.upload-body-item {
+    margin-bottom: 10px;
+}
+
+.upload-body-item:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+.upload-body-unit:nth-child(1) {
+    margin-bottom: 10px;
+}
+
+.upload-body-unit-inner {
+    display: table;
+    table-layout: fixed;
+}
+
+.upload-btn,
+.upload-note {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.upload-btn button {
+    padding: 6px 15px;
+    font-size: 0.75rem;
+    border-radius: 4px;
+    color: #fff;
+    background: #5A79B5;
+}
+
+.upload-note span {
+    padding: 0 5px;
+    font-size: 0.75rem;
+    color: #aaa;
+}
+
+.upload-area {
+    padding: 6px;
+    border-radius: 4px;
+    background: rgba(63, 144, 176, 0.15);
+}
+
+.upload-title {
+    padding: 8px 0;
+}
+
+.upload-field input,
+.upload-field textarea {
+    width: 100%;
+    padding: 4px 6px;
+    border: #aaa solid 1px;
+    border-radius: 4px;
+    font-size: 0.875rem;
+}
+
+/* popup-upload-footer */
+
+
+/* END: component-upload
