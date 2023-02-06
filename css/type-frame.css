@@ -25,12 +25,20 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;margin: 0;padding: 0;
 }
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
 	line-height: 1;
 	font-size:.8rem;
     margin: 0;
     padding: 0;
 }
+
 a,ol, ul {
 	list-style: none;
 	text-decoration: none;
@@ -53,6 +61,21 @@ label{
     color: #e2e2e2;
     font-size: 0.625rem;
 }
+
+.pop-tab-header .unittab-active {
+    background: #5A79B5;
+    color: #fff;
+}
+
+/* span基本設定 */
+.span-1{
+    display:flex;
+    height: 1rem;
+    font-size: 0.75rem;
+    color:#555555 ;
+    margin-left:1%;
+}
+
 /* 左邊選單外框 */
 .left-clumn{
     flex-direction: row;
@@ -110,6 +133,16 @@ label{
     border-bottom-right-radius: 5px;
     margin-top: -5px;
     margin-bottom: -5px;
+}
+
+/* note星星 */
+.require::before{
+    content: "*";
+    color:#E96A6A;
+    font-size:1rem ;
+    position: relative;
+    top: 3px;
+    left: -2px;
 }
 
 
@@ -347,7 +380,7 @@ input[type=text] {
     border-bottom: 1px solid #aaaaaa;
 }
 
-.pop-unit-input input[type=text] {
+.pop-unit-input input[type=text] input[type=radio] {
     width: calc(100% - 15px);
     border: 1px solid #aaaaaa;
     height: 20px;
@@ -355,6 +388,18 @@ input[type=text] {
     margin-left: 5px;
     margin-right: 5px;
     border-radius: 3px;
+}
+
+/* input靠右 */
+.pop-unit-input-right input[type=text] {
+    width: calc(100% - 15px);
+    border: 1px solid #aaaaaa;
+    height: 20px;
+    margin-top: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 3px;
+    text-align: right;
 }
 
 .pop-unit-input input[type=date] {
@@ -460,10 +505,11 @@ input[type="date" i] {
     border-radius: 3px;
 }
 
-input[type="checkbox"] {
+input[type="checkbox"] ,[type="radio"] {
     line-height: 1.2rem;
     position: relative;
     top: 2px;
+    border: 1px solid orange;
 }
 
 .btn {
@@ -491,6 +537,7 @@ textarea{
     margin: 0 auto;
     border-radius: 5px;
     border: 1px solid #aaaaaa;
+    margin: 5px;
 }
 
 .textarea2{
@@ -862,6 +909,13 @@ select {
 
 }
 
+.popWindow-body-2{
+    width: 100%;
+    background-color:#ffffff;
+    padding-top: 2%;
+
+}
+
 .poprow{
     display:flex;
     width: 100%;
@@ -926,6 +980,18 @@ select {
     
 }
 /* 彈窗拼接欄位設定 */
+.pop-unit-3{
+    display: inline-flex;
+    width:calc(100% / 3);
+    line-height: 1.2rem;
+}
+
+.pop-unit-all{
+    display: inline-flex;
+    width:100%;
+    line-height: 1.2rem;
+}
+
 .pop-unit-four{
     display: inline-flex;
     width: 25%;
@@ -940,6 +1006,34 @@ select {
 
 .pop-unit-title{
     width:30%;
+    border-right: none;
+    text-align: right;
+    padding-right: 5px;
+    background-color: #F2EDE6;
+    font-size: .7rem;
+    padding: 5px 3px;
+    color: #333333;
+    border-right: 1px solid #333333;
+    border-left: 1px solid #333333;
+    margin-left: -1px;
+}
+
+.pop-unit-title-3{
+    width:22.5%;
+    border-right: none;
+    text-align: right;
+    padding-right: 5px;
+    background-color: #F2EDE6;
+    font-size: .7rem;
+    padding: 5px 3px;
+    color: #333333;
+    border-right: 1px solid #333333;
+    border-left: 1px solid #333333;
+    margin-left: -1px;
+}
+
+.pop-unit-title-4{
+    width:7.5%;
     border-right: none;
     text-align: right;
     padding-right: 5px;
@@ -983,6 +1077,18 @@ select {
     background-color: #ffffff;
 }
 
+.pop-unit-input-3{
+    width:77.5%;
+    border-right: none;
+    background-color: #ffffff;
+}
+
+.pop-unit-input-4{
+    width:92.5%;
+    border-right: none;
+    background-color: #ffffff;
+}
+
 .pop-unit-input-two{
     width:86.5%;
     border-right: none;
@@ -999,7 +1105,7 @@ select {
 }
 
 .pop-unit-input{
-    width:70%;
+    width:calc(100% - 15px);
     border-right: none;
     background-color: #ffffff;
 }
@@ -1011,12 +1117,13 @@ select {
 }
 
 .pop-button-group{
+    display: inline-block;
+    width: 100%;
     background-color:#e4eff4 ;
     padding: 3px;
-    border: 1px solid #555555;
     border-bottom: none;
     margin-top: -1px;
-    margin-right: -2px;
+
 }
 
 .pop-double-unit-input{
@@ -1273,6 +1380,10 @@ select {
     border-bottom-right-radius: 5px;
 }
 
+.pop-body-frame{
+    width: 100%;
+}
+
 /* pop視窗alert */
 .blackBackground-alert{
     width: 100vw;
@@ -1406,7 +1517,7 @@ select {
 }
 
 .courseWindow-body{
-    width: 98%;
+    width: 100%;
     background-color:#f1f1f1;
     padding: 1%;
 
@@ -1757,7 +1868,7 @@ select {
 
 .double-clumn-left{
     display:inline-flex;
-    width: 35%;
+    width: 25%;
 
 }
 
@@ -1766,11 +1877,13 @@ select {
     padding: 10px;
     background-color: #ffffff;
     border-radius: 10px;
+    width:75% ;
 }
 
 /* 雙欄位時間軸 */
 .unit-time-s{
         display: block;
+        width: 100%;
         border: 1px solid #797979;
         background-color:#F7F7F7 ;
         padding: 8px;
