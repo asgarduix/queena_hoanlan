@@ -1017,10 +1017,9 @@ select {
 
 .popTitle{
     width: 100%;
-    font-size: .8rem;
+    font-size: 1rem;
     color: #ffffff;
-    padding-left: 15px;
-    padding-top: 8px;
+    padding: 12px;
 }
 
 .popDel{
@@ -1496,18 +1495,18 @@ select {
 }
 
 .alert-footer-button .btn-confirmcancel{
-    border: 1px solid #E96A6A;
+    border: 1px solid #075D8E;
     border-radius: 5px;
     background-color: #ffffff;
     margin: 5px;
-    color:#E96A6A ;
+    color:#075D8E ;
     
 }
 
 .alert-footer-button .btn-confirmsure{
-    border: 1px solid #E96A6A;
+    border: 1px solid #075D8E;
     border-radius: 5px;
-    background-color: #E96A6A;
+    background-color: #075D8E;
     color: #ffffff;
     margin: 3px 8px;
 }
@@ -1563,24 +1562,28 @@ select {
     text-align: center;
     line-height: 1rem;
     margin: 5px auto;
-    font-size: 12px;
+    font-size:  1rem;
     color:#555555;
+    padding: 5px 0;
 }
 
 .alert-body span{
     display: inline-block;
     text-align: center;
     line-height: 1rem;
-    font-size: 12px;
+    font-size:  1rem;
     padding: 0 5px;
     color: #E96A6A;
     font-weight: 500;
+    padding: 5px 0;
+    padding-left: 5px;
 }
 
 .alert-footer{
     background-color: #ffffff;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    padding-bottom: 15px;
 }
 .alert-footer-button{
     display: flex;
