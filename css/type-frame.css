@@ -1482,6 +1482,36 @@ select {
     width: 100%;
 }
 
+/* pop視窗confire */
+.model-confirm {
+    position: flex;
+    width: 25%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    z-index: 1;
+    display: block;
+    border: 2px solid #075D8E;
+    background-color:#2080b8;
+    border-radius: 10px;
+}
+
+.alert-footer-button .btn-confirmcancel{
+    border: 1px solid #E96A6A;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin: 5px;
+    color:#E96A6A ;
+    
+}
+
+.alert-footer-button .btn-confirmsure{
+    border: 1px solid #E96A6A;
+    border-radius: 5px;
+    background-color: #E96A6A;
+    color: #ffffff;
+    margin: 3px 8px;
+}
+
 /* pop視窗alert */
 .blackBackground-alert{
     width: 100vw;
@@ -1502,8 +1532,6 @@ select {
     z-index: 1;
     display: block;
     border: 2px solid #E96A6A;
-}
-.model-alert{
     background-color:#E96A6A ;
     border-radius: 10px;
 }
