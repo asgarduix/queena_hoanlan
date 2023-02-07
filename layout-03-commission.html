@@ -46,7 +46,7 @@
                     <div class="columnFour">
                         <div class="workShop">
                             <ul>
-                                <li><a href="#">佣金作業</a></li>
+                                <li><a href="#" class="unittab-active">佣金作業</a></li>
                                 <li><a href="#">法遵稽核</a></li>
                                 <li><a href="#">角色權限</a></li>
                             </ul>
@@ -104,23 +104,6 @@
                             <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
                         </div>
                         <div class="query-unit-group">
-                            <div class="query-unit-title">批單日期</div>
-                            <div class="query-unit-input">
-                                <div class="query-unit-double-input">
-                                    <div class="columnFive-left-37">
-                                    <input type="date" value="" placeholder="請輸入值">
-                                    </div>
-                                    <span class="zigzagLine">～</span>
-                                    <div class="columnFive-left-37">
-                                        <input type="date" value="" placeholder="請輸入值">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="content-unit">
-                        <div class="query-unit-group">
                             <div class="query-unit-title">險種</div>
                             <div class="query-unit-input">
                                 <select name="" id="">
@@ -142,6 +125,27 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="content-unit">
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">批單日期</div>
+                            <div class="query-unit-input">
+                                <div class="query-unit-double-input">
+                                    <div class="columnFive-left-37">
+                                    <input type="date" value="" placeholder="請輸入值">
+                                    </div>
+                                    <span class="zigzagLine">～</span>
+                                    <div class="columnFive-left-37">
+                                        <input type="date" value="" placeholder="請輸入值">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">上傳人員(員編/姓名)</div>
+                            <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="query-unit-info">
                     <div class="query-unit-infolist">
@@ -157,12 +161,16 @@
             <div class="right-clumn-row">
                 <div class="tableInfo">
                     <div class="tableWork">
-                        <button class="active btn btn-add ">新增</button>
-                        <button class="btn btn-edit">編輯</button>
-                        <button class="btn btn-del">刪除</button>
+                        <button class="active btn btn-add unittab-active">上傳檔案</button>
+                        <button class="btn btn-edit">作廢</button>
                     </div>
                     <div class="tableBody">
-                        <div id="table01"></div>
+                        <div class="tab-frame-1">
+                            <ul>
+                                <li><div class="">共<span>4</span>筆</div></li>
+                            </ul>
+                            <div id="table01"></div>
+                        </div>
                         <div class="tablePage">
                             <ul>
                                 <li><button class="btn btn-prev">上一頁</button></li>
@@ -197,36 +205,29 @@
 <script>
     let table01Data = [{
         id: "b1",
-        投保編號: "設計文字",
-        保險公司: "設計文字",
-        險別: "設計文字",
-        保單號碼: "設計文字",
-        保費: "設計文字",
-        統一編號: "設計文字",
-        狀態: "設計文字",
-        相關資料: "設計文字",
+        上傳批號: "設計文字",
+        檔名: "設計文字",
+        錯誤提示: "設計文字",
+        上傳人員: "設計文字",
+        上傳時間: "設計文字",
     },
     {
         id: "b1",
-        投保編號: "設計文字",
-        保險公司: "設計文字",
-        險別: "設計文字",
-        保單號碼: "設計文字",
-        保費: "設計文字",
-        統一編號: "設計文字",
-        狀態: "設計文字",
-        相關資料: "設計文字",
+        上傳批號: "設計文字",
+        檔名: "設計文字",
+        錯誤提示: "設計文字",
+        上傳人員: "設計文字",
+        上傳時間: "設計文字",
+
     }, 
     {
         id: "b1",
-        投保編號: "設計文字",
-        保險公司: "設計文字",
-        險別: "設計文字",
-        保單號碼: "設計文字",
-        保費: "設計文字",
-        統一編號: "設計文字",
-        狀態: "設計文字",
-        相關資料: "設計文字",
+        上傳批號: "設計文字",
+        檔名: "設計文字",
+        錯誤提示: "設計文字",
+        上傳人員: "設計文字",
+        上傳時間: "設計文字",
+
     }, 
 ];
     var table01 = new Tabulator("#table01", {
@@ -253,14 +254,11 @@
                     cell.getRow().toggleSelect();
                 }
             },
-            { title: "投保編號", field: "投保編號"},
-            { title: "保險公司", field: "保險公司" },
-            { title: "險別", field: "險別" },
-            { title: "保單號碼", field: "保單號碼" },
-            { title: "保費", field: "保費" },
-            { title: "統一編號", field: "統一編號" },
-            { title: "狀態", field: "狀態" },
-            { title: "相關資料", field: "相關資料" },
+            { title: "上傳批號", field: "上傳批號"},
+            { title: "檔名", field: "檔名" },
+            { title: "錯誤提示", field: "錯誤提示" },
+            { title: "上傳人員", field: "上傳人員" },
+            { title: "上傳時間", field: "上傳時間" },
         ],
     });
     // 選擇預設勾選row
