@@ -86,6 +86,28 @@ label{
     margin-left:1%;
 }
 
+.span-repeat-1{
+    display:block;
+    border-radius: 5px;
+    font-size:  1rem;
+    color: #393939;
+    font-weight: 500;
+}
+
+.span-repeat-2{
+    display:block;
+    border-radius: 5px;
+    font-size:  1rem;
+    color: #E96A6A;
+    font-weight: 500;
+}
+
+.span-repeat-3{
+    position: relative;
+    top: 5px;
+    color: #075D8E;
+}
+
 /* 左邊選單外框 */
 .left-clumn{
     flex-direction: row;
@@ -1492,6 +1514,30 @@ select {
     border: 2px solid #075D8E;
     background-color:#2080b8;
     border-radius: 10px;
+}
+
+.confirm-body{
+    display: block;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 15px 10px;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.repeat-note{
+    display: flex;
+    background-color: #F2F2F2;
+    border: 1px solid #666666;
+    border-radius: 5px ;
+    justify-content: center;
+    padding:8px 0 ;
+    margin-bottom:10px ;
+    margin-top: 10px;
+}
+
+.repeat-note span{
+    padding: 0 5px;
 }
 
 .alert-footer-button .btn-confirmcancel{
