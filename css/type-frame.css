@@ -67,6 +67,16 @@ label{
     color: #fff;
 }
 
+.workShop .unittab-active {
+    background: #5A79B5;
+    color: #fff;
+}
+
+.tableWork .unittab-active {
+    background: #5A79B5;
+    color: #fff;
+}
+
 /* span基本設定 */
 .span-1{
     display:flex;
@@ -328,10 +338,23 @@ label{
 
 .workShop ul li a{
     width: 100%;
-    color: #ffffff;
-    background-color: #5A79B5;
+    color: #5B7CBD;
+    background-color: #ebf0f6;
     border-radius: 18px;
     padding: 5px 20px;
+}
+
+.workShop ul li a:hover{
+    width: 100%;
+    color: #ebf0f6;
+    background-color: #5B7CBD;
+    border-radius: 18px;
+    padding: 5px 20px;
+}
+
+.workShop ul li a:active{
+    color: #ebf0f6;
+    background-color: #5B7CBD;
 }
 
 .workName{
@@ -441,7 +464,7 @@ input[type="date" i] {
     overflow: hidden;
     padding: 0;
     margin: 0;
-    width: 100%;
+    width:calc(100% - 15px); 
     border:none;
     border-bottom: 1px solid #aaaaaa;
     margin-top: -5px;
@@ -797,7 +820,7 @@ textarea{
 
 .tableBody{
     border: 1px solid #7E96C4;
-    padding: 5px;
+    border-top: none;
 }
 
 .tablePage{
@@ -1284,6 +1307,26 @@ select {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     margin-top: -1px;
+}
+
+.tableinfo_content .tab-frame-1{
+    border: 1px solid #c8c8c8;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    margin-top: -1px;
+}
+
+.tab-frame-1 ul{
+    display: inline-flex;
+}
+
+.tab-frame-1 li{
+    line-height: 1.2rem;
+    padding: 10px;
+}
+
+.tab-frame-1 span{
+    padding: 0 5px;
 }
 
 .tab-body-2{

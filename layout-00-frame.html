@@ -46,7 +46,7 @@
                     <div class="columnFour">
                         <div class="workShop">
                             <ul>
-                                <li><a href="#">佣金作業</a></li>
+                                <li><a href="#" class="unittab-active">佣金作業</a></li>
                                 <li><a href="#">法遵稽核</a></li>
                                 <li><a href="#">角色權限</a></li>
                             </ul>
@@ -82,7 +82,7 @@
                 <div class="query-unit">
                     <div class="content-unit">
                         <div class="query-unit-group">
-                            <div class="query-unit-title">統一編號/ID</div>
+                            <div class="query-unit-title require">統一編號/ID</div>
                             <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
                         </div>
                         <div class="query-unit-group">
@@ -127,12 +127,18 @@
             <div class="right-clumn-row">
                 <div class="tableInfo">
                     <div class="tableWork">
-                        <button class="active btn btn-add ">新增</button>
+                        <button class="active btn btn-add unittab-active">新增</button>
                         <button class="btn btn-edit">編輯</button>
+                        <button class="btn btn-edit">確認出單</button>
                         <button class="btn btn-del">刪除</button>
                     </div>
                     <div class="tableBody">
-                        <div id="table01"></div>
+                        <div class="tab-frame-1">
+                            <ul>
+                                <li><div class="">共<span>3</span>筆</div></li>
+                            </ul>
+                            <div id="table01"></div>
+                        </div>
                         <div class="tablePage">
                             <ul>
                                 <li><button class="btn btn-prev">上一頁</button></li>
