@@ -115,6 +115,7 @@ label{
     border: 1px solid #5A79B5;
     border-radius: 15px;
     margin: 5px;
+    height: 99vh;
 }
 
 .left-clumn-row a{
@@ -1039,7 +1040,8 @@ select {
 
 .poprow-group{
     line-height: 1.2rem;
-    padding: 10px;
+    padding: 10px 0;
+    display: flex;
 
 }
 
@@ -1381,8 +1383,8 @@ select {
 
 .popWindow-footer-2{
     background-color:#dde1e7;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .popfooter-button-group{
@@ -1635,7 +1637,6 @@ select {
     line-height: 1rem;
     font-size:  1rem;
     padding: 0 5px;
-    color: #E96A6A;
     font-weight: 500;
     padding: 5px 0;
     padding-left: 5px;
