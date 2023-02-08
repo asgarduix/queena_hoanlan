@@ -423,6 +423,7 @@ label{
 input[type=text] {
     width: calc(100% - .5rem);
     border: none;
+    height: 24px;
     border-bottom: 1px solid #aaaaaa;
 }
 
@@ -513,13 +514,14 @@ input[type="date" i] {
     border-right: none;
     border-bottom: 1px solid #aaaaaa;
     height: 23px;
-    margin-top: 3px;
+    margin-top: 5px;
     margin-left: 5px;
     margin-right: 3px;
     border-radius: 3px;
     font-size: 10px;
 	background:url(../img/arrow_drop_down_black_24dp2.svg) no-repeat right center transparent;
     line-height: 1.2rem;
+
 }
 
 .pop-double-unit-input select {
@@ -570,7 +572,7 @@ input[type="date" i] {
 .pop-double-unit-input input[type=text] {
     width: calc(100% - 1px);
     border: 1px solid #aaaaaa;
-    height: 20px;
+    height: 24px;
     margin-top: 3px;
     margin-left: 5px;
     margin-right: 5px;
@@ -761,11 +763,18 @@ textarea{
 
 .content-unit{
     display: inline-flex;
-    width: calc(100% / 5);
+    border-bottom: 1px solid rgb(244, 244, 244);
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+/* 彈窗單行搜尋 */
+.content-unit-2{
+    display: block;
     width: 100%;
     border-bottom: 1px solid rgb(244, 244, 244);
-
-
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding:15px;
 }
 
 .query-unit-info{
@@ -807,12 +816,17 @@ textarea{
 /* 均分3塊 */
 .query-unit-group-2{
     width: calc(100% / 3);
-    border-right:1px solid rgb(244, 244, 244);
-    padding: 5px;
+    border:1px solid rgb(244, 244, 244);
+    border-bottom: none;
+    padding: 15px 0 10px 0;
+    margin-top: -1px;
 }
-
-.query-unit-group-2:last-child{
-    border-right:none; 
+/* 單行 */
+.query-unit-group-3{
+    width: 100%;
+    border: none;
+    padding: 15px 0 10px 0;
+    margin-top: -1px;
 }
 
 .query-unit-title{
@@ -826,6 +840,12 @@ textarea{
 .query-unit-input {
     display: flex;
     padding: 7px ;
+}
+
+/* 小彈窗的間距調整 */
+.query-unit-input-2 {
+    display: flex;
+    padding: 3px ;
 }
 
 .query-unit-double-input{
@@ -1533,7 +1553,8 @@ select {
 /* pop視窗confire */
 .model-confirm {
     position: flex;
-    width: 25%;
+    width: 50%;
+    max-width: 50%;
     margin: 0 auto;
     margin-top: 2rem;
     z-index: 1;
@@ -1627,8 +1648,8 @@ select {
 }
 
 .alert-body{
-    background-color: #ffffff;
-    padding: 1rem;
+    background-color: #eeeeee;
+    padding: 1rem .5rem;
 }
 
 .alert-body p{
