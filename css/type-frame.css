@@ -798,11 +798,21 @@ textarea{
     float: right;
     margin-right: 10px;
 }
-
+/* 均分五塊 */
 .query-unit-group{
     width: calc(100% / 5);
     border-right:1px solid rgb(244, 244, 244);
     padding: 5px;
+}
+/* 均分3塊 */
+.query-unit-group-2{
+    width: calc(100% / 3);
+    border-right:1px solid rgb(244, 244, 244);
+    padding: 5px;
+}
+
+.query-unit-group-2:last-child{
+    border-right:none; 
 }
 
 .query-unit-title{
@@ -1041,7 +1051,6 @@ select {
 .poprow-group{
     line-height: 1.2rem;
     padding: 10px 0;
-    display: flex;
 
 }
 
@@ -1532,6 +1541,7 @@ select {
     border: 2px solid #075D8E;
     background-color:#2080b8;
     border-radius: 10px;
+    min-width: 35%;
 }
 
 .confirm-body{
