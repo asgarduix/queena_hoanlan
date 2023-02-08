@@ -331,6 +331,11 @@ label{
     line-height: 2rem;
 }
 
+/* 工作項目選取群組 */
+.listcheck-button-group{
+
+}
+
 /* 工作項目選擇 */
 .workShop{
     border-radius: 20px;
@@ -739,6 +744,28 @@ textarea{
     margin: 0 auto;
 }
 
+.btn-list{
+    border: 1px solid #777777;
+    background-color: #9e9e9e;
+    color: #ffffff;
+	border-radius: 5px;
+    font-size: .5rem;
+    margin: 0 auto;
+    margin-left: 5px;
+}
+
+.btn-listcheck{
+    border: 1px solid #f2f2f2;
+    background-color: #e4e4e4;
+    color: #313131;
+	border-radius: 50px;
+    font-size: .875rem;
+    font-weight: 500;
+    margin: 0 auto;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
 .pop-btn-add{
     border: 1px solid #5A79B5;
     background-color: #5A79B5;
@@ -761,11 +788,19 @@ textarea{
     border-top-right-radius: 10px;
 }
 
+.query-unit-body{
+    border: 1px solid #5A79B5;
+    margin-top: -1px;
+    padding: 10px 15px;
+}
+
 .content-unit{
-    display: inline-flex;
+    display: flex;
     border-bottom: 1px solid rgb(244, 244, 244);
     background-color: #ffffff;
     border-radius: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 /* 彈窗單行搜尋 */
 .content-unit-2{
@@ -1439,8 +1474,6 @@ select {
     line-height: 2rem;
     background-color: #F2F2F2;
     border: 1px solid #797979;
-    margin-top: -6px;
-    margin-left: -6px;
     padding-left: 10px;
 }
 
@@ -1493,8 +1526,7 @@ select {
 }
 
 .pop-table-body{
-    margin-left: -6px;
-    margin-right: -4px;
+
 }
 
 .pop-table-body ul{
@@ -1506,16 +1538,15 @@ select {
 .pop-table-body ul li{
     width: calc(100% / 8);
     border: 1px solid #797979;
+    border-right: none;
     margin-top: -1px;
-    margin-right: -1px;
     padding: 5px 1px;
 }
 
-
 .pop-table-body ul li:last-child{
-    border-right: none;
-
+    border-right: 1px solid #797979;
 }
+
 
 .pop-table-label{
     display: inline-flex;
@@ -1524,7 +1555,7 @@ select {
 .pop-table-label-input{
     padding: 1px 0;
 }
-
+/* check置頂 */
 .pop-table-label-input .inputstar{
     display: inline-flex;
     position: relative;

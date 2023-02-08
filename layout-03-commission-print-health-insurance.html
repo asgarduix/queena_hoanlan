@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="css/type-frame.css">
     <link rel="stylesheet" href="css/type-frame-color.css">
     <link rel="stylesheet" href="css/tabulator_ment.css">
+        <!-- css-component-upload -->
+        <link rel="stylesheet" href="css/component-upload.css">
 </head>
 <body>
     <div class="container">
@@ -72,17 +74,27 @@
                 <div class="breadCrumb">
                     <span class="materialSize-m-r material-icons-outlined">location_on</span>
                     <!-- &nbsp;不換行空格 -->
-                    <a href="#">佣金作業</a>&nbsp;/&nbsp;<a href="#">要保書作業</a> 
+                    <a href="#">佣金作業</a>&nbsp;/&nbsp;<a href="#">獎金佣金報表</a> 
                 </div>
             </div>
             <div class="right-clumn-row">
-                <h1 class="unitH1">要保書作業</h1>
+                <h1 class="unitH1">獎金佣金報表</h1>
+            </div>
+            <div class="title-button-group">
+                <button class="btn-title btn-title-active">上傳</button>
+                <button class="btn-title">對帳</button>
+                <button class="btn-title">結算</button>
+                <button class="btn-title">明細列印</button>
             </div>
             <div class="right-clumn-row">
                 <div class="query-unit">
                     <div class="content-unit">
                         <div class="query-unit-group">
-                            <div class="query-unit-title require">統一編號/ID</div>
+                            <div class="query-unit-title">上傳批號</div>
+                            <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
+                        </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">保險公司</div>
                             <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
                         </div>
                         <div class="query-unit-group">
@@ -90,15 +102,35 @@
                             <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
                         </div>
                         <div class="query-unit-group">
-                            <div class="query-unit-title">保單號碼</div>
+                            <div class="query-unit-title">保批單號</div>
                             <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
                         </div>
                         <div class="query-unit-group">
-                            <div class="query-unit-title">客戶名稱</div>
-                            <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
+                            <div class="query-unit-title">險種</div>
+                            <div class="query-unit-input">
+                                <select name="" id="">
+                                    <option value="">商業火險</option>
+                                    <option value="">商業動產流動綜合保險</option>
+                                    <option value="">貨物運輸保險</option>
+                                    <option value="">營建機具綜合險</option>
+                                    <option value="">團體傷害保險</option>
+                                    <option value="">公共意外責任險</option>
+                                    <option value="">產品責任險</option>
+                                    <option value="">僱主意外責任險</option>
+                                    <option value="">僱主補償契約</option>
+                                    <option value="">現金保險</option>
+                                    <option value="">員工誠實險保證保險</option>
+                                    <option value="">營造綜合保險</option>
+                                    <option value="">運送人責任保</option>
+                                    <option value="">車險</option>
+                                </select>
+                            </div>
                         </div>
+                    </div>
+                    
+                    <div class="content-unit">
                         <div class="query-unit-group">
-                            <div class="query-unit-title">要保書輸入日期區間</div>
+                            <div class="query-unit-title">批單日期</div>
                             <div class="query-unit-input">
                                 <div class="query-unit-double-input">
                                     <div class="columnFive-left-37">
@@ -110,6 +142,10 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">上傳人員(員編/姓名)</div>
+                            <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
                         </div>
                     </div>
                 </div>
@@ -127,14 +163,13 @@
             <div class="right-clumn-row">
                 <div class="tableInfo">
                     <div class="tableWork">
-                        <button class="active btn btn-add unittab-active">新增</button>
-                        <button class="btn btn-edit">編輯</button>
-                        <button class="btn btn-del">刪除</button>
+                        <button class="active btn btn-add unittab-active">上傳檔案</button>
+                        <button class="btn btn-edit">作廢</button>
                     </div>
                     <div class="tableBody">
                         <div class="tab-frame-1">
                             <ul>
-                                <li><div class="">共<span>3</span>筆</div></li>
+                                <li><div class="">共<span>4</span>筆</div></li>
                             </ul>
                             <div id="table01"></div>
                         </div>
@@ -165,43 +200,56 @@
             </div>
         </div>
     </div>
-
+    <!-- pop confirm視窗 -->
+    <div class="blackBackground-alert">
+        <div class="model-confirm">
+            <div class="alert-header">
+                <p class="popTitle">二代健保身份</p>
+                <div class="alertclose">
+                    <button><span class="material-icons-outlined">clear</span></button>
+                </div>
+            </div>
+            <div class="confirm-body">
+                <p>是否為二代健保身份？</p>
+                <p>筆數<span>12</span></p>
+            </div>
+            <div class="alert-footer">
+                <div class="alert-footer-button">
+                    <button class="btn btn-confirmcancel">取消</button>
+                    <button class="btn btn-confirmsure">確定</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 
 <script>
     let table01Data = [{
         id: "b1",
-        投保編號: "設計文字",
-        保險公司: "設計文字",
-        險別: "設計文字",
-        保單號碼: "設計文字",
-        保費: "設計文字",
-        統一編號: "設計文字",
-        狀態: "設計文字",
-        相關資料: "設計文字",
+        上傳批號: "設計文字",
+        檔名: "設計文字",
+        錯誤提示: "設計文字",
+        上傳人員: "設計文字",
+        上傳時間: "設計文字",
     },
     {
         id: "b1",
-        投保編號: "設計文字",
-        保險公司: "設計文字",
-        險別: "設計文字",
-        保單號碼: "設計文字",
-        保費: "設計文字",
-        統一編號: "設計文字",
-        狀態: "設計文字",
-        相關資料: "設計文字",
+        上傳批號: "設計文字",
+        檔名: "設計文字",
+        錯誤提示: "設計文字",
+        上傳人員: "設計文字",
+        上傳時間: "設計文字",
+
     }, 
     {
         id: "b1",
-        投保編號: "設計文字",
-        保險公司: "設計文字",
-        險別: "設計文字",
-        保單號碼: "設計文字",
-        保費: "設計文字",
-        統一編號: "設計文字",
-        狀態: "設計文字",
-        相關資料: "設計文字",
+        上傳批號: "設計文字",
+        檔名: "設計文字",
+        錯誤提示: "設計文字",
+        上傳人員: "設計文字",
+        上傳時間: "設計文字",
+
     }, 
 ];
     var table01 = new Tabulator("#table01", {
@@ -228,14 +276,11 @@
                     cell.getRow().toggleSelect();
                 }
             },
-            { title: "投保編號", field: "投保編號"},
-            { title: "保險公司", field: "保險公司" },
-            { title: "險別", field: "險別" },
-            { title: "保單號碼", field: "保單號碼" },
-            { title: "保費", field: "保費" },
-            { title: "統一編號", field: "統一編號" },
-            { title: "狀態", field: "狀態" },
-            { title: "相關資料", field: "相關資料" },
+            { title: "上傳批號", field: "上傳批號"},
+            { title: "檔名", field: "檔名" },
+            { title: "錯誤提示", field: "錯誤提示" },
+            { title: "上傳人員", field: "上傳人員" },
+            { title: "上傳時間", field: "上傳時間" },
         ],
     });
     // 選擇預設勾選row
