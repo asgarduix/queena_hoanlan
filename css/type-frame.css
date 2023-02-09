@@ -258,6 +258,13 @@ label{
     top:5px ;
 }
 
+.materialSize-listcheck{
+    font-size:1rem;
+    position: relative;
+    top: 3px;
+    padding-right: 5px;
+}
+
 .unitH1{
     font-size:23px ;
     font-weight: 600;
@@ -349,6 +356,8 @@ label{
 
 /* 工作項目選取群組 */
 .listcheck-button-group{
+    padding: 5px 0 5px 3px;
+    border-bottom: 1px solid #f4f4f4;
 
 }
 
@@ -761,29 +770,23 @@ textarea{
 }
 
 .btn-list{
-    border: 1px solid #777777;
-    background-color: #9e9e9e;
-    color: #ffffff;
+    background-color: #f3f3f3;
+    color: #373737;
 	border-radius: 5px;
     font-size: .5rem;
     margin: 0 auto;
-    margin-left: 5px;
+    padding: 0 5px;
 }
 
 .btn-listcheck{
-    border: 1px solid #f2f2f2;
     background-color: #e4e4e4;
     color: #313131;
+    padding:2px 15px 5px 15px ;
 	border-radius: 50px;
-    font-size: .875rem;
-    font-weight: 500;
     margin: 0 auto;
     margin-left: 5px;
-    margin-top: 5px;
-}
-
-.btn-listcheck::before{
-    content: "check";
+    font-size: .875rem;
+    font-weight: 500;
 }
 
 .pop-btn-add{
@@ -948,9 +951,10 @@ textarea{
 }
 
 .tablePage{
-    border: 1px solid #aaaaaa;
     background-color:#eef1f7 ;
     line-height: 1.2rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .tablePage-2{
@@ -1123,7 +1127,6 @@ select {
 }
 
 .popWindow-body{
-    width: 98%;
     background-color:#ffffff;
     padding: 1%;
 
@@ -1148,6 +1151,13 @@ select {
     display:flex;
     width: 100%;
     margin: 5px 0 15px 0;
+}
+
+.poprow-3{
+    display:block;
+    width: 100%;
+    margin: 5px 0 15px 0;
+    padding-left:15px ;
 }
 
 .poprow-nonborder{
@@ -1223,7 +1233,6 @@ select {
 
 .pop-unit-all{
     display: inline-flex;
-    width:100%;
     line-height: 1.2rem;
 }
 
@@ -1557,10 +1566,11 @@ select {
 }
 
 .tab-body-2-footre{
-    height: 1rem;
     background-color:#F2F2F2;
     border: 1px solid #797979;
     margin-top: -1px;
+    padding: 8px 0;
+    padding-right: 8px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -1953,7 +1963,6 @@ select {
 .time-oder-layer{
     display: flex;
     padding: 3px;
-    border: 1px solid blueviolet;
 }
 
 .oderpoint-line{
@@ -1970,7 +1979,6 @@ select {
 /* 時間軸細項 */
 .time-oder-layer-unit{
     display: flex;
-    border: 1px solid yellow;
 }
 
 .unit-time-group{

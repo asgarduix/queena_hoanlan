@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>layout</title>
     <!-- Material -->
-    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="/material/material-icons-ie.css">
     <link rel="stylesheet" href="/material/material-icons.css">
     <!-- element-plus -->
@@ -86,24 +86,23 @@
                 <button class="btn-title">結算</button>
                 <button class="btn-title btn-title-active">明細列印</button>
             </div>
+            <div class="listcheck-button-group">
+                <button class="btn-listcheck"><span class="materialSize-listcheck material-icons-outlined">check_circle</span>帳期</button>
+                <button class="btn-listcheck"><span class="materialSize-listcheck material-icons-outlined">check_circle</span>結算代號</button>
+                <button class="btn-listcheck"><span class="materialSize-listcheck material-icons-outlined">check_circle</span>單位別</button>
+            </div>
             <div class="right-clumn-row">
                 <div class="query-unit">
-                    <div class="listcheck-button-group">
-                        <button class="btn btn-listcheck"><span class="materialSize-m material-icons-outlined">check_circle</span>帳期</button>
-                    </div>
-                    <hr>
-                    <div class="content-unit">
-                        <div class="query-unit-group">
-                            <div class="query-unit-title">帳期</div>
-                            <div class="query-unit-input">
-                                <div class="query-unit-double-input">
-                                    <div class="columnFive-left-37">
+                    <div class="poprow-3">
+                        <div class="query-unit-title">帳期</div>
+                        <div class="query-unit-input">
+                            <div class="query-unit-double-input">
+                                <div class="columnFive-left">
+                                <input type="date" value="" placeholder="請輸入值">
+                                </div>
+                                <span class="zigzagLine">～</span>
+                                <div class="columnFive-left">
                                     <input type="date" value="" placeholder="請輸入值">
-                                    </div>
-                                    <span class="zigzagLine">～</span>
-                                    <div class="columnFive-left-37">
-                                        <input type="date" value="" placeholder="請輸入值">
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -201,20 +200,18 @@
                     </div>
                 </div>
                 <div class="query-unit-body">
-                    <div class="query-unit-group-3">
-                        <div class="query-unit-title">單位別</div>
-                        <div class="query-unit-input-2 ">
-                            <label for=""><input type="checkbox" value="全部">全部</label>
-                            <label for=""><input type="checkbox" value="台北">台北</label>
-                            <label for=""><input type="checkbox" value="台中">台中</label>
-                            <label for=""><input type="checkbox" value="台南">台南</label>
-                            <label for=""><input type="checkbox" value="高雄">高雄</label>
-                        </div>
+                    <div class="query-unit-title">單位別</div>
+                    <div class="query-unit-input-2 ">
+                        <label for=""><input type="checkbox" value="全部">全部</label>
+                        <label for=""><input type="checkbox" value="台北">台北</label>
+                        <label for=""><input type="checkbox" value="台中">台中</label>
+                        <label for=""><input type="checkbox" value="台南">台南</label>
+                        <label for=""><input type="checkbox" value="高雄">高雄</label>
                     </div>
-                    <hr class="case">
-                    <div>
-                        <button class="btn btn-list">二代健保身份</button>
-                        <button class="btn btn-list">變更承攬人</button>
+                    <hr>
+                    <div class="listcheck-button-group">
+                        <button class="btn-list">二代健保身份</button>
+                        <button class="btn-list">變更承攬人</button>
                     </div>
                         <div class="upload-tabulate-header">
                             <ul>
@@ -224,6 +221,8 @@
                         </div>
                         <div class="upload-tabulate">
                             <div id="table02"></div>
+                        </div>
+                        <div class="upload-tabulate-footer">
                             <div class="tablePage">
                                 <ul>
                                     <li><button class="btn btn-prev">上一頁</button></li>
@@ -247,7 +246,6 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="upload-tabulate-footer"></div>
                 </div>
                 <div class="query-unit-info">
                     <div class="query-unit-infolist">
