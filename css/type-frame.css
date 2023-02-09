@@ -77,6 +77,11 @@ label{
     color: #fff;
 }
 
+.pop-tab-header .unittab-active {
+    background: #5A79B5;
+    color: #fff;
+}
+
 /* span基本設定 */
 .span-1{
     display:flex;
@@ -791,6 +796,16 @@ textarea{
     font-size: 10px;
 }
 
+.pop-btn-del{
+    border: 1px solid #e8c7de;
+    background-color: #f0b3c2;
+    color: #ffffff;
+	border-radius: 5px;
+    padding:5px 15px;
+    margin: 3px;
+    font-size: 10px;
+}
+
 .timeline-btn-del{
     display: inline-flex;
     font-size: .75rem;
@@ -926,10 +941,24 @@ textarea{
     border-top: none;
 }
 
+.tableBody-2{
+    border: 1px solid #7E96C4;
+    border-top: none;
+    border-radius: 10px;
+}
+
 .tablePage{
     border: 1px solid #aaaaaa;
     background-color:#eef1f7 ;
     line-height: 1.2rem;
+}
+
+.tablePage-2{
+    border: 1px solid #aaaaaa;
+    background-color:#eef1f7 ;
+    line-height: 1.2rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .tablePage ul{
@@ -938,6 +967,16 @@ textarea{
 }
 
 .tablePage li{
+    line-height: 1.2rem;
+    padding-top: 5px;
+}
+
+.tablePage-2 ul{
+    display: flex;
+    justify-content: end;
+}
+
+.tablePage-2 li{
     line-height: 1.2rem;
     padding-top: 5px;
 }
@@ -1492,6 +1531,18 @@ select {
     padding-left: 10px;
 }
 
+.pop-table-header-2{
+    display: inline-flex;
+    width: 100%;
+    line-height: 2rem;
+    background-color: #F2F2F2;
+    border: 1px solid #797979;
+    padding-left: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-bottom: -1px;
+}
+
 .tab-body-2 ul{
     display: inline-flex;
 }
@@ -2022,7 +2073,7 @@ select {
     background-color: #ffffff;
     color: #333333;
 	border-radius: 5px;
-    padding:8px 15px;
+    padding:px 15px;
     margin-left:5px;
     font-size: .5rem;
     box-shadow: 0px 2px 2px rgb(231, 231, 231);
