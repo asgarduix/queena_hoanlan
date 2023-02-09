@@ -2073,10 +2073,10 @@ select {
     background-color: #ffffff;
     color: #333333;
 	border-radius: 5px;
-    padding:px 15px;
+    padding:0px 15px 10px 5px;
     margin-left:5px;
-    font-size: .5rem;
-    box-shadow: 0px 2px 2px rgb(231, 231, 231);
+    margin-top: 5px;
+    font-size: .875rem;
 }
 
 .uploadCase hr.case{

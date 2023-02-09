@@ -58,7 +58,7 @@ textarea {
 }
 
 .upload-body-unit-inner {
-    display: table;
+    display:inline;
     table-layout: fixed;
 }
 
@@ -85,7 +85,7 @@ textarea {
 .upload-area {
     padding: 8px;
     border-radius: 4px;
-    background: rgba(63, 144, 176, 0.15);
+    background:#aaa;
 }
 
 .upload-title {
@@ -109,4 +109,11 @@ textarea {
 
 .upload-field textarea{
     margin-left: -1px;
+}
+
+.upload-area .materialSize-s{
+    font-size: 1.5rem;
+    position: relative;
+    right:-10px ;
+    top: 5px;
 }
