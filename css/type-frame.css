@@ -214,11 +214,17 @@ label{
 }
 
 .pop-materialSize-xs{
-    font-size: 15px;
-    line-height: .9rem;
+    font-size:.875rem;
     position: relative;
     top: 2px;
-    left: -.3rem;
+    left: -1rem;
+}
+
+.pop-materialSize-s{
+    font-size:1.3rem;
+    position: relative;
+    top: 5px;
+    left: -.8rem;
 }
 
 .materialSize-xs-grey{
@@ -1072,12 +1078,11 @@ select {
 }
 
 .pop-unit-label{
-    line-height: 1.2rem;
-    font-size: 12px;
+    font-size: .875rem;
     color: #075D8E;
     font-weight: 600;
-    margin-bottom: 3px;
-    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-top: 15px;
 }
 
 .pop-unit-label:first-child{
@@ -1369,8 +1374,8 @@ select {
     width: 100%;
     background-color:#e4eff4 ;
     padding: 3px;
-    border-bottom: none;
     margin-top: -1px;
+    border: 1px solid #333333;
 }
 
 .pop-double-unit-input{
@@ -1652,10 +1657,9 @@ select {
     position: relative;
     top: 3px;
     left: -3px;
-    font-size:0.5rem;
     border: 1px solid #aaaaaa;
     height: 24px;
-    margin-left: -8px;
+    margin-left: -5px;
     margin-right: 5px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -2155,15 +2159,12 @@ select {
 
 /* search bar 下拉選單出現樣式 */
 .search-list{
-    display: none;
+    display: block;
     border: 1px solid #7F7F7F;
     box-shadow: 0px 2px 5px rgb(172, 172, 172);
     background-color: #ededed;
     border-radius: 5px;
     width: calc(100% / 8.1);
-    position: absolute;
-    top: 89%;
-    left: 14.4%;
     padding: 5px;
     padding-top: 0;
     border-bottom-left-radius: 5px;
@@ -2171,6 +2172,7 @@ select {
     font-weight: 400;
     z-index: 990;
     max-height: 250px;
+    width: 17.5%;
 }
 
 .search-list-unit ul{
