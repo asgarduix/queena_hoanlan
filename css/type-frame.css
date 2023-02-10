@@ -27,17 +27,19 @@ time, mark, audio, video,button {
     background-repeat: no-repeat;
     background-size:cover;
     background-color: #555555;
-    display: flex;
+    background-position: center center;
+    height:100vh;
 }
 
 .login-border{
     border: 1px solid #5A79B5;
     border-radius: 10px;
     padding: 15px 10px;
-    display: inline-block;
-    width: 30%;
+    display:block;
+    max-width: 565px;
     margin: 0 auto;
-    margin-top: 3rem;
+    position: relative;
+    top: 3rem;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+22,c6d9f2+100 */
     background: #ffffff; /* Old browsers */
     background: -moz-linear-gradient(top,  #ffffff 22%, #c6d9f2 100%); /* FF3.6-15 */
@@ -82,7 +84,7 @@ time, mark, audio, video,button {
     position: absolute;
     display: inline-flex;
     top: 52%;
-    right: 28%;
+    right: 18%;
     font-size:1rem;
     color: #2080b8;
 }
@@ -445,8 +447,9 @@ label{
 
 .left-clumn-item_logo-2 img {
 	display: block;
-	width: 80%;
-	padding: 10px;
+	width: 60%;
+	padding: 1%;
+    padding-bottom: 2rem;
 	margin: 0 auto;
 }
 
@@ -823,7 +826,7 @@ textarea{
     font-size: .9rem;
     width: 90%;
     margin:0 auto;
-    margin-left: 10px;
+    margin-left: 5%;
     background-color:#396BCC ;
     color: #fff;
     letter-spacing: 5px;
