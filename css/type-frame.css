@@ -2159,7 +2159,7 @@ select {
 
 /* search bar 下拉選單出現樣式 */
 .search-list{
-    display: block;
+    display: none;
     border: 1px solid #7F7F7F;
     box-shadow: 0px 2px 5px rgb(172, 172, 172);
     background-color: #ededed;
@@ -2424,4 +2424,12 @@ select {
     padding-top: 3px;
     padding-left: 5px;
 
+}
+
+/* 附件框框 */
+.file-content{
+    border: 1px solid #333333;
+    max-height: 30rem;
+    overflow-y: scroll;
+    padding: 5px;
 }
