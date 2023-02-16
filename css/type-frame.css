@@ -218,10 +218,11 @@ button {
 }
 
 .poprow label {
+    display: inline-flex;
     margin-left: 3px;
     font-size: 0.875rem;
-    vertical-align: text-bottom;
-    margin-top: 4px;
+    align-items: center;
+    margin-top: 5px;
 }
 
 .container{
@@ -385,6 +386,17 @@ button {
     left: -2px;
 }
 
+/* 錯誤訊息 */
+.errownote{
+    display: flex;
+    color:#E96A6A ;
+}
+
+.errownote .span-4{
+    padding-left: 5px;
+}
+
+
 .forhighline{
     display: inline-flex;
     font-size: .5rem;
@@ -412,18 +424,6 @@ button {
     padding-top: 8px;
     text-align: center;
 }
-
-.errownote::after{
-    content: "輸入格式錯誤！";
-    color:#E96A6A;
-    font-size:.75rem ;
-    font-weight: 600;
-    position: relative;
-    top: 0px;
-    left: -2px;
-    margin-left: 8px;
-}
-
 
 /* 字體大小設定 */
 .materialSize{
@@ -1668,7 +1668,7 @@ select {
 }
 
 .poprow .pop-unit-input{
-    display: flex;
+    display: inline-block;
     border-right: none;
 }
 
