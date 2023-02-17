@@ -91,16 +91,32 @@ time, mark, audio, video,button {
 .box-a-word{
     padding: 5px 0;
 }
-
+/* 以下兩組位置相同 */
+/* 睜眼 */
 .login-box .iconlive span.eye-A::before{
     content: "visibility";
     position: absolute;
     top: 31%;
     left: 90%;
 }
-
+/* 閉眼 */
+.login-box .iconlive span.eye-A-a::before{
+    content: "visibility_off";
+    position: absolute;
+    top: 31%;
+    left: 90%;
+}
+/* 以下兩組位置相同 */
+/* 閉眼 */
 .login-box .iconlive span.eye-B::before{
     content: "visibility_off";
+    position: absolute;
+    top: 11%;
+    left: 90%;
+}
+/* 睜眼 */
+.login-box .iconlive span.eye-B-b::before{
+    content: "visibility";
     position: absolute;
     top: 11%;
     left: 90%;
