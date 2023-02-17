@@ -697,7 +697,7 @@ button {
 
 /* 輸入欄位基本設定 */
 
-input[type=text] {
+input[type=text],[type=password] {
     width: calc(100% - .5rem);
     border: none;
     height: 24px;
