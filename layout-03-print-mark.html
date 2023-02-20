@@ -1,104 +1,146 @@
 <!DOCTYPE html>
 <html lang="zh">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>layout</title>
     <!-- Material -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-    <link rel="stylesheet" href="/material/material-icons-ie.css">
-    <link rel="stylesheet" href="/material/material-icons.css">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/material/material-icons-ie.css" />
+    <link rel="stylesheet" href="/material/material-icons.css" />
     <!-- element-plus -->
     <!-- <link rel="stylesheet" href="/unpkg.com/element-plus/dist/index.css" /> -->
 
     <!-- tabulator -->
-    <link rel="stylesheet" href="tabulator/tabulator-master/dist/css/tabulator.min.css">
-    <script type="text/javascript" src="tabulator/tabulator-master/dist/js/tabulator.min.js"></script> 
+    <link
+      rel="stylesheet"
+      href="tabulator/tabulator-master/dist/css/tabulator.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="tabulator/tabulator-master/dist/js/tabulator.min.js"
+    ></script>
     <!-- tabulator cdn 使用於github上 -->
-    <link href="https://unpkg.com/tabulator-tables@5.4.3/dist/css/tabulator.min.css" rel="stylesheet">
-    <script type="text/javascript" src="https://unpkg.com/tabulator-tables@5.4.3/dist/js/tabulator.min.js"></script> 
-    
+    <link
+      href="https://unpkg.com/tabulator-tables@5.4.3/dist/css/tabulator.min.css"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/tabulator-tables@5.4.3/dist/js/tabulator.min.js"
+    ></script>
+
     <!-- 以我的為主 -->
     <!-- 有外框線 阿寶用 -->
     <!-- <link rel="stylesheet" href="css/type-frame-border.css"> -->
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/jquery-ui.theme.css">
-    <link rel="stylesheet" href="css/type-frame.css">
-    <link rel="stylesheet" href="css/type-frame-color.css">
-    <link rel="stylesheet" href="css/tabulator_ment.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/jquery-ui.theme.css" />
+    <link rel="stylesheet" href="css/type-frame.css" />
+    <link rel="stylesheet" href="css/type-frame-color.css" />
+    <link rel="stylesheet" href="css/tabulator_ment.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="left-clumn">
-            <div class="left-clumn-item_logo">
-                <a href="#"><img src="./img/item_logo.png" alt=""></a>
-            </div>
-            <div class="left-clumn-row">
-                <div class="title">佣金作業</div>
-            </div>
-            <div class="left-clumn-row">
-                <a href="#"><span class="materialSize material-icons-outlined">description</span><div class="secList">要保書作業</div></a>
-            </div>
-            <div class="left-clumn-row">
-                <a href="#"><span class="materialSize material-icons-outlined">list_alt</span><div class="secList">批單及保單作業</div></a>
-            </div>
-            <div class="left-clumn-row">
-                <a href="#"><span class="materialSize material-icons-outlined">paid</span><div class="secList">獎金佣金報表</div></a>
-            </div>
+      <div class="left-clumn">
+        <div class="left-clumn-item_logo">
+          <a href="#"><img src="./img/item_logo.png" alt="" /></a>
         </div>
-        <div class="right-clumn">
-            <div class="right-clumn-row">
-                <ul class="lifteflex">
-                    <div class="columnFour">
-                        <div class="workShop">
-                            <ul>
-                                <li><a href="#" class="unittab-active">佣金作業</a></li>
-                                <li><a href="#">法遵稽核</a></li>
-                                <li><a href="#">角色權限</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="columnFive-right">
-                        <div class="workName">
-                            <ul>
-                                <li>和安保代：<span>廖家祥</span></li>
-                                <li>行政專員<span class="workCode">A123456</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="columnTen-right">
-                        <div class="logOut">
-                            <button>登出</button>
-                            <span class="materialSize-s material-icons-outlined">logout</span>
-                        </div>
-                    </div>
+        <div class="left-clumn-row">
+          <div class="title">佣金作業</div>
+        </div>
+        <div class="left-clumn-row">
+          <a href="#"
+            ><span class="materialSize material-icons-outlined"
+              >description</span
+            >
+            <div class="secList">要保書作業</div></a
+          >
+        </div>
+        <div class="left-clumn-row">
+          <a href="#"
+            ><span class="materialSize material-icons-outlined">list_alt</span>
+            <div class="secList">批單及保單作業</div></a
+          >
+        </div>
+        <div class="left-clumn-row">
+          <a href="#"
+            ><span class="materialSize material-icons-outlined">paid</span>
+            <div class="secList">獎金佣金報表</div></a
+          >
+        </div>
+      </div>
+      <div class="right-clumn">
+        <div class="right-clumn-row">
+          <ul class="lifteflex">
+            <div class="columnFour">
+              <div class="workShop">
+                <ul>
+                  <li><a href="#" class="unittab-active">佣金作業</a></li>
+                  <li><a href="#">法遵稽核</a></li>
+                  <li><a href="#">角色權限</a></li>
                 </ul>
+              </div>
             </div>
-            <div class="right-clumn-row">
-                <div class="breadCrumb">
-                    <span class="materialSize-m-r material-icons-outlined">location_on</span>
-                    <!-- &nbsp;不換行空格 -->
-                    <a href="#">佣金作業</a>&nbsp;/&nbsp;<a href="#">獎金佣金報表</a> 
-                </div>
+            <div class="columnFive-right">
+              <div class="workName">
+                <ul>
+                  <li>和安保代：<span>廖家祥</span></li>
+                  <li>行政專員<span class="workCode">A123456</span></li>
+                </ul>
+              </div>
             </div>
-            <div class="right-clumn-row">
-                <h1 class="unitH1">獎金佣金報表</h1>
+            <div class="columnTen-right">
+              <div class="logOut">
+                <button>登出</button>
+                <span class="materialSize-s material-icons-outlined"
+                  >logout</span
+                >
+              </div>
             </div>
-            <div class="title-button-group">
-                <button class="btn-title">上傳</button>
-                <button class="btn-title">對帳</button>
-                <button class="btn-title">結算</button>
-                <button class="btn-title btn-title-active">明細列印</button>
-            </div>
-            <div class="listcheck-button-group">
-                <button class="btn-listcheck"><span class="materialSize-listcheck material-icons-outlined">check_circle</span>帳期</button>
-                <button class="btn-listcheck"><span class="materialSize-listcheck material-icons-outlined">check_circle</span>結算代號</button>
-                <button class="btn-listcheck"><span class="materialSize-listcheck material-icons-outlined">check_circle</span>單位別</button>
-            </div>
-            <div class="right-clumn-row">
-                <!-- 先隱藏 -->
-                <!-- <div class="query-unit">
+          </ul>
+        </div>
+        <div class="right-clumn-row">
+          <div class="breadCrumb">
+            <span class="materialSize-m-r material-icons-outlined"
+              >location_on</span
+            >
+            <!-- &nbsp;不換行空格 -->
+            <a href="#">佣金作業</a>&nbsp;/&nbsp;<a href="#">獎金佣金報表</a>
+          </div>
+        </div>
+        <div class="right-clumn-row">
+          <h1 class="unitH1">獎金佣金報表</h1>
+        </div>
+        <div class="title-button-group">
+          <button class="btn-title">上傳</button>
+          <button class="btn-title">對帳</button>
+          <button class="btn-title">結算</button>
+          <button class="btn-title btn-title-active">明細列印</button>
+        </div>
+        <div class="listcheck-button-group">
+          <button class="btn-listcheck">
+            <span class="materialSize-listcheck material-icons-outlined"
+              >check_circle</span
+            >帳期
+          </button>
+          <button class="btn-listcheck">
+            <span class="materialSize-listcheck material-icons-outlined"
+              >check_circle</span
+            >結算代號
+          </button>
+          <button class="btn-listcheck">
+            <span class="materialSize-listcheck material-icons-outlined"
+              >check_circle</span
+            >單位別
+          </button>
+        </div>
+        <div class="right-clumn-row">
+          <!-- 先隱藏 -->
+          <!-- <div class="query-unit">
                     <div class="poprow-3">
                         <div class="query-unit-title">帳期</div>
                         <div class="query-unit-input">
@@ -114,272 +156,345 @@
                         </div>
                     </div>
                 </div> -->
-                <div class="query-unit-body">
-                    <div class="right-clumn-row">
-                        <div class="pop-table-header">
-                            <div class="query-unit-infolist">
-                                結算代號共<span>12</span>項資料
-                            </div>
-                        </div>
-                        <div class="pop-table-body">
-                            <ul>
-                                <li>
-                                    <label class="pop-table-label" for="">
-                                        <div class="pop-table-label-input">
-                                            <input type="checkbox" value="" name="">
-                                        </div>FB20221109001
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="pop-table-label" for="">
-                                        <div class="pop-table-label-input">
-                                            <input type="checkbox" value="" name="">
-                                        </div>FB20221109002
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="pop-table-label" for="">
-                                        <div class="pop-table-label-input">
-                                            <input type="checkbox" value="" name="">
-                                        </div>FB20221109003
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="pop-table-label" for="">
-                                        <div class="pop-table-label-input">
-                                            <input type="checkbox" value="" name="">
-                                        </div>FB20221109004
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="pop-table-label" for="">
-                                        <div class="pop-table-label-input">
-                                            <input type="checkbox" value="" name="">
-                                        </div>FB20221109005
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="pop-table-label" for="">
-                                        <div class="pop-table-label-input">
-                                            <input type="checkbox" value="" name="">
-                                        </div>FB20221109006
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="pop-table-label" for="">
-                                        <div class="pop-table-label-input">
-                                            <input type="checkbox" value="" name="">
-                                        </div>FB20221109007
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="pop-table-label" for="">
-                                        <div class="pop-table-label-input">
-                                            <input type="checkbox" value="">
-                                        </div>FB20221109008
-                                    </label>
-                                </li>
-                            </ul>
-                            <ul>
-                                <li>
-                                    <label class="pop-table-label" for="">
-                                        <div class="pop-table-label-input">
-                                            <input type="checkbox" value="" name="">
-                                        </div>FB20221109009
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="pop-table-label" for="">
-                                        <div class="pop-table-label-input">
-                                            <input type="checkbox" value="" name="">
-                                        </div>FB20221109010
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="pop-table-label" for="">
-                                        <div class="pop-table-label-input">
-                                            <input type="checkbox" value="" name="">
-                                        </div>FB20221109011
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="pop-table-label" for="">
-                                        <div class="pop-table-label-input">
-                                            <input type="checkbox" value="" name="">
-                                        </div>FB20221109012
-                                    </label>
-                                </li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <hr size="1" class="allHr">
-                    <div class="query-unit-title">單位別</div>
-                    <div class="query-unit-input-2 ">
-                        <label class="label-A" for=""><input type="checkbox" value="全部">全部</label>
-                        <label class="label-A" for=""><input type="checkbox" value="台北">台北</label>
-                        <label class="label-A" for=""><input type="checkbox" value="台中">台中</label>
-                        <label class="label-A" for=""><input type="checkbox" value="台南">台南</label>
-                        <label class="label-A" for=""><input type="checkbox" value="高雄">高雄</label>
-                        <button class="btn btn-choose">搜尋</button>
-                    </div>
-                    <hr class="lineHR">
-                    <div class="listcheck-button-group">
-                        <button class="btn-list">二代健保身份</button>
-                        <button class="btn-list">變更承攬人</button>
-                    </div>
-                        <div class="upload-tabulate-header">
-                            <ul>
-                                <li><a href="">下載</a></li>
-                                <li><a href="">刪除</a></li>
-                            </ul>
-                        </div>
-                        <div class="upload-tabulate">
-                            <div id="table02"></div>
-                        </div>
-                        <div class="upload-tabulate-footer">
-                            <div class="tablePage">
-                                <ul>
-                                    <li><button class="btn btn-prev">上一頁</button></li>
-                                    <li><button class="btn btn-next">下一頁</button></li>
-                                    <li class="bulenote">每頁筆數</li>
-                                    <li>
-                                        <select name="" id="">
-                                            <option value="">1000</option>
-                                            <option value="">2</option>
-                                            <option value="">3</option>
-                                        </select>
-                                    </li>
-                                    <li class="bulenote">目前頁數</li>
-                                    <li>
-                                        <select name="" id="">
-                                            <option value="">1000</option>
-                                            <option value="">2</option>
-                                            <option value="">3</option>
-                                        </select>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+          <div class="query-unit-body">
+            <div class="right-clumn-row">
+              <div class="pop-table-header">
+                <div class="query-unit-infolist">
+                  結算代號共<span>12</span>項資料
                 </div>
-                <div class="query-unit-info">
-                    <div class="query-unit-infobutton">
-                        <button class="btn btn-clear">清除</button>
-                        <button class="btn btn-search">匯出</button>
-                    </div>
-                </div>
+              </div>
+              <div class="pop-table-body">
+                <ul>
+                  <li>
+                    <label class="pop-table-label" for="">
+                      <div class="pop-table-label-input">
+                        <input type="checkbox" value="" name="" />
+                      </div>
+                      FB20221109001
+                    </label>
+                  </li>
+                  <li>
+                    <label class="pop-table-label" for="">
+                      <div class="pop-table-label-input">
+                        <input type="checkbox" value="" name="" />
+                      </div>
+                      FB20221109002
+                    </label>
+                  </li>
+                  <li>
+                    <label class="pop-table-label" for="">
+                      <div class="pop-table-label-input">
+                        <input type="checkbox" value="" name="" />
+                      </div>
+                      FB20221109003
+                    </label>
+                  </li>
+                  <li>
+                    <label class="pop-table-label" for="">
+                      <div class="pop-table-label-input">
+                        <input type="checkbox" value="" name="" />
+                      </div>
+                      FB20221109004
+                    </label>
+                  </li>
+                  <li>
+                    <label class="pop-table-label" for="">
+                      <div class="pop-table-label-input">
+                        <input type="checkbox" value="" name="" />
+                      </div>
+                      FB20221109005
+                    </label>
+                  </li>
+                  <li>
+                    <label class="pop-table-label" for="">
+                      <div class="pop-table-label-input">
+                        <input type="checkbox" value="" name="" />
+                      </div>
+                      FB20221109006
+                    </label>
+                  </li>
+                  <li>
+                    <label class="pop-table-label" for="">
+                      <div class="pop-table-label-input">
+                        <input type="checkbox" value="" name="" />
+                      </div>
+                      FB20221109007
+                    </label>
+                  </li>
+                  <li>
+                    <label class="pop-table-label" for="">
+                      <div class="pop-table-label-input">
+                        <input type="checkbox" value="" />
+                      </div>
+                      FB20221109008
+                    </label>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <label class="pop-table-label" for="">
+                      <div class="pop-table-label-input">
+                        <input type="checkbox" value="" name="" />
+                      </div>
+                      FB20221109009
+                    </label>
+                  </li>
+                  <li>
+                    <label class="pop-table-label" for="">
+                      <div class="pop-table-label-input">
+                        <input type="checkbox" value="" name="" />
+                      </div>
+                      FB20221109010
+                    </label>
+                  </li>
+                  <li>
+                    <label class="pop-table-label" for="">
+                      <div class="pop-table-label-input">
+                        <input type="checkbox" value="" name="" />
+                      </div>
+                      FB20221109011
+                    </label>
+                  </li>
+                  <li>
+                    <label class="pop-table-label" for="">
+                      <div class="pop-table-label-input">
+                        <input type="checkbox" value="" name="" />
+                      </div>
+                      FB20221109012
+                    </label>
+                  </li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
             </div>
+            <hr size="1" class="allHr" />
+            <div class="query-unit-title">單位別</div>
+            <div class="query-unit-input-2">
+              <label class="label-A" for=""
+                ><input type="checkbox" value="全部" />全部</label
+              >
+              <label class="label-A" for=""
+                ><input type="checkbox" value="台北" />台北</label
+              >
+              <label class="label-A" for=""
+                ><input type="checkbox" value="台中" />台中</label
+              >
+              <label class="label-A" for=""
+                ><input type="checkbox" value="台南" />台南</label
+              >
+              <label class="label-A" for=""
+                ><input type="checkbox" value="高雄" />高雄</label
+              >
+              <button class="btn btn-choose">搜尋</button>
+            </div>
+            <hr class="lineHR" />
+            <div class="listcheck-button-group">
+              <button class="btn-list">二代健保身份</button>
+              <button class="btn-list">變更承攬人</button>
+            </div>
+            <div class="upload-tabulate-header">
+              <ul>
+                <li><a href="">下載</a></li>
+                <li><a href="">刪除</a></li>
+              </ul>
+            </div>
+            <div class="upload-tabulate">
+              <div id="table02"></div>
+            </div>
+            <div class="upload-tabulate-footer">
+              <div class="tablePage">
+                <ul>
+                  <li><button class="btn btn-prev">上一頁</button></li>
+                  <li><button class="btn btn-next">下一頁</button></li>
+                  <li class="bulenote">每頁筆數</li>
+                  <li>
+                    <select name="" id="">
+                      <option value="">1000</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                    </select>
+                  </li>
+                  <li class="bulenote">目前頁數</li>
+                  <li>
+                    <select name="" id="">
+                      <option value="">1000</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                    </select>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="query-unit-info">
+            <div class="query-unit-infobutton">
+              <button class="btn btn-clear">清除</button>
+              <button class="btn btn-search">匯出</button>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
 
 <!-- 巢狀結構tabulator設定 -->
 <script>
-    let nestedData = [{
-        id: "a1",
-        單位: "台北營業一部",
-        承攬身份: "介紹人",
-        承攬人: "AC123456 陳佩雲",
-        佣金試算: "3,000",
-        備註: "無底薪",
-        二代健保身份: "N",
-        ntTable: [
-            { 投保編號: "001193-吳孟哲", 保單編號: "500", 批單編號: "90870169" ,險別:"責任險" ,保費:"2,000,000",佣金:"7,000" },
-            { 投保編號: "001193-吳孟哲", 保單編號: "337", 批單編號: "90870170" ,險別:"責任險" ,保費:"2,000,000",佣金:"10,000" },
-        ]
-    }, ]
-    
-    var table = new Tabulator("#table02", {
-        height: "100%",
-        layout: "fitColumns",
-        movableColumns: true,
-        data: nestedData,
-        columns: [{
-                formatter: "rowSelection",
-                titleFormatter: "rowSelection",
-                headerHozAlign: "center",
-                hozAlign: "center",
-                headerSort: false,
-                maxWidth: 30,
-                minWidth: 30,
-                cellClick: function(e, cell) {
-                    cell.getRow().toggleSelect();
-                }
-            },
-            {
-                formatter: (cell, formatterParams, onRendered) => {
-                    let div = document.createElement('div');
-                    let el = cell.getRow().getElement()
-                    let btnName = ["＋", "–"]
-    
-                    btnName.forEach((name, index) => {
-                        let btn = document.createElement('button');
-                        $(btn).text(name)
-                        elementsChangeClass(btn, "add", "table-btn-switch")
-                        btn.addEventListener("click", (e) => {
-                            $(el).find(".table-btn-switch").toggle()
-                            $(el).find(".table-subtable-container").toggle()
-                        });
-                        if (index === 1) {
-                            $(btn).css("display", "none")
-                        }
-                        div.appendChild(btn)
-                    })
-                    return div
-                },
-                headerHozAlign: "center",
-                hozAlign: "center",
-                headerSort: false,
-                maxWidth: 30,
-                minWidth: 30
-            },
-            { title: "單位", field: "單位",},
-            { title: "承攬身份", field: "承攬身份" },
-            { title: "承攬人", field: "承攬人" },
-            { title: "佣金試算", field: "佣金試算",hozAlign:"right" },
-            { title: "備註", field: "備註" },
-            { title: "二代健保身份", field: "二代健保身份" },
-        ],
-        rowFormatter: function(row) {
-            let container = document.createElement("div");
-            let subtable = document.createElement("div");
-    
-            $(container).css("display", "none")
-            elementsChangeClass(container, "add", "table-subtable-container")
-            elementsChangeClass(subtable, "add", "table-subtable")
-            $(subtable).attr("id", row.getData().id)
-    
-            container.appendChild(subtable);
-            row.getElement().appendChild(container);
-    
-            let subTable = new Tabulator("#" + row.getData().id, {
-                layout: "fitColumns",
-                data: row.getData().ntTable,
-                columns: [
-                    { title: "投保編號", field: "投保編號" },
-                    { title: "保單編號", field: "保單編號" },
-                    { title: "批單號碼", field: "批單號碼" },
-                    { title: "險別", field: "險別" },
-                    { title: "保費", field: "保費" , hozAlign: "right"  },
-                    { title: "佣金", field: "佣金", hozAlign:"right" },
-                ]
-            })
+  let nestedData = [
+    {
+      id: "a1",
+      單位: "台北營業一部",
+      承攬身份: "介紹人",
+      承攬人: "AC123456 陳佩雲",
+      佣金試算: "3,000",
+      備註: "無底薪",
+      二代健保身份: "N",
+      ntTable: [
+        {
+          投保編號: "001193-吳孟哲",
+          保單編號: "500",
+          批單編號: "90870169",
+          險別: "責任險",
+          保費: "2,000,000",
+          佣金: "7,000",
         },
-    });
-    
-    function elementsChangeClass(elements, behavior, classNames) {
-        if (behavior === "add") {
-            $(elements).each(function(index, element) {
-                $(element).addClass(classNames)
-            })
-        } else if (behavior === "remove") {
-            $(elements).each(function(index, element) {
-                $(element).removeClass(classNames)
-            })
-        }
-    }
-    </script>
+        {
+          投保編號: "001193-吳孟哲",
+          保單編號: "337",
+          批單編號: "90870170",
+          險別: "責任險",
+          保費: "2,000,000",
+          佣金: "10,000",
+        },
+      ],
+    },
+  ];
+
+  var table = new Tabulator("#table02", {
+    height: "100%",
+    layout: "fitColumns",
+    movableColumns: true,
+    data: nestedData,
+    columns: [
+      {
+        formatter: "rowSelection",
+        titleFormatter: "rowSelection",
+        headerHozAlign: "center",
+        hozAlign: "center",
+        headerSort: false,
+        maxWidth: 30,
+        minWidth: 30,
+        cellClick: function (e, cell) {
+          cell.getRow().toggleSelect();
+        },
+      },
+      {
+        // formatter: (cell, formatterParams, onRendered) => {
+        //     let div = document.createElement('div');
+        //     let el = cell.getRow().getElement()
+        //     let btnName = ["＋", "–"]
+
+        //     btnName.forEach((name, index) => {
+        //         let btn = document.createElement('button');
+        //         // $(btn).text(name)
+        //         btn.innerText = name
+        //         elementsChangeClass(btn, "add", "table-btn-switch")
+        //         btn.addEventListener("click", (e) => {
+        //             // $(el).find(".table-btn-switch").toggle()
+        //             // $(el).find(".table-subtable-container").toggle()
+        //             document.querySelector(".table-btn-switch")
+        //         });
+        //         if (index === 1) {
+        //             $(btn).css("display", "none")
+        //         }
+        //         div.appendChild(btn)
+        //     })
+        //     return div
+        // },
+        formatter: (cell, formatterParams, onRendered) => {
+          let div = document.createElement("div");
+
+          let el = cell.getRow().getElement();
+          let btnOpen = document.createElement("button");
+          btnOpen.innerText = "＋";
+          btnOpen.classList.add("table-toggle", "table-btn-switch");
+          btnOpen.addEventListener("click", btnClick);
+
+          let btnClose = document.createElement("button");
+          btnClose.innerText = "–";
+          btnClose.classList.add(
+            "table-toggle",
+            "table-btn-switch",
+            "table-hide"
+          );
+          btnClose.addEventListener("click", btnClick);
+          function btnClick(e) {
+            e.stopPropagation();
+            el.querySelectorAll(".table-toggle").forEach((toggleElement) => {
+              toggleElement.classList.toggle("table-hide");
+            });
+          }
+          div.appendChild(btnOpen);
+          div.appendChild(btnClose);
+          return div;
+        },
+        headerHozAlign: "center",
+        hozAlign: "center",
+        headerSort: false,
+        maxWidth: 30,
+        minWidth: 30,
+      },
+      { title: "單位", field: "單位" },
+      { title: "承攬身份", field: "承攬身份" },
+      { title: "承攬人", field: "承攬人" },
+      { title: "佣金試算", field: "佣金試算", hozAlign: "right" },
+      { title: "備註", field: "備註" },
+      { title: "二代健保身份", field: "二代健保身份" },
+    ],
+    rowFormatter: function(row) {
+        let container = document.createElement("div");
+        let subtable = document.createElement("div");
+        container.classList.add(
+            "table-subtable-container",
+            "table-toggle",
+            "table-hide"
+          );
+        subtable.classList.add("table-subtable");
+        //$(container).css("display", "none")
+        //elementsChangeClass(container, "add", "table-subtable-container")
+        //elementsChangeClass(subtable, "add", "table-subtable")
+        //$(subtable).attr("id", row.getData().id)
+
+        container.appendChild(subtable);
+        row.getElement().appendChild(container);
+
+        let subTable = new Tabulator(subtable, {
+            layout: "fitColumns",
+            data: row.getData().ntTable,
+            columns: [
+                { title: "投保編號", field: "投保編號" },
+                { title: "保單編號", field: "保單編號" },
+                { title: "批單號碼", field: "批單號碼" },
+                { title: "險別", field: "險別" },
+                { title: "保費", field: "保費" , hozAlign: "right"  },
+                { title: "佣金", field: "佣金", hozAlign:"right" },
+            ]
+        })
+    },
+  });
+
+  // function elementsChangeClass(elements, behavior, classNames) {
+  //     if (behavior === "add") {
+  //         $(elements).each(function(index, element) {
+  //             $(element).addClass(classNames)
+  //         })
+  //     } else if (behavior === "remove") {
+  //         $(elements).each(function(index, element) {
+  //             $(element).removeClass(classNames)
+  //         })
+  //     }
+  // }
+</script>

@@ -33,16 +33,19 @@
                 <a href="#"><img src="./img/item_logo.png" alt=""></a>
             </div>
             <div class="left-clumn-row">
-                <div class="title">佣金作業</div>
+                <div class="title">法遵稽核</div>
             </div>
             <div class="left-clumn-row">
-                <a href="#"><span class="materialSize material-icons-outlined">description</span><div class="secList">要保書作業</div></a>
+                <a href="#"><span class="materialSize material-icons-outlined">description</span><div class="secList">合約管理</div></a>
             </div>
             <div class="left-clumn-row">
-                <a href="#"><span class="materialSize material-icons-outlined">list_alt</span><div class="secList">批單及保單作業</div></a>
+                <a href="#"><span class="materialSize material-icons-outlined">list_alt</span><div class="secList">法遵管理</div></a>
             </div>
             <div class="left-clumn-row">
-                <a href="#"><span class="materialSize material-icons-outlined">paid</span><div class="secList">獎金佣金報表</div></a>
+                <a href="#"><span class="materialSize material-icons-outlined">paid</span><div class="secList">會審管理</div></a>
+            </div>
+            <div class="left-clumn-row">
+                <a href="#"><span class="materialSize material-icons-outlined">paid</span><div class="secList">稽核/缺失改善建議</div></a>
             </div>
         </div>
         <div class="right-clumn">
@@ -51,8 +54,8 @@
                     <div class="columnFour">
                         <div class="workShop">
                             <ul>
-                                <li><a href="#" class="unittab-active">佣金作業</a></li>
-                                <li><a href="#">法遵稽核</a></li>
+                                <li><a href="#">佣金作業</a></li>
+                                <li><a href="#" class="unittab-active">法遵稽核</a></li>
                                 <li><a href="#">角色權限</a></li>
                             </ul>
                         </div>
@@ -77,33 +80,58 @@
                 <div class="breadCrumb">
                     <span class="materialSize-m-r material-icons-outlined">location_on</span>
                     <!-- &nbsp;不換行空格 -->
-                    <a href="#">佣金作業</a>&nbsp;/&nbsp;<a href="#">要保書作業</a> 
+                    <a href="#">法遵稽核</a>&nbsp;/&nbsp;<a href="#">合約管理</a> 
                 </div>
             </div>
             <div class="right-clumn-row">
-                <h1 class="unitH1">要保書作業</h1>
+                <h1 class="unitH1">合約管理</h1>
             </div>
             <div class="right-clumn-row">
                 <div class="query-unit">
                     <div class="content-unit">
                         <div class="query-unit-group">
-                            <div class="query-unit-title require">統一編號/ID</div>
-                            <div class="query-unit-input"><input type="text" value="" placeholder="123456fu 18"></div>
+                            <div class="query-unit-title">部門別</div>
+                            <div class="query-unit-input">
+                                <select name="" id="">
+                                    <option value="">營業一部</option>
+                                    <option value="">營業二部</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="query-unit-group">
-                            <div class="query-unit-title">投保編號</div>
+                            <div class="query-unit-title">合約編號</div>
                             <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
                         </div>
                         <div class="query-unit-group">
-                            <div class="query-unit-title">保單號碼</div>
-                            <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
+                            <div class="query-unit-title">承辦人</div>
+                            <div class="query-unit-input">
+                                <div class="query-unit-double-input">
+                                    <div class="columnFour">
+                                    <input type="text" value="" placeholder="請輸入值">
+                                    </div>
+                                    <div class="columnFour">
+                                        <input type="text" value="" placeholder="請輸入值">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="query-unit-group">
-                            <div class="query-unit-title">客戶名稱</div>
-                            <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
+                            <div class="query-unit-title">審核狀態</div>
+                            <div class="query-unit-input">
+                                <select name="" id="">
+                                    <option value="">立案</option>
+                                    <option value="">審閱中</option>
+                                    <option value="">會簽中</option>
+                                    <option value="">審閱完成</option>
+                                    <option value="">會辦完成</option>
+                                    <option value="">申請用印</option>
+                                    <option value="">上傳用印合完成檔</option>
+                                    <option value="">完成合約</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="query-unit-group">
-                            <div class="query-unit-title">要保書輸入日期區間</div>
+                            <div class="query-unit-title">合約生效日日區間</div>
                             <div class="query-unit-input">
                                 <div class="query-unit-double-input">
                                     <div class="columnFive-left-45">
@@ -134,7 +162,6 @@
                     <div class="tableWork">
                         <button class="active btn btn-add unittab-active">新增</button>
                         <button class="btn btn-edit">編輯</button>
-                        <button class="btn btn-del">刪除</button>
                     </div>
                     <div class="tableBody">
                         <div class="tab-frame-1">
@@ -177,36 +204,23 @@
 <script>
     let table01Data = [{
         id: "b1",
-        投保編號: "T222333000",
-        保險公司: "國泰",
-        險別: "商業火險",
-        保單號碼: "A12356789",
-        保費: "2,000",
-        統一編號: "16149963",
-        狀態: "未確認出單",
-        歸檔序號: "3",
-    },
-    {
-        id: "b1",
-        投保編號: "T222333001",
-        保險公司: "國泰",
-        險別: "商業火險",
-        保單號碼: "B246801214",
-        保費: "2,000",
-        統一編號: "16149963",
-        狀態: "未確認出單",
-        歸檔序號: "N/A",
+        預計簽約日期: "",
+        合約期間: "",
+        編號: "",
+        部門: "",
+        合約名稱: "責任險",
+        承辦人: "",
+        審閱狀態: "未確認出單",
     }, 
     {
         id: "b1",
-        投保編號: "T222333002",
-        保險公司: "富邦",
-        險別: "商業動產流動綜合保險",
-        保單號碼: "C13579012",
-        保費: "3,000",
-        統一編號: "16149963",
-        狀態: "未確認出單",
-        歸檔序號: "N/A",
+        預計簽約日期: "",
+        合約期間: "",
+        編號: "",
+        部門: "",
+        合約名稱: "責任險",
+        承辦人: "",
+        審閱狀態: "未確認出單",
     }, 
 ];
     var table01 = new Tabulator("#table01", {
@@ -233,22 +247,18 @@
                     cell.getRow().toggleSelect();
                 }
             },
-            { title: "投保編號", field: "投保編號",
-                formatter: function(cell, formatterParams, onRendered) {
-                    return "<a href='#'>" + cell.getValue() + "</a>"
-                },
-            },
-            { title: "保險公司", field: "保險公司" },
-            { title: "險別", field: "險別" },
-            { title: "保單號碼", field: "保單號碼" },
-            { title: "保費", field: "保費", hozAlign: "right"},
-            { title: "統一編號", field: "統一編號" },
-            { title: "狀態", field: "狀態" },
-            { title: "歸檔序號", field: "歸檔序號",
+            { title: "預計簽約日期", field: "預計簽約日期",},
+            { title: "合約期間", field: "合約期間" },
+            { title: "編號", field: "編號" },
+            { title: "部門", field: "部門" },
+            { title: "合約名稱", field: "合約名稱",
+
             formatter: function(cell, formatterParams, onRendered) {
                     return "<a href='#'>" + cell.getValue() + "</a>"
                 },
             },
+            { title: "承辦人", field: "承辦人" },
+            { title: "審閱狀態", field: "審閱狀態" }
         ],
     });
     // 選擇預設勾選row

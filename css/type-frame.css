@@ -581,6 +581,12 @@ button {
     width: 37%;
 }
 
+.columnFive-left-45{
+    display: inline-flex;
+    justify-content: start;
+    width: 45%;
+}
+
 .columnTen-right{
     display: inline-flex;
     justify-content: end;
@@ -800,10 +806,9 @@ input[type="date" i] {
     overflow: hidden;
     padding: 0;
     margin: 0;
-    width:calc(100% - 15px); 
     border:none;
     border-bottom: 1px solid #aaaaaa;
-    margin-top: -5px;
+    margin-top: 1px;
 }
 
 .pop-unit-input > select {
@@ -825,14 +830,12 @@ input[type="date" i] {
     border-left: none;
     border-right: none;
     border-bottom: 1px solid #aaaaaa;
-    height: 23px;
-    margin-top: 5px;
+    height: 24px;
     margin-left: 5px;
     margin-right: 3px;
     border-radius: 3px;
     font-size: 10px;
 	background:url(../img/arrow_drop_down_black_24dp2.svg) no-repeat right center transparent;
-    line-height: 1.2rem;
 
 }
 
@@ -1258,6 +1261,7 @@ textarea{
 
 .query-unit-double-input{
     display: inline-flex;
+    width: 100%;
 }
 
 .tableInfo{
@@ -2927,6 +2931,9 @@ select {
 
 /* tabulator 按鈕出現內欄位 star */
 /* nest table */
+.table-hide {
+    display: none;
+}
 .table-subtable-container {
     padding: 7px;
     background: #555;
