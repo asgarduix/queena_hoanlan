@@ -1259,6 +1259,10 @@ textarea{
     padding: 3px ;
 }
 
+.query-unit-input-2 ul{
+    display: inline-flex;
+}
+
 .query-unit-double-input{
     display: inline-flex;
     width: 100%;
@@ -1978,7 +1982,7 @@ select {
     border: 1px solid #797979;
     border-right: none;
     margin-top: -1px;
-    padding: 5px 1px;
+    padding: 15px 5px 5px 5px;
 }
 
 .pop-table-body ul li:last-child{
@@ -1990,13 +1994,8 @@ select {
     border: 1px solid orange;
 }
 
-
 .pop-table-label{
     display: inline-flex;
-}
-
-.pop-table-label-input{
-    padding-right: 3px;
 }
 /* check置頂 */
 .pop-table-label-input .inputstar{
