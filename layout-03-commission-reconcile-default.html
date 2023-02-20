@@ -93,7 +93,7 @@
                 <div class="query-unit">
                     <div class="content-unit">
                         <div class="query-unit-group">
-                            <div class="query-unit-title">上傳批號</div>
+                            <div class="query-unit-title require">保險公司</div>
                             <div class="query-unit-input"><input type="text" value="" placeholder="富邦"></div>
                         </div>
                         <div class="query-unit-group">
@@ -137,7 +137,6 @@
                         <button class="active btn btn-add unittab-active">對帳</button>
                         <button class="btn btn-edit">作廢</button>
                         <button class="btn btn-edit">下載錯誤明細</button>
-                        <button class="btn btn-edit">下載原始上傳檔</button>
                     </div>
                     <div class="tableBody">
                         <div class="tab-frame-1">
@@ -182,26 +181,26 @@
         id: "b1",
         上傳批號: "CK20221109001",
         檔名: "20221109_富邦_保險公司佣金明細-2.xlsx",
-        錯誤提示: "AS12345 陳美伶",
-        上傳人員: "111/11/1",
-        上傳時間: "N/A",
+        上傳人員: "AS12345 陳美伶",
+        上傳時間: "111/11/1",
+        錯誤提示: "N/A",
     },
     {
         id: "b1",
-        上傳批號: "FB20221109002",
+        上傳批號: "CK20221109001",
         檔名: "20221109_富邦_保險公司佣金明細-7.xlsx",
-        錯誤提示: "AS12345 陳美伶",
-        上傳人員: "111/11/1",
-        上傳時間: "N/A",
+        上傳人員: "AS12345 陳美伶",
+        上傳時間: "111/11/1",
+        錯誤提示: "字要怎麼變紅色",
 
     }, 
     {
         id: "b1",
-        上傳批號: "HT20221109003",
-        檔名: "20221102_富邦_保險公司佣金明細-1.xlsx",
-        錯誤提示: "AS12345 陳美伶",
-        上傳人員: "111/11/1",
-        上傳時間: "N/A",
+        上傳批號: "CK20221109001",
+        檔名: "20221109_富邦_保險公司佣金明細-1.xlsx",
+        上傳人員: "AS12345 陳美伶",
+        上傳時間: "111/11/1",
+        錯誤提示: "N/A",
 
     }, 
 ];
@@ -231,9 +230,25 @@
             },
             { title: "上傳批號", field: "上傳批號"},
             { title: "檔名", field: "檔名" },
-            { title: "錯誤提示", field: "錯誤提示" },
             { title: "上傳人員", field: "上傳人員" },
             { title: "上傳時間", field: "上傳時間" },
+            {
+            title: "錯誤提示",
+            field: "錯誤提示",
+            hozAlign: "left",
+            headerSort: false,
+            formatter: function(cell, formatterParams, onRendered) {
+                let hintData = cell.getValue();
+                if (hintData === "不良") {
+                    return "<span class='hint-bad'></span>";
+                } else if (hintData === "正常") {
+                    return "<span class='hint-normal'></span>";
+                } else if (hintData === "良好") {
+                    return "<span class='hint-good'></span>";
+                }
+            },
+            // formatter: "link",
+        },
         ],
     });
     // 選擇預設勾選row

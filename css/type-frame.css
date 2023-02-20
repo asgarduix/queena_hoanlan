@@ -233,6 +233,11 @@ button {
     cursor: pointer;
 }
 
+/* label 基本 */
+.label-A{
+    margin-right: 5px;
+}
+
 .poprow label {
     display: inline-flex;
     margin-left: 3px;
@@ -281,6 +286,12 @@ button {
 /* hr的基本設定 */
 .lineHR{
     border: 1px solid #eeeeee;
+}
+
+.allHr{
+    border-color: #5A79B5;
+    margin-left: -1rem;
+    margin-right: -1rem;
 }
 /* span基本設定 */
 .span-1{
@@ -392,7 +403,7 @@ button {
     margin-bottom: -5px;
 }
 
-/* note星星 */
+/* 必填note星星 */
 .require::before{
     content: "*";
     color:#E96A6A;
@@ -823,7 +834,7 @@ input[type="date" i] {
 .pop-double-unit-input select {
     width: calc(100% - 10px);
     border: 1px solid #aaaaaa;
-    height: 23px;
+    height: 24px;
     margin-top: 3px;
     margin-left: 5px;
     border-radius: 3px;
@@ -1139,6 +1150,7 @@ textarea{
     border: 1px solid #5A79B5;
     margin-top: -1px;
     padding: 10px 15px;
+    border-radius: 10px;
 }
 
 .content-unit{
@@ -1977,7 +1989,7 @@ select {
 }
 
 .pop-table-label-input{
-    padding: 1px 0;
+    padding-right: 3px;
 }
 /* check置頂 */
 .pop-table-label-input .inputstar{
@@ -2432,8 +2444,14 @@ select {
     font-size: .875rem;
 }
 
-.btn-upload::after{
-    content: "";
+.btn-upload span{
+    font-size: 1.2rem;
+    display: inline-block;
+    border-left: 1px solid #555555;
+    padding: 10px;
+    position: relative;
+    top: 3px;
+    margin:-14px -20px -8px 20px;
 }
 
 .uploadCase hr.case{
@@ -2803,3 +2821,178 @@ select {
     line-height: 1.2rem;
     margin: .75rem 0;
 }
+
+/* tabulator 紅色字錯誤提示 star */
+.content-hint {
+    margin-right: 0;
+}
+
+.content-hint ul {
+    list-style: none;
+    padding: 0 5px 0 0;
+    margin: 0;
+    text-align: right;
+}
+
+.content-hint li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4px;
+    font-size: 0.75rem;
+}
+
+.hint-good::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 30px;
+    margin-right: 2px;
+    background: #75BD0E;
+}
+
+.hint-normal::before {
+    content: "123";
+    display: inline-block;
+    margin-right: 2px;
+    background: #FFA225;
+}
+
+.hint-bad::before {
+    content: "123";
+    display: inline-block;
+    margin-right: 2px;
+    background: #F33349;
+}
+
+.hint-empty::before {
+    content: "123";
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 2px;
+    background: transparent;
+}
+
+/* tabulator 紅色字錯誤提示 END */
+
+/* 單行搜尋 star */
+.singular-search{
+    display: flex;
+    background-color: #F2EDE6;
+    width:50%;
+    border: 1px solid #777777;
+    border-radius: 5px;
+}
+
+.singular-search-title{
+    display: inline-flex;
+    width: 30%;
+    justify-content: end;
+    padding-right: 8px;
+    background-color: #F2EDE6;
+    font-size: .7rem;
+    color: #333333;
+    border-right: 1px solid #333333;
+    align-items: center;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    
+
+}
+
+.singular-search-info{
+    display: inline-flex;
+    width: 60%;
+    border-right: none;
+    padding-right: 5px;
+    background-color: #ffffff;
+    font-size: .7rem;
+    padding: 5px 3px;
+    color: #333333;
+    border-right: 1px solid #333333;
+}
+
+.btn-singular-search{
+    display: block;
+    width: 10%;
+    border-radius: 5px;
+
+}
+/* 單行搜尋 end */
+
+/* tabulator 按鈕出現內欄位 star */
+/* nest table */
+.table-subtable-container {
+    padding: 7px;
+    background: #555;
+    border-style: none;
+    border-bottom: #aaa solid 3px;
+    border-top: #aaa solid 3px;
+}
+
+.table-btn-switch {
+    background: #027DB4;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 0;
+    border-radius: 40px;
+    margin-top: 4px;
+}
+
+.table-subtable-container .tabulator .tabulator-headers .tabulator-col,
+.table-subtable-container .tabulator .tabulator-headers .tabulator-col:hover {
+    background: #37eecf;
+    color: #333;
+}
+
+.content-table .table-subtable-container .tabulator .tabulator-headers .tabulator-col:hover {
+    background: #37eecf;
+}
+
+.content-table .table-subtable-container .tabulator .tabulator-header .tabulator-col .tabulator-col-content {
+    padding: 2px;
+}
+
+.table-input-inner {
+    border: #aaa solid 1px;
+    border-radius: 4px;
+    background: #fff;
+    outline-color: #aaa;
+    padding: 0 4px;
+    height: 23px;
+    overflow: hidden;
+}
+
+.tabulator-row .tabulator-cell.table-input.tabulator-editing {
+    border-style: none;
+    padding: 4px;
+}
+
+.tabulator-row .tabulator-cell.table-input.tabulator-editing input {
+    border: #aaa solid 1px;
+    background: #fff;
+    border-radius: 4px;
+    outline-color: #aaa;
+    padding: 0 4px;
+}
+
+.table-input-unit .table-input-inner {
+    width: 100px;
+    display: inline-block;
+}
+
+.table-input-unit .input-unit-text {
+    width: 20px;
+    padding-left: 3px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0.875rem;
+}
+
+/* tabulator 按鈕出現內欄位 end */
