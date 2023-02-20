@@ -53,6 +53,10 @@ textarea {
     margin-bottom: 0;
 }
 
+.upload-body-unit{
+    padding-bottom: 5px;
+}
+
 .upload-body-unit:nth-child(1) {
     margin-bottom: 0px;
 }

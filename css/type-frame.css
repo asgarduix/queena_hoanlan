@@ -1333,15 +1333,21 @@ select {
     display: flex;
 }
 
-.pop-unit-two-list .select-1{
+.pop-unit-two-list .btn-together{
     display: inline-flex;
-    width: calc(100% - 105px);
+    width:40%;
     border: 1px solid #aaaaaa;
+    position: relative;
+    top: 3px;
+    left: -3rem;
     height: 33px;
-    margin-left: -3rem;
+    line-height: 33px;
     background-color: #fff;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    padding-left: 5px;
+    background:url(../img/expand_more_black_24dp.svg) no-repeat right center transparent;
+    background-color: #fff;
 }
 
 .pop-unit-two-list input[type=text] {
@@ -2416,14 +2422,18 @@ select {
 }
 
 .btn-upload{
-    border: 1px solid #075D8E;
+    border: 1px solid #555555;
     background-color: #ffffff;
     color: #333333;
 	border-radius: 5px;
-    padding:0px 15px 10px 5px;
+    padding:10px 20px 10px 5px;
     margin-left:5px;
     margin-top: 5px;
     font-size: .875rem;
+}
+
+.btn-upload::after{
+    content: "";
 }
 
 .uploadCase hr.case{
