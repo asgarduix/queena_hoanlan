@@ -11,20 +11,20 @@
     <link rel="stylesheet" href="/material/material-icons.css"> -->
     <!-- element-plus -->
     <!-- <link rel="stylesheet" href="/unpkg.com/element-plus/dist/index.css" /> -->
-    
     <!-- tabulator -->
     <link rel="stylesheet" href="tabulator/tabulator-master/dist/css/tabulator.min.css">
     <script type="text/javascript" src="tabulator/tabulator-master/dist/js/tabulator.min.js"></script> 
     <!-- tabulator cdn 使用於github上 -->
     <link href="https://unpkg.com/tabulator-tables@5.4.3/dist/css/tabulator.min.css" rel="stylesheet">
-    <script type="text/javascript" src="https://unpkg.com/tabulator-tables@5.4.3/dist/js/tabulator.min.js"></script>
-
+    <script type="text/javascript" src="https://unpkg.com/tabulator-tables@5.4.3/dist/js/tabulator.min.js"></script> 
     <!-- 以我的為主 -->
     <!-- 有外框線 阿寶用 -->
     <!-- <link rel="stylesheet" href="css/type-frame-border.css"> -->
     <link rel="stylesheet" href="css/type-frame.css">
     <link rel="stylesheet" href="css/type-frame-color.css">
     <link rel="stylesheet" href="css/tabulator_ment.css">
+    <!-- css-component-upload -->
+    ｚ<link rel="stylesheet" href="css/component-upload.css">
 </head>
 <body>
     <div class="container">
@@ -33,19 +33,16 @@
                 <a href="#"><img src="./img/item_logo.png" alt=""></a>
             </div>
             <div class="left-clumn-row">
-                <div class="title">法遵稽核</div>
+                <div class="title">佣金作業</div>
             </div>
             <div class="left-clumn-row">
-                <a href="#"><span class="materialSize material-icons-outlined">description</span><div class="secList">合約管理</div></a>
+                <a href="#"><span class="materialSize material-icons-outlined">description</span><div class="secList">要保書作業</div></a>
             </div>
             <div class="left-clumn-row">
-                <a href="#"><span class="materialSize material-icons-outlined">list_alt</span><div class="secList">法遵管理</div></a>
+                <a href="#"><span class="materialSize material-icons-outlined">list_alt</span><div class="secList">批單及保單作業</div></a>
             </div>
             <div class="left-clumn-row">
-                <a href="#"><span class="materialSize material-icons-outlined">paid</span><div class="secList">會審管理</div></a>
-            </div>
-            <div class="left-clumn-row">
-                <a href="#"><span class="materialSize material-icons-outlined">paid</span><div class="secList">稽核/缺失改善建議</div></a>
+                <a href="#"><span class="materialSize material-icons-outlined">paid</span><div class="secList">獎金佣金報表</div></a>
             </div>
         </div>
         <div class="right-clumn">
@@ -54,8 +51,8 @@
                     <div class="columnFour">
                         <div class="workShop">
                             <ul>
-                                <li><a href="#">佣金作業</a></li>
-                                <li><a href="#" class="unittab-active">法遵稽核</a></li>
+                                <li><a href="#" class="unittab-active">佣金作業</a></li>
+                                <li><a href="#">法遵稽核</a></li>
                                 <li><a href="#">角色權限</a></li>
                             </ul>
                         </div>
@@ -80,66 +77,84 @@
                 <div class="breadCrumb">
                     <span class="materialSize-m-r material-icons-outlined">location_on</span>
                     <!-- &nbsp;不換行空格 -->
-                    <a href="#">法遵稽核</a>&nbsp;/&nbsp;<a href="#">稽核/缺失改善建議</a> 
+                    <a href="#">佣金作業</a>&nbsp;/&nbsp;<a href="#">獎金佣金報表</a> 
                 </div>
             </div>
             <div class="right-clumn-row">
-                <h1 class="unitH1">稽核/缺失改善建議</h1>
+                <h1 class="unitH1">獎金佣金報表</h1>
             </div>
             <div class="title-button-group">
-                <button class="btn-title btn-title-active">稽核</button>
-                <button class="btn-title">結案管理</button>
+                <button class="btn-title btn-title-active">上傳</button>
+                <button class="btn-title">對帳</button>
+                <button class="btn-title">結算</button>
+                <button class="btn-title">明細列印</button>
             </div>
             <div class="right-clumn-row">
                 <div class="query-unit">
                     <div class="content-unit">
                         <div class="query-unit-group">
-                            <div class="query-unit-title">會審對象</div>
-                            <div class="query-unit-input">
-                                <select name="" id="">
-                                    <option value="">營業一部</option>
-                                    <option value="">營業二部</option>
-                                    <option value="">營業三部</option>
-                                    <option value="">通路營運部</option>
-                                    <option value="">綜合企劃部</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="query-unit-group">
-                            <div class="query-unit-title">查核類型</div>
-                            <div class="query-unit-input">
-                                <select name="" id="">
-                                    <option value="">合約</option>
-                                    <option value="">函文</option>
-                                    <option value="">稽核</option>
-                                    <option value="">缺失改善</option>
-                                    <option value="">裁罰</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="query-unit-group">
-                            <div class="query-unit-title">會審項目</div>
+                            <div class="query-unit-title">上傳批號</div>
                             <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
                         </div>
                         <div class="query-unit-group">
-                            <div class="query-unit-title">會審日區間</div>
+                            <div class="query-unit-title">保險公司</div>
+                            <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
+                        </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">投保編號</div>
+                            <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
+                        </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">保批單號</div>
+                            <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
+                        </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">險種</div>
+                            <div class="query-unit-input">
+                                <select name="" id="">
+                                    <option value="">商業火險</option>
+                                    <option value="">商業動產流動綜合保險</option>
+                                    <option value="">貨物運輸保險</option>
+                                    <option value="">營建機具綜合險</option>
+                                    <option value="">團體傷害保險</option>
+                                    <option value="">公共意外責任險</option>
+                                    <option value="">產品責任險</option>
+                                    <option value="">僱主意外責任險</option>
+                                    <option value="">僱主補償契約</option>
+                                    <option value="">現金保險</option>
+                                    <option value="">員工誠實險保證保險</option>
+                                    <option value="">營造綜合保險</option>
+                                    <option value="">運送人責任保</option>
+                                    <option value="">車險</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="content-unit">
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">批單日期</div>
                             <div class="query-unit-input">
                                 <div class="query-unit-double-input">
-                                    <div class="columnFive-left-45">
+                                    <div class="columnFive-left-37">
                                     <input type="date" value="" placeholder="請輸入值">
                                     </div>
                                     <span class="zigzagLine">～</span>
-                                    <div class="columnFive-left-45">
+                                    <div class="columnFive-left-37">
                                         <input type="date" value="" placeholder="請輸入值">
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">上傳人員(員編/姓名)</div>
+                            <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="query-unit-info">
                     <div class="query-unit-infolist">
-                        搜尋結果：共<span>0</span>筆
+                        共<span>0</span>項資料
                     </div>
                     <div class="query-unit-infobutton">
                         <button class="btn btn-clear">清除</button>
@@ -151,15 +166,13 @@
             <div class="right-clumn-row">
                 <div class="tableInfo">
                     <div class="tableWork">
-                        <button class="active btn btn-add unittab-active">新增</button>
-                        <button class="btn btn-edit">編輯</button>
-                        <button class="btn btn-edit">刪除</button>
-                        <button class="btn btn-edit">生成查核底稿</button>
+                        <button class="active btn btn-add unittab-active">上傳檔案</button>
+                        <button class="btn btn-edit">作廢</button>
                     </div>
                     <div class="tableBody">
                         <div class="tab-frame-1">
                             <ul>
-                                <li><div class="">共<span>3</span>筆</div></li>
+                                <li><div class="">共<span>4</span>筆</div></li>
                             </ul>
                             <div id="table01"></div>
                         </div>
@@ -190,22 +203,56 @@
             </div>
         </div>
     </div>
-
+    <!-- pop confirm視窗 -->
+    <div class="blackBackground-alert">
+        <div class="model-confirm">
+            <div class="alert-header">
+                <p class="popTitle">暫存底稿</p>
+                <div class="alertclose">
+                    <button><span class="material-icons-outlined">clear</span></button>
+                </div>
+            </div>
+            <div class="alert-body">
+                <p>2022/11/7 13:57:01  暫存底稿成功</p>
+                <p>暫存批號<span>T20221128030</span></p>
+            </div>
+            <div class="alert-footer">
+                <div class="alert-footer-button">
+                    <button class="btn btn-confirmcancel">取消</button>
+                    <button class="btn btn-confirmsure">確定</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 
 <script>
     let table01Data = [{
         id: "b1",
-        查核底稿編號: "查核底稿編號001",
-        查核時間: "查核時間",
-        查核標的類型: "作業循環",
-        查核標的名稱: "查核標的名稱",
-        查核作業代號: "查核作業代號",
-        查核作業名稱: "查核作業名稱",
-        查核性質: "查核性質",
-        受查單位: "受查單位",
-        查核人員: "查核人員",
+        上傳批號: "設計文字",
+        檔名: "設計文字",
+        錯誤提示: "設計文字",
+        上傳人員: "設計文字",
+        上傳時間: "設計文字",
+    },
+    {
+        id: "b1",
+        上傳批號: "設計文字",
+        檔名: "設計文字",
+        錯誤提示: "設計文字",
+        上傳人員: "設計文字",
+        上傳時間: "設計文字",
+
+    }, 
+    {
+        id: "b1",
+        上傳批號: "設計文字",
+        檔名: "設計文字",
+        錯誤提示: "設計文字",
+        上傳人員: "設計文字",
+        上傳時間: "設計文字",
+
     }, 
 ];
     var table01 = new Tabulator("#table01", {
@@ -232,20 +279,11 @@
                     cell.getRow().toggleSelect();
                 }
             },
-            { title: "查核底稿編號", field: "查核底稿編號",
-            
-            formatter: function(cell, formatterParams, onRendered) {
-                    return "<a href='#'>" + cell.getValue() + "</a>"
-                },
-            },
-            { title: "查核時間", field: "查核時" },
-            { title: "查核標的類型", field: "查核標的類型" },
-            { title: "查核標的名稱", field: "查核標的名稱" },
-            { title: "查核作業代號", field: "查核作業代號",},
-            { title: "查核作業名稱", field: "查核作業名稱" },
-            { title: "查核性質", field: "查核性質" },
-            { title: "受查單位", field: "受查單位" },
-            { title: "查核人員", field: "查核人員" },
+            { title: "上傳批號", field: "上傳批號"},
+            { title: "檔名", field: "檔名" },
+            { title: "錯誤提示", field: "錯誤提示" },
+            { title: "上傳人員", field: "上傳人員" },
+            { title: "上傳時間", field: "上傳時間" },
         ],
     });
     // 選擇預設勾選row

@@ -293,6 +293,14 @@ button {
     margin-left: -1rem;
     margin-right: -1rem;
 }
+
+.allHr-dot{
+    margin-left: -.75rem;
+    margin-right: -.75rem;
+    border:.01rem #797979 dashed;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
 /* span基本設定 */
 .span-1{
     display:flex;
@@ -788,9 +796,9 @@ input[type=radio] {
 }
 
 .pop-unit-input-two input[type=text] {
-    width: calc(100% - 120px);
+    width: calc(100% - 10px);
     border: 1px solid #aaaaaa;
-    height: 20px;
+    height: 24px;
     margin-top: 3px;
     margin-left: 5px;
     margin-right: 5px;
@@ -1120,6 +1128,14 @@ textarea{
     margin-left: 5px;
     font-size: .875rem;
     font-weight: 500;
+}
+
+.btn-right-border{
+    background-color: #ffffff;
+    margin: 5px;
+    padding-right: 10px;
+
+    border-right: 1px solid #111111;
 }
 
 .pop-btn-add{
@@ -1499,24 +1515,50 @@ select {
 }
 
 .popWindow-body{
-    background-color:#ffffff;
+    background-color:#eeeeee;
     padding: 1%;
+}
 
+.popWindow-body-2{
+    background-color:#fff;
+    padding: 1%;
 }
 
 .popWindow-body-2{
     width: 100%;
     background-color:#ffffff;
-    padding-top: 2%;
-
+    padding-top: 1%;
+    border-radius: 10px;
 }
 
 .poprow{
     display:flex;
     width: 100%;
-    background-color: #dde1e7;
+    background-color: #eeeeee;
     border: 1px solid #333333;
     margin-top: -1px;
+}
+
+.poprow-table{
+    display: inline;
+    width: 100%;
+}
+
+.poprow-table ul{
+    display: inline-flex;
+    width: 100%;
+}
+
+.poprow-table li{
+    width:100% ;
+}
+
+.poprow-table .btn{
+    display: inline-flex;
+    font-size: .75rem;
+    margin: 8px 5px;
+    border-radius: 5px;
+    background-color:#D7D7D7 ;
 }
 
 .poprow-2{
@@ -1599,12 +1641,18 @@ select {
 /* 彈窗拼接欄位設定 */
 .pop-unit-3{
     display: inline-flex;
-    width:calc(100% / 3);
+    width:75%;
     line-height: 1.2rem;
 }
 
 .pop-unit-all{
     display: inline-flex;
+    line-height: 1.2rem;
+}
+
+.pop-unit-one{
+    display: inline-flex;
+    width: 100%;
     line-height: 1.2rem;
 }
 
@@ -1635,7 +1683,7 @@ select {
 }
 
 .pop-unit-title-3{
-    width:22.5%;
+    width:8.7%;
     border-right: none;
     text-align: right;
     padding-right: 5px;
@@ -1649,7 +1697,7 @@ select {
 }
 
 .pop-unit-title-4{
-    width:7.5%;
+    width:6.4%;
     border-right: none;
     text-align: right;
     padding-right: 5px;
@@ -1688,19 +1736,24 @@ select {
 }
 
 .pop-unit-input{
+    display: inline-flex;
     width:70%;
     border-right: none;
     background-color: #ffffff;
 }
 
+.pop-unit-input ul li{
+    display: inline;
+}
+
 .pop-unit-input-3{
-    width:77.5%;
+    width:91.3%;
     border-right: none;
     background-color: #ffffff;
 }
 
 .pop-unit-input-4{
-    width:92.5%;
+    width:93.6%;
     border-right: none;
     background-color: #ffffff;
 }
@@ -1839,6 +1892,8 @@ select {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     margin-top: -1px;
+    background-color: #fff;
+    width: 100%;
 }
 
 .tableinfo_content .tab-frame-1{
@@ -2447,6 +2502,7 @@ select {
     padding:10px 20px 10px 5px;
     margin-left:5px;
     margin-top: 5px;
+    margin-bottom: 5px;
     font-size: .875rem;
 }
 
@@ -2750,13 +2806,14 @@ select {
 }
 
 .timeline-s-group-left{
-    display: flex;
+    display:flex;
     justify-content: start;
     padding-top: 5px;
 }
 
 .timeline-s-group ul{
-    display: flex;
+    display: block;
+    width: 100%;
 }
 
 .timeline-s-group li{
@@ -2769,7 +2826,7 @@ select {
 }
 
 .timeline-s-group-left ul{
-    display: flex;
+    display: inline-flex;
 }
 
 .timeline-s-group-left li{
@@ -2808,10 +2865,17 @@ select {
 
 /* 附件框框 */
 .file-content{
-    border: 1px solid #333333;
-    max-height: 30rem;
+    max-height:250px;
     overflow-y: scroll;
     padding: 5px;
+    margin-bottom: 20px;
+}
+
+.file-content p{
+    display: block;
+    padding: 8px;
+    font-size: .875rem;
+    font-weight: 500;
 }
 
 /* 新增關閉範圍彈窗 */
@@ -3005,3 +3069,63 @@ select {
 }
 
 /* tabulator 按鈕出現內欄位 end */
+
+/* 回覆信件的header star */
+.check-item-headre{
+    display: flex;
+    background-color:#EEEEEE ;
+    border: 1px solid #797979;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.check-item-headre p{
+    display: inline;
+    color: #333333;
+    font-size: .875rem;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.check-item-headre span{
+    display: inline;
+    color: #394f65;
+    font-size: .875rem;
+    padding: 10px 10px 10px 5px;
+    margin-left: -10px;
+    font-weight: 500;
+}
+
+/* 回覆信件的header end */
+
+/* 回覆信件的footer star */
+.check-item-footer{
+    display: flex;
+    background-color:#fff ;
+    border: 1px solid #797979;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: -1px;
+    margin-bottom: 10px;
+}
+
+.check-item-footer p{
+    display: inline;
+    color: #333333;
+    font-size: .875rem;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.check-item-footer span{
+    display: inline;
+    color: #394f65;
+    font-size: .875rem;
+    padding: 10px 10px 10px 5px;
+    margin-left: -10px;
+    font-weight: 500;
+}
+
+/* 回覆信件的footer end */

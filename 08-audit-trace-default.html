@@ -87,42 +87,14 @@
                 <h1 class="unitH1">稽核/缺失改善建議</h1>
             </div>
             <div class="title-button-group">
-                <button class="btn-title btn-title-active">稽核</button>
-                <button class="btn-title">結案管理</button>
+                <button class="btn-title">稽核</button>
+                <button class="btn-title btn-title-active">結案管理</button>
             </div>
             <div class="right-clumn-row">
                 <div class="query-unit">
                     <div class="content-unit">
                         <div class="query-unit-group">
-                            <div class="query-unit-title">會審對象</div>
-                            <div class="query-unit-input">
-                                <select name="" id="">
-                                    <option value="">營業一部</option>
-                                    <option value="">營業二部</option>
-                                    <option value="">營業三部</option>
-                                    <option value="">通路營運部</option>
-                                    <option value="">綜合企劃部</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="query-unit-group">
-                            <div class="query-unit-title">查核類型</div>
-                            <div class="query-unit-input">
-                                <select name="" id="">
-                                    <option value="">合約</option>
-                                    <option value="">函文</option>
-                                    <option value="">稽核</option>
-                                    <option value="">缺失改善</option>
-                                    <option value="">裁罰</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="query-unit-group">
-                            <div class="query-unit-title">會審項目</div>
-                            <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
-                        </div>
-                        <div class="query-unit-group">
-                            <div class="query-unit-title">會審日區間</div>
+                            <div class="query-unit-title">查核年月區間</div>
                             <div class="query-unit-input">
                                 <div class="query-unit-double-input">
                                     <div class="columnFive-left-45">
@@ -134,6 +106,22 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">查核作業</div>
+                            <div class="query-unit-input">
+                                <input type="text" value="" placeholder="請輸入值">
+                            </div>
+                        </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">受查單位</div>
+                            <div class="query-unit-input">
+                                <input type="text" value="" placeholder="請輸入值">
+                            </div>
+                        </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">查核意見</div>
+                            <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
                         </div>
                     </div>
                 </div>
@@ -151,10 +139,7 @@
             <div class="right-clumn-row">
                 <div class="tableInfo">
                     <div class="tableWork">
-                        <button class="active btn btn-add unittab-active">新增</button>
-                        <button class="btn btn-edit">編輯</button>
-                        <button class="btn btn-edit">刪除</button>
-                        <button class="btn btn-edit">生成查核底稿</button>
+                        <button class="active btn btn-add unittab-active">缺失改善情形</button>
                     </div>
                     <div class="tableBody">
                         <div class="tab-frame-1">
@@ -190,7 +175,7 @@
             </div>
         </div>
     </div>
-
+    
 </body>
 </html>
 
@@ -203,9 +188,10 @@
         查核標的名稱: "查核標的名稱",
         查核作業代號: "查核作業代號",
         查核作業名稱: "查核作業名稱",
-        查核性質: "查核性質",
+        查核項目: "查核性質",
         受查單位: "受查單位",
         查核人員: "查核人員",
+        查核結果: "查核結果",
     }, 
 ];
     var table01 = new Tabulator("#table01", {
@@ -243,9 +229,10 @@
             { title: "查核標的名稱", field: "查核標的名稱" },
             { title: "查核作業代號", field: "查核作業代號",},
             { title: "查核作業名稱", field: "查核作業名稱" },
-            { title: "查核性質", field: "查核性質" },
+            { title: "查核項目", field: "查核項目" },
             { title: "受查單位", field: "受查單位" },
             { title: "查核人員", field: "查核人員" },
+            { title: "查核結果", field: "查核結果" }
         ],
     });
     // 選擇預設勾選row
