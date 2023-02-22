@@ -21,6 +21,10 @@ time, mark, audio, video,button {
 
 }
 
+body{
+    font-size:1rem ;
+}
+
 /* 登入畫面start */
 .login-body{
     background-image: url("../img/ui_bg.jpg");
@@ -243,7 +247,6 @@ button {
     margin-left: 3px;
     font-size: 0.875rem;
     align-items: center;
-    margin-top: 5px;
 }
 
 .container{
@@ -465,6 +468,36 @@ button {
     text-align: center;
 }
 
+/* 圖像按鈕定位material */
+.btn-position{
+    position: relative;
+    top: 0;
+    left: -.5rem;
+}
+
+.span-zoom::before{
+    content: "search";
+    color: #111111;
+    font-size: 1.2rem;
+    position: relative;
+    top: -3px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.btn-zoom{
+    display:inline-flex;
+    background-color: #fff;
+    position: relative;
+    top: 3px;
+    left:-11px ;
+    border: 1px solid #aaaaaa;
+    height: 24px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
 /* 字體大小設定 */
 .materialSize{
     font-size: 18px;
@@ -480,10 +513,9 @@ button {
 }
 
 .pop-materialSize-xs{
-    font-size:.875rem;
+    font-size:1rem;
     position: relative;
     top: 2px;
-    left: -1rem;
 }
 
 .pop-materialSize-s{
@@ -509,7 +541,7 @@ button {
 }
 
 .course-materialSize-xs{
-    font-size: 15px;
+    font-size: 1rem;
     line-height: .9rem;
     position: relative;
     top: 3px;
@@ -750,16 +782,21 @@ input[type=text],[type=password] {
     border-bottom: 1px solid #aaaaaa;
 }
 
-input[type=radio] {
+input[type="checkbox"] ,[type="radio"] {
+    min-width: 15px;
     height: auto;
-    margin: 0;
-    margin-left: 3px;
-    vertical-align: middle;
-    transform: translateY(-1px);
-    -webkit-transform: translateY(-1px);
-    -moz-transform: translateY(-1px);
-    -ms-transform: translateY(-1px);
-    -o-transform: translateY(-1px);
+    margin-top: 0.1em;
+    border-radius: 2px;
+    vertical-align: top;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.25);
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+}
+
+input[type="checkbox"] ,[type="radio"] :checked {
+    background-color: #555555;
+    border-color: #555555;
 }
 
 .pop-unit-input input[type=text]  {
@@ -772,6 +809,16 @@ input[type=radio] {
     border-radius: 3px;
 }
 
+.inputzoom input[type=text]  {
+    width: calc(100% - 50px);
+    border: 1px solid #aaaaaa;
+    height: 24px;
+    position: relative;
+    top: -5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 3px;
+}
 
 /* input靠右 */
 .pop-unit-input-right input[type=text] {
@@ -900,18 +947,6 @@ input[type="date" i] {
     margin-left: 5px;
     margin-right: 5px;
     border-radius: 3px;
-}
-
-input[type="checkbox"] ,[type="radio"] {
-    height: auto;
-    margin: 0;
-    margin-left: 3px;
-    vertical-align: middle;
-    transform: translateY(-1px);
-    -webkit-transform: translateY(-1px);
-    -moz-transform: translateY(-1px);
-    -ms-transform: translateY(-1px);
-    -o-transform: translateY(-1px);
 }
 
 .btn {
@@ -1458,7 +1493,7 @@ select {
 }
 
 .pop-unit-label{
-    font-size: .875rem;
+    font-size: 1rem;
     color: #075D8E;
     font-weight: 600;
     margin-bottom: 8px;
@@ -1670,11 +1705,10 @@ select {
 
 .pop-unit-title{
     width:30%;
-    border-right: none;
     text-align: right;
     padding-right: 5px;
     background-color: #F2EDE6;
-    font-size: .7rem;
+    font-size: .875rem;
     padding: 5px 3px;
     color: #333333;
     border-right: 1px solid #333333;
@@ -1684,7 +1718,6 @@ select {
 
 .pop-unit-title-3{
     width:8.7%;
-    border-right: none;
     text-align: right;
     padding-right: 5px;
     background-color: #F2EDE6;
@@ -1698,7 +1731,6 @@ select {
 
 .pop-unit-title-4{
     width:6.4%;
-    border-right: none;
     text-align: right;
     padding-right: 5px;
     background-color: #F2EDE6;
@@ -1714,7 +1746,7 @@ select {
     width:30%;
     text-align: right;
     padding-right: 5px;
-    font-size: .7rem;
+    font-size: .875rem;
     padding: 5px 3px;
     color: #333333;
     margin-left: -1px;
@@ -1723,11 +1755,10 @@ select {
 
 .pop-unit-title-two{
     width:12.6%;
-    border-right: none;
     text-align: right;
     padding-right: 5px;
     background-color: #F2EDE6;
-    font-size: .7rem;
+    font-size: .875rem;
     padding: 5px 3px;
     color: #333333;
     border-right: 1px solid #333333;
@@ -1766,7 +1797,7 @@ select {
 }
 
 .poprow .pop-unit-input{
-    display: inline-block;
+    display: inline-flex;
     border-right: none;
 }
 
@@ -1805,7 +1836,6 @@ select {
     border: 2px solid #111111;
     margin: 0;
     z-index: 999;
-    margin-right: -2px;
 }
 
 .pop-tab{
@@ -1948,10 +1978,12 @@ select {
 .pop-table-header{
     display: inline-flex;
     width: 100%;
-    line-height: 2rem;
     background-color: #F2F2F2;
     border: 1px solid #797979;
     padding-left: 10px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    font-size: .875rem;
 }
 
 .pop-table-header-2{
@@ -2022,10 +2054,6 @@ select {
     margin-left: 5px;
 }
 
-.pop-table-body{
-
-}
-
 .pop-table-body ul{
     display: inline-flex;
     width:100% ;
@@ -2033,6 +2061,7 @@ select {
 }
 
 .pop-table-body ul li{
+    display: inline-flex;
     width: calc(100% / 8);
     border: 1px solid #797979;
     border-right: none;
@@ -2051,26 +2080,9 @@ select {
 
 .pop-table-label{
     display: inline-flex;
-}
-/* check置頂 */
-.pop-table-label-input .inputstar{
-    display: inline-flex;
-    position: relative;
-    top: -3px;
-}
-
-.pop-btn-3{
-    background-color:#ffffff;
-    color: #7F7F7F;
-    position: relative;
-    top: 3px;
-    left: -3px;
-    border: 1px solid #aaaaaa;
-    height: 24px;
-    margin-left: -5px;
-    margin-right: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    padding-left: 3px;
+    align-items: baseline;
+    font-size: .875rem;
 }
 
 .pop-body-frame{
