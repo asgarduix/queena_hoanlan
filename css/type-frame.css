@@ -784,7 +784,7 @@ input[type=text],[type=password] {
 
 input[type="checkbox"] ,[type="radio"] {
     min-width: 15px;
-    height: auto;
+    height: 15px;
     margin-top: 0.1em;
     border-radius: 2px;
     vertical-align: top;
@@ -813,8 +813,6 @@ input[type="checkbox"] ,[type="radio"] :checked {
     width: calc(100% - 50px);
     border: 1px solid #aaaaaa;
     height: 24px;
-    position: relative;
-    top: -5px;
     margin-left: 5px;
     margin-right: 5px;
     border-radius: 3px;
@@ -1775,6 +1773,13 @@ select {
 
 .pop-unit-input ul li{
     display: inline;
+    position: relative;
+    top: 5px;
+}
+
+.columnFour ul li{
+    display: inline-flex;
+    margin-top: 5px;
 }
 
 .pop-unit-input-3{
