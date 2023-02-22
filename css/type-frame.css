@@ -426,7 +426,7 @@ button {
     font-size:1rem ;
     position: relative;
     top: 3px;
-    left: -2px;
+    left: 3px;
 }
 
 /* 錯誤訊息 */
@@ -842,6 +842,16 @@ input[type="checkbox"] ,[type="radio"] :checked {
 
 .pop-unit-input-two input[type=text] {
     width: calc(100% - 10px);
+    border: 1px solid #aaaaaa;
+    height: 24px;
+    margin-top: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+
+.pop-unit-input-3 input[type=text] {
+    width: calc(100% - 45px);
     border: 1px solid #aaaaaa;
     height: 24px;
     margin-top: 3px;
@@ -1430,7 +1440,7 @@ select {
 }
 
 .zigzagLine{
-    display: block;
+    display: inline-block;
     line-height: .9rem;
     margin: 0 2px;
     padding-top: 4px;
@@ -1702,7 +1712,7 @@ select {
 }
 
 .pop-unit-title{
-    width:30%;
+    width:120px;
     text-align: right;
     padding-right: 5px;
     background-color: #F2EDE6;
@@ -1715,11 +1725,11 @@ select {
 }
 
 .pop-unit-title-3{
-    width:8.7%;
+    width:120px;
     text-align: right;
     padding-right: 5px;
     background-color: #F2EDE6;
-    font-size: .7rem;
+    font-size: .875rem;
     padding: 5px 3px;
     color: #333333;
     border-right: 1px solid #333333;
@@ -1752,7 +1762,7 @@ select {
 }
 
 .pop-unit-title-two{
-    width:12.6%;
+    width:120px;
     text-align: right;
     padding-right: 5px;
     background-color: #F2EDE6;
@@ -3146,3 +3156,5 @@ select {
 }
 
 /* 回覆信件的footer end */
+
+/* 保險選單欄位分塊 */
