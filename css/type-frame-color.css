@@ -48,12 +48,11 @@ a,ol, ul {
 .left-clumn-row a{
     color: #5A79B5;
 	background-color: #ffffff;
+    margin-top: .875rem;
+    margin-bottom: .875rem;
 }
 
 /* 工作項目選擇 */
-.workShop{
-    background-color: #5A79B5;
-}
 
 .workName{
 	color: #5B7CBD;

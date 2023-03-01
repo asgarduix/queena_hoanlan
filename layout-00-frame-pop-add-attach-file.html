@@ -23,6 +23,11 @@
     <link rel="stylesheet" href="css/type-frame.css">
     <link rel="stylesheet" href="css/type-frame-color.css">
     <link rel="stylesheet" href="css/tabulator_ment.css">
+    <style>
+        /* .span-4{
+            display: none;
+        } */
+    </style>
 </head>
 <body>
     <div class="container">
@@ -181,22 +186,24 @@
                 <div class="pop-body-frame">
                 <div class="poprow">
                     <div class="pop-unit-four">
-                        <div class="pop-unit-title">投保編號</div>
-                        <div class="pop-unit-input">
+                        <div class="pop-unit-title ">投保編號</div>
+                        <div class="pop-unit-input errownote">
                             <input type="text" value="" placeholder="請輸入值">
-                            <div class="errownote">
-                                <span class="span-4">輸入格式錯誤！</span>
-                            </div>
-                        </div>     
+                            <span class="span-4">輸入格式錯誤！</span>
+                        </div>
                     </div>
                     <div class="pop-unit-four">
                         <div class="pop-unit-title">業務來源</div>
-                        <div class="pop-unit-input pop-unit-input-last">
-                            <label><input type="radio" value="">一般件</label>
-                            <label> <input type="radio" value="">介紹件</label>
-                            <div class="errownote">
-                                <span class="span-4">輸入格式錯誤！</span>
-                            </div>
+                        <div class="pop-unit-input errownote pop-unit-input-last">
+                            <ul>
+                                <li>
+                                    <input type="radio" value="" id="01"><label for="" id="01">一般件</label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="" id="02"><label for="" id="02">介紹件</label>
+                                </li>
+                            </ul>
+                            <span class="span-4">輸入格式錯誤！</span>
                         </div>    
                     </div>
                 </div>
@@ -206,29 +213,25 @@
                 <div class="poprow">
                     <div class="pop-unit-four">
                         <div class="pop-unit-title"><span class="pop-materialSize-s material-icons-outlined">cancel</span>單位別</div>
-                        <div class="pop-unit-input">
+                        <div class="pop-unit-input errownote">
                             <input class="pop-input" type="text" value="" placeholder="請輸入值">
-                            <div class="errownote">
-                                <span class="span-4">輸入格式錯誤！</span>
-                            </div>
+                            <span class="span-4">輸入格式錯誤！</span>
                         </div>    
                     </div>
                     <div class="pop-unit-four">
                         <div class="pop-unit-title">承攬身份</div>
-                        <div class="pop-unit-input">
+                        <div class="pop-unit-input errownote">
                             <select name="" id="">
                                 <option value="" selected>請選擇</option>
                                 <option value="">業務員</option>
                                 <option value="">服務業代</option>
                             </select>
-                            <div class="errownote">
                                 <span class="span-4">輸入格式錯誤！</span>
-                            </div>
                         </div>    
                     </div>
                     <div class="pop-unit-four">
                         <div class="pop-unit-title">保險/服務業代</div>
-                            <div class="pop-unit-input">
+                            <div class="pop-unit-input errownote">
                                 <div class="pop-double-unit-input">
                                     <div class="columnFive-left">
                                         <input type="text" value="" placeholder="請輸入值">
@@ -237,14 +240,12 @@
                                         <input type="text" value="" placeholder="請輸入值" disabled>
                                     </div>
                                 </div>
-                                <div class="errownote">
-                                    <span class="span-4">輸入格式錯誤！</span>
-                                </div>
+                                <span class="span-4">輸入格式錯誤！</span>
                             </div>   
                         </div>
                     <div class="pop-unit-four">
                         <div class="pop-unit-title">佣金比例</div>
-                        <div class="pop-unit-input spaceS">
+                        <div class="pop-unit-input errownote">
                             <div class="pop-double-unit-input">
                                 <div class="columnTwo">
                                     <select name="" id="">
@@ -257,35 +258,32 @@
                                 </div>
                                 <span class="zigzagLine">%</span>
                             </div>
-                            <div class="errownote">
                                 <span class="span-4">輸入格式錯誤！</span>
-                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="poprow">
                     <div class="pop-unit-four">
                         <div class="pop-unit-title">薪資狀況</div>
-                        <div class="pop-unit-input">
+                        <div class="pop-unit-input errownote">
                             <select name="" id="">
                                 <option value="" selected>請選擇</option>
                                 <option value="">有底薪</option>
                                 <option value="">無底薪</option>
                             </select>
-                            <div class="errownote">
-                                <span class="span-4">輸入格式錯誤！</span>
-                            </div>
+                            <span class="span-4">輸入格式錯誤！</span>
                         </div>
                     </div>
                     <div class="pop-unit-four">
                         <div class="pop-unit-title">健保身份</div>
-                        <div class="pop-unit-input pop-unit-input-last">
-                            <label for="">
-                                <input type="checkbox">二代健保身份
-                            </label>
-                            <div class="errownote">
-                                <span class="span-4">輸入格式錯誤！</span>
-                            </div>
+                        <div class="pop-unit-input errownote pop-unit-input-last">
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="01">
+                                    <label for="" id="01">二代健保身份</label>
+                                </li>
+                            </ul>
+                            <span class="span-4">輸入格式錯誤！</span>
                         </div>    
                     </div>
                 </div>
@@ -293,29 +291,25 @@
                 <div class="poprow">
                     <div class="pop-unit-four">
                         <div class="pop-unit-title"><span class="pop-materialSize-s material-icons-outlined">cancel</span>單位別</div>
-                        <div class="pop-unit-input">
+                        <div class="pop-unit-input errownote">
                             <input class="pop-input" type="text" value="" placeholder="請輸入值">
-                            <div class="errownote">
-                                <span class="span-4">輸入格式錯誤！</span>
-                            </div>
+                            <span class="span-4">輸入格式錯誤！</span>
                         </div>    
                     </div>
                     <div class="pop-unit-four">
                         <div class="pop-unit-title">承攬身份</div>
-                        <div class="pop-unit-input">
+                        <div class="pop-unit-input errownote">
                             <select name="" id="">
                                 <option value="" selected>請選擇</option>
                                 <option value="">業務員</option>
                                 <option value="">服務業代</option>
                             </select>
-                            <div class="errownote">
                                 <span class="span-4">輸入格式錯誤！</span>
-                            </div>
                         </div>    
                     </div>
                     <div class="pop-unit-four">
                         <div class="pop-unit-title">保險/服務業代</div>
-                            <div class="pop-unit-input">
+                            <div class="pop-unit-input errownote">
                                 <div class="pop-double-unit-input">
                                     <div class="columnFive-left">
                                         <input type="text" value="" placeholder="請輸入值">
@@ -324,14 +318,12 @@
                                         <input type="text" value="" placeholder="請輸入值" disabled>
                                     </div>
                                 </div>
-                                <div class="errownote">
                                     <span class="span-4">輸入格式錯誤！</span>
-                                </div>
                             </div>   
                         </div>
                     <div class="pop-unit-four">
                         <div class="pop-unit-title">佣金比例</div>
-                        <div class="pop-unit-input spaceS">
+                        <div class="pop-unit-input errownote">
                             <div class="pop-double-unit-input">
                                 <div class="columnTwo">
                                     <select name="" id="">
@@ -344,35 +336,32 @@
                                 </div>
                                 <span class="zigzagLine">%</span>
                             </div>
-                            <div class="errownote">
                                 <span class="span-4">輸入格式錯誤！</span>
-                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="poprow">
                     <div class="pop-unit-four">
                         <div class="pop-unit-title">薪資狀況</div>
-                        <div class="pop-unit-input">
+                        <div class="pop-unit-input errownote">
                             <select name="" id="">
                                 <option value="" selected>請選擇</option>
                                 <option value="">有底薪</option>
                                 <option value="">無底薪</option>
                             </select>
-                            <div class="errownote">
-                                <span class="span-4">輸入格式錯誤！</span>
-                            </div>
+                            <span class="span-4">輸入格式錯誤！</span>
                         </div>
                     </div>
                     <div class="pop-unit-four">
                         <div class="pop-unit-title">健保身份</div>
-                        <div class="pop-unit-input pop-unit-input-last">
-                            <label for="">
-                                <input type="checkbox">二代健保身份
-                            </label>
-                            <div class="errownote">
-                                <span class="span-4">輸入格式錯誤！</span>
-                            </div>
+                        <div class="pop-unit-input errownote pop-unit-input-last">
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="01">
+                                    <label for="" id="01">二代健保身份</label>
+                                </li>
+                            </ul>
+                            <span class="span-4">輸入格式錯誤！</span>
                         </div>
                     </div>
                 </div>
@@ -392,10 +381,12 @@
                     <div class="poprow">
                         <div class="pop-unit-four">
                             <div class="pop-unit-title">統一編號/ID</div>
-                            <div class="pop-unit-input">
+                            <div class="pop-unit-input inputzoom">
                                 <input type="text" value="" placeholder="請輸入值">
-                                <button class="pop-btn-3"><span class="course-materialSize-s material-icons-outlined" >search</span></button>
-                            </div>     
+                                <button class="btn-zoom">
+                                    <span class="span-zoom material-icons-outlined"></span>
+                                </button>
+                            </div>        
                         </div>
                         <div class="pop-unit-four">
                             <div class="pop-unit-title">要保人</div>
@@ -461,12 +452,17 @@
                         <div class="pop-unit-two">
                             <div class="pop-unit-title-two">國籍</div>
                             <div class="pop-unit-input-two">
-                                <div class="pop-unit-input">
-                                    <label><input type="radio" value="">本國</label>
-                                    <label> <input type="radio" value="">非本國</label>
-                                    <input type="text" value="" placeholder="請輸入值">
-                                </div> 
-                                
+                                <div class="columnThree">
+                                    <ul>
+                                        <li>
+                                            <input type="radio" value=""><label>本國</label>
+                                        </li>
+                                        <li><input type="radio" value=""><label>非本國</label></li>
+                                    </ul>
+                                    <div class="columnFour">
+                                        <input type="text" value="" placeholder="請輸入值" disabled>
+                                    </div>
+                                </div>    
                             </div>    
                         </div>
                     </div>
@@ -606,7 +602,7 @@
 
 ];
     var table02 = new Tabulator("#table02", {
-        data: table01Data,
+        data: table02Data,
         //autoColumns: true,
         layout: "fitColumns",// 表格風格
         height: "250px",
