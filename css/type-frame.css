@@ -253,6 +253,7 @@ button {
     display: flex;
     margin: 0;
     padding: 0;
+    background-color:rgba(245, 245, 245, 0.1) ;
 }
 
 ::placeholder {
@@ -360,7 +361,7 @@ button {
     flex-direction: row;
     width: 15%;
     border: 1px solid #9fb7e8;
-    border-radius: 15px;
+    border-radius: 30px;
     margin: 5px;
     height: 100vh;
 /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b9cae9+0,ffffff+80 */
@@ -369,6 +370,7 @@ background: -moz-linear-gradient(45deg,  #b9cae9 0%, #ffffff 80% ,transparent 80
 background: -webkit-linear-gradient(45deg,  #b9cae9 0%,#ffffff 80% ,transparent 80%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(45deg,  #b9cae9 0%,#ffffff 80% ,transparent 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9cae9', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+box-shadow: 0 0 2px 1px rgba(183, 183, 183, 0.6);
 
 }
 
@@ -651,11 +653,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9cae9', end
 /* 左邊選單logo */
 .left-clumn-item_logo{
     display: block;
-    margin: 20px auto;
+    margin: 15px auto;
+    margin-top: 8px;
+    padding-top: 1px;
+    padding-bottom: 1px;
     width: 90%;
-    border: 1px solid #7E96C4;
-    border-radius: 40px;
-
+    border-radius: 30px;
+    box-shadow: inset 2px 5px 10px #dfdfdf;
+    border: 1px solid #dfdfdf;
 }
 
 .left-clumn-item_logo-2{
@@ -668,7 +673,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9cae9', end
 
 .left-clumn-item_logo img {
 	display: block;
-	width: 80%;
+	width: 100%;
 	padding: 10px;
 	margin: 0 auto;
 }
@@ -684,6 +689,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9cae9', end
 .right-clumn{
     flex-direction: row;
     width: 85%;
+    padding-left: 5px;
+    padding-right: 5px;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+20,b9cae9+100 */
 background: #ffffff; /* Old browsers */
 background: -moz-linear-gradient(-45deg,  #ffffff 20%, #b9cae9 100% ,transparent 80% ); /* FF3.6-15 */
@@ -697,6 +704,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .right-clumn-row{
     padding: 5px;
 }
+
+.row-shadow{
+    box-shadow: 0 0 2px 1px rgba(183, 183, 183, 0.6);
+    padding: 0px;
+    padding-right: 5px;
+    border-radius: 15px;
+}
+
+
 
 /* 工作項目選取群組 */
 .listcheck-button-group{
@@ -1247,8 +1263,8 @@ textarea{
 
 .query-unit{
     border: 1px solid #5A79B5;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .query-unit-body{
@@ -1308,7 +1324,6 @@ textarea{
 /* 均分五塊 */
 .query-unit-group{
     width: calc(100% / 5);
-    border-right:1px solid rgb(244, 244, 244);
     padding: 5px;
 }
 
@@ -1368,8 +1383,8 @@ textarea{
 .tableInfo{
     border: 1px solid #7E96C4;
     border-radius: 10px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .tableWork{
@@ -1387,6 +1402,11 @@ textarea{
 
 .tableBody{
     border-top: none;
+    padding:10px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border-top-right-radius:0 ;
+    border-top-left-radius:0 ;
 }
 
 .tableBody-2{
@@ -1397,8 +1417,11 @@ textarea{
 
 .tablePage{
     background-color:#eef1f7 ;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: 1px solid #7E96C4;
+    border-top: none;
+    margin-top: -1px;
 }
 
 .tablePage-2{
@@ -1443,7 +1466,7 @@ select {
 	-moz-appearance:none;
 	-webkit-appearance:none;
 	border:1px solid #aaaaaa;
-    border-radius: 2px;
+    border-radius: 5px;
 	width:calc(100% - 1px);
 	padding-left:2px;
 	padding-right:30px;
@@ -1979,7 +2002,7 @@ select {
     width: 100%;
 }
 
-.tableinfo_content .tab-frame-1{
+.tab-frame-1{
     border: 1px solid #c8c8c8;
     background-color: #eeeeee;
     border-radius: 10px;
@@ -3191,3 +3214,12 @@ hr.case2{
 /* 回覆信件的footer end */
 
 /* 保險選單欄位分塊 */
+
+/* 版權宣告 */
+.copyright{
+    width: 100%;
+    text-align: center;
+    color: #7894CA;
+    margin-top: 8px;
+}
+

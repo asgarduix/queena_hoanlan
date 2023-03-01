@@ -58,3 +58,10 @@
 .tabulator .tabulator-col-resize-handle{
     margin-top: -1px;
 }
+
+.tabulator .tabulator-header {
+    background-color: #DFEBEE;
+}
+.tabulator .tabulator-header .tabulator-col{
+    background-color: #DFEBEE;
+}
