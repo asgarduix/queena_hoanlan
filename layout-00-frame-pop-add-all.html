@@ -500,7 +500,7 @@
                     </div>
                     <hr>
                     <div class="poprow-nonborder">
-                        <!-- 選單為個人健康傷害險、團體傷害險 -->
+                        <!-- 選單為個人健康傷害險、團體傷害險 star -->
                         <div class="pop-unit-four">
                             <div class="pop-unit-title-bgnone">投保險種</div>
                             <div class="pop-unit-input">
@@ -526,6 +526,18 @@
                                 </select>
                             </div>   
                         </div>
+                        <!-- 選單為個人健康傷害險、團體傷害險 end -->
+                        <!-- 選單為住火、居綜險、商火 star -->
+                        <div class="pop-unit-four" style="display: none;">
+                            <div class="pop-unit-title-bgnone">投保險別</div>
+                            <div class="pop-unit-input">
+                                <select name="" id="">
+                                    <option value="" selected>住火、居綜險</option>
+                                    <option value="">商業火險</option>
+                                </select>
+                            </div>   
+                        </div>
+                        <!-- 選單為住火、居綜險、商火 end -->
                     </div>
                     <hr>
                     <div class="pop-inside-border">
@@ -646,10 +658,73 @@
                             </div>
                         </div>
                         <hr>
-                        <!-- 投保險別為商業火險的附加險欄位 -->
+                        <!-- 投保險別為住火、居綜險、商火的附加險欄位 star -->
                         <div class="pop-table" style="display: none;">
                             <div class="pop-table-header">
-                                附加險
+                                <ul>
+                                    <li>住火、居綜險</li>
+                                </ul>
+                            </div>
+                            <div class="pop-table-body">
+                                <div class="pop-body-frame">
+                                    <div class="poprow">
+                                        <div class="pop-unit-all">
+                                            <div class="pop-unit-title">標的物地址</div>
+                                            <div class="pop-unit-input require">
+                                                <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                            </div>     
+                                        </div>
+                                    </div>
+                                    <div class="poprow">
+                                        <div class="pop-unit-3">
+                                            <div class="pop-unit-title-3">建築物保額</div>
+                                            <div class="pop-unit-input-3">
+                                                <input class="pop-input" type="text" value="" placeholder="請輸入值"><span class="zigzagLine">元</span>
+                                            </div>     
+                                        </div>
+                                        <div class="pop-unit-3">
+                                            <div class="pop-unit-title-3">建築內動產保額</div>
+                                            <div class="pop-unit-input-3">
+                                                <input class="pop-input" type="text" value="" placeholder="請輸入值"><span class="zigzagLine">%</span>
+                                            </div>     
+                                        </div>
+                                        <div class="pop-unit-3">
+                                            <div class="pop-unit-title-3">火險總保費</div>
+                                            <div class="pop-unit-input-3 require">
+                                                <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                            </div>     
+                                        </div>
+                                    </div>
+                                    <div class="poprow">
+                                        <div class="pop-unit-3">
+                                            <div class="pop-unit-title-3">佣金率</div>
+                                            <div class="pop-unit-input-3 require">
+                                                <input class="pop-input" type="text" value="" placeholder="請輸入值"><span class="zigzagLine">％</span>
+                                            </div>     
+                                        </div>
+                                        <div class="pop-unit-3">
+                                            <div class="pop-unit-title-3">基本地震險保費</div>
+                                            <div class="pop-unit-input-3 require">
+                                                <input class="pop-input" type="text" value="" placeholder="請輸入值"><span class="zigzagLine">元</span>
+                                            </div>     
+                                        </div>
+                                        <div class="pop-unit-3">
+                                            <div class="pop-unit-title-3">佣金率</div>
+                                            <div class="pop-unit-input-3 require">
+                                                <input class="pop-input" type="text" value="" placeholder="請輸入值"><span class="zigzagLine">％</span>
+                                            </div>     
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 投保險別為住火、居綜險、商火的附加險欄位 end -->
+                        <!-- 投保險別為商業火險的附加險欄位 star -->
+                        <div class="pop-table">
+                            <div class="pop-table-header">
+                                <ul>
+                                    <li>附加險</li>
+                                </ul>
                             </div>
                             <div class="pop-table-body">
                                 <ul>
@@ -753,6 +828,7 @@
                                 </ul>
                             </div>
                         </div>
+                        <!-- 投保險別為商業火險的附加險欄位 end -->
                         <!-- 個人傷害險出現欄位 star -->
                         <div class="pop-table" style="display: none;">
                             <div class="pop-table-header">
@@ -805,7 +881,7 @@
                         </div>
                         <!-- 個人傷害險出現欄位 end -->
                         <!-- 團體傷害險欄位 star -->
-                        <div class="pop-table">
+                        <div class="pop-table" style="display: none;">
                             <div class="pop-table-header">
                                 <ul>
                                     <li>團體傷害險保險資料</li>
@@ -845,6 +921,182 @@
                             </div>
                         </div>
                         <!-- 團體傷害險欄位 end -->
+                        <!-- 旅平險 star -->
+                        <div class="pop-table" style="display: none;">
+                            <div class="pop-table-header">
+                                <ul>
+                                    <li>旅平險</li>
+                                </ul>
+                            </div>
+                            <div class="pop-table-body">
+                                <div class="pop-body-frame">
+                                    <div class="poprow">
+                                        <div class="pop-unit-four">
+                                            <div class="pop-unit-title-4">旅遊地區</div>
+                                            <div class="pop-unit-input-4 require">
+                                                <input class="pop-input" type="text" value="" placeholder="請輸入值"><span class="zigzagLine">人</span>
+                                            </div>     
+                                        </div>
+                                        <div class="pop-unit-four">
+                                            <div class="pop-unit-title-4">身故/失能(ADD)保額</div>
+                                            <div class="pop-unit-input-4">
+                                                <input class="pop-input" type="text" value="" placeholder="請輸入值"><span class="zigzagLine">元</span>
+                                            </div>     
+                                        </div>
+                                        <div class="pop-unit-four">
+                                            <div class="pop-unit-title-4">醫療(MR)保額</div>
+                                            <div class="pop-unit-input-4">
+                                                <input class="pop-input" type="text" value="" placeholder="請輸入值"><span class="zigzagLine">元</span>
+                                            </div>     
+                                        </div>
+                                        <div class="pop-unit-four">
+                                            <div class="pop-unit-title-4">總保費</div>
+                                            <div class="pop-unit-input-4">
+                                                <input class="pop-input" type="text" value="" placeholder="請輸入值"><span class="zigzagLine">元</span>
+                                            </div>     
+                                        </div>
+                                    </div>
+                                    <div class="poprow">
+                                        <div class="pop-unit-four">
+                                            <div class="pop-unit-title-4">佣金率</div>
+                                            <div class="pop-unit-input-4">
+                                                <input class="pop-input" type="text" value="" placeholder="請輸入值"><span class="zigzagLine">％</span>
+                                            </div>     
+                                        </div>
+                                        <div class="pop-unit-3">
+                                            <div class="pop-unit-title-3">備註</div>
+                                            <div class="pop-unit-input-3">
+                                                <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                            </div>     
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 旅平險 end -->
+                        <!-- 機車險 star -->
+                        <div class="pop-table" style="display: none;">
+                            <div class="pop-table-header">
+                                <ul>
+                                    <li>機車險</li>
+                                </ul>
+                            </div>
+                            <div class="pop-table-body">
+                                <div class="pop-body-frame">
+                                    <div class="poprow">
+                                        <div class="pop-unit-four">
+                                            <div class="pop-unit-title-4">(強制)投保編號</div>
+                                            <div class="pop-unit-input-4">
+                                                <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                            </div>     
+                                        </div>
+                                        <div class="pop-unit-four">
+                                            <div class="pop-unit-title-4">(任意)投保編號</div>
+                                            <div class="pop-unit-input-4">
+                                                <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                            </div>     
+                                        </div>
+                                        <div class="pop-unit-four">
+                                            <div class="pop-unit-title-4">車號</div>
+                                            <div class="pop-unit-input-4 require">
+                                                <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                            </div>     
+                                        </div>
+                                        <div class="pop-unit-four">
+                                            <div class="pop-unit-title-4">強制証號碼</div>
+                                            <div class="pop-unit-input-4">
+                                                <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                            </div>     
+                                        </div>
+                                    </div>
+                                    <div class="poprow">
+                                        <div class="pop-unit-four">
+                                            <div class="pop-unit-title-4">任意保單號碼</div>
+                                            <div class="pop-unit-input-4">
+                                                <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                            </div>     
+                                        </div>
+                                    </div>
+                                    <div class="poprow">
+                                        <div class="pop-unit-two">
+                                            <div class="pop-unit-title-two">強制險保期</div>
+                                            <div class="pop-unit-input-two">
+                                                <div class="pop-unit-input">
+                                                    <input type="date" value="" placeholder="請輸入值">
+                                                </div>
+                                                <div class="columnFive-left">
+                                                <span class="zigzagLine">中午12時起</span>
+                                                </div>
+                                                <span class="zigzagLine">~</span>
+                                                <div class="pop-unit-input">
+                                                    <input type="date" value="" placeholder="請輸入值">
+                                                </div>
+                                                <div class="columnFive-left">
+                                                <span class="zigzagLine">中午12時止</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pop-unit-four">
+                                            <div class="pop-unit-title-4">強制險保費</div>
+                                            <div class="pop-unit-input-4 require">
+                                                <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                                <span class="zigzagLine">元</span>
+                                            </div>     
+                                        </div>
+                                        <div class="pop-unit-four">
+                                            <div class="pop-unit-title-4">獎金</div>
+                                            <div class="pop-unit-input-4 require">
+                                                <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                                <span class="zigzagLine">元</span>
+                                            </div>     
+                                        </div>
+                                    </div>
+                                    <div class="poprow">
+                                        <div class="pop-unit-two">
+                                            <div class="pop-unit-title-two">任意險保期</div>
+                                            <div class="pop-unit-input-two">
+                                                <div class="pop-unit-input">
+                                                    <input type="date" value="" placeholder="請輸入值">
+                                                </div>
+                                                <div class="columnFive-left">
+                                                <span class="zigzagLine">中午12時起</span>
+                                                </div>
+                                                <span class="zigzagLine">~</span>
+                                                <div class="pop-unit-input">
+                                                    <input type="date" value="" placeholder="請輸入值">
+                                                </div>
+                                                <div class="columnFive-left">
+                                                <span class="zigzagLine">中午12時止</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pop-unit-four">
+                                            <div class="pop-unit-title-4">任意險保費</div>
+                                            <div class="pop-unit-input-4 require">
+                                                <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                                <span class="zigzagLine">元</span>
+                                            </div>     
+                                        </div>
+                                        <div class="pop-unit-four">
+                                            <div class="pop-unit-title-4">佣金率</div>
+                                            <div class="pop-unit-input-4 require">
+                                                <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                                <span class="zigzagLine">％</span>
+                                            </div>     
+                                        </div>
+                                    </div>
+                                    <div class="poprow">
+                                        <div class="pop-unit-all">
+                                            <div class="pop-unit-title">備註</div>
+                                            <div class="pop-unit-input">
+                                                <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                            </div>     
+                                        </div>
+                                    </div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- 機車險 end -->
                         <hr class="case">
                         <div class="pop-table">
                             <div class="pop-table-header">

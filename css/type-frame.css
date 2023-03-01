@@ -331,10 +331,6 @@ button {
     content: "search";
     font-size: 1.5rem;
     color: #555555;
-    position: relative;
-    top: .5rem;
-    left: -3rem;
-
 }
 
 .span-repeat-1{
@@ -363,10 +359,17 @@ button {
 .left-clumn{
     flex-direction: row;
     width: 15%;
-    border: 1px solid #5A79B5;
+    border: 1px solid #9fb7e8;
     border-radius: 15px;
     margin: 5px;
-    height: 99vh;
+    height: 100vh;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b9cae9+0,ffffff+80 */
+background: #b9cae9; /* Old browsers */
+background: -moz-linear-gradient(45deg,  #b9cae9 0%, #ffffff 80% ,transparent 80%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg,  #b9cae9 0%,#ffffff 80% ,transparent 80%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg,  #b9cae9 0%,#ffffff 80% ,transparent 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9cae9', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 
 .left-clumn-row a{
@@ -580,11 +583,14 @@ button {
     font-size:1.5rem ;
     font-weight: 600;
     padding-left: 5px;
+    padding-top: 1rem;
+    padding-bottom: .2rem;
 }
 
 /* ul解除display:inline-flex間距 */
 .lifteflex{
     display: flex;
+    background-color: #ffffff;
 }
 
 /* column寬度設定 */
@@ -678,12 +684,18 @@ button {
 .right-clumn{
     flex-direction: row;
     width: 85%;
-    margin: 5px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+20,b9cae9+100 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #ffffff 20%, #b9cae9 100% ,transparent 80% ); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #ffffff 20%,#b9cae9 100% ,transparent 80%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #ffffff 20%,#b9cae9 100% ,transparent 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b9cae9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
 }
 
 .right-clumn-row{
     padding: 5px;
-    line-height: 2rem;
 }
 
 /* 工作項目選取群組 */
@@ -697,6 +709,7 @@ button {
 .workShop{
     border-radius: 50px;
     background-color: #ffffff;
+    margin-top: .5rem;
 }
 
 .workShop ul{
@@ -743,6 +756,11 @@ button {
     background-color: #5B7CBD;
 }
 
+.workName{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
 .workName ul{
     display: flex;
     justify-content: end;
@@ -751,7 +769,7 @@ button {
     padding: 5px 15px;
 }
 
-.workName ul li{
+.workName li{
     font-size: 1rem;
     text-align: center;
     margin: 0 5px;
@@ -877,6 +895,7 @@ input[type="checkbox"] ,[type="radio"] :checked {
     margin-top: 3px;
     margin-left: 5px;
     margin-right: 5px;
+    margin-bottom: 3px;
     border-radius: 3px;
 }
 
@@ -1319,7 +1338,7 @@ textarea{
 }
 
 .query-unit-title{
-    padding-left: 8px;
+    padding: 8px;
     font-size: 0.875rem;
 }
 
@@ -1344,7 +1363,6 @@ textarea{
 
 .query-unit-double-input{
     display: inline-flex;
-    width: 100%;
 }
 
 .tableInfo{
@@ -1461,9 +1479,7 @@ select {
 
 .zigzagLine{
     display: inline-block;
-    line-height: .9rem;
     margin: 0 2px;
-    padding-top: 4px;
 }
 
 .title-button-group{
@@ -1807,7 +1823,7 @@ select {
 }
 
 .pop-unit-input-3{
-    width:100%;
+    width:calc(100% - 120px);
     border-right: none;
     background-color: #ffffff;
 }
@@ -2551,6 +2567,14 @@ select {
     top: 3px;
     margin:-14px -20px -8px 20px;
 }
+
+
+hr.case2{
+    border: .1% solid #075D8E;
+    opacity: .3;
+    margin-left: -5px;
+}
+
 
 .uploadCase hr.case{
     border: .1% solid #075D8E;

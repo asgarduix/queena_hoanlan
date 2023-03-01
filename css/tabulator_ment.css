@@ -54,3 +54,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.tabulator .tabulator-col-resize-handle{
+    margin-top: -1px;
+}

@@ -47,7 +47,7 @@ a,ol, ul {
 
 .left-clumn-row a{
     color: #5A79B5;
-	background-color: #ffffff;
+	background-color: transparent;
     margin-top: .875rem;
     margin-bottom: .875rem;
 }
