@@ -426,7 +426,6 @@ button {
     font-size:1rem ;
     position: relative;
     top: 3px;
-    left: -.1rem;
 }
 
 /* 錯誤訊息 */
@@ -1814,7 +1813,7 @@ select {
 }
 
 .pop-unit-input-4{
-    width: 100%;
+    width: calc(100% - 120px);
     border-right: none;
     background-color: #ffffff;
 }
