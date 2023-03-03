@@ -708,7 +708,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .row-shadow{
     box-shadow: 0 0 2px 1px rgba(183, 183, 183, 0.6);
     padding: 0px;
-    padding-right: 5px;
     border-radius: 15px;
 }
 
@@ -1652,7 +1651,7 @@ select {
 }
 
 .poprow-table li{
-    width:100% ;
+    /* width:100% ; */
 }
 
 .poprow-table .btn{
