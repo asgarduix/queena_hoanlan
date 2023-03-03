@@ -363,7 +363,6 @@ button {
     border: 1px solid #9fb7e8;
     border-radius: 30px;
     margin: 5px;
-    height: 100vh;
 /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b9cae9+0,ffffff+80 */
 background: #b9cae9; /* Old browsers */
 background: -moz-linear-gradient(45deg,  #b9cae9 0%, #ffffff 80% ,transparent 80%); /* FF3.6-15 */
@@ -917,6 +916,7 @@ input[type="checkbox"] ,[type="radio"] :checked {
 input[type="date" i] {
     align-items: center;
     display:block;
+    width: calc(100% - 5px);
     font-family: monospace;
     padding-inline-start: 1px;
     cursor: default;
@@ -1306,7 +1306,7 @@ textarea{
     float: left;
     color: #075D8E;
     letter-spacing: 2px;
-    margin-left: 10px;
+    margin-left:.875rem;
 }
 
 .query-unit-infolist span{
@@ -1314,6 +1314,7 @@ textarea{
     color: #075D8E;
     font-weight: 500;
     padding: 0 3px;
+    margin-top: .5rem;
 }
 
 .query-unit-infobutton{
@@ -1382,8 +1383,6 @@ textarea{
 .tableInfo{
     border: 1px solid #7E96C4;
     border-radius: 10px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
 }
 
 .tableWork{
@@ -1403,9 +1402,7 @@ textarea{
     border-top: none;
     padding:10px;
     background-color: #ffffff;
-    border-radius: 15px;
-    border-top-right-radius:0 ;
-    border-top-left-radius:0 ;
+    border-radius: 10px;
 }
 
 .tableBody-2{
@@ -1416,8 +1413,8 @@ textarea{
 
 .tablePage{
     background-color:#eef1f7 ;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     border: 1px solid #7E96C4;
     border-top: none;
     margin-top: -1px;
@@ -2006,6 +2003,8 @@ select {
     background-color: #eeeeee;
     border-radius: 10px;
     margin-top: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .tab-frame-1 ul{
@@ -3219,6 +3218,6 @@ hr.case2{
     width: 100%;
     text-align: center;
     color: #7894CA;
-    margin-top: 8px;
+    margin:1rem 0;
 }
 
