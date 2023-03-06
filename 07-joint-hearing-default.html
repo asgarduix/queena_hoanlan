@@ -188,12 +188,12 @@
 <script>
     let table01Data = [{
         id: "b1",
-        來源作業: "合約",
-        會辦項目名稱: "",
-        限辦日期: "",
-        會辦對象: "",
-        立案日: "",
-        狀態: "",
+        來源作業: "稽核/缺失改善建議",
+        會辦項目名稱: "會辦項目名稱",
+        限辦日期: "限辦日期",
+        會辦對象: "會辦對象",
+        立案日: "立案日",
+        狀態: "狀態",
     }, 
 ];
     var table01 = new Tabulator("#table01", {
@@ -220,13 +220,14 @@
                     cell.getRow().toggleSelect();
                 }
             },
-            { title: "來源作業", field: "來源作業",
+            { title: "來源作業", field: "來源作業"
+            },
+            { title: "會辦項目名稱", field: "會辦項目名稱",
             
             formatter: function(cell, formatterParams, onRendered) {
                     return "<a href='#'>" + cell.getValue() + "</a>"
                 },
             },
-            { title: "會辦項目名稱", field: "會辦項目名稱" },
             { title: "限辦日期", field: "限辦日期" },
             { title: "會辦對象", field: "會辦對象" },
             { title: "立案日", field: "立案日",},
