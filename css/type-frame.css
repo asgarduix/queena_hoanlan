@@ -1626,12 +1626,28 @@ select {
     border-radius: 10px;
 }
 
+.sec-pop-body{
+    background-color: #eeeeee;
+    margin: -1%;
+    margin-bottom: 1%;
+    padding: 1%;
+    padding-bottom: 0;
+    border-bottom: 1px solid #797979;
+}
+
 .poprow{
     display:flex;
     width: 100%;
     background-color: #eeeeee;
     border: 1px solid #333333;
     margin-top: -1px;
+}
+
+.row-sec-in{
+    display:flex;
+    width: 100%;
+    background-color: #333333;
+    border: 1px solid #333333;
 }
 
 .poprow-table{
@@ -1988,6 +2004,27 @@ select {
     margin-top: -2px;
     margin-bottom: 1rem;
     background-color: #fff;
+    width: 100%;
+}
+
+.tab-body-4{
+    border: 1px solid #111111;
+    padding: 10px 10px 10px 10px;
+    background-color: #fff;
+    width: 100%;
+    margin-top: -2px;
+}
+
+.tab-body-3{
+    border: 1px solid #797979;
+    border-top:.01rem #797979 dashed;;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: -2px;
+    margin-bottom: 1rem;
+    background-color: #D7D7D7;
     width: 100%;
 }
 
