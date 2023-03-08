@@ -1841,6 +1841,7 @@ select {
 .poprow .pop-unit-input{
     display: inline-flex;
     border-right: none;
+    width: calc(100% - 120px);
 }
 
 .poprow .pop-unit-input-last {
