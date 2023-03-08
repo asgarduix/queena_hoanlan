@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="css/type-frame.css">
     <link rel="stylesheet" href="css/type-frame-color.css">
     <link rel="stylesheet" href="css/tabulator_ment.css">
+    <!-- css-component-upload -->
+    <link rel="stylesheet" href="css/component-upload.css">
 </head>
 <body>
     <div class="container">
@@ -366,35 +368,37 @@
     <!-- 新增end -->
 
     <!-- 第二層彈窗 star -->
-            <!-- pop視窗double -->
-            <div class="blackBackground-2">
-                <div class="popWindow-2">
-                    <div class="popWindow-header-2">
-                        <p class="popTitle-2">綜合評述</p>
-                        <div class="popDel">
-                            <button>
-                                <span class="material-icons-outlined">clear</span>
-                            </button>
-                        </div>
+        <!-- START: component-upload -->
+        <div class="blackBackground">
+            <div class="popWindow sec-popup component-upload">
+                <!-- popup-upload-header -->
+                <div class="popWindow-header component-upload-header">
+                    <p class="popTitle">綜合評述</p>
+                    <div class="popDel">
+                        <button>
+                            <span class="material-icons-outlined">clear</span>
+                        </button>
                     </div>
-                    <div class="popWindow-body">
-                        <!-- 附件展示 -->
-                        <div class="file-content">
-                            <p>綜合評述</p>
-                            <textarea name="" id="" cols="30" rows="10">我是評述說明</textarea>
-                            <!-- 請先暫留 -->
-                            <!-- <p>查核結果</p>
-                            <input type="radio" name=""><label for="">無重大缺失</label>
-                            <input type="radio" name=""><label for="">缺失</label>
-                            <input type="radio" name=""><label for="">改善項目</label> -->
-                        </div>
+                </div>
+                <!-- popup-upload-body -->
+                <div class="popWindow-body component-upload-body">
+                    <div class="upload-body-item">
+                        <div class="upload-title">綜合評述</div>
                     </div>
-                    <div class="popfooter-button-group-2">
-                        <button class="btn btn-cancel-2">取消</button>
-                        <button class="btn btn-sure-2">確定</button>
+                    <div class="upload-body-item">
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <!-- popup-upload-footer -->
+                <div class="popWindow-footer component-upload-footer">
+                    <div class="popfooter-button-group">
+                        <button class="btn btn-cancel">取消</button>
+                        <button class="btn btn-sure">確定</button>
                     </div>
                 </div>
             </div>
+        </div>
+        <!-- END: component-upload -->
     <!-- 第二層彈窗 end -->
 </body>
 </html>

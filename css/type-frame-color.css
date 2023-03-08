@@ -35,6 +35,12 @@ a,ol, ul {
 	list-style: none;
 	text-decoration: none;
 }
+a {
+    color: #3C83D8;
+}
+a:hover{
+    color: #3368a9;
+}
 .container{
     display: flex;
     margin: 0;
