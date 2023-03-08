@@ -240,6 +240,7 @@ button {
 /* label 基本 */
 .label-A{
     margin-right: 5px;
+    line-height: 1.2rem;
 }
 
 .poprow label {
@@ -963,10 +964,8 @@ input[type="date" i] {
     margin-top: 3px;
     margin-left: 5px;
     border-radius: 3px;
-    font-size: 10px;
+    font-size: .75rem;
 	background:url(../img/arrow_drop_down_black_24dp2.svg) no-repeat right center transparent;
-    line-height: 1.2rem;
-    height:1.5rem;
 }
 
 .pop-double-unit-input .columnTwo{
@@ -1177,15 +1176,6 @@ textarea{
     margin: 0 auto;
 }
 
-.btn-sure-2{
-    border: 1px solid #7E96C4;
-    background-color: #555555;
-    color: #ffffff;
-	border-radius: 5px;
-    padding:3px 25px;
-    font-size:0.875rem;
-    margin: 0 auto;
-}
 
 .btn-choose{
     border: 1px solid #7E96C4;
@@ -1264,6 +1254,7 @@ textarea{
     border: 1px solid #5A79B5;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    background-color: #ffffff;
 }
 
 .query-unit-body{
@@ -1271,6 +1262,7 @@ textarea{
     margin-top: -1px;
     padding: 10px 15px;
     border-radius: 10px;
+    background-color: #ffffff;
 }
 
 .content-unit{
@@ -1341,8 +1333,9 @@ textarea{
     width: calc(100% / 3);
     border:1px solid rgb(244, 244, 244);
     border-bottom: none;
-    padding: 15px 0 10px 0;
+    padding: 10px 0 10px 0;
     margin-top: -1px;
+
 }
 /* 單行 */
 .query-unit-group-3{
@@ -1355,6 +1348,7 @@ textarea{
 .query-unit-title{
     padding: 8px;
     font-size: 0.875rem;
+    width: 150px;
 }
 
 .query-unit-button{
@@ -1378,6 +1372,7 @@ textarea{
 
 .query-unit-double-input{
     display: inline-flex;
+    flex-wrap: wrap;
 }
 
 .tableInfo{
@@ -1402,7 +1397,8 @@ textarea{
     border-top: none;
     padding:10px;
     background-color: #ffffff;
-    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .tableBody-2{
@@ -1414,7 +1410,10 @@ textarea{
 .tablePage{
     background-color:#eef1f7 ;
     border-top: none;
+    border: 1px solid #5A79B5;
     margin-top: -1px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .tablePage-2{
@@ -1541,16 +1540,6 @@ select {
     border-radius: 15px;
 }
 
-.popWindow-2{
-    border: 2px solid #c6c6c6;
-    background-color: #e2e2e2;
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 5rem;
-    margin-bottom: 2rem;
-    box-shadow: 0px 3px 3px black;
-    border-radius: 15px;
-}
 
 .pop-unit-label{
     font-size: 1rem;
@@ -1586,27 +1575,6 @@ select {
     border-top-right-radius: 15px;
     margin: 0;
     padding: 0;
-}
-
-.popWindow-header-2{
-    display:flex;
-    width: 100%;
-    line-height: 1.2rem;
-    background-color:#d5d5d5;
-    color: #555555;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    margin: 0;
-    padding: 0;
-    border-bottom: 1px solid #333333;
-}
-
-.popTitle-2{
-    width: 100%;
-    font-size: 1rem;
-    color: #393939;
-    padding-left: 15px;
-    padding-top: 8px;
 }
 
 .popWindow-body{
@@ -1833,13 +1801,6 @@ select {
     margin-left: -1px;
 }
 
-.pop-unit-input{
-    display: inline-flex;
-    width:70%;
-    border-right: none;
-    background-color: #ffffff;
-}
-
 .pop-unit-input ul li{
     display: inline;
     position: relative;
@@ -1887,7 +1848,7 @@ select {
 }
 
 .pop-unit-input{
-    width:calc(100% - 120px);
+    width:calc(100% - 150px);
     border-right: none;
     background-color: #ffffff;
 }
@@ -2052,28 +2013,15 @@ select {
 
 .popWindow-footer{
     background-color:#dde1e7;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    margin-top: 1rem;
-}
-
-.popWindow-footer-2{
-    background-color:#dde1e7;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    margin-top: 1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
 }
 
 .popfooter-button-group{
     margin: 0 auto;
     text-align: center;
-    line-height: 4rem;
-}
-
-.popfooter-button-group-2{
-    margin: 0 auto;
-    text-align: center;
-    line-height: 4rem;
 }
 
 .pop-table{
@@ -2192,8 +2140,19 @@ select {
     border: 2px solid #075D8E;
     background-color:#2080b8;
     border-radius: 10px;
+    max-width: 30%;
+}
+
+.model-confirm-2 {
+    position: flex;
+    margin: 0 auto;
+    margin-top: 2rem;
+    z-index: 1;
+    display: block;
+    border: 2px solid #075D8E;
+    background-color:#2080b8;
+    border-radius: 10px;
     max-width: 80%;
-    min-width: 50%;
 }
 
 .confirm-body{
@@ -2637,6 +2596,8 @@ hr.case2{
     display: block;
     margin: 0 auto;
     margin-top: -1px;
+    border-left: 1px solid #aaaaaa;
+    border-right: 1px solid #aaaaaa;
 }
 
 .upload-tabulate-header{
@@ -3112,7 +3073,7 @@ hr.case2{
 }
 .table-subtable-container {
     padding: 7px;
-    background: #555;
+    background: #eeeeee;
     border-style: none;
     border-bottom: #aaa solid 3px;
     border-top: #aaa solid 3px;
@@ -3133,12 +3094,12 @@ hr.case2{
 
 .table-subtable-container .tabulator .tabulator-headers .tabulator-col,
 .table-subtable-container .tabulator .tabulator-headers .tabulator-col:hover {
-    background: #37eecf;
+    background: #cdf0f8;
     color: #333;
 }
 
 .content-table .table-subtable-container .tabulator .tabulator-headers .tabulator-col:hover {
-    background: #37eecf;
+    background: #beebf5;
 }
 
 .content-table .table-subtable-container .tabulator .tabulator-header .tabulator-col .tabulator-col-content {
