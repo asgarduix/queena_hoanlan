@@ -33,7 +33,7 @@ body {
 }
 a,ol, ul {
 	list-style: none;
-	text-decoration: none;
+	text-decoration: none; 
 }
 a {
     color: #3C83D8;
