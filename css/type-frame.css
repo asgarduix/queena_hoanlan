@@ -914,7 +914,7 @@ input[type="date" i] {
 .pop-unit-input > select {
     width: calc(100% - 10px);
     border: 1px solid #aaaaaa;
-    height: 23px;
+    height: 24px;
     margin-top: 3px;
     margin-left: 5px;
     margin-right: 3px;
@@ -957,7 +957,7 @@ input[type="date" i] {
 .course-unit select {
     width: calc(100% - 10px);
     border: none;
-    height: 23px;
+    height: 24px;
     margin-top: 3px;
     margin-left: 5px;
     margin-right: 3px;
@@ -3104,7 +3104,7 @@ hr.case2{
     background: #fff;
     outline-color: #aaa;
     padding: 0 4px;
-    height: 23px;
+    height: 24px;
     overflow: hidden;
 }
 
