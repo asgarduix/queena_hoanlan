@@ -1959,6 +1959,15 @@ select {
     margin-top: -2px;
 }
 
+.tab-body-5{
+    border: 1px solid #4a4a4a;
+    padding: 0 5px 5px 5px;
+    background-color: #fff;
+    width: 100%;
+    border-radius:10px ;
+}
+
+
 .tab-body-3{
     border: 1px solid #797979;
     border-top:.01rem #797979 dashed;;
