@@ -343,6 +343,7 @@ button {
 .left-clumn{
     flex-direction: row;
     width: 15%;
+    height: 99vh;
     border: 1px solid #9fb7e8;
     border-radius: 30px;
     margin: 5px;
