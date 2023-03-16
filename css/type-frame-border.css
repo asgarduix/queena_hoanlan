@@ -685,7 +685,6 @@ select {
 }
 
 .popWindow-body{
-    width: 98%;
     background-color:#ffffff;
     padding: 1%;
 
@@ -830,7 +829,6 @@ select {
 }
 
 .pop-tab-header{
-    line-height: 1.5rem;
     display: flex;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -840,7 +838,6 @@ select {
 
 .pop-tab-header ul{
     display: flex;
-    line-height: 1.5rem;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-color: #dce7fa;
@@ -849,26 +846,20 @@ select {
 
 .pop-tab-header li{
     display: inline;
-    line-height: 2rem;
     font-size: 10px;
     color: #075D8E;
-    padding-top: 1px;
     margin-left: -1px;
 }
 
 .pop-tab-header li a{
     display: inline;
     border-right: 1px solid #5A79B5;
-    line-height: 2rem;
-    padding:9px 15px;
     font-size: 10px;
     color: #075D8E;
 }
 
 .pop-tab-header li a:hover{
     border-right: 1px solid #5A79B5;
-    line-height: 2rem;
-    padding:9px 15px;
     font-size: 10px;
     color: #ffffff;
     background-color:#075D8E ;
@@ -876,8 +867,6 @@ select {
 
 .pop-tab-header li:first-child a:hover {
     border-right: 1px solid #5A79B5;
-    line-height: 2rem;
-    padding:9px 15px;
     font-size: 10px;
     color: #ffffff;
     background-color:#075D8E ;

@@ -25,6 +25,12 @@ body{
     font-size:1rem ;
 }
 
+.disabled {
+    background-color: dimgrey !important;
+    color: linen;
+    opacity: .5;
+}
+
 /* 登入畫面start */
 .login-body{
     background-image: url("../img/ui_bg.jpg");
@@ -504,7 +510,6 @@ box-shadow: 0 0 2px 1px rgba(183, 183, 183, 0.6);
     font-size:1rem;
     position: relative;
     top: 2px;
-    left: .5rem;
     background-color: transparent;
 }
 
@@ -618,6 +623,12 @@ box-shadow: 0 0 2px 1px rgba(183, 183, 183, 0.6);
     display: inline-flex;
     justify-content: start;
     width: 45%;
+}
+
+.columnFive-left-46{
+    display: inline-flex;
+    justify-content: start;
+    width: 46%;
 }
 
 .columnTen-right{
@@ -1319,6 +1330,16 @@ textarea{
     margin-top: -1px;
 }
 
+/* 均分1塊 */
+.query-unit-group-1{
+    width: 100%;
+    border:1px solid rgb(244, 244, 244);
+    border-bottom: none;
+    padding: 10px 0 10px 0;
+    margin-top: -1px;
+}
+
+
 /* 彈窗的均分3塊 */
 .pop-info-cut-3{
     display: inline-flex;
@@ -1367,6 +1388,7 @@ textarea{
 .query-unit-double-input{
     display: inline-flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .tableInfo{
@@ -1572,7 +1594,7 @@ select {
 }
 
 .popWindow-body{
-    background-color:#ffffff;
+    background-color:#eeeeee;
     padding: 1%;
 }
 
@@ -1888,7 +1910,6 @@ select {
 }
 
 .pop-tab-header{
-    line-height: 1.5rem;
     display:flex;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -1906,26 +1927,22 @@ select {
 
 .pop-tab-header li{
     display: inline;
-    font-size: 10px;
+    font-size: .875rem;
     color: #075D8E;
-    padding-top: 5px;
-    padding-bottom: 5px;
     margin-left: -1px;
 }
 
 .pop-tab-header li a{
-    display: inline;
+    display: inline-block;
     border-right: 1px solid #5A79B5;
-    padding:7px 15px;
     font-size: 0.875rem;
     color: #075D8E;
-    border-bottom: 1px solid #075D8E;
+    padding:12px;
+    border-bottom: 1px solid #5A79B5;
 }
 
 .pop-tab-header li a:hover{
     border-right: 1px solid #5A79B5;
-    line-height: 1.5;
-    padding:7px 15px;
     font-size: 0.875rem;
     color: #ffffff;
     background-color:#075D8E ;
@@ -1933,8 +1950,6 @@ select {
 
 .pop-tab-header li:first-child a:hover {
     border-right: 1px solid #5A79B5;
-    line-height: 1.5;
-    padding:7px 15px;
     font-size: 0.875rem;
     color: #ffffff;
     background-color:#075D8E ;
@@ -2138,6 +2153,10 @@ select {
 
 .pop-body-frame{
     width: 100%;
+    background-color: #ffffff;
+    padding: 1%;
+    border-radius: 5px;
+
 }
 
 /* pop視窗confire */
@@ -2583,11 +2602,13 @@ select {
 .btn-upload span{
     font-size: 1.2rem;
     display: inline-block;
-    border-left: 1px solid #555555;
-    padding: 10px;
+    border-right: 1px solid #555555;
     position: relative;
     top: 3px;
-    margin:-14px -20px -8px 20px;
+    padding: 10px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    margin-right: 10px;
 }
 
 
@@ -3235,5 +3256,19 @@ hr.case2{
     margin-left: -10px;
     margin-right: -10px;
     box-shadow: inset 0 0 10px #cccccc;
+}
+
+/* 0316新增-按鈕間隔線 */
+.line-grid{
+    display: inline;
+
+}
+.line-grid::before{
+    content: "Ｉ";
+    font-size: 2.3rem;
+    font-weight: 100;
+    position: relative;
+    top: 10px;
+    margin: -14px;
 }
 

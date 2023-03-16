@@ -80,49 +80,58 @@
                 <div class="breadCrumb">
                     <span class="materialSize-m-r material-icons-outlined">location_on</span>
                     <!-- &nbsp;不換行空格 -->
-                    <a href="#">法遵稽核</a>&nbsp;/&nbsp;<a href="#">稽核/缺失改善建議</a> 
+                    <a href="#">法遵稽核</a>&nbsp;/&nbsp;<a href="#">合約管理</a> 
                 </div>
             </div>
             <div class="right-clumn-row">
-                <h1 class="unitH1">稽核/缺失改善建議</h1>
-            </div>
-            <div class="title-button-group">
-                <button class="btn-title btn-title-active">稽核</button>
-                <button class="btn-title">結案管理</button>
+                <h1 class="unitH1">合約管理</h1>
             </div>
             <div class="right-clumn-row">
                 <div class="query-unit">
                     <div class="content-unit">
                         <div class="query-unit-group">
-                            <div class="query-unit-title">會審對象</div>
+                            <div class="query-unit-title">部門別</div>
                             <div class="query-unit-input">
                                 <select name="" id="">
                                     <option value="">營業一部</option>
                                     <option value="">營業二部</option>
-                                    <option value="">營業三部</option>
-                                    <option value="">通路營運部</option>
-                                    <option value="">綜合企劃部</option>
                                 </select>
                             </div>
                         </div>
                         <div class="query-unit-group">
-                            <div class="query-unit-title">查核類型</div>
-                            <div class="query-unit-input">
-                                <select name="" id="">
-                                    <option value="">合約</option>
-                                    <option value="">函文</option>
-                                    <option value="">稽核</option>
-                                    <option value="">缺失改善</option>
-                                    <option value="">裁罰</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="query-unit-group">
-                            <div class="query-unit-title">會審項目</div>
+                            <div class="query-unit-title">合約編號</div>
                             <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
                         </div>
                         <div class="query-unit-group">
-                            <div class="query-unit-title">會審日區間</div>
+                            <div class="query-unit-title">承辦人</div>
+                            <div class="query-unit-input">
+                                <div class="query-unit-double-input">
+                                    <div class="columnFour">
+                                    <input type="text" value="" placeholder="請輸入值">
+                                    </div>
+                                    <div class="columnFour">
+                                        <input type="text" value="" placeholder="請輸入值">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">審核狀態</div>
+                            <div class="query-unit-input">
+                                <select name="" id="">
+                                    <option value="">立案</option>
+                                    <option value="">審閱中</option>
+                                    <option value="">會簽中</option>
+                                    <option value="">審閱完成</option>
+                                    <option value="">會辦完成</option>
+                                    <option value="">申請用印</option>
+                                    <option value="">上傳用印合完成檔</option>
+                                    <option value="">完成合約</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">合約生效日日區間</div>
                             <div class="query-unit-input">
                                 <div class="query-unit-double-input">
                                     <div class="columnFive-left-45">
@@ -139,7 +148,7 @@
                 </div>
                 <div class="query-unit-info">
                     <div class="query-unit-infolist">
-                        搜尋結果：共<span>0</span>筆
+                        共<span>0</span>項資料
                     </div>
                     <div class="query-unit-infobutton">
                         <button class="btn btn-clear">清除</button>
@@ -154,7 +163,6 @@
                         <button class="active btn btn-add unittab-active">新增</button>
                         <button class="btn btn-edit">編輯</button>
                         <button class="btn btn-edit">刪除</button>
-                        <button class="btn btn-edit">生成查核底稿</button>
                     </div>
                     <div class="tableBody">
                         <div class="tab-frame-1">
@@ -195,7 +203,7 @@
     <div class="blackBackground">
         <div class="popWindow">
             <div class="popWindow-header">
-                <p class="popTitle">查核項目</p>
+                <p class="popTitle">新增合約</p>
                 <div class="popDel">
                     <button>
                         <span class="material-icons-outlined">clear</span>
@@ -205,126 +213,119 @@
             <div class="popWindow-body">
                 <!-- 包裹欄位外框 -->
                 <div class="pop-body-frame">
-                    <!-- 請先留著 -->
-                    <!-- <div class="check-item-headre">
-                        <p>覆核主旨：</p><span>覆核主旨</span>
-                    </div>
-                    <div class="check-item-footer">
-                        <textarea name="" id="" cols="30" rows="3">我是說明</textarea>
-                    </div> -->
-                    <div class="poprow">
-                        <div class="pop-unit-four">
-                            <div class="pop-unit-title">查核項目序號</div>
-                            <div class="pop-unit-input">
-                                <input type="text" value="" placeholder="請輸入值">
-                            </div>     
-                        </div>
-                        <div class="pop-unit-four">
-                            <div class="pop-unit-title">查核項目代號</div>
-                            <div class="pop-unit-input">
-                                <input type="text" value="" placeholder="請輸入值">
-                            </div>      
-                        </div>
-                        <div class="pop-unit-four">
-                            <div class="pop-unit-title">查核項目名稱</div>
-                            <div class="pop-unit-input">
-                                <input type="text" value="" placeholder="請輸入值">
-                            </div>      
-                        </div>
-                        <div class="pop-unit-four">
-                            <div class="pop-unit-title">查核作業代號</div>
-                            <div class="pop-unit-input">
-                                <input type="text" value="" placeholder="請輸入值">
-                            </div>      
+                    <div class="pop-tab">
+                        <div class="pop-tab-header">
+                            <ul>
+                                <li><a href="" class="unittab-active">合約內容</a></li>
+                                <li><a href="">附件</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="poprow">
-                        <div class="pop-unit-four">
-                            <div class="pop-unit-title">受查單位</div>
-                            <div class="pop-unit-input">
-                                <input type="text" value="" placeholder="請輸入值">
-                            </div>     
+                    <div class="tab-body fot-searchlist">
+                        <div class="poprow">
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">合約編號</div>
+                                <div class="pop-unit-input">
+                                    <input type="text" value="" placeholder="請輸入值">
+                                </div>     
+                            </div>
+                            <div class="pop-unit-3">
+                                <div class="pop-unit-title">合約名稱</div>
+                                <div class="pop-unit-input">
+                                    <input type="text" value="" placeholder="請輸入值">
+                                </div>    
+                            </div>
                         </div>
-                        <div class="pop-unit-four">
-                            <div class="pop-unit-title">稽核人員</div>
-                            <div class="pop-unit-input pop-unit-input-last">
-                                <input type="text" value="" placeholder="請輸入值">
-                            </div>      
+                        <div class="poprow">
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">部門別</div>
+                                <div class="pop-unit-input">
+                                    <input type="text" value="" placeholder="請輸入值">
+                                </div>     
+                            </div>
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">承辦人</div>
+                                <div class="pop-unit-input pop-unit-input-last">
+                                    <input type="text" value="" placeholder="請輸入值">
+                                </div>    
+                            </div>
                         </div>
-                    </div>
-                    <div class="poprow">
-                        <div class="pop-unit-all">
-                            <div class="pop-unit-title-4">查核目標</div>
-                            <div class="pop-unit-input-4 pop-unit-input">
-                                <input class="pop-input" type="text" value="" placeholder="請輸入值">
-                            </div>   
+                        <div class="poprow">
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">預計簽約日</div>
+                                <div class="pop-unit-input">
+                                    <input type="date" value="" placeholder="請輸入值">
+                                </div>     
+                            </div>
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">契約當事人(甲)</div>
+                                <div class="pop-unit-input">
+                                    <input type="text" value="" placeholder="請輸入值">
+                                </div>    
+                            </div>
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">契約當事人(乙)</div>
+                                <div class="pop-unit-input">
+                                    <input type="text" value="" placeholder="請輸入值">
+                                </div>    
+                            </div>
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">關係人身份</div>
+                                <div class="pop-unit-input">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" value="" placeholder="請輸入值"><label for="">利害關係人</label>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>    
+                            </div>
                         </div>
-                    </div>
-                    <div class="poprow">
-                        <div class="pop-unit-all">
-                            <div class="pop-unit-title-4">查核說明</div>
-                            <div class="pop-unit-input-4 pop-unit-input">
-                                <input class="pop-input" type="text" value="" placeholder="請輸入值">
-                            </div>   
+                        <div class="poprow">
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">合約起日</div>
+                                <div class="pop-unit-input">
+                                    <input type="date" value="" placeholder="請輸入值">
+                                </div>     
+                            </div>
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">合約迄日</div>
+                                <div class="pop-unit-input">
+                                    <input type="text" value="" placeholder="請輸入值">
+                                </div>    
+                            </div>
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">合約總金額</div>
+                                <div class="pop-unit-input pop-unit-input-last">
+                                    <input type="text" value="" placeholder="請輸入值">
+                                </div>    
+                            </div>
                         </div>
-                    </div>
-                    <div class="poprow">
-                        <div class="pop-unit-four">
-                            <div class="pop-unit-title">預計查核開始日</div>
-                            <div class="pop-unit-input">
-                                <input type="text" value="" placeholder="請輸入值">
-                            </div>     
-                        </div>
-                        <div class="pop-unit-four">
-                            <div class="pop-unit-title">預計查核完成日</div>
-                            <div class="pop-unit-input pop-unit-input-last">
-                                <input type="text" value="" placeholder="請輸入值">
-                            </div>      
-                        </div>
-                    </div>
-                    <div class="poprow">
-                        <div class="pop-unit-all">
-                            <div class="pop-unit-title-4">工作底稿</div>
-                            <div class="pop-unit-input-4 pop-unit-input">
-                                <button class="btn-right-border">全部下載</button>
-                                <button class="btn-upload">
-                                    要保附件-1.pdf
-                                </button>
-                                <button class="btn-upload">
-                                    工作底稿-1-1-1-1-1.doc
-                                </button>
-                            </div>   
+                        <div class="poprow">
+                            <div class="pop-unit-all">
+                                <div class="pop-unit-title">合約內容說明</div>
+                                <div class="pop-unit-input">
+                                    <input type="text" value="" placeholder="請輸入值">
+                                </div>     
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="pop-unit-label"><span class="materialSize-xs material-icons-outlined">indeterminate_check_box</span>會審回覆</div>
+                <div class="pop-unit-label"><span class="materialSize-xs material-icons-outlined">indeterminate_check_box</span>會審項目</div>
                 <div class="pop-body-frame">
-                    <div class="poprow">
-                        <div class="pop-unit-four">
-                            <div class="pop-unit-title">查核結果</div>
-                            <div class="pop-unit-input">
-                                <input type="text" value="" placeholder="請輸入值">
-                            </div>     
-                        </div>
-                        <div class="pop-unit-four">
-                            <div class="pop-unit-title">風險等級</div>
-                            <div class="pop-unit-input">
-                                <input type="text" value="" placeholder="請輸入值">
-                            </div> 
-                        </div>
-                        <div class="pop-unit-two">
-                            <div class="pop-unit-title">查核意見</div>
-                            <div class="pop-unit-input">
-                                <input type="text" value="" placeholder="請輸入值">
-                            </div> 
-                        </div>
+                    <div class="timeline-s-group-left">
+                        <ul>
+                            <li><button class="timeline-btn-del">新增</button></li>
+                            <li><button class="">編輯</button></li>
+                            <li><button class="">刪除</button></li>
+                        </ul>
                     </div>
                     <!-- 包裹欄位外框 -->
                     <div class="tab-body-2">
                             <ul>
                                 <li>共<span>3</span>筆</li>
                             </ul>
-                        <div id="table03"></div>
+                        <div id="table02"></div>
                     </div>
                     <div class="tablePage">
                         <ul>
@@ -352,9 +353,11 @@
             </div>
             <div class="popWindow-footer">
                 <div class="popfooter-button-group">
-                    <button class="btn btn-cancel">返回</button>
+                    <button class="btn btn-cancel">取消</button>
                     <button class="btn btn-sure">儲存</button>
-                    <button class="btn btn-sure">複核通過</button>
+                    <p class="line-grid"></p>
+                    <button class="btn btn-sure">會辦</button>
+                    <button class="btn btn-sure disabled">送審</button>
                 </div>
             </div>
         </div>
@@ -362,19 +365,27 @@
     <!-- 新增end -->
 </body>
 </html>
-<!-- table01 -->
+
 <script>
     let table01Data = [{
         id: "b1",
-        查核底稿編號: "查核底稿編號001",
-        查核時間: "查核時間",
-        查核標的類型: "作業循環",
-        查核標的名稱: "查核標的名稱",
-        查核作業代號: "查核作業代號",
-        查核作業名稱: "查核作業名稱",
-        查核性質: "查核性質",
-        受查單位: "受查單位",
-        查核人員: "查核人員",
+        預計簽約日期: "預計簽約日期",
+        合約期間: "合約期間",
+        編號: "編號1",
+        部門: "營業一部",
+        合約名稱: "責任險",
+        承辦人: "承辦人",
+        審閱狀態: "未確認出單",
+    }, 
+    {
+        id: "b1",
+        預計簽約日期: "預計簽約日期",
+        合約期間: "合約期間",
+        編號: "編號2",
+        部門: "營業一部",
+        合約名稱: "責任險",
+        承辦人: "承辦人",
+        審閱狀態: "未確認出單",
     }, 
 ];
     var table01 = new Tabulator("#table01", {
@@ -401,20 +412,17 @@
                     cell.getRow().toggleSelect();
                 }
             },
-            { title: "查核底稿編號", field: "查核底稿編號",
-            
+            { title: "預計簽約日期", field: "預計簽約日期",},
+            { title: "合約期間", field: "合約期間" },
+            { title: "編號", field: "編號",
             formatter: function(cell, formatterParams, onRendered) {
                     return "<a href='#'>" + cell.getValue() + "</a>"
                 },
             },
-            { title: "查核時間", field: "查核時" },
-            { title: "查核標的類型", field: "查核標的類型" },
-            { title: "查核標的名稱", field: "查核標的名稱" },
-            { title: "查核作業代號", field: "查核作業代號",},
-            { title: "查核作業名稱", field: "查核作業名稱" },
-            { title: "查核性質", field: "查核性質" },
-            { title: "受查單位", field: "受查單位" },
-            { title: "查核人員", field: "查核人員" },
+            { title: "部門", field: "部門" },
+            { title: "合約名稱", field: "合約名稱"},
+            { title: "承辦人", field: "承辦人" },
+            { title: "審閱狀態", field: "審閱狀態" }
         ],
     });
     // 選擇預設勾選row
@@ -423,15 +431,22 @@
     //table.selectRow(table.setFilter("id","=","a1"));
 </script>
 
-<!-- table02 -->
 <script>
     let table02Data = [{
         id: "b1",
-        附件性質: "附件性質",
-        檔案名稱: "附件-1.pdf",
-        備註標題: "附件-備註標題",
-        備註說明: "附件-備註說明",
-        上傳日期: "111/12/27",
+        會審編號: "會審編號",
+        會審日期: "會審日期",
+        會審單位: "會審單位",
+        會審備註: "會審備註",
+        狀態: "狀態",
+    }, 
+    {
+        id: "b2",
+        會審編號: "會審編號",
+        會審日期: "會審日期",
+        會審單位: "會審單位",
+        會審備註: "會審備註",
+        狀態: "狀態",
     }, 
 ];
     var table02 = new Tabulator("#table02", {
@@ -458,72 +473,19 @@
                     cell.getRow().toggleSelect();
                 }
             },
-            { title: "附件性質", field: "附件性質"},
-            { title: "檔案名稱", field: "檔案名稱",
+            { title: "會審編號", field: "會審編號",},
+            { title: "會審日期", field: "會審日期" },
+            { title: "會審單位", field: "會審單位",
             formatter: function(cell, formatterParams, onRendered) {
                     return "<a href='#'>" + cell.getValue() + "</a>"
                 },
             },
-            { title: "備註標題", field: "備註標題" },
-            { title: "備註說明", field: "備註說明" },
-            { title: "上傳日期", field: "上傳日期",},
+            { title: "會審備註", field: "會審備註" },
+            { title: "狀態", field: "狀態"},
         ],
     });
     // 選擇預設勾選row
-    table01.selectRow(["b1"]);
-    // 使用filter能精準指定欄位
-    //table.selectRow(table.setFilter("id","=","a1"));
-</script>
-
-<!-- table03 -->
-<script>
-    let table03Data = [{
-        id: "b1",
-        附件性質: "附件性質",
-        檔案名稱: "附件-1.pdf",
-        備註標題: "附件-備註標題",
-        備註說明: "附件-備註說明",
-        上傳日期: "上傳日期",
-    }, 
-];
-    var table03 = new Tabulator("#table03", {
-        data: table03Data,
-        //autoColumns: true,
-        layout: "fitColumns",// 表格風格
-        height: "250px",
-        movableColumns: true,// 移動欄位
-        resizableRows: true,// 可縮放欄位
-        tooltips: true,// 提示
-        tooltipsHeader: true,
-        tooltipGenerationMode: "hover",
-        selectable: false,
-        rowHeight:30,
-        columns: [{
-                formatter: "rowSelection",
-                titleFormatter: "rowSelection",
-                headerHozAlign: "center",
-                hozAlign: "center",
-                headerSort: false,
-                maxWidth: 30,
-                minWidth: 30,
-                cellClick: function(e, cell) {
-                    cell.getRow().toggleSelect();
-                }
-            },
-            { title: "附件性質", field: "附件性質" },
-            { title: "檔案名稱", field: "檔案名稱",
-                            
-            formatter: function(cell, formatterParams, onRendered) {
-                    return "<a href='#'>" + cell.getValue() + "</a>"
-                },
-            },
-            { title: "備註標題", field: "備註標題" },
-            { title: "備註說明", field: "備註說明" },
-            { title: "上傳日期", field: "上傳日期",},
-        ],
-    });
-    // 選擇預設勾選row
-    table01.selectRow(["b1"]);
+    table02.selectRow(["b1"]);
     // 使用filter能精準指定欄位
     //table.selectRow(table.setFilter("id","=","a1"));
 </script>
