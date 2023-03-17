@@ -25,8 +25,6 @@
     <link rel="stylesheet" href="css/type-frame.css">
     <link rel="stylesheet" href="css/type-frame-color.css">
     <link rel="stylesheet" href="css/tabulator_ment.css">
-    <!-- css-component-upload -->
-    <link rel="stylesheet" href="css/component-upload.css">
 </head>
 <body>
     <div class="container">
@@ -205,7 +203,7 @@
     <div class="blackBackground">
         <div class="popWindow">
             <div class="popWindow-header">
-                <p class="popTitle">新增合約</p>
+                <p class="popTitle">送審</p>
                 <div class="popDel">
                     <button>
                         <span class="material-icons-outlined">clear</span>
@@ -214,26 +212,31 @@
             </div>
             <div class="popWindow-body">
                 <!-- 包裹欄位外框 -->
-                <div class="pop-body-frame">
-                    <div class="pop-tab">
-                        <div class="pop-tab-header">
-                            <ul>
-                                <li><a href="" class="unittab-active">合約內容</a></li>
-                                <li><a href="">附件</a></li>
-                            </ul>
-                        </div>
+                <div class="poprow">
+                    <div class="pop-info-cut-1">
+                        <div class="pop-unit-title">送審對象</div>
+                        <div class="pop-unit-input">
+                            <input type="text" value="" placeholder="請輸入值">
+                        </div>     
                     </div>
-                    <div class="tab-body fot-searchlist">
-                        <div class="poprow">
-                            <div class="poprow-table">
-                                <!-- 包裹欄位外框 -->
-                                <ul>
-                                    <li><button class="btn">新增</button></li>
-                                    <li><button class="btn">刪除</button></li>
-                                    <li><input type="checkbox" value="" placeholder="請輸入值"><label for="">送審版本合約</label></li>
-                                </ul>
-                                    <div id="table02"></div>
-                            </div>
+                </div>
+                <div class="poprow">
+                    <div class="pop-info-cut-1">
+                        <div class="pop-unit-title">送審備註</div>
+                        <div class="pop-unit-input">
+                            <textarea name="" id="" cols="30" rows="4"></textarea>
+                        </div>     
+                    </div>
+                </div>
+                <div class="pop-background">
+                    <div class="poprow">
+                        <div class="poprow-table">
+                            <!-- 包裹欄位外框 -->
+                            <ul>
+                                <li><button class="btn">新增</button></li>
+                                <li><button class="btn">刪除</button></li>
+                            </ul>
+                                <div id="table02"></div>
                         </div>
                     </div>
                 </div>
@@ -241,54 +244,12 @@
             <div class="popWindow-footer">
                 <div class="popfooter-button-group">
                     <button class="btn btn-cancel">取消</button>
-                    <button class="btn btn-sure">儲存</button>
+                    <button class="btn btn-sure">確定</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- 新增end -->
-
-    <!-- START: component-upload -->
-    <div class="blackBackground">
-            <div class="popWindow sec-popup component-upload">
-                <!-- popup-upload-header -->
-                <div class="popWindow-header component-upload-header">
-                    <p class="popTitle">送審</p>
-                    <div class="popDel">
-                        <button>
-                            <span class="material-icons-outlined">clear</span>
-                        </button>
-                    </div>
-                </div>
-                <!-- popup-upload-body -->
-                <div class="popWindow-body component-upload-body">
-                    <div class="upload-body-item">
-                        <div class="upload-title">提交編號</div>
-                        <div class="upload-field"><input type="text"></div>
-                    </div>
-                    <div class="upload-body-item">
-                        <div class="upload-title">提交日期</div>
-                        <div class="upload-field"><input type="text"></div>
-                    </div>
-                    <div class="upload-body-item">
-                        <div class="upload-title">提交對象</div>
-                        <div class="upload-field"><input type="text"></div>
-                    </div>
-                    <div class="upload-body-item">
-                        <div class="upload-title">提交備註</div>
-                        <div class="upload-field"><textarea name="" id="" cols="30" rows="4"></textarea></div>
-                    </div>
-                </div>
-                <!-- popup-upload-footer -->
-                <div class="popWindow-footer component-upload-footer">
-                    <div class="popfooter-button-group">
-                        <button class="btn btn-cancel">取消</button>
-                        <button class="btn btn-sure">確定</button>
-                    </div>
-                </div>
-            </div>
-    </div>
-    <!-- END: component-upload -->
 </body>
 </html>
 
@@ -361,19 +322,19 @@
     let table02Data = [{
         id: "b1",
         附件性質: "附件性質",
-        檔案名稱: "檔案名稱",
+        檔案名稱: "合約附件-2.pdf",
         備註標題: "備註標題",
         備註說明: "備註說明",
-        上傳日期: "上傳日期",
+        上傳說明: "上傳說明",
     }, 
     {
-        id: "b1",
+        id: "b2",
         附件性質: "附件性質",
-        檔案名稱: "檔案名稱",
+        檔案名稱: "合約附件-3.pdf",
         備註標題: "備註標題",
         備註說明: "備註說明",
-        上傳日期: "上傳日期",
-    },
+        上傳說明: "上傳說明",
+    }, 
 ];
     var table02 = new Tabulator("#table02", {
         data: table02Data,
@@ -400,13 +361,12 @@
                 }
             },
             { title: "附件性質", field: "附件性質",},
-            { title: "檔案名稱", field: "檔案名稱" 
-            ,
+            { title: "檔案名稱", field: "檔案名稱",
             formatter: function(cell, formatterParams, onRendered) {
                     return "<a href='#'>" + cell.getValue() + "</a>"
                 },
             },
-            { title: "備註標題", field: "備註標題"},
+            { title: "備註標題", field: "備註標題" },
             { title: "備註說明", field: "備註說明" },
             { title: "上傳日期", field: "上傳日期"},
         ],
