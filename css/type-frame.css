@@ -1261,6 +1261,16 @@ textarea{
     background-color: #ffffff;
 }
 
+.query-unit-body-2{
+    border: 1px solid #5A79B5;
+    margin-top: -1px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #ffffff;
+}
+
 .content-unit{
     display: flex;
     border-bottom: 1px solid rgb(244, 244, 244);
@@ -1399,6 +1409,13 @@ textarea{
     border-radius: 10px;
 }
 
+.tableInfo-2{
+    border: 1px solid #7E96C4;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
 .tableWork{
     border-radius: 10px;
     line-height: 1.6rem;
@@ -1424,6 +1441,14 @@ textarea{
     border: 1px solid #7E96C4;
     border-top: none;
     border-radius: 10px;
+}
+
+.tableBody-3{
+    border: 1px solid #7E96C4;
+    border-radius: none;
+    padding: .75rem;
+    margin: 0;
+
 }
 
 .tablePage{
@@ -1764,7 +1789,7 @@ select {
 }
 
 .pop-unit-title{
-    width:120px;
+    width:100px;
     text-align: right;
     padding-right: 5px;
     background-color: #F2EDE6;
@@ -1814,7 +1839,7 @@ select {
 }
 
 .pop-unit-title-two{
-    width:120px;
+    width:100px;
     text-align: right;
     padding-right: 5px;
     background-color: #F2EDE6;
@@ -1850,7 +1875,7 @@ select {
 
 .pop-unit-input-two{
     display: inline-flex;
-    width: calc(100% - 120px);
+    width: calc(100% - 100px);
     border-right: none;
     background-color: #ffffff;
 }
@@ -1866,7 +1891,7 @@ select {
 .poprow .pop-unit-input{
     display: inline-flex;
     border-right: none;
-    width: calc(100% - 120px);
+    width: calc(100% - 100px);
 }
 
 .poprow .pop-unit-input-last {
@@ -2270,7 +2295,7 @@ select {
 }
 
 .alert-body{
-    background-color: #eeeeee;
+    background-color: #ffffff;
     padding: 1rem .5rem;
 }
 
