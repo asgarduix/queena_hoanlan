@@ -1673,7 +1673,8 @@ select {
 }
 
 .poprow-table li{
-    /* width:100% ; */
+    line-height: 0;
+    margin-left: 8px;
 }
 
 .poprow-table .btn{
@@ -1687,7 +1688,7 @@ select {
 .poprow-table label{
     display: inline-flex;
     font-size: .875rem;
-    margin-top: .8rem;
+    margin-top: .6rem;
 }
 
 .poprow-2{
