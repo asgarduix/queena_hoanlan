@@ -321,6 +321,9 @@ button {
     content: "search";
     font-size: 1.5rem;
     color: #555555;
+    position: relative;
+    top: 8px;
+    left: -50px;
 }
 
 .span-repeat-1{
