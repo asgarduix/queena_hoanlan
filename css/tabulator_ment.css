@@ -73,3 +73,7 @@
     border-bottom: 1px solid #AAAAAA;
     margin-bottom: 1px;
 }
+
+.tabulator .tabulator-col-resize-handle{
+    margin-top: -1px;
+}
