@@ -39,13 +39,15 @@
     position: relative;
     box-sizing: border-box;
     padding: 4px;
+    padding-top: 0;
     border-right: 1px solid #aaaaaa;
     border-top: 1px solid #aaaaaa ;
-    margin-top: -3px;
+    margin-top: -1px;
     vertical-align: middle;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 1rem;
 }
 
 .tabulator-col{
@@ -72,8 +74,4 @@
 .tabulator-col-resize-handle{
     border-bottom: 1px solid #AAAAAA;
     margin-bottom: 1px;
-}
-
-.tabulator .tabulator-col-resize-handle{
-    margin-top: -1px;
 }

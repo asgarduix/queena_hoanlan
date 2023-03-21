@@ -235,7 +235,8 @@ button {
     display: inline-flex;
     margin-left: 3px;
     font-size: 0.875rem;
-    align-items: center;
+    position: relative;
+    top: -3px;
 }
 
 .container{
@@ -247,7 +248,7 @@ button {
 
 ::placeholder {
     color: #e2e2e2;
-    font-size: 0.625rem;
+    font-size: .875rem;
 }
 
 .login-tab .unittab-active {
@@ -834,7 +835,6 @@ input[type="checkbox"] ,[type="radio"] :checked {
 }
 
 .pop-unit-input input[type=text]  {
-    width: calc(100% - 15px);
     border: 1px solid #aaaaaa;
     height: 30px;
     margin-top: 3px;
@@ -878,7 +878,6 @@ input[type="checkbox"] ,[type="radio"] :checked {
 }
 
 .pop-unit-input input[type=date] {
-    width: calc(100% - 15px);
     border: 1px solid #aaaaaa;
     height: 30px;
     margin-top: 3px;
@@ -1153,17 +1152,20 @@ textarea{
     border: 1px solid #075D8E;
     background-color: #ffffff;
     color: #075D8E;
-	border-radius: 5px;
-    padding:3px 25px;
-    font-size:0.875rem;
+	border-radius: 4px;
+    padding:8px 16px;
+    font-size:1rem;
     margin: 0 auto;
+    width: 100px;
+    height:38px ;
+    letter-spacing: 4px;
 }
 
 .btn-cancel-2{
     border: 1px solid #949495;
     background-color: #f7f7f7;
     color: #949495;
-	border-radius: 5px;
+	border-radius: 4px;
     padding:3px 25px;
     font-size: 0.875rem;
     margin: 0 auto;
@@ -1173,10 +1175,12 @@ textarea{
     border: 1px solid #7E96C4;
     background-color: #075D8E;
     color: #ffffff;
-	border-radius: 5px;
-    padding:3px 25px;
-    font-size:0.875rem;
+	border-radius: 4px;
+    padding:8px 16px;
+    font-size:1rem;
     margin: 0 auto;
+    height: 38px;
+    letter-spacing: 4px;
 }
 
 
@@ -1184,7 +1188,7 @@ textarea{
     border: 1px solid #7E96C4;
     background-color: #5A79B5;
     color: #ffffff;
-	border-radius: 5px;
+	border-radius: 4px;
     padding:1px 8px;
     font-size: 0.875rem;
     margin-left: 5px;
@@ -1194,7 +1198,7 @@ textarea{
     border: 1px solid #777777;
     background-color: #555555;
     color: #ffffff;
-	border-radius: 5px;
+	border-radius: 4px;
     padding:3px 25px;
     font-size: 0.875rem;
     margin: 0 auto;
@@ -1203,7 +1207,7 @@ textarea{
 .btn-list{
     background-color: #f3f3f3;
     color: #373737;
-	border-radius: 5px;
+	border-radius: 4px;
     font-size: 0.875rem;
     margin: 0 auto;
     padding: 0 5px;
@@ -1464,12 +1468,13 @@ textarea{
     margin-top: -1px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    height: 50px;
 }
 
 .tablePage-2{
     border: 1px solid #aaaaaa;
     background-color:#eef1f7 ;
-    line-height: 1.2rem;
+    height: 50px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -1481,8 +1486,7 @@ textarea{
 }
 
 .tablePage li{
-    line-height: 1.5rem;
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
 .tablePage-2 ul{
@@ -1496,11 +1500,11 @@ textarea{
 }
 
 .bulenote{
-    display: block;
-    font-size: 8px;
+    display: inline-block;
+    font-size:.875rem;
     color:#075D8E ;
     margin: 3px;
-    line-height: 1.2rem;
+    margin-top: 8px;
 }
 
 select {
@@ -1508,12 +1512,12 @@ select {
 	-moz-appearance:none;
 	-webkit-appearance:none;
 	border:1px solid #aaaaaa;
-    border-radius: 5px;
+    border-radius: 4px;
 	width:calc(100% - 1px);
 	padding-left:2px;
 	padding-right:30px;
 	background:url(../img/arrow_drop_down_black_24dp.svg) no-repeat right center transparent;
-    line-height: 1.3rem;
+    height: 28px;
 }
 
 .pop-unit-two-list{
@@ -1685,10 +1689,12 @@ select {
 
 .poprow-table .btn{
     display: inline-flex;
-    font-size: .75rem;
-    margin: 8px 5px;
-    border-radius: 5px;
+    font-size: .875rem;
+    padding: 4px 10px;
+    border-radius: 4px;
     background-color:#D7D7D7 ;
+    line-height: 25px;
+    margin:10px 0px;
 }
 
 .poprow-table label{
@@ -1796,7 +1802,7 @@ select {
 }
 
 .pop-unit-title{
-    width:100px;
+    width:125px;
     text-align: right;
     padding-right: 5px;
     background-color: #F2EDE6;
@@ -1806,6 +1812,7 @@ select {
     border-right: 1px solid #333333;
     border-left: 1px solid #333333;
     margin-left: -1px;
+    line-height: 25px;
 }
 
 .pop-unit-title-3{
@@ -1862,6 +1869,7 @@ select {
     display: inline;
     position: relative;
     top: 5px;
+    line-height: 30px;
 }
 
 .columnFour ul li{
@@ -1898,7 +1906,7 @@ select {
 .poprow .pop-unit-input{
     display: inline-flex;
     border-right: none;
-    width: calc(100% - 100px);
+    width: calc(100% - 125px);
 }
 
 .poprow .pop-unit-input-last {
@@ -2123,8 +2131,9 @@ select {
 }
 
 .tab-body-2 li{
-    line-height: 1.2rem;
-    padding: 5px;
+    line-height: 50px;
+    padding-left: 15px;
+    font-size: 1rem;
 }
 
 .tab-body-2 span{

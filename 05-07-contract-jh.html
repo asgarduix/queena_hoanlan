@@ -216,8 +216,8 @@
                     <div class="pop-tab">
                         <div class="pop-tab-header">
                             <ul>
-                                <li><a href="" class="unittab-active">合約內容</a></li>
-                                <li><a href="">附件</a></li>
+                                <li><a href="">合約內容</a></li>
+                                <li><a href="" class="unittab-active">附件</a></li>
                             </ul>
                         </div>
                     </div>
@@ -246,12 +246,14 @@
                             <div class="pop-unit-four">
                                 <div class="pop-unit-title">承辦人</div>
                                 <div class="pop-unit-input pop-unit-input-last">
-                                    <div class="columnFive-left">
+                                    <div class="query-unit-double-input">
+                                        <div class="columnFive-left">
                                         <input type="text" value="" placeholder="請輸入值">
                                         </div>
                                         <div class="columnTwo">
                                             <input type="text" value="" placeholder="請輸入值">
                                         </div>
+                                    </div>
                                 </div>    
                             </div>
                         </div>
@@ -316,11 +318,53 @@
                         </div>
                     </div>
                 </div>
+                <div class="pop-unit-label"><span class="materialSize-xs material-icons-outlined">indeterminate_check_box</span>會辦項目</div>
+                <div class="pop-body-frame">
+                    <div class="timeline-s-group-left">
+                        <ul>
+                            <li><button class="timeline-btn-del">新增</button></li>
+                            <li><button class="">編輯</button></li>
+                            <li><button class="">刪除</button></li>
+                        </ul>
+                    </div>
+                    <!-- 包裹欄位外框 -->
+                    <div class="tab-body-2">
+                            <ul>
+                                <li>共<span>3</span>筆</li>
+                            </ul>
+                        <div id="table02"></div>
+                    </div>
+                    <div class="tablePage">
+                        <ul>
+                            <li><button class="btn btn-prev">上一頁</button></li>
+                            <li><button class="btn btn-next">下一頁</button></li>
+                            <li class="bulenote">每頁筆數</li>
+                            <li>
+                                <select name="" id="">
+                                    <option value="">1000</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </li>
+                            <li class="bulenote">目前頁數</li>
+                            <li>
+                                <select name="" id="">
+                                    <option value="">1000</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="popWindow-footer">
                 <div class="popfooter-button-group">
                     <button class="btn btn-cancel">取消</button>
                     <button class="btn btn-sure">儲存</button>
+                    <p class="line-grid"></p>
+                    <button class="btn btn-sure">會辦</button>
+                    <button class="btn btn-sure disabled">送審</button>
                 </div>
             </div>
         </div>
@@ -396,19 +440,19 @@
 <script>
     let table02Data = [{
         id: "b1",
-        會辦編號: "會辦編號",
+        會辦編號: "附件性質",
         會辦日期: "會辦日期",
         會辦單位: "會辦單位",
         會辦備註: "會辦備註",
-        狀態: "狀態",
+        狀態: "結案",
     }, 
     {
         id: "b2",
-        會辦編號: "會辦編號",
+        會辦編號: "附件性質",
         會辦日期: "會辦日期",
         會辦單位: "會辦單位",
         會辦備註: "會辦備註",
-        狀態: "狀態",
+        狀態: "結案",
     }, 
 ];
     var table02 = new Tabulator("#table02", {
@@ -434,13 +478,14 @@
                     cell.getRow().toggleSelect();
                 }
             },
-            { title: "會辦編號", field: "會辦編號",},
-            { title: "會辦日期", field: "會辦日期" },
-            { title: "會辦單位", field: "會辦單位",
+            { title: "會辦編號", field: "會辦編號"
+            ,
             formatter: function(cell, formatterParams, onRendered) {
                     return "<a href='#'>" + cell.getValue() + "</a>"
                 },
             },
+            { title: "會辦日期", field: "會辦日期"},
+            { title: "會辦單位", field: "會辦單位" },
             { title: "會辦備註", field: "會辦備註" },
             { title: "狀態", field: "狀態"},
         ],
