@@ -277,6 +277,12 @@ button {
     color: #fff;
 }
 
+.popWindow-body .active-A{
+    color: #555555;
+    font-weight: 800;
+    font-family: 1rem;
+}
+
 /* hr的基本設定 */
 .lineHR{
     border: 1px solid #eeeeee;
