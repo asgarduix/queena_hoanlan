@@ -103,22 +103,6 @@
                             <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
                         </div>
                         <div class="query-unit-group">
-                            <div class="query-unit-title">批單日期</div>
-                            <div class="query-unit-input">
-                                <div class="query-unit-double-input">
-                                    <div class="columnFive-left-45">
-                                    <input type="date" value="" placeholder="請輸入值">
-                                    </div>
-                                    <span class="zigzagLine">～</span>
-                                    <div class="columnFive-left-45">
-                                        <input type="date" value="" placeholder="請輸入值">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-unit">
-                        <div class="query-unit-group">
                             <div class="query-unit-title">險種</div>
                             <div class="query-unit-input">
                                 <select name="" id="">
@@ -140,6 +124,20 @@
                             </div>
                         </div>
                     </div>
+                    <div class="content-unit">
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">批單日期起</div>
+                            <div class="query-unit-input">
+                                <input type="date" value="" placeholder="請輸入值">
+                            </div>
+                        </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">批單日期迄</div>
+                            <div class="query-unit-input">
+                                <input type="date" value="" placeholder="請輸入值">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="query-unit-info">
                     <div class="query-unit-infolist">
@@ -155,14 +153,20 @@
             <div class="right-clumn-row">
                 <div class="tableInfo">
                     <div class="tableWork">
-                        <button class=" btn btn-add unittab-active">批改</button>
+                        <button class="active btn btn-add unittab-active">批改</button>
                         <button class="btn btn-edit">批退</button>
+                        <button class="btn btn-edit">刪除</button>
                     </div>
                     <div class="tableBody">
-                        <div id="table01"></div>
+                        <div class="tab-frame-1">
+                            <ul>
+                                <li><div class="">共<span>3</span>筆</div></li>
+                            </ul>
+                            <div id="table01"></div>
+                        </div>
                         <div class="tablePage">
                             <ul>
-                                <li><button class="btn btn-prev">上一頁</button></li>
+                                <li><button class="btn btn-prev disabled">上一頁</button></li>
                                 <li><button class="btn btn-next">下一頁</button></li>
                                 <li class="bulenote">每頁筆數</li>
                                 <li>
@@ -229,7 +233,6 @@
         tooltipsHeader: true,
         tooltipGenerationMode: "hover",
         selectable: false,
-        rowHeight:30,
         columns: [{
                 formatter: "rowSelection",
                 titleFormatter: "rowSelection",
