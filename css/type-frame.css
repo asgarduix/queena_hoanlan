@@ -61,10 +61,10 @@ body{
 }
 
 .login-box .list-A input[type=text] {
-    width: calc(100% - 7em);
+    width: calc(100% - 5em);
     border: none;
     height: 30px;
-    border-bottom: 1px solid #aaaaaa;
+    border-bottom: 1px solid #E96A6A;
 }
 
 .login-box .btn{
@@ -75,9 +75,12 @@ body{
 .vercode{
     background-color: #555555;
     color: #fff;
-    padding: 10px 20px;
+    padding: 4px 15px;
     margin-left: 15px;
     border-radius: 5px;
+    font-size: .75rem;
+    position: relative;
+    bottom: -8px;
 } 
 
 .box-a-word{
@@ -87,16 +90,22 @@ body{
 /* 睜眼 */
 .login-box .iconlive span.eye-A::before{
     content: "visibility";
-    position: absolute;
-    top: 31%;
-    left: 90%;
+    margin-right: 4px;
+    font-size: 1.3125rem;
+    color: rgba(7, 93, 142, 0.7);
+    display: inline-block;
+    vertical-align: middle;
+    position: inherit;
 }
 /* 閉眼 */
 .login-box .iconlive span.eye-A-a::before{
     content: "visibility_off";
-    position: absolute;
-    top: 31%;
-    left: 90%;
+    margin-right: 4px;
+    font-size: 1.3125rem;
+    color: rgba(7, 93, 142, 0.7);
+    display: inline-block;
+    vertical-align: middle;
+    position: inherit;
 }
 /* 以下兩組位置相同 */
 /* 閉眼 */
@@ -116,10 +125,10 @@ body{
 
 .login-box .forhighline span.forget-A::before {
     content: "help_outline";
-    font-size: 0.875rem;
     position: absolute;
     top:0;
-    left: -1rem;
+    left: 0;
+    font-size: 12px;
 
 }
 
@@ -445,7 +454,7 @@ box-shadow: 0 0 2px 1px rgba(183, 183, 183, 0.6);
 }
 
 .forhighline{
-    display: inline-flex;
+    display: flex;
     font-size: .5rem;
     padding:.4rem ;
 }
@@ -2666,6 +2675,13 @@ hr.case2{
     border: .1% solid #075D8E;
     opacity: .3;
     margin-left: -5px;
+}
+
+hr.case3{
+    border: .1% solid #D0D0D0;
+    opacity: .3;
+    margin-left: -20px;
+    margin-right:-20px ;
 }
 
 
