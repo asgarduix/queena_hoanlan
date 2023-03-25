@@ -109,7 +109,7 @@ button {
 
 .login-box .forhighline .btn {
     margin: -10px 0 0;
-    right: 30px;
+    /* right: 30px; */
     color: rgba(7, 93, 142, 1);
 }
 
