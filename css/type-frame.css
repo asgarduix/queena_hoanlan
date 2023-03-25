@@ -67,6 +67,13 @@ body{
     border-bottom: 1px solid #E96A6A;
 }
 
+.login-box .list-A-black input[type=text] {
+    width: calc(100% - 5em);
+    border: none;
+    height: 30px;
+    border-bottom: 1px solid #aaaaaa;
+}
+
 .login-box .btn{
     padding: 0;
     margin-bottom: 10px;
