@@ -32,10 +32,6 @@ button {
     outline: none;
 }
 
-.login-body input.bg {
-    background-color: #eeeeee;
-}
-
 .login-border {
     max-width: 450px;
     padding: 30px 50px 60px;
