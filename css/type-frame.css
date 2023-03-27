@@ -146,6 +146,13 @@ body{
     border-bottom: 1px solid #E96A6A;
 }
 
+.login-content .inputerrow input[type=password] {
+    width: calc(100% - .5rem);
+    border: none;
+    height: 30px;
+    border-bottom: 1px solid #E96A6A;
+}
+
 .forgetword{
     position: absolute;
     display: inline-flex;
