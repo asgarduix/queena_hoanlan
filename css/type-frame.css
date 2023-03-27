@@ -299,6 +299,11 @@ button {
     font-family: 1rem;
 }
 
+.listcheck-button-group .active {
+    background-color:#555555;
+    color: #fff;
+}
+
 /* hr的基本設定 */
 .lineHR{
     border: 1px solid #eeeeee;
