@@ -1190,7 +1190,6 @@ textarea{
     padding:8px 16px;
     font-size:1rem;
     margin: 0 auto;
-    width: 100px;
     height:38px ;
     letter-spacing: 4px;
 }
@@ -1628,6 +1627,16 @@ select {
     border-radius: 15px;
 }
 
+.popWindow-2{
+    border: 2px solid #ABBBD9;
+    background-color: #e2e2e2;
+    max-width: 767px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    box-shadow: 0px 3px 3px black;
+    border-radius: 15px;
+}
+
 
 .pop-unit-label{
     font-size: 1rem;
@@ -1656,7 +1665,7 @@ select {
 .popWindow-header{
     display:flex;
     width: 100%;
-    line-height: 1.2rem;
+    height: 43px;
     background-color:#5A79B5;
     color: #ffffff;
     border-top-left-radius: 15px;
@@ -1672,7 +1681,7 @@ select {
 
 .popWindow-body-2{
     background-color:#fff;
-    padding: 1%;
+    padding: 10px 10px 70px 10px;
 }
 
 .popWindow-body-2{
@@ -1740,7 +1749,6 @@ select {
 .poprow-2{
     display:flex;
     width: 100%;
-    margin: 5px 0 15px 0;
 }
 
 .poprow-3{
@@ -1789,7 +1797,7 @@ select {
 .popDel button{
     font-size: .7rem;
     font-weight: 700;
-    line-height: 1;
+    height: 43px;
     color: #ffffff;
     background-color: transparent;
     padding-top: 5px;
@@ -2162,6 +2170,7 @@ select {
 
 .tab-body-2 ul{
     display: inline-flex;
+    height: 45px;
 }
 
 .tab-body-2 li{
@@ -2178,10 +2187,10 @@ select {
     background-color:#F2F2F2;
     border: 1px solid #797979;
     margin-top: -1px;
-    padding: 8px 0;
     padding-right: 8px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    height: 23px;
 }
 
 .pop-table-header ul{

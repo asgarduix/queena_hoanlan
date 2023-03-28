@@ -925,7 +925,7 @@
     </div>
     <!-- pop視窗double -->
     <div class="blackBackground-2">
-        <div class="popWindow">
+        <div class="popWindow-2">
             <div class="popWindow-header">
                 <p class="popTitle">彈窗內容</p>
                 <div class="popDel">
@@ -934,7 +934,7 @@
                     </button>
                 </div>
             </div>
-            <div class="popWindow-body">
+            <div class="popWindow-body-2">
                 <!-- 包裹欄位外框 -->
                 <div class="pop-body-frame">
                     <div class="poprow-2">
@@ -1023,7 +1023,7 @@
         身份別: "設計文字",
     }, ];
     var table03 = new Tabulator("#table03", {
-        data: table01Data,
+        data: table03Data,
         //autoColumns: true,
         layout: "fitColumns",// 表格風格
         height: "200px",
@@ -1039,8 +1039,8 @@
                 headerHozAlign: "center",
                 hozAlign: "center",
                 headerSort: false,
-                maxWidth: 50,
-                minWidth: 50,
+                maxWidth: 30,
+                minWidth: 30,
                 cellClick: function(e, cell) {
                     cell.getRow().toggleSelect();
                 }
