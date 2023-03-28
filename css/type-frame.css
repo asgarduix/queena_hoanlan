@@ -1191,6 +1191,7 @@ textarea{
     font-size:1rem;
     margin: 0 auto;
     height:38px ;
+    width: 95px;
     letter-spacing: 4px;
 }
 
@@ -1213,6 +1214,7 @@ textarea{
     font-size:1rem;
     margin: 0 auto;
     height: 38px;
+    width: 95px;
     letter-spacing: 4px;
 }
 
@@ -1275,8 +1277,8 @@ textarea{
 }
 
 .pop-btn-del{
-    border: 1px solid #e8c7de;
-    background-color: #f0b3c2;
+    border: 1px solid #E72410;
+    background-color: #E72410;
     color: #ffffff;
 	border-radius: 5px;
     padding:5px 15px;
@@ -1619,7 +1621,7 @@ select {
 .popWindow{
     border: 2px solid #ABBBD9;
     background-color: #e2e2e2;
-    width: 85%;
+    width:1536px;
     margin: 0 auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -1631,6 +1633,16 @@ select {
     border: 2px solid #ABBBD9;
     background-color: #e2e2e2;
     max-width: 767px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    box-shadow: 0px 3px 3px black;
+    border-radius: 15px;
+}
+
+.popWindow-3{
+    border: 2px solid #ABBBD9;
+    background-color: #e2e2e2;
+    max-width: 1440px;
     margin: 0 auto;
     margin-top: 4rem;
     box-shadow: 0px 3px 3px black;
@@ -1676,12 +1688,12 @@ select {
 
 .popWindow-body{
     background-color:#eeeeee;
-    padding: 1%;
+    padding: 10px 10px 70px 10px;
 }
 
 .popWindow-body-2{
     background-color:#fff;
-    padding: 10px 10px 70px 10px;
+    padding: 10px 10px 20px 10px;
 }
 
 .popWindow-body-2{
@@ -1702,7 +1714,6 @@ select {
 
 .poprow{
     display:flex;
-    width: 100%;
     background-color: #eeeeee;
     border: 1px solid #333333;
     margin-top: -1px;
@@ -1809,9 +1820,9 @@ select {
     background-color:#cccccc ;
     border: none;
     padding: 5px 8px;
-    border-radius: 10px;
+    border-radius: 30px;
     font-weight: 500;
-    
+    font-size: 1rem;
 }
 
 .poprow-2 p{
@@ -1820,7 +1831,17 @@ select {
     border: none;
     padding: 5px 8px;
     margin-right: 10px;
-    
+    font-size: 1rem;
+}
+
+.poprow-2 p.boldword{
+    display:inline;
+    color:#111111 ;
+    border: none;
+    padding: 5px 8px;
+    margin-right: 10px;
+    font-size: 1rem;
+    font-weight: 500;
 }
 /* 彈窗拼接欄位設定 */
 .pop-unit-3{
@@ -1858,7 +1879,7 @@ select {
 }
 
 .pop-unit-title-3{
-    width:120px;
+    width:125px;
     text-align: right;
     padding-right: 5px;
     background-color: #F2EDE6;
@@ -1871,7 +1892,7 @@ select {
 }
 
 .pop-unit-title-4{
-    width:120px;
+    width:125px;
     text-align: right;
     padding-right: 5px;
     background-color: #F2EDE6;
@@ -1884,7 +1905,7 @@ select {
 }
 
 .pop-unit-title-bgnone{
-    width:120px;
+    width:125px;
     text-align: right;
     padding-right: 5px;
     font-size: .875rem;
@@ -2125,13 +2146,16 @@ select {
     background-color:#dde1e7;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    padding-top: .75rem;
-    padding-bottom: .75rem;
+    height: 90px;
+
 }
 
 .popfooter-button-group{
     margin: 0 auto;
     text-align: center;
+    height: 90px;
+    padding: 25px 0;
+    vertical-align: middle;
 }
 
 .pop-table{

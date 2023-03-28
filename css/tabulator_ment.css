@@ -3,6 +3,7 @@
     border-top: 1px solid #797979;
     border-bottom: 1px solid #797979;
     margin-top: -1px;
+    width: 100%;
 }
 
 .tabulator-header-contents{

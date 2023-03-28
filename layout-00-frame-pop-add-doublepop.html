@@ -939,7 +939,7 @@
                 <div class="pop-body-frame">
                     <div class="poprow-2">
                         <span>16149963</span>
-                        <p>宏燁資訊股份有限公司</p>
+                        <p class="boldword">宏燁資訊股份有限公司</p>
                     </div>
                 </div>
                 <div class="tab-body-2">
@@ -1045,7 +1045,11 @@
                     cell.getRow().toggleSelect();
                 }
             },
-            { title: "投保編號", field: "投保編號" },
+            { title: "投保編號", field: "投保編號",
+            formatter: function(cell, formatterParams, onRendered) {
+                    return "<a href='#'>" + cell.getValue() + "</a>"
+                },
+            },
             { title: "險別名稱", field: "險別名稱" },
             { title: "客戶名稱", field: "客戶名稱" },
             { title: "身份別", field: "身份別" },
