@@ -1941,7 +1941,7 @@ select {
 }
 
 .pop-unit-title-two{
-    width:100px;
+    width:125px;
     text-align: right;
     padding-right: 5px;
     background-color: #F2EDE6;
@@ -1978,7 +1978,7 @@ select {
 
 .pop-unit-input-two{
     display: inline-flex;
-    width: calc(100% - 100px);
+    width: calc(100% - 125px);
     border-right: none;
     background-color: #ffffff;
 }
