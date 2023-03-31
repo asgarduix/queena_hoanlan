@@ -279,6 +279,32 @@ button {
     font-size: .875rem;
 }
 
+.left-clumn .unittab-active {
+    background: #5A79B5;
+    color: #fff;
+	background-color: #5A79B5;
+    margin-left: 3%;
+    margin-right: 2%;
+    height: 43px;
+}
+
+.left-clumn .unittab-active .materialSize{
+    padding-left: 7px;
+    line-height: 32px;
+}
+
+.left-clumn .unittab-active::before{
+    content: "";
+    border-left: 5px solid #5A79B5;
+    position: relative;
+    left:-9px ;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    height: 43px;
+}
+
 .login-tab .unittab-active {
     background: #5A79B5;
     color: #fff;
@@ -393,7 +419,7 @@ button {
 /* 左邊選單外框 */
 .left-clumn{
     flex-direction: row;
-    width: 15%;
+    width:220px;
     border: 1px solid #9fb7e8;
     border-radius: 30px;
     margin: 5px;
@@ -407,13 +433,8 @@ box-shadow: 0 0 2px 1px rgba(183, 183, 183, 0.6);
 
 }
 
-.left-clumn-row a{
-    text-decoration:none ;
-}
-
 .left-clumn-row{
     padding: 0 3px;
-    line-height: 1.2rem;
 }
 
 .left-clumn-row .title{
@@ -424,9 +445,11 @@ box-shadow: 0 0 2px 1px rgba(183, 183, 183, 0.6);
 
 .left-clumn-row .secList{
 	font-size:1rem;
+    line-height: 32px;
 }
 
 .left-clumn-row a{
+    text-decoration:none ;
     display:flex;
 	font-size:1rem;
     border-radius: 5px;
@@ -450,7 +473,7 @@ box-shadow: 0 0 2px 1px rgba(183, 183, 183, 0.6);
     content: "";
     border-left: 5px solid #5A79B5;
     position: relative;
-    left:-8px ;
+    left:-9px ;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     margin-top: -5px;
@@ -540,8 +563,9 @@ box-shadow: 0 0 2px 1px rgba(183, 183, 183, 0.6);
 
 /* 字體大小設定 */
 .materialSize{
-    font-size: 18px;
+    font-size: 1rem;
     padding: 0 10px;
+    line-height: 32px;
 }
 
 .materialSize-xs{
@@ -651,6 +675,7 @@ box-shadow: 0 0 2px 1px rgba(183, 183, 183, 0.6);
     display: inline-flex;
     justify-content: end;
     width: 40%;
+    line-height: 66px;
 }
 .columnFive-left{
     display: inline-flex;
@@ -678,7 +703,7 @@ box-shadow: 0 0 2px 1px rgba(183, 183, 183, 0.6);
 
 .columnTen-right{
     display: inline-flex;
-    justify-content: end;
+    justify-content: center;
     width: 10%;
 }
 
@@ -726,7 +751,7 @@ box-shadow: 0 0 2px 1px rgba(183, 183, 183, 0.6);
 /* 右側選單外誆 */
 .right-clumn{
     flex-direction: row;
-    width: 85%;
+    width: calc(100% - 220px);
     padding-left: 5px;
     padding-right: 5px;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+20,b9cae9+100 */
@@ -737,6 +762,12 @@ background: linear-gradient(135deg,  #ffffff 20%,#b9cae9 100% ,transparent 80%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b9cae9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 
+}
+
+.right-clumn-row:first-child{
+    margin-right: -10px;
+    margin-top: -5px;
+    height: 70px;
 }
 
 .right-clumn-row{
@@ -760,17 +791,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 /* 工作項目選擇 */
 .workShop{
-    border-radius: 50px;
+    border-radius: 30px;
     background-color: #ffffff;
     margin-top: .5rem;
 }
 
 .workShop ul{
     display: inline-flex;
-    background-color: #ffffff;
+    background-color: #eaeff6;
     border: 1px solid #5B7CBD;
     border-radius: 50px;
     padding: 2px 0;
+    margin-top: .5rem;
 }
 
 .workShop ul li{
@@ -790,7 +822,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .workShop ul li a{
     width: 100%;
     color: #5B7CBD;
-    background-color: #ebf0f6;
+
     border-radius: 50px;
     padding: 2px 20px;
     line-height: 1.5;
@@ -810,7 +842,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 .workName{
-    margin-top: .5rem;
+    margin-top: 1rem;
     margin-bottom: .5rem;
 }
 
@@ -818,7 +850,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     display: flex;
     justify-content: end;
     border: 1px solid #5B7CBD;
-    border-radius: 50px;
+    border-radius: 30px;
     padding: 5px 15px;
 }
 
@@ -837,7 +869,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 .logOut{
     font-size: 1rem;
-    margin-top: 3px;
+    line-height: 70px;
 }
 
 .breadCrumb{
