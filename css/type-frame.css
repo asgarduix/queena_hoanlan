@@ -31,6 +31,22 @@ body{
     opacity: 1;
 }
 
+.container{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,5b7cbd+100 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 50%, #e6eaf4 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ffffff 50%,#e6eaf4 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ffffff 50%,#e6eaf4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#5b7cbd',GradientType=0 ); /* IE6-9 */
+
+
+}
+
 /* 登入畫面start */
 .login-body{
     background-image: url("../img/ui_bg.jpg");
@@ -267,13 +283,6 @@ button {
     top: -3px;
 }
 
-.container{
-    display: flex;
-    margin: 0;
-    padding: 0;
-    background-color:rgba(245, 245, 245, 0.1) ;
-}
-
 ::placeholder {
     color: #e2e2e2;
     font-size: .875rem;
@@ -425,11 +434,11 @@ button {
     margin: 5px;
 /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b9cae9+0,ffffff+80 */
 background: #b9cae9; /* Old browsers */
-background: -moz-linear-gradient(45deg,  #b9cae9 0%, #ffffff 80% ,transparent 80%); /* FF3.6-15 */
-background: -webkit-linear-gradient(45deg,  #b9cae9 0%,#ffffff 80% ,transparent 80%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(45deg,  #b9cae9 0%,#ffffff 80% ,transparent 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: -moz-linear-gradient(0deg,  #b9cae9 10%, #ffffff 100% ,transparent 50%); /* FF3.6-15 */
+background: -webkit-linear-gradient(0deg,  #b9cae9 10%,#ffffff 100% ,transparent 50%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(0deg,  #b9cae9 10%,#ffffff 100% ,transparent 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9cae9', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-box-shadow: 0 0 2px 1px rgba(183, 183, 183, 0.6);
+box-shadow: 0 0 1px 1px rgba(158, 158, 158, 0.6);
 
 }
 
@@ -750,16 +759,17 @@ box-shadow: 0 0 2px 1px rgba(183, 183, 183, 0.6);
 
 /* 右側選單外誆 */
 .right-clumn{
-    flex-direction: row;
+    flex-direction: row; 
     width: calc(100% - 220px);
     padding-left: 5px;
     padding-right: 5px;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+20,b9cae9+100 */
-background: #ffffff; /* Old browsers */
-background: -moz-linear-gradient(-45deg,  #ffffff 20%, #b9cae9 100% ,transparent 80% ); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg,  #ffffff 20%,#b9cae9 100% ,transparent 80%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg,  #ffffff 20%,#b9cae9 100% ,transparent 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b9cae9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(-90deg,  #ffffff 15%, #b9cae9 90% ,transparent 100% ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-90deg,  #ffffff 15%,#b9cae9 90% ,transparent 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(140deg,  #ffffff 15%,#b9cae9 90% ,transparent 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b9cae9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    overflow-y: auto;
 
 
 }

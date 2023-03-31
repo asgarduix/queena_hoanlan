@@ -41,13 +41,6 @@ a {
 a:hover{
     color: #3368a9;
 }
-.container{
-    display: flex;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    height: 100vh;
-}
 /* 左側選單顏色設定 */
 .left-clumn-row .title{
 	color:#7894CA ;
