@@ -777,7 +777,6 @@ box-shadow: 0 0 1px 1px rgba(158, 158, 158, 0.6);
 .right-clumn-row:first-child{
     margin-right: -10px;
     margin-top: -5px;
-    height: 70px;
 }
 
 .right-clumn-row{
@@ -1651,6 +1650,7 @@ select {
 .zigzagLine{
     display: inline-block;
     margin: 0 2px;
+    padding-top: 12px;
 }
 
 .title-button-group{
@@ -1688,7 +1688,7 @@ select {
 .popWindow{
     border: 2px solid #ABBBD9;
     background-color: #e2e2e2;
-    width:1536px;
+    width:1236px;
     margin: 0 auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -2066,7 +2066,7 @@ select {
     display: inline-block;
     color: #111111;
     font-weight: 500;
-    padding-top:5px;
+    padding-top:10px;
     line-height: 1.2rem;
 }
 
