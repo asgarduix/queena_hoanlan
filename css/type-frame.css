@@ -948,6 +948,13 @@ input[type="checkbox"] ,[type="radio"] :checked {
     border-radius: 3px;
 }
 
+.pop-unit-input-5 input[type=text]  {
+    width: calc(100% - 75%);
+    border: 1px solid #aaaaaa;
+    height: 30px;
+
+}
+
 .inputzoom input[type=text]  {
     width: calc(100% - 5px);
     border: 1px solid #aaaaaa;
@@ -3455,4 +3462,3 @@ hr.case3{
     top: 10px;
     margin: -14px;
 }
-
