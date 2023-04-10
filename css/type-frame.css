@@ -2006,8 +2006,8 @@ select {
 .pop-unit-input ul li{
     display: inline;
     position: relative;
-    top: 5px;
-    height: 30px;
+    top: 3px;
+    line-height: 30px;
 }
 
 .columnFour ul li{
