@@ -280,7 +280,7 @@ button {
     margin-left: 3px;
     font-size: 0.875rem;
     position: relative;
-    top: -3px;
+    top: -1px;
 }
 
 ::placeholder {
@@ -1686,7 +1686,7 @@ select {
 .popWindow{
     border: 2px solid #ABBBD9;
     background-color: #e2e2e2;
-    width:1236px;
+    width:95%;
     margin: 0 auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -2058,6 +2058,7 @@ select {
 
 .pop-double-unit-input{
     display: flex;
+    width: 100%;
 }
 
 .pop-double-unit-input span{
