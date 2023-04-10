@@ -951,8 +951,11 @@ input[type="checkbox"] ,[type="radio"] :checked {
 .pop-unit-input-5 input[type=text]  {
     width: calc(100% - 75%);
     border: 1px solid #aaaaaa;
-    height: 30px;
-
+    height: 29px;
+    margin-top: -1px;
+    padding-bottom: 0px;
+    text-align: right;
+    padding-right: 5px;
 }
 
 .inputzoom input[type=text]  {
@@ -2004,7 +2007,7 @@ select {
     display: inline;
     position: relative;
     top: 5px;
-    line-height: 30px;
+    height: 30px;
 }
 
 .columnFour ul li{
