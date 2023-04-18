@@ -280,7 +280,7 @@ button {
     margin-left: 3px;
     font-size: 0.875rem;
     position: relative;
-    top: -1px;
+    top: -3px;
 }
 
 ::placeholder {
@@ -932,6 +932,14 @@ input[type="checkbox"] ,[type="radio"] :checked {
     height: 30px;
     margin-top: 3px;
     margin-bottom: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+
+.pop-unit-input input[type=radio] ,input[type=checkbox]  {
+    border: 1px solid #aaaaaa;
+    margin-top: 10px;
     margin-left: 5px;
     margin-right: 5px;
     border-radius: 3px;
@@ -2003,10 +2011,13 @@ select {
     margin-left: -1px;
 }
 
+.pop-unit-input ul{
+    display: inline-flex;
+    line-height: 30px;
+}
+
 .pop-unit-input ul li{
     display: inline;
-    position: relative;
-    top: 3px;
     line-height: 30px;
 }
 
