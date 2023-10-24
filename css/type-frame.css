@@ -3476,3 +3476,75 @@ hr.case3{
     top: 10px;
     margin: -14px;
 }
+
+/* 2023新增時間線 */
+.timeLINE{
+    display: inline-flex;
+    width: 100%;
+    background-color: #aaaaaa;
+    border: 1px solid #027DB4;
+    margin-bottom: 15px;
+    padding:0;
+}
+
+.timeline-box{
+    display: inline-block;
+    width: calc(100% / 6);
+    border: 1px solid pink;
+    height: 3rem;
+}
+
+.timeline-box-s-left-top{
+    display: block;
+    height: 1.5rem;
+    border: 2px solid #555555 ;
+    margin: 0 -5px;
+    border-top-left-radius:100px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.timeline-box-s-right-bottom{
+    display: block;
+    height: 1.5rem;
+    border: 2px solid #555555 ;
+    margin: 0 -5px;
+    border-top: none;
+    border-right: none;
+    border-bottom-left-radius:100px;
+}
+
+.timepoint{
+    display: inline-block;
+    width: 30px;
+    height: 3rem;
+    line-height: 3rem;
+    border: 1px solid blue;
+    margin-left: 3rem;
+
+}
+
+.timepoint p {
+    display: block;
+    font-size: 10px;
+    text-align: center;
+    height: 2rem;
+}
+
+.doit-1{
+    display:block ;
+    width: 10px;
+    height: 10px;
+    border: 3px solid #333;
+    border-radius: 10px ;
+    margin: 0 auto;
+}
+
+.hr-1{
+    display: inline-block;
+    border: 2px solid #555555;
+    width: calc(100% - 85px);
+    text-align: right;
+    margin-right: 0;
+    vertical-align: middle;
+}
