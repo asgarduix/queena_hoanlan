@@ -2130,7 +2130,7 @@ select {
     border-right: 1px solid #5A79B5;
     font-size: 0.875rem;
     color: #075D8E;
-    padding:12px;
+    padding:10px;
     border-bottom: 1px solid #5A79B5;
 }
 
@@ -3547,4 +3547,105 @@ hr.case3{
     text-align: right;
     margin-right: 0;
     vertical-align: middle;
+}
+/* 2023/10/24 頁籤內的頁籤 */
+.tab-inside-1{
+    background-color: #f4f4f4;
+    border: 1px solid #F2EDE6;
+}
+
+.pop-tab-2{
+    border: 1px solid #111111;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.pop-tab-header-2{
+    display:flex;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.pop-tab-header-2 ul{
+    display: flex;
+    background-color: #F2EDE6;
+
+}
+
+.pop-tab-header-2 li{
+    display: inline;
+    font-size: .875rem;
+    color: #333333;
+    margin-left: -1px;
+}
+
+.pop-tab-header-2 li a{
+    display: inline-block;
+    border-right: 1px solid #333333;
+    font-size: 0.875rem;
+    color: #333333;
+    padding:12px;
+}
+
+.pop-tab-header-2 li a:hover{
+    border-right: 1px solid #5A79B5;
+    font-size: 0.875rem;
+    color: #ffffff;
+    background-color:#075D8E ;
+}
+
+.pop-tab-header-2 li:first-child a:hover {
+    border-right: 1px solid #5A79B5;
+    font-size: 0.875rem;
+    color: #ffffff;
+    background-color:#075D8E ;
+}
+
+.pop-tab-header-2 li:first-child a{
+    margin-left: 0;
+}
+.pop-tab-header-2 li:last-child a{
+    margin-left: 0;
+}
+
+.new-item{
+    background-color: #ffffff;
+    line-height: 30px;
+    padding: 0 15px 0 5px;
+    border-right: 1px solid #333333;
+}
+
+.new-item:first-child{
+    background-color: #f8e9d4;
+}
+
+.new-item span{
+    display: inline-block;
+    font-size: 18px;
+    position: relative;
+    top: 4px;
+    right: -10px;
+}
+
+.noteSmall{
+    padding: 0 5px;
+    font-size: 0.75rem;
+    color: #aaa;
+}
+
+.noteArea{
+    background-color: #fff;
+    width:100% ;
+    margin-top: -1px;
+    border: 1px solid #333333;
+}
+
+.noteArea-list{
+    display: block;
+    background-color: #eeeeee;
+    margin: 5px;
+    padding: 5px;
+    min-height: 100px;
+    border: 1px solid #cccccc;
+
 }
