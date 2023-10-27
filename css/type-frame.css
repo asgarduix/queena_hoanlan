@@ -1361,6 +1361,36 @@ textarea{
     font-size: 0.875rem;
 }
 
+.pop-btn-fellow{
+    border: 1px solid #d62612;
+    background-color: #b7392b;
+    color: #ffffff;
+	border-radius: 5px;
+    padding:0px 15px;
+    margin: 3px;
+    font-size: 0.875rem;
+}
+
+.pop-btn-fellow:hover{
+    border: 1px solid #d62612;
+    background-color: #E72410;
+    color: #ffffff;
+	border-radius: 5px;
+    padding:0px 15px;
+    margin: 3px;
+    font-size: 0.875rem;
+}
+
+
+.pop-btn-fellow.active{
+    border: 1px solid #cd7065;
+    background-color: #9d5c55;
+    color: #ffffff;
+	border-radius: 5px;
+    padding:0px 15px;
+    margin: 3px;
+    font-size: 0.875rem;
+}
 .timeline-btn-del{
     display: inline-flex;
     font-size: 0.875rem;
@@ -3649,4 +3679,32 @@ hr.case3{
     min-height: 100px;
     border: 1px solid #cccccc;
 
+}
+
+.pop-query-list{
+    display: inline-flex;
+}
+
+.pop-query-list ul{
+    position: relative;
+    top: 3px;
+}
+
+.pop-query-list li{
+    height: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
+
+.pop-query-list label{
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: none;
+    position: relative;
+    top: -3px;
+}
+
+.pop-query-list input[type=checkbox],input[type=radio] {
+    border: none;
 }
