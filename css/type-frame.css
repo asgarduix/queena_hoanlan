@@ -915,7 +915,7 @@ input[type="checkbox"] ,[type="radio"] {
     min-width: 1rem;
     height: 1rem;
     border-radius: 2px;
-    vertical-align: text-top;
+    vertical-align: baseline;
     background-color: #fff;
     border: 1px solid rgba(0,0,0,.25);
     -webkit-print-color-adjust: exact;
@@ -1043,7 +1043,7 @@ input[type="date" i] {
     margin-left: 5px;
     margin-right: 3px;
     border-radius: 3px;
-    font-size: 10px;
+    font-size: .9rem;
 	background:url(../img/arrow_drop_down_black_24dp2.svg) no-repeat right center transparent;
     line-height: 1.2rem;
 }
@@ -1326,7 +1326,7 @@ textarea{
 .btn-listcheck{
     background-color: #e4e4e4;
     color: #313131;
-    padding:2px 15px 5px 15px ;
+    padding:5px 15px 5px 15px ;
 	border-radius: 50px;
     margin: 0 auto;
     margin-left: 5px;
