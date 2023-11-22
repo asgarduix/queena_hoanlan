@@ -1058,7 +1058,7 @@ input[type="date" i] {
     margin-left: 5px;
     margin-right: 3px;
     border-radius: 3px;
-    font-size: 10px;
+    font-size: .875rem;
 	background:url(../img/arrow_drop_down_black_24dp2.svg) no-repeat right center transparent;
 
 }
