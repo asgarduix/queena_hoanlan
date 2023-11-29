@@ -186,11 +186,14 @@
                             <input type="text" value="" placeholder="請輸入值">
                         </div>     
                     </div>
-                    <div class="pop-unit-four">
+                    <div class="pop-unit-3">
                         <div class="pop-unit-title">業務來源</div>
-                        <div class="pop-unit-input pop-unit-input-last">
-                            <input type="radio" value="" id=""><label for="">一般件</label>
-                            <input type="radio" value="" id=""><label for="">介紹件</label>
+                        <div class="pop-unit-input ">
+                            <ul>
+                                <li><input type="radio" value="" id="01"><label for="" id="01">一般件</label></li>
+                                <li><input type="radio" value="" id="02" checked><label for="" id="02">介紹件-共同承攬</label></li>
+                                <li><input type="radio" value="" id="02"><label for="" id="03">介紹件-自行招攬</label></li>
+                            </ul>
                         </div>    
                     </div>
                 </div>
@@ -199,7 +202,12 @@
                 </div>
                 <div class="poprow">
                     <div class="pop-unit-four">
-                        <div class="pop-unit-title"><span class="pop-materialSize-xs material-icons-outlined">cancel</span>單位別</div>
+                        <div class="pop-unit-title">
+                            <button class="btn-position">
+                                <span class="pop-materialSize-xs material-icons-outlined">cancel</span>
+                            </button>
+                            單位別
+                        </div>
                         <div class="pop-unit-input">
                             <input class="pop-input" type="text" value="" placeholder="請輸入值">
                         </div>    
@@ -208,8 +216,8 @@
                         <div class="pop-unit-title">承攬身份</div>
                         <div class="pop-unit-input">
                             <select name="" id="">
-                                <option value="" selected>請選擇</option>
-                                <option value="">業務員</option>
+                                <option value="">請選擇</option>
+                                <option value="" selected>業務員</option>
                                 <option value="">服務業代</option>
                             </select>
                         </div>    
@@ -219,10 +227,10 @@
                             <div class="pop-unit-input">
                                 <div class="pop-double-unit-input">
                                     <div class="columnFive-left">
-                                        <input type="text" value="" placeholder="請輸入值">
+                                        <input type="text" value="A12345" placeholder="請輸入值" disabled>
                                         </div>
                                         <div class="columnTwo">
-                                        <input type="text" value="" placeholder="請輸入值" disabled>
+                                        <input type="text" value="廖家祥" placeholder="請輸入值" disabled>
                                     </div>
                                 </div>
                             </div>   
@@ -234,11 +242,12 @@
                                 <div class="columnTwo">
                                     <select name="" id="">
                                         <option value="">請選擇</option>
-                                        <option value="">比例</option>
+                                        <option value="" selected>比例</option>
+                                        <option value="">定額</option>
                                     </select>
                                 </div>
                                 <div class="columnFour">
-                                    <input type="text" value="" placeholder="請輸入值" disabled>
+                                    <input type="text" value="" placeholder="45" disabled>
                                 </div>
                                 <span class="zigzagLine">%</span>
                             </div>
@@ -259,14 +268,24 @@
                     <div class="pop-unit-four">
                         <div class="pop-unit-title">健保身份</div>
                         <div class="pop-unit-input pop-unit-input-last">
-                            <input type="checkbox" id=""><label for="">二代健保身份</label>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="01">
+                                    <label for="" id="01">二代健保身份</label>
+                                </li>
+                            </ul>
                         </div>    
                     </div>
                 </div>
                 <hr class="pophr">
                 <div class="poprow">
                     <div class="pop-unit-four">
-                        <div class="pop-unit-title"><span class="pop-materialSize-xs material-icons-outlined">cancel</span>單位別</div>
+                        <div class="pop-unit-title">
+                            <button class="btn-position">
+                                <span class="pop-materialSize-xs material-icons-outlined">cancel</span>
+                            </button>
+                            單位別
+                        </div>
                         <div class="pop-unit-input">
                             <input class="pop-input" type="text" value="" placeholder="請輸入值">
                         </div>    
@@ -275,9 +294,9 @@
                         <div class="pop-unit-title">承攬身份</div>
                         <div class="pop-unit-input">
                             <select name="" id="">
-                                <option value="" selected>請選擇</option>
+                                <option value="">請選擇</option>
                                 <option value="">業務員</option>
-                                <option value="">服務業代</option>
+                                <option value="" selected>服務業代</option>
                             </select>
                         </div>    
                     </div>
@@ -286,10 +305,10 @@
                             <div class="pop-unit-input">
                                 <div class="pop-double-unit-input">
                                     <div class="columnFive-left">
-                                        <input type="text" value="" placeholder="請輸入值">
+                                        <input type="text" value="A12345" placeholder="請輸入值">
                                         </div>
                                         <div class="columnTwo">
-                                        <input type="text" value="" placeholder="請輸入值" disabled>
+                                        <input type="text" value="廖家祥" placeholder="請輸入值" disabled>
                                     </div>
                                 </div>
                             </div>   
@@ -302,6 +321,7 @@
                                     <select name="" id="">
                                         <option value="">請選擇</option>
                                         <option value="">比例</option>
+                                        <option value="" selected>定額</option>
                                     </select>
                                 </div>
                                 <div class="columnFour">
@@ -326,7 +346,12 @@
                     <div class="pop-unit-four">
                         <div class="pop-unit-title">健保身份</div>
                         <div class="pop-unit-input pop-unit-input-last">
-                            <input type="checkbox" id=""><label for="">二代健保身份</label>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="01">
+                                    <label for="" id="01">二代健保身份</label>
+                                </li>
+                            </ul>
                         </div>    
                     </div>
                 </div>
@@ -338,7 +363,6 @@
                         <ul>
                             <li><a href="">要保人資料</a></li>
                             <li><a href="">被保人(主)資料</a></li>
-                            <li><a href="">被保人(主)資料</a></li>
                         </ul>
                     </div>
                 </div>
@@ -346,25 +370,27 @@
                     <div class="poprow">
                         <div class="pop-unit-four">
                             <div class="pop-unit-title">統一編號/ID</div>
-                            <div class="pop-unit-input">
+                            <div class="pop-unit-input inputzoom">
                                 <input type="text" value="" placeholder="請輸入值">
-                                <button class="pop-btn-3"><span class="course-materialSize-xs material-icons-outlined" >search</span></button>
+                                <button class="btn-zoom">
+                                    <span class="span-zoom material-icons-outlined"></span>
+                                </button>
                             </div>     
                         </div>
                         <div class="pop-unit-four">
                             <div class="pop-unit-title">要保人</div>
+                            <div class="pop-unit-input ">
+                                <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                            </div>    
+                        </div>
+                        <div class="pop-unit-four">
+                            <div class="pop-unit-title require">市內電話</div>
                             <div class="pop-unit-input">
                                 <input class="pop-input" type="text" value="" placeholder="請輸入值">
                             </div>    
                         </div>
                         <div class="pop-unit-four">
-                            <div class="pop-unit-title">E-mail</div>
-                            <div class="pop-unit-input">
-                                <input class="pop-input" type="text" value="" placeholder="請輸入值">
-                            </div>    
-                        </div>
-                        <div class="pop-unit-four">
-                            <div class="pop-unit-title">手機號碼</div>
+                            <div class="pop-unit-title require">手機號碼</div>
                             <div class="pop-unit-input">
                                 <input class="pop-input" type="text" value="" placeholder="請輸入值">
                             </div>    
@@ -379,7 +405,13 @@
                         </div>
                         <div class="pop-unit-four">
                             <div class="pop-unit-title">負責人</div>
-                            <div class="pop-unit-input pop-unit-input-last">
+                            <div class="pop-unit-input">
+                                <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                            </div>    
+                        </div>
+                        <div class="pop-unit-two">
+                            <div class="pop-unit-title">E-mail</div>
+                            <div class="pop-unit-input">
                                 <input class="pop-input" type="text" value="" placeholder="請輸入值">
                             </div>    
                         </div>
@@ -415,15 +447,17 @@
                         <div class="pop-unit-two">
                             <div class="pop-unit-title-two">國籍</div>
                             <div class="pop-unit-input-two">
-                                <div class="pop-unit-input">
-                                    <label><input type="radio" value="">本國</label>
-                                    <label> <input type="radio" value="">非本國</label>
-                                    <input type="text" value="" placeholder="請輸入值">
-                                </div> 
-                                
-                            </div>    
+                                <ul>
+                                    <li>
+                                        <input type="radio" value=""><label>本國</label>
+                                    </li>
+                                    <li><input type="radio" value=""><label>非本國</label></li>
+                                </ul>
+                                <div class="columnFour">
+                                    <input type="text" value="" placeholder="請輸入值" disabled>
+                                </div>
+                            </div>
                         </div>
-                    </div>
                 </div>
                     <!-- 放大鏡按下出現list -->
                     <div class="search-list">
@@ -458,12 +492,12 @@
                         <div class="pop-unit-two">
                             <div class="pop-unit-title">付款方式</div>
                             <div class="pop-unit-input-two pop-unit-input-last">
-                                <label>
-                                    <input type="checkbox" value="">支票
-                                    <input type="checkbox" value="">信用卡
-                                    <input type="checkbox" value="">匯款
-                                    <input type="checkbox" value="">現金
-                                </label>
+                                <ul>
+                                    <li><input type="checkbox" value="" id=""><label for="">支票</label></li>
+                                    <li><input type="checkbox" value=""><label for="">信用卡</label></li>
+                                    <li><input type="checkbox" value=""><label for="">匯款</label></li>
+                                    <li><input type="checkbox" value=""><label for="">現金</label></li>
+                                </ul>
                             </div>     
                         </div>
                     </div>
@@ -473,7 +507,6 @@
                             <div class="pop-unit-title-bgnone">投保險種</div>
                             <div class="pop-unit-input">
                                 <select name="" id="">
-                                    <option value="" selected>其他</option>
                                     <option value="">火災保險</option>
                                 </select>
                             </div>     
@@ -482,7 +515,6 @@
                             <div class="pop-unit-title-bgnone">投保險別</div>
                             <div class="pop-unit-input">
                                 <select name="" id="">
-                                    <option value="" selected>其他</option>
                                     <option value="">商業火險</option>
                                 </select>
                             </div>   
@@ -491,16 +523,11 @@
                     <hr>
                     <div class="pop-inside-border">
                         <div class="poprow">
-                            <div class="pop-unit-four">
+                            <div class="pop-unit-two">
                                 <div class="pop-unit-title">保險公司(主)</div>
                                 <div class="pop-unit-input">
                                     <input class="pop-input" type="text" value="" placeholder="請輸入值">
-                                </div>     
-                            </div>
-                            <div class="pop-unit-four">
-                                <div class="pop-unit-title">保單編號(主)</div>
-                                <div class="pop-unit-input">
-                                    <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                    <input class="pop-input" type="text" value="" placeholder="請輸入值" disabled>
                                 </div>     
                             </div>
                             <div class="pop-unit-four">
@@ -534,6 +561,12 @@
                         </div>
                         <div class="poprow">
                             <div class="pop-unit-four">
+                                <div class="pop-unit-title">保單編號(主)</div>
+                                <div class="pop-unit-input">
+                                    <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                </div>     
+                            </div>
+                            <div class="pop-unit-four">
                                 <div class="pop-unit-title">本單保費</div>
                                 <div class="pop-unit-input">
                                     <input class="pop-input" type="text" value="" placeholder="請輸入值">
@@ -556,15 +589,33 @@
                                     </div>
                                 </div>    
                             </div>
-                            <div class="pop-unit-two">
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">地震險佣金率</div>
+                                <div class="pop-unit-input spaceS">
+                                    <div class="pop-double-unit-input">
+                                        <div class="columnTwo">
+                                            <select name="" id="">
+                                                <option value="">請選擇</option>
+                                                <option value="">比例</option>
+                                            </select>
+                                        </div>
+                                        <div class="columnFour">
+                                            <input type="text" value="" placeholder="請輸入值" disabled>
+                                        </div>
+                                        <span class="zigzagLine">%</span>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="poprow">
+                            <div class="pop-unit-all">
                                 <div class="pop-unit-title-two">備註</div>
                                 <div class="pop-unit-input-two">
                                     <input class="pop-input" type="text" value="" placeholder="請輸入值">
                                 </div>     
                             </div>
                         </div>
-                        <hr>
-                        <div class="poprow">
+                        <!-- <div class="poprow">
                             <div class="pop-unit-two">
                                 <div class="pop-unit-title-two">標的種類</div>
                                 <div class="pop-unit-input-two">
@@ -605,7 +656,7 @@
                                     <input class="pop-input" type="text" value="" placeholder="請輸入值">
                                 </div>     
                             </div>
-                        </div>
+                        </div> -->
                         <hr>
                         <div class="pop-table">
                             <div class="pop-table-header">
@@ -614,146 +665,100 @@
                             <div class="pop-table-body">
                                 <ul>
                                     <li>
-                                        <label class="pop-table-label">
-                                            <div class="pop-table-label-input"><input class="inputstar" type="checkbox" value="">
-                                            </div>擴大地震險
-                                        </label>
+                                        <input type="checkbox" value="" id="01">
+                                        <label for="01">擴大地震險</label>
                                     </li>
                                     <li>
-                                        <label class="pop-table-label">
-                                            <div class="pop-table-label-input"><input class="inputstar" type="checkbox" value="">
-                                            </div>超額颱風及洪水險
-                                        </label>
+                                        <input type="checkbox" value="" id="02">
+                                        <label for="02">超額颱風及洪水險</label>
                                     </li>
                                     <li>
-                                        <label class="pop-table-label">
-                                            <div class="pop-table-label-input"><input class="inputstar" type="checkbox" value="">
-                                            </div>水漬險
-                                        </label>
+                                        <input type="checkbox" value="" id="03">
+                                        <label for="03">水漬險</label>
                                     </li>
                                     <li>
-                                        <label class="pop-table-label">
-                                            <div class="pop-table-label-input"><input class="inputstar" type="checkbox" value="">
-                                            </div>自動消防裝置滲漏險
-                                        </label>
+                                        <input type="checkbox" value="" id="04">
+                                        <label for="04">自動消防裝置滲漏險</label>
                                     </li>
                                     <li>
-                                        <label class="pop-table-label">
-                                            <div class="pop-table-label-input"><input class="inputstar" type="checkbox" value="">
-                                            </div>恐怖主義險
-                                        </label>
+                                        <input type="checkbox" value="" id="05">
+                                        <label for="05">恐怖主義險</label>
                                     </li>
                                     <li>
-                                        <label class="pop-table-label">
-                                            <div class="pop-table-label-input"><input class="inputstar" type="checkbox" value="">
-                                            </div>超額竊盜顯
-                                        </label>
+                                        <input type="checkbox" value="" id="06">
+                                        <label for="06">超額竊盜險</label>
                                     </li>
                                     <li>
-                                        <label class="pop-table-label">
-                                            <div class="pop-table-label-input"><input class="inputstar" type="checkbox" value="">
-                                            </div>地震超額保障保險
-                                        </label>
+                                        <input type="checkbox" value="" id="07">
+                                        <label for="07">地震超額保障保險</label>
                                     </li>
                                     <li>
-                                        <label class="pop-table-label">
-                                            <div class="pop-table-label-input"><input class="inputstar" type="checkbox" value="">
-                                            </div>第三人意外責任
-                                        </label>
+                                        <input type="checkbox" value="" id="08">
+                                        <label for="08">第三人意外責任</label>
                                     </li>
                                 </ul>
                                 <ul>
                                     <li>
-                                        <label class="pop-table-label">
-                                            <div class="pop-table-label-input"><input class="inputstar" type="checkbox" value="">
-                                            </div>承租人火災責任保險
-                                        </label>
+                                        <input type="checkbox" value="" id="09">
+                                        <label for="09">承租人火災責任保險</label>
                                     </li>
                                     <li>
-                                        <label class="pop-table-label">
-                                            <div class="pop-table-label-input"><input class="inputstar" type="checkbox" value="">
-                                            </div>地層下陷、滑動或山崩險
-                                        </label>
+                                        <input type="checkbox" value="" id="10">
+                                        <label for="10">地層下陷、滑動或山崩險</label>
                                     </li>
                                     <li>
-                                        <label class="pop-table-label">
-                                            <div class="pop-table-label-input"><input class="inputstar" type="checkbox" value="">
-                                            </div>租金損失險
-                                        </label>
+                                        <input type="checkbox" value="" id="11">
+                                        <label for="11">租金損失險</label>
                                     </li>
                                     <li>
-                                        <label class="pop-table-label">
-                                            <div class="pop-table-label-input"><input class="inputstar" type="checkbox" value="">
-                                            </div>寵物意外補償費用
-                                        </label>
+                                        <input type="checkbox" value="" id="12">
+                                        <label for="12">寵物意外補償費用</label>
                                     </li>
                                     <li>
-                                        <label class="pop-table-label">
-                                            <div class="pop-table-label-input"><input class="inputstar" type="checkbox" value="">
-                                            </div>其他
-                                        </label>
+                                        <input type="checkbox" value="" id="13">
+                                        <label for="13">其他</label>
                                     </li>
                                     <li>
-                                        <label class="pop-table-label">
-                                            <div class="pop-table-label-input"><input class="inputstar" type="checkbox" value="">
-                                            </div>爆炸
-                                        </label>
+                                        <input  type="checkbox" value="" id="14">
+                                        <label  for="14">爆炸</label>
                                     </li>
                                     <li>
-                                        <label class="pop-table-label">
-                                            <div class="pop-table-label-input"><input class="inputstar" type="checkbox" value="">
-                                            </div>地震
-                                        </label>
+                                        <input type="checkbox" value="" id="15">
+                                        <label for="15">地震</label>
                                     </li>
                                     <li>
-                                        <label class="pop-table-label">
-                                            <div class="pop-table-label-input"><input class="inputstar" type="checkbox" value="">
-                                            </div>颱風及洪水
-                                        </label>
+                                        <input type="checkbox" value="" id="16">
+                                        <label for="16">颱風及洪水</label>
                                     </li>
                                 </ul>
                                 <ul>
                                     <li>
-                                        <label class="pop-table-label">
-                                            <div class="pop-table-label-input"><input class="inputstar" type="checkbox" value="">
-                                            </div>罷工、暴動、民眾騷擾、惡意破壞行為
-                                        </label>
+                                        <input type="checkbox" value="" id="17">
+                                        <label for="17">罷工、暴動、民眾騷擾、惡意破壞行為</label>
                                     </li>
                                     <li>
-                                        <label class="pop-table-label">
-                                            <div class="pop-table-label-input"><input class="inputstar" type="checkbox" value="">
-                                            </div>水漬
-                                        </label>
+                                        <input type="checkbox" value="" id="18">
+                                        <label for="18">水漬</label>
                                     </li>
                                     <li>
-                                        <label class="pop-table-label">
-                                            <div class="pop-table-label-input"><input class="inputstar" type="checkbox" value="">
-                                            </div>煙燻
-                                        </label>
+                                        <input  type="checkbox" value="" id="19">
+                                        <label  for="19">煙燻</label>
                                     </li>
                                     <li>
-                                        <label class="pop-table-label">
-                                            <div class="pop-table-label-input"><input class="inputstar" type="checkbox" value="">
-                                            </div>竊盜
-                                        </label>
+                                        <input type="checkbox" value="" id="20">
+                                        <label for="20">竊盜</label>
                                     </li>
                                     <li>
-                                        <label class="pop-table-label">
-                                            <div class="pop-table-label-input"><input class="inputstar" type="checkbox" value="">
-                                            </div>航空器墜落、機動車輛碰撞
-                                        </label>
+                                        <input type="checkbox" value="" id="21">
+                                        <label for="21">航空器墜落、機動車輛碰撞</label>
                                     </li>
                                     <li>
-                                        <label class="pop-table-label">
-                                            <div class="pop-table-label-input"><input class="inputstar" type="checkbox" value="">
-                                            </div>營業中斷
-                                        </label>
+                                        <input type="checkbox" value="" id="22">
+                                        <label for="22">營業中斷</label>
                                     </li>
                                     <li>
-                                        <label class="pop-table-label">
-                                            <div class="pop-table-label-input"><input class="inputstar" type="checkbox" value="">
-                                            </div>第三人意外責任
-                                        </label>
+                                        <input type="checkbox" value="" id="23">
+                                        <label for="23">第三人意外責任</label>
                                     </li>
                                     <li><label></label></li>
                                 </ul>
@@ -764,10 +769,8 @@
                             <div class="pop-table-header">
                                 <ul>
                                     <li>
-                                    <label class="pop-table-label">
-                                        <div class="pop-table-label-input"><input class="inputstar" type="checkbox" value="">
-                                        </div>共保件
-                                    </label>
+                                        <input type="checkbox" value="">
+                                        <label for="">共保件</label>
                                     </li>
                                     <li>
                                         <button class="btn pop-table-header-btn">新增</button>
@@ -778,7 +781,12 @@
                                 <div class="pop-body-frame">
                                     <div class="poprow">
                                         <div class="pop-unit-four">
-                                            <div class="pop-unit-title"><span class="pop-materialSize-xs material-icons-outlined">cancel</span>保險公司(主)</div>
+                                            <div class="pop-unit-title">
+                                                <button class="btn-position">
+                                                    <span class="pop-materialSize-xs material-icons-outlined">cancel</span>
+                                                </button>
+                                                保險公司(主)
+                                            </div>
                                             <div class="pop-unit-input">
                                                 <input class="pop-input" type="text" value="" placeholder="請輸入值">
                                             </div>    
@@ -813,8 +821,8 @@
                                         </div>
                                         <div class="pop-unit-four">
                                             <div class="pop-unit-title">佣金率</div>
-                                            <div class="pop-unit-input spaceS">
-                                                <div class="pop-double-unit-input">
+                                            <div class="pop-unit-input ">
+                                                <div class="pop-double-unit-input pop-unit-input-last">
                                                     <div class="columnTwo">
                                                         <select name="" id="">
                                                             <option value="">請選擇</option>
@@ -832,7 +840,12 @@
                                     <hr class="pophr">
                                     <div class="poprow">
                                         <div class="pop-unit-four">
-                                            <div class="pop-unit-title"><span class="pop-materialSize-xs material-icons-outlined">cancel</span>保險公司(主)</div>
+                                            <div class="pop-unit-title">
+                                                <button class="btn-position">
+                                                    <span class="pop-materialSize-xs material-icons-outlined">cancel</span>
+                                                </button>
+                                                保險公司(主)
+                                            </div>
                                             <div class="pop-unit-input">
                                                 <input class="pop-input" type="text" value="" placeholder="請輸入值">
                                             </div>    
@@ -867,7 +880,7 @@
                                         </div>
                                         <div class="pop-unit-four">
                                             <div class="pop-unit-title">佣金率</div>
-                                            <div class="pop-unit-input spaceS">
+                                            <div class="pop-unit-input pop-unit-input-last">
                                                 <div class="pop-double-unit-input">
                                                     <div class="columnTwo">
                                                         <select name="" id="">
@@ -900,7 +913,7 @@
         </div>
     </div>
 </body>
-</html>
+</html> 
 
 <script>
     let table01Data = [{

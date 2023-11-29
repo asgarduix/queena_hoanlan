@@ -939,7 +939,7 @@ input[type="checkbox"] ,[type="radio"] :checked {
 
 .pop-unit-input input[type=radio] ,input[type=checkbox]  {
     border: 1px solid #aaaaaa;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 5px;
     margin-right: 5px;
     border-radius: 3px;
@@ -1885,14 +1885,14 @@ select {
 
 .poprow-nonborder{
     display:flex;
-    padding: 10px 0;
+    padding: 5px 0;
     width: 100%;
     background-color: #ffffff;
 }
 
 .poprow-group{
     line-height: 1.2rem;
-    padding: 10px 0;
+    padding: 5px 0;
 
 }
 
@@ -2020,6 +2020,7 @@ select {
 
 .pop-unit-title-bgnone{
     width:125px;
+    line-height: 25px;
     text-align: right;
     padding-right: 5px;
     font-size: .875rem;
@@ -2286,8 +2287,7 @@ select {
     width: 100%;
     background-color: #e4eff4;
     border: 1px solid #797979;
-    padding-left: 10px;
-    padding-bottom: 5px;
+    padding: 5px;
     font-size: .875rem;
 }
 
@@ -2341,8 +2341,9 @@ select {
 }
 
 .pop-table-header li{
+    display: flex;
+    align-items: center;
     padding-top: 8px;
-    line-height: 1.2rem;
     margin: 0 8px;
 }
 
@@ -2373,17 +2374,23 @@ select {
     border: 1px solid #797979;
     border-right: none;
     margin-top: -1px;
-    padding: 15px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
 }
 
 .pop-table-body ul li:last-child{
     border-right: 1px solid #797979;
 }
 
+.pop-table-body ul li >label{
+    display: flex;
+    align-items: center;
+
+}
+
 .pop-body-frame{
     width: 100%;
     background-color: #ffffff;
-    padding: 1%;
+    padding-top:5px;
     border-radius: 5px;
 
 }
