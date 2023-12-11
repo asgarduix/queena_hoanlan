@@ -280,9 +280,9 @@
                             <div class="pop-unit-input-two">
                                 <ul>
                                     <li><input type="radio"><label for="">法令函釋</label></li>
-                                    <li><input type="radio"><label for="">申訴陳情</label></li>
-                                    <li><input type="radio" checked><label for="">裁罰</label></li>
-                                    <li><input type="radio"><label for="">洗錢防制</label></li>
+                                    <li><input type="radio"><label for="">爭議案件</label></li>
+                                    <li><input type="radio" checked><label for="">裁罰案彙整</label></li>
+                                    <li><input type="radio"><label for="">洗錢防制名單及國家更新</label></li>
                                     <li><input type="radio"><label for="">其他</label></li>
                                 </ul>
                             </div>    
@@ -293,7 +293,7 @@
                             <div class="pop-unit-title">作業性質</div>
                             <div class="pop-unit-input-4 pop-unit-input">
                                 <ul>
-                                    <li><input type="checkbox"><label for="">內控興革</label></li>
+                                    <li><input type="checkbox"><label for="">修訂內控</label></li>
                                     <li><input type="checkbox"><label for="">教育宣導</label></li>
                                     <li><input type="checkbox"><label for="">其他</label></li>
                                     <li><input type="text"></li>
@@ -314,9 +314,9 @@
                         <div class="poprow">
                             <div class="listcheck-button-group">
                                 <button class="btn-listcheck">函文本文</button>
-                                <button class="btn-listcheck">裁罰訊息</button>
-                                <button class="btn-listcheck active">裁罰歸檔</button>
-                                <button class="btn-listcheck">裁罰統計</button>
+                                <button class="btn-listcheck">裁罰案彙整訊息</button>
+                                <button class="btn-listcheck active">裁罰案彙整歸檔</button>
+                                <button class="btn-listcheck">裁罰案彙整統計</button>
                             </div>
                         </div>
                         <hr>
@@ -439,8 +439,8 @@
 <script>
     let table03Data = [{
         id: "b1",
-        裁罰標題: "裁罰標題",
-        裁罰關鍵字: "裁罰關鍵字",
+        裁罰案彙整標題: "裁罰案彙整標題",
+        裁罰案彙整關鍵字: "裁罰案彙整關鍵字",
         更新日期: "更新日期",
     }, 
 ];
@@ -467,12 +467,12 @@
                     cell.getRow().toggleSelect();
                 }
             },
-            { title: "裁罰標題", field: "裁罰標題" ,
+            { title: "裁罰案彙整標題", field: "裁罰案彙整標題" ,
             formatter: function(cell, formatterParams, onRendered) {
                     return "<a href='#'>" + cell.getValue() + "</a>"
                 },
             },
-            { title: "裁罰關鍵字", field: "裁罰關鍵字" },
+            { title: "裁罰案彙整關鍵字", field: "裁罰案彙整關鍵字" },
             { title: "更新日期", field: "更新日期" },
         ],
     });
