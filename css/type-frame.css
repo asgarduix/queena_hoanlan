@@ -280,7 +280,6 @@ button {
     margin-left: 3px;
     font-size: 0.875rem;
     position: relative;
-    top: -3px;
 }
 
 ::placeholder {
@@ -1421,7 +1420,6 @@ textarea{
 .timeline-btn-del{
     display: inline-flex;
     font-size: 0.875rem;
-
 }
 
 .query-unit{
@@ -1797,6 +1795,7 @@ select {
 
 
 .pop-unit-label{
+    display: inline;
     font-size: 1rem;
     color: #075D8E;
     font-weight: 600;
@@ -1804,8 +1803,26 @@ select {
     margin-top: 15px;
 }
 
+.pop-unit-label ul{
+    display: inline-flex;
+}
+
+.pop-unit-label li{
+    font-size:14px ;
+    color: #555555;
+    line-height: 25px;
+}
+
 .pop-unit-label:first-child{
     margin-top: 3px;
+}
+
+.pop-unit-label input[type=radio] ,input[type=checkbox]  {
+    border: 1px solid #aaaaaa;
+    border-radius: 3px;
+    line-height: 23px;
+    position: relative;
+    top: 3px;
 }
 
 .popWindow-header{
@@ -3551,75 +3568,89 @@ hr.case3{
 
 /* 2023新增時間線 */
 .timeLINE{
-    display: inline-flex;
+    display: flex;
     width: 100%;
-    background-color: #aaaaaa;
-    border: 1px solid #027DB4;
-    margin-bottom: 15px;
     padding:0;
+    background-color: #ffffff;
+    padding: 15px 5px;
+    border-radius: 5px;
 }
 
 .timeline-box{
-    display: inline-block;
-    width: calc(100% / 6);
-    border: 1px solid pink;
-    height: 3rem;
+    flex:1;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-.timeline-box-s-left-top{
-    display: block;
-    height: 1.5rem;
-    border: 2px solid #555555 ;
-    margin: 0 -5px;
-    border-top-left-radius:100px;
-    border-right: none;
-    border-bottom: none;
-}
-
-.timeline-box-s-right-bottom{
-    display: block;
-    height: 1.5rem;
-    border: 2px solid #555555 ;
-    margin: 0 -5px;
-    border-top: none;
-    border-right: none;
-    border-bottom-left-radius:100px;
+.timepoint-top{
+    text-align: center;
+    margin-bottom: 5px;
 }
 
 .timepoint{
-    display: inline-block;
-    width: 30px;
-    height: 3rem;
-    line-height: 3rem;
-    border: 1px solid blue;
-    margin-left: 3rem;
-
+    display:inline-block;
+    width: calc(100% / 3);
+    margin-right: -4px;
 }
 
-.timepoint p {
+
+
+/* 需顯示透明度使用 */
+.timeOpacity{
+    opacity: .5;
+}
+
+.doit-1{}
+
+.btn-G{
+    background-color: #78e1a9;
+    border: 2px solid #13683d;
     display: block;
-    font-size: 10px;
-    text-align: center;
-    height: 2rem;
+    border-radius: 10px ;
+    width: 13px;
+    height: 13px;
+    margin: 0 auto;
 }
 
-.doit-1{
-    display:block ;
-    width: 10px;
-    height: 10px;
-    border: 3px solid #333;
+.btn-R{
+    background-color: #f1aca3;
+    border: 2px solid #c20606;
+    display: block;
     border-radius: 10px ;
+    width: 13px;
+    height: 13px;
+    margin: 0 auto;
+}
+
+.btn-RY{
+    background-color: #d4d3c7;
+    border: 2px solid #6c6c6b;
+    display: block;
+    border-radius: 10px ;
+    width: 13px;
+    height: 13px;
+    margin: 0 auto;
+}
+
+.btn-Y{
+    background-color: #f5ef9b;
+    border: 2px solid #dfb124;
+    display: block;
+    border-radius: 10px ;
+    width: 13px;
+    height: 13px;
     margin: 0 auto;
 }
 
 .hr-1{
-    display: inline-block;
-    border: 2px solid #555555;
-    width: calc(100% - 85px);
-    text-align: right;
-    margin-right: 0;
-    vertical-align: middle;
+    border-top: 2px solid #ababab;
+    width: 100%;
+    height: 10px;
+    position: relative;
+    top: 3px;
+
 }
+
 /* 2023/10/24 頁籤內的頁籤 */
 .tab-inside-1{
     background-color: #f4f4f4;
@@ -3682,21 +3713,28 @@ hr.case3{
 
 .new-item{
     background-color: #ffffff;
-    line-height: 30px;
-    padding: 0 15px 0 5px;
+    line-height: 25px;
+    padding: 0 10px 0 5px;
     border-right: 1px solid #333333;
+    font-size: 14px;
 }
 
-.new-item:first-child{
-    background-color: #f8e9d4;
+.new-item .btn{
+    padding:0.3rem 0.5rem ;
+    margin: 0 auto
+
+}
+
+.new-item p{
+    display: inline-flex;
+    line-height: 20px;
 }
 
 .new-item span{
     display: inline-block;
-    font-size: 18px;
+    font-size: 20px;
     position: relative;
-    top: 4px;
-    right: -10px;
+    top: 5px;
 }
 
 .noteSmall{
@@ -3749,4 +3787,184 @@ hr.case3{
 
 .pop-query-list input[type=checkbox],input[type=radio] {
     border: none;
+}
+/* 新增歷程css */
+.pop-listMesg-1{
+    position: absolute;
+    top: 9rem;
+    left: 2.5rem;
+    width: 250px;
+    height: 150px;
+    padding: 5px;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 3px;
+    border: 1px solid #e2e1e1;
+}
+
+.pop-listMesg-2{
+    position: absolute;
+    top: 9rem;
+    left: 10rem;
+    width: 250px;
+    height: 150px;
+    padding: 5px;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 3px;
+    border: 1px solid #e2e1e1;
+}
+
+.pop-listMesg-3{
+    position: absolute;
+    top: 9rem;
+    left: 17rem;
+    width: 250px;
+    height: 150px;
+    padding: 5px;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 3px;
+    border: 1px solid #e2e1e1;
+}
+
+.pop-listMesg-4{
+    position: absolute;
+    top: 9rem;
+    left: 24rem;
+    width: 250px;
+    height: 150px;
+    padding: 5px;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 3px;
+    border: 1px solid #e2e1e1;
+}
+
+.pop-listMesg-5{
+    position: absolute;
+    top: 9rem;
+    left: 30rem;
+    width: 250px;
+    height: 150px;
+    padding: 5px;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 3px;
+    border: 1px solid #e2e1e1;
+}
+
+.pop-listMesg-6{
+    position: absolute;
+    top: 9rem;
+    left: 37rem;
+    width: 250px;
+    height: 150px;
+    padding: 5px;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 3px;
+    border: 1px solid #e2e1e1;
+}
+
+.pop-listMesg-7{
+    position: absolute;
+    top: 9rem;
+    left: 44rem;
+    width: 250px;
+    height: 150px;
+    padding: 5px;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 3px;
+    border: 1px solid #e2e1e1;
+}
+
+.pop-listMesg-8{
+    position: absolute;
+    top: 9rem;
+    left: 44rem;
+    width: 250px;
+    height: 150px;
+    padding: 5px;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 3px;
+    border: 1px solid #e2e1e1;
+}
+
+/* 綠色的線 */
+.pop-listBox-line-G{
+    border: 1px solid #13683d;
+}
+
+/* 紅色的線 */
+.pop-listBox-line-R{
+    border: 1px solid #c20606;
+}
+
+/* 黃色的線 */
+.pop-listBox-line-Y{
+    border: 1px solid #dfb124;
+}
+
+.listBox{
+    padding: 3px;
+    height: 8.5rem;
+    overflow: auto;
+    border-radius: 10px;
+}
+
+.listBox ul{
+    display: block;
+}
+
+.listBox li{
+    padding: 5px 2px;
+    border-bottom: 1px dashed #3c3c3c;
+}
+
+.listBox li a {
+    color: #3c3c3c;
+}
+
+.listBox li p{
+    display: inline-block;
+}
+
+.p-Gpoint::before{
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 10px;
+    background-color: #78e1a9;
+    border: 2px solid #13683d;
+    position: relative;
+    top: 1px;
+    margin-left: 3px;
+}
+
+.p-Rpoint::before{
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 10px;
+    background-color: #f1aca3;
+    border: 2px solid #c20606;
+    position: relative;
+    top: 1px;
+}
+
+.p-Ypoint::before{
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 10px;
+    background-color: #f5ef9b;
+    border: 2px solid #dfb124;
+    position: relative;
+    top: 1px;
 }

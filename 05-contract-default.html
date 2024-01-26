@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>layout</title>
+    <title>函文管理-合約管理</title>
     <!-- Material -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <!-- <link rel="stylesheet" href="/material/material-icons-ie.css">
@@ -168,6 +168,7 @@
                         <button class="active btn btn-add unittab-active">新增</button>
                         <button class="btn btn-edit">編輯</button>
                         <button class="btn btn-edit">刪除</button>
+                        <button class="btn btn-edit">匯出年度清冊</button>
                     </div>
                     <div class="tableBody">
                         <div class="tab-frame-1">
@@ -212,7 +213,7 @@
         id: "b1",
         預計簽約日期: "預計簽約日期",
         合約期間: "合約期間",
-        編號: "編號1",
+        合約編號: "編號1",
         部門: "營業一部",
         合約名稱: "責任險",
         承辦人: "承辦人",
@@ -222,7 +223,7 @@
         id: "b2",
         預計簽約日期: "預計簽約日期",
         合約期間: "合約期間",
-        編號: "編號2",
+        合約編號: "編號2",
         部門: "營業一部",
         合約名稱: "責任險",
         承辦人: "承辦人",
@@ -254,7 +255,7 @@
             },
             { title: "預計簽約日期", field: "預計簽約日期",},
             { title: "合約期間", field: "合約期間" },
-            { title: "編號", field: "編號",
+            { title: "合約編號", field: "合約編號",
             formatter: function(cell, formatterParams, onRendered) {
                     return "<a href='#'>" + cell.getValue() + "</a>"
                 },
