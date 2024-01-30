@@ -577,8 +577,8 @@ box-shadow: 0 0 1px 1px rgba(158, 158, 158, 0.6);
 }
 
 .materialSize-xs{
-    font-size: .5rem;
-    line-height: .9rem;
+    font-size: 1rem;
+    line-height: 1rem;
     position: relative;
     top: 2px;
 }
@@ -934,10 +934,9 @@ input[type="checkbox"] ,[type="radio"] :checked {
 .pop-unit-input input[type=text]  {
     border: 1px solid #aaaaaa;
     height: 30px;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    margin-left: 5px;
-    margin-right: 5px;
+    position: relative;
+    top:3px ;
+    left: 3px;
     border-radius: 3px;
 }
 
@@ -948,14 +947,27 @@ input[type="checkbox"] ,[type="radio"] :checked {
     border-radius: 3px;
 }
 
-.pop-unit-input-4 input[type=text]  {
-    width: calc(100% - 54px);
+.pop-unit-input ul li > input[type=text]  {
     border: 1px solid #aaaaaa;
     height: 30px;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    position: relative;
+    top: -2px;
+    left: 3px;
+    border-radius: 3px;
+}
+
+.pop-unit-input ul li input[type=radio] ,input[type=checkbox]  {
+    border: 1px solid #aaaaaa;
     margin-left: 5px;
     margin-right: 5px;
+    border-radius: 3px;
+}
+
+.pop-unit-input-4 input[type=text]  {
+    border: 1px solid #aaaaaa;
+    height: 30px;
+    position: relative;
+    top: -3px;
     border-radius: 3px;
 }
 
@@ -1110,12 +1122,12 @@ input[type="date" i] {
 }
 
 .pop-double-unit-input input[type=text] {
-    width: calc(100% - 1px);
+    width: calc(100% - 15px);
     border: 1px solid #aaaaaa;
     height: 30px;
-    margin-top: 3px;
-    margin-left: 5px;
-    margin-right: 5px;
+    position: relative;
+    top: 0;
+    left: 5px;
     border-radius: 3px;
 }
 
@@ -1391,10 +1403,9 @@ textarea{
     background-color: #b7392b;
     color: #ffffff;
 	border-radius: 5px;
-    padding:0px 15px;
+    padding:5px 15px;
     margin: 3px;
     font-size: 0.875rem;
-    line-height: 20px;
 }
 
 .pop-btn-fellow:hover{
@@ -1402,8 +1413,7 @@ textarea{
     background-color: #E72410;
     color: #ffffff;
 	border-radius: 5px;
-    padding:0px 15px;
-    margin: 3px;
+    padding:5px 15px;
     font-size: 0.875rem;
 }
 
@@ -1413,7 +1423,7 @@ textarea{
     background-color: #9d5c55;
     color: #ffffff;
 	border-radius: 5px;
-    padding:0px 15px;
+    padding:5px 15px;
     margin: 3px;
     font-size: 0.875rem;
 }
@@ -1795,11 +1805,10 @@ select {
 
 
 .pop-unit-label{
-    display: inline;
     font-size: 1rem;
     color: #075D8E;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     margin-top: 15px;
 }
 
@@ -3787,6 +3796,8 @@ hr.case3{
 
 .pop-query-list input[type=checkbox],input[type=radio] {
     border: none;
+    position: relative;
+    top: 3px;
 }
 /* 新增歷程css */
 .pop-listMesg-1{
