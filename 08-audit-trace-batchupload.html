@@ -88,41 +88,30 @@
             </div>
             <div class="title-button-group">
                 <button class="btn-title">稽核</button>
-                <button class="btn-title btn-title-active">結案管理</button>
-                <button class="btn-title btn-title">批次上傳稽核項目</button>
+                <button class="btn-title btn-title">結案管理</button>
+                <button class="btn-title btn-title-active">批次上傳稽核項目</button>
             </div>
             <div class="right-clumn-row">
                 <div class="query-unit">
                     <div class="content-unit">
                         <div class="query-unit-group">
-                            <div class="query-unit-title">查核年月區間</div>
+                            <div class="query-unit-title">格式名稱</div>
                             <div class="query-unit-input">
                                 <div class="query-unit-double-input">
-                                    <div class="columnFive-left-45">
-                                    <input type="date" value="" placeholder="請輸入值">
-                                    </div>
-                                    <span class="zigzagLine">～</span>
-                                    <div class="columnFive-left-45">
-                                        <input type="date" value="" placeholder="請輸入值">
-                                    </div>
+                                    <select name="" id="">
+                                        <option value="">請選擇</option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
-                        <div class="query-unit-group">
-                            <div class="query-unit-title">查核作業</div>
+                        <div class="query-unit-group-2-T">
+                            <div class="query-unit-title">選擇檔案</div>
                             <div class="query-unit-input">
                                 <input type="text" value="" placeholder="請輸入值">
+                                <button class="btn btn-search">瀏覽</button>
                             </div>
-                        </div>
-                        <div class="query-unit-group">
-                            <div class="query-unit-title">受查單位</div>
-                            <div class="query-unit-input">
-                                <input type="text" value="" placeholder="請輸入值">
-                            </div>
-                        </div>
-                        <div class="query-unit-group">
-                            <div class="query-unit-title">查核意見</div>
-                            <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
                         </div>
                     </div>
                 </div>
@@ -132,7 +121,7 @@
                     </div>
                     <div class="query-unit-infobutton">
                         <button class="btn btn-clear">清除</button>
-                        <button class="btn btn-search">搜尋</button>
+                        <button class="btn btn-search">匯入</button>
                     </div>
                 </div>
             </div>
@@ -140,7 +129,7 @@
             <div class="right-clumn-row">
                 <div class="tableInfo">
                     <div class="tableWork">
-                        <button class="active btn btn-add unittab-active">缺失改善情形</button>
+                        <button class="active btn btn-add unittab-active">確認匯入</button>
                     </div>
                     <div class="tableBody">
                         <div class="tab-frame-1">
@@ -189,10 +178,8 @@
         查核標的名稱: "查核標的名稱",
         查核作業代號: "查核作業代號",
         查核作業名稱: "查核作業名稱",
-        查核項目: "查核性質",
         受查單位: "受查單位",
-        查核人員: "查核人員",
-        查核結果: "查核結果",
+        主要查核人員: "主要查核人員",
     }, 
 ];
     var table01 = new Tabulator("#table01", {
@@ -229,10 +216,8 @@
             { title: "查核標的名稱", field: "查核標的名稱" },
             { title: "查核作業代號", field: "查核作業代號",},
             { title: "查核作業名稱", field: "查核作業名稱" },
-            { title: "查核項目", field: "查核項目" },
             { title: "受查單位", field: "受查單位" },
-            { title: "查核人員", field: "查核人員" },
-            { title: "查核結果", field: "查核結果" }
+            { title: "主要查核人員", field: "主要查核人員" },
         ],
     });
     // 選擇預設勾選row

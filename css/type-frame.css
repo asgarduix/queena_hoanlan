@@ -3979,3 +3979,12 @@ hr.case3{
     position: relative;
     top: 1px;
 }
+
+.upload-body-item ul{
+    display: inline-flex;
+}
+.upload-body-item li{
+    height: 25px;
+    line-height: 25px;
+    margin-right: 5px;
+}
