@@ -90,33 +90,41 @@
                     <div class="content-unit">
                         <div class="query-unit-group">
                             <div class="query-unit-title require">統一編號/ID</div>
-                            <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
+                            <div class="query-unit-input">
+                                <input type="text" value="" placeholder="請輸入值">
+                            </div>
+                            <span class="span-search-1">輸入格式錯誤！</span>
                         </div>
                         <div class="query-unit-group">
                             <div class="query-unit-title">投保編號</div>
                             <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
+                            <span class="span-search-1">輸入格式錯誤！</span>
                         </div>
                         <div class="query-unit-group">
                             <div class="query-unit-title">保單號碼</div>
                             <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
+                            <span class="span-search-1">輸入格式錯誤！</span>
                         </div>
                         <div class="query-unit-group">
                             <div class="query-unit-title">要保書輸入起期</div>
                             <div class="query-unit-input"> 
                                 <input type="date" value="" placeholder="請輸入值">
                             </div>
+                            <span class="span-search-1">輸入格式錯誤！</span>
                         </div>
                         <div class="query-unit-group">
                             <div class="query-unit-title">要保書輸入迄期</div>
                             <div class="query-unit-input"> 
                                 <input type="date" value="" placeholder="請輸入值">
                             </div>
+                            <span class="span-search-1">輸入格式錯誤！</span>
                         </div>
                     </div>
                     <div class="content-unit">
                         <div class="query-unit-group-1">
                             <div class="query-unit-title">客戶名稱</div>
                             <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
+                            <span class="span-search-1">輸入格式錯誤！</span>
                         </div>
                     </div>
                 </div>
@@ -182,36 +190,33 @@
 <script>
     let table01Data = [{
         id: "b1",
-        投保編號: "T222333000",
         保險公司: "國泰",
         險別: "商業火險",
         保單號碼: "A12356789",
         保費: "2,000",
+        批單號碼: "A1234567890",
         統一編號: "16149963",
-        狀態: "未確認出單",
-        歸檔序號: "3",
+        狀態: "已出單",
     },
     {
         id: "b1",
-        投保編號: "T222333001",
         保險公司: "國泰",
         險別: "商業火險",
         保單號碼: "B246801214",
         保費: "2,000",
+        批單號碼: "A1234567890",
         統一編號: "16149963",
         狀態: "未確認出單",
-        歸檔序號: "N/A",
     }, 
     {
         id: "b1",
-        投保編號: "T222333002",
         保險公司: "富邦",
         險別: "商業動產流動綜合保險",
         保單號碼: "C13579012",
         保費: "3,000",
+        批單號碼: "A1234567890",
         統一編號: "16149963",
         狀態: "未確認出單",
-        歸檔序號: "N/A",
     }, 
 ];
     var table01 = new Tabulator("#table01", {
@@ -238,22 +243,19 @@
                     cell.getRow().toggleSelect();
                 }
             },
-            { title: "投保編號", field: "投保編號",
-                formatter: function(cell, formatterParams, onRendered) {
-                    return "<a href='#'>" + cell.getValue() + "</a>"
-                },
-            },
-            { title: "保險公司", field: "保險公司" },
+            { title: "保險公司", field: "保險公司"},
             { title: "險別", field: "險別" },
             { title: "保單號碼", field: "保單號碼" },
             { title: "保費", field: "保費", hozAlign: "right"},
-            { title: "統一編號", field: "統一編號" },
-            { title: "狀態", field: "狀態" },
-            { title: "歸檔序號", field: "歸檔序號",
+            { title: "批單號碼", field: "批單號碼",
             formatter: function(cell, formatterParams, onRendered) {
-                    return "<a href='#'>" + cell.getValue() + "</a>"
-                },
+                        return "<a href='#'>" + cell.getValue() + "</a>"
+                    },
             },
+            { title: "客戶名稱", field: "客戶名稱"},
+            { title: "統一編號", field: "統一編號" },
+            { title: "員編姓名", field: "員編姓名" },
+            { title: "狀態", field: "狀態" },
         ],
     });
     // 選擇預設勾選row
