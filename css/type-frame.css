@@ -279,7 +279,8 @@ button {
     display: inline-flex;
     margin-left: 3px;
     font-size: 0.875rem;
-    position: relative;
+    height: 30px;
+    line-height: 30px;
 }
 
 ::placeholder {
@@ -934,9 +935,10 @@ input[type="checkbox"] ,[type="radio"] :checked {
 .pop-unit-input input[type=text]  {
     border: 1px solid #aaaaaa;
     height: 30px;
+    line-height: 30px;
     position: relative;
-    top:3px ;
     left: 3px;
+    top: 3px;
     border-radius: 3px;
 }
 
@@ -1054,13 +1056,13 @@ input[type="date" i] {
     width: calc(100% - 10px);
     border: 1px solid #aaaaaa;
     height: 30px;
-    margin-top: 3px;
-    margin-left: 5px;
-    margin-right: 3px;
+    line-height: 30px;
+    position: relative;
+    top: 3px;
+    left: 3px;
     border-radius: 3px;
     font-size: .9rem;
 	background:url(../img/arrow_drop_down_black_24dp2.svg) no-repeat right center transparent;
-    line-height: 1.2rem;
 }
 
 .content-unit select {
@@ -1125,8 +1127,9 @@ input[type="date" i] {
     width: calc(100% - 15px);
     border: 1px solid #aaaaaa;
     height: 30px;
+    line-height: 30px;
     position: relative;
-    top: 0;
+    top: 2px;
     left: 5px;
     border-radius: 3px;
 }
@@ -1945,7 +1948,7 @@ select {
 
 .poprow-nonborder{
     display:flex;
-    padding: 5px 0;
+    padding:0;
     width: 100%;
     background-color: #ffffff;
 }
@@ -2107,7 +2110,6 @@ select {
     display: inline-flex;
     line-height: 30px;
     height: 30px;
-    padding-top: 5px;
 }
 
 .pop-unit-input ul li{
@@ -2182,6 +2184,8 @@ select {
     font-weight: 500;
     padding-top:10px;
     line-height: 1.2rem;
+    width: 25px;
+    text-align: end;
 }
 
 .pophr{
@@ -2890,23 +2894,18 @@ select {
     background-color: #ffffff;
     color: #333333;
 	border-radius: 5px;
-    padding:0px 20px 10px 5px;
-    margin-left:5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    padding:0px 10px 10px 5px;
     font-size: .875rem;
 }
 
 .btn-upload span{
     font-size: 1.2rem;
     display: inline-block;
-    border-left: 1px solid #555555;
+    border-right: 1px solid #555555;
     position: relative;
     top: 5px;
-    left: 35px;
-    padding:10px 20px 10px 5px;
-    margin-top: -6px;
-    margin-bottom: -6px;
+    padding:10px 10px 10px 5px;
+    margin-right: 5px;
 }
 
 
