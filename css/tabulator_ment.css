@@ -25,6 +25,7 @@
 .tabulator-row {
     height: 40px;
     line-height: 40px;
+    border-bottom: 1px solid #aaaaaa;
 }
 
 .tabulator-col .tabulator-sortable .tabulator-col-sorter-element{
@@ -37,13 +38,12 @@
 
 .tabulator-row .tabulator-cell{
     display: inline-block;
-    position: relative;
     box-sizing: border-box;
-    padding: 4px;
+    padding: 1px;
     padding-top: 0;
     border-right: 1px solid #aaaaaa;
-    border-top: 1px solid #aaaaaa ;
-    margin-top: -1px;
+    border-bottom: 1px solid #aaaaaa ;
+    margin-top:0px;
     vertical-align: middle;
     white-space: nowrap;
     overflow: hidden;
@@ -52,7 +52,7 @@
 }
 
 .tabulator-col{
-    height: 40px;
+    max-height: 40px;
     line-height: 40px;
 }
 
@@ -77,14 +77,14 @@
     margin-bottom: 1px;
 }
 
-.tabulator .tabulator-col-resize-handle{
+/* .tabulator .tabulator-col-resize-handle{
     position: relative;
     display: inline-block;
     width: 6px;
-    top: 1px;
+    top: -1px;
     margin-left: -3px;
     margin-right: -3px;
     z-index: 10;
     vertical-align: middle;
-}
+} */
 
