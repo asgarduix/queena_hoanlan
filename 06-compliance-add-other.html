@@ -180,7 +180,7 @@
     <div class="blackBackground">
         <div class="popWindow">
             <div class="popWindow-header">
-                <p class="popTitle">會審項目名稱</p>
+                <p class="popTitle">會辦項目名稱</p>
                 <div class="popDel">
                     <button>
                         <span class="material-icons-outlined">clear</span>
@@ -188,15 +188,6 @@
                 </div>
             </div>
             <div class="popWindow-body">
-                <div class="pop-unit-label">
-                    <span class="materialSize-s material-icons-outlined">indeterminate_check_box</span>會審  
-                </div>
-                <div class="pop-unit-label">
-                    <ul>
-                        <li><input type="checkbox"><label for="">法令函釋</label></li>
-                        <li><input type="checkbox"><label for="">爭議案件</label></li>
-                    </ul>
-                </div>  
                 <!-- 包裹欄位外框 -->
                 <!-- 暫留 -->
                 <!-- <div class="sec-pop-body">
@@ -259,7 +250,7 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- <div class="pop-unit-label"><span class="materialSize-s material-icons-outlined">indeterminate_check_box</span>函文資料</div>
+                <div class="pop-unit-label"><span class="materialSize-s material-icons-outlined">indeterminate_check_box</span>函文資料</div>
                 <div class="pop-tab">
                     <div class="pop-tab-header">
                         <ul>
@@ -267,8 +258,8 @@
                             <li><a href="">上傳附件</a></li>
                         </ul>
                     </div>
-                </div> -->
-                <!-- <div class="tab-body fot-searchlist">
+                </div>
+                <div class="tab-body fot-searchlist">
                     <div class="poprow">
                         <div class="pop-unit-four">
                             <div class="pop-unit-title">函文編號</div>
@@ -291,7 +282,7 @@
                                     <li><input type="radio"><label for="">法令函釋</label></li>
                                     <li><input type="radio"><label for="">爭議案件</label></li>
                                     <li><input type="radio"><label for="">裁罰案彙整</label></li>
-                                    <li><input type="radio"><label for="">洗錢防制名單及國家更新</label></li>
+                                    <li><input type="radio" checked><label for="">洗錢防制名單及國家更新</label></li>
                                     <li><input type="radio"><label for="">其他</label></li>
                                 </ul>
                             </div>    
@@ -302,15 +293,15 @@
                             <div class="pop-unit-title">作業性質</div>
                             <div class="pop-unit-input-4 pop-unit-input">
                                 <ul>
-                                    <li><input type="checkbox"><label for="">法令函釋</label></li>
-                                    <li><input type="checkbox"><label for="">爭議案件</label></li>
-                                    <li><input type="checkbox"><label for="">裁罰案彙整</label></li>
-                                    <li><input type="checkbox"><label for="">洗錢防制名單及國家更新</label></li>
-                                    <li><input type="checkbox"><label for="">其他<input type="text"></label></li>
+                                    <li><input type="checkbox"><label for="">修訂內控</label></li>
+                                    <li><input type="checkbox"><label for="">教育宣導</label></li>
+                                    <li><input type="checkbox" checked><label for="">其他</label></li>
+                                    <li><input type="text"></li>
                                 </ul>
                             </div>   
                         </div>
                     </div>
+                    <hr>
                     <div class="tab-inside-1">
                         <div class="pop-tab-2">
                             <div class="pop-tab-header-2">
@@ -322,192 +313,28 @@
                         </div>
                         <div class="poprow">
                             <div class="listcheck-button-group">
-                                <button class="btn-listcheck active">函文本文</button>
-                                <button class="btn-listcheck">法令函釋</button>
+                                <button class="btn-listcheck">函文本文</button>
+                                <button class="btn-listcheck active">其他</button>
                             </div>
                         </div>
                         <div class="poprow">
-                            <div class="pop-unit-two">
-                                <div class="pop-unit-title">來函單位</div>
-                                <div class="pop-unit-input">
-                                    <select name="" id="">
-                                        <option value="">待提供1</option>
-                                        <option value="">待提供2</option>
-                                        <option value="">待提供3</option>
-                                    </select>
-                                </div>     
-                            </div>
-                            <div class="pop-unit-two">
-                                <div class="pop-unit-title">作業名稱</div>
-                                <div class="pop-unit-input">
-                                    <input type="text" value="">
-                                </div>    
-                            </div>
-                        </div>
-                        <div class="poprow">
-                            <div class="pop-unit-four">
-                                <div class="pop-unit-title">立案日</div>
-                                <div class="pop-unit-input">
-                                    <input class="pop-input" type="date" value="" placeholder="請輸入值">
-                                </div>     
-                            </div>
-                            <div class="pop-unit-four">
-                                <div class="pop-unit-title">來函字號</div>
-                                <div class="pop-unit-input">
-                                    <input type="text" value="">
-                                </div>    
-                            </div>
-                            <div class="pop-unit-four">
-                                <div class="pop-unit-title">速別</div>
-                                <div class="pop-unit-input">
-                                    <select name="" id="">
-                                        <option value="">普通件</option>
-                                    </select>
-                                </div>    
-                            </div>
-                        </div>
-                        <div class="poprow">
-                            <div class="pop-unit-four">
-                                <div class="pop-unit-title">密等</div>
+                            <div class="pop-unit-all">
+                                <div class="pop-unit-title">其他項目</div>
                                 <div class="pop-unit-input">
                                     <input class="pop-input" type="text" value="" placeholder="請輸入值">
                                 </div>     
                             </div>
-                            <div class="pop-unit-four">
-                                <div class="pop-unit-title">解密條件</div>
-                                <div class="pop-unit-input">
-                                    <input type="text" value="">
-                                </div>    
-                            </div>
-                            <div class="pop-unit-four">
-                                <div class="pop-unit-title">保密期限</div>
-                                <div class="pop-unit-input">
-                                    <input type="text" value="">
-                                </div>    
-                            </div>
                         </div>
                         <div class="poprow">
                             <div class="pop-unit-all">
-                                <div class="pop-unit-title">主旨</div>
-                                <div class="pop-unit-input">
-                                    <textarea name="" id="" cols="30" rows="3"></textarea>
-                                </div>     
-                            </div>
-                        </div>
-                        <div class="poprow">
-                            <div class="pop-unit-all">
-                                <div class="pop-unit-title">說明</div>
-                                <div class="pop-unit-input">
-                                    <textarea name="" id="" cols="30" rows="3"></textarea>
-                                </div>     
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- <div class="pop-unit-label">
-                    <span class="materialSize-s material-icons-outlined">indeterminate_check_box</span>會審
-                    <div class="pop-query-list">
-                        <ul>
-                            <li>
-                            <input type="checkbox"><label for="">提交審閱</label>
-                            <input type="checkbox"><label for="">會辦單位</label>
-                            </li>
-                        </ul>
-                    </div>
-                </div> -->
-                <div class="tab-body fot-searchlist">
-                    <div class="poprow">
-                        <div class="pop-unit-two">
-                            <div class="pop-unit-title">提交編號</div>
-                            <div class="pop-unit-input">
-                                <input class="pop-input" type="text" value="" placeholder="請輸入值">
-                            </div>     
-                        </div>
-                        <div class="pop-unit-two">
-                            <div class="pop-unit-title">提交項目</div>
-                            <div class="pop-unit-input">
-                                <ul>
-                                    <li><input type="checkbox"><label for="">法令函釋</label></li>
-                                    <li><input type="checkbox"><label for="">爭議案件</label></li>
-                                    <li><input type="checkbox"><label for="">裁罰案彙整</label></li>
-                                </ul>
-                            </div>    
-                        </div>
-                    </div>
-                    <div class="poprow">
-                        <div class="pop-unit-two">
-                            <div class="pop-unit-title">提交對象</div>
-                            <div class="pop-unit-input">
-                                <input type="text">
-                            </div>   
-                        </div>
-                        <div class="pop-unit-four">
-                            <div class="pop-unit-title">提交日</div>
-                            <div class=" pop-unit-input">
-                                <input type="date">
-                            </div>   
-                        </div>
-                    </div>
-                    <div class="poprow">
-                        <div class="pop-unit-all">
-                            <div class="pop-unit-title-4">提交備註</div>
-                            <div class="pop-unit-input-4 pop-unit-input">
-                                <textarea name="" id="" cols="30" rows="3"></textarea>
-                            </div>   
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="tab-inside-1">
-                        <div class="poprow">
-                            <div class="listcheck-button-group">
-                                <button class="btn-listcheck active">新增會辦單位</button>
-                            </div>
-                        </div>
-                        <!-- 新增會辦單位選項 -->
-                        <div class="poprow">
-                            <div class="new-item">
-                                <button class="btn">
-                                <p>會辦單位-A</p>
-                                <span class="material-icons-outlined">cancel</span>
-                                </button>
-                            </div>
-                            <div class="new-item">
-                                <button class="btn">
-                                <p>會辦單位-B</p>
-                                <span class="material-icons-outlined">cancel</span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="poprow">
-                            <div class="pop-unit-two">
-                                <div class="pop-unit-title">會辦編號</div>
+                                <div class="pop-unit-title">其他說明</div>
                                 <div class="pop-unit-input">
                                     <input class="pop-input" type="text" value="" placeholder="請輸入值">
-                                </div>     
-                            </div>
-                            <div class="pop-unit-four">
-                                <div class="pop-unit-title">會辦單位</div>
-                                <div class="pop-unit-input">
-                                    <input type="text" value="">
-                                </div>    
-                            </div>
-                            <div class="pop-unit-four">
-                                <div class="pop-unit-title">會辦日期</div>
-                                <div class="pop-unit-input">
-                                    <input type="date" value="">
-                                </div>    
-                            </div>
-                        </div>
-                        <div class="poprow">
-                            <div class="pop-unit-all">
-                                <div class="pop-unit-title">會辦備註</div>
-                                <div class="pop-unit-input">
-                                    <textarea name="" id="" cols="30" rows="3"></textarea>
                                 </div>     
                             </div>
                         </div>
                         <div class="noteArea">
-                            <button class="btn pop-btn-add">上傳</button>
+                            <button class="btn pop-btn-add">選擇檔案</button>
                             <span class="noteSmall">(檔案格式：xlsx / 單檔大小不可超過10MB)</span>
                             <div class="noteArea-list">
                                 123456
@@ -521,6 +348,7 @@
                                 </div>     
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
