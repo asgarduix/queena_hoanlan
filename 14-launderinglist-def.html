@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>函文管理-合約管理</title>
+    <title>layout</title>
     <!-- Material -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <!-- <link rel="stylesheet" href="/material/material-icons-ie.css">
@@ -33,19 +33,33 @@
                 <a href="#"><img src="./img/item_logo.png" alt=""></a>
             </div>
             <div class="left-clumn-row">
-                <div class="title">函文管理</div>
+                <div class="title">商業保險</div>
+            </div>
+            <div class="left-clumn-row" >
+                <a href="#"><span class="materialSize material-icons-outlined">navigate_next</span>
+                    <div class="secList">要保書作業</div>
+                </a>
             </div>
             <div class="left-clumn-row">
-                <a href="#"><span class="materialSize material-icons-outlined">description</span><div class="secList">合約管理</div></a>
+                <a href="#"><span class="materialSize material-icons-outlined">navigate_next</span><div class="secList">批單及保單作業</div></a>
             </div>
             <div class="left-clumn-row">
-                <a href="#"><span class="materialSize material-icons-outlined">list_alt</span><div class="secList">法遵管理</div></a>
+                <a href="#"><span class="materialSize material-icons-outlined">navigate_next</span><div class="secList">獎金佣金報表</div></a>
             </div>
             <div class="left-clumn-row">
-                <a href="#"><span class="materialSize material-icons-outlined">paid</span><div class="secList">會審管理</div></a>
+                <a href="#"><span class="materialSize material-icons-outlined">navigate_next</span><div class="secList">綜合查詢</div></a>
             </div>
             <div class="left-clumn-row">
-                <a href="#"><span class="materialSize material-icons-outlined">paid</span><div class="secList">稽核/缺失改善建議</div></a>
+                <a href="10-upload-frame.html"><span class="materialSize material-icons-outlined">navigate_next</span><div class="secList">批次上傳查詢</div></a>
+            </div>
+            <div class="left-clumn-row">
+                <a href="11-wait-frame.html"><span class="materialSize material-icons-outlined">navigate_next</span><div class="secList">待處理保批單</div></a>
+            </div>
+            <div class="left-clumn-row">
+                <a href="#"><span class="materialSize material-icons-outlined">navigate_next</span><div class="secList">業績管理</div></a>
+            </div>
+            <div class="left-clumn-row">
+                <a href="13-content-Insurance.html"  class="unittab-active"><span class="materialSize material-icons-outlined">navigate_next</span><div class="secList">續保管理</div></a>
             </div>
         </div>
         <div class="right-clumn">
@@ -54,7 +68,7 @@
                     <div class="columnFour">
                         <div class="workShop">
                             <ul>
-                                <li><a href="#">佣金作業</a></li>
+                                <li><a href="#">商業保險</a></li>
                                 <li><a href="#" class="unittab-active">函文管理</a></li>
                                 <li><a href="#">角色權限</a></li>
                             </ul>
@@ -80,81 +94,63 @@
                 <div class="breadCrumb">
                     <span class="materialSize-m-r material-icons-outlined">location_on</span>
                     <!-- &nbsp;不換行空格 -->
-                    <a href="#">函文管理</a>&nbsp;/&nbsp;<a href="#">合約管理</a> 
+                    <a href="#">函文管理</a>&nbsp;/&nbsp;<a href="#">查詢洗防名單</a> 
                 </div>
             </div>
             <div class="right-clumn-row">
-                <h1 class="unitH1">合約管理</h1>
+                <h1 class="unitH1">查詢洗防名單</h1>
             </div>
             <div class="right-clumn-row">
                 <div class="query-unit">
                     <div class="content-unit">
                         <div class="query-unit-group">
-                            <div class="query-unit-title">部門別</div>
-                            <div class="query-unit-input">
-                                <select name="" id="">
-                                    <option value="">營業一部</option>
-                                    <option value="">營業二部</option>
-                                </select>
-                            </div>
+                            <div class="query-unit-title require">客戶名稱</div>
+                            <div class="query-unit-input"><input type="text" value="" placeholder="123456fu 18"></div>
                         </div>
                         <div class="query-unit-group">
-                            <div class="query-unit-title">合約編號</div>
+                            <div class="query-unit-title">關係</div>
                             <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
                         </div>
-                        <div class="query-unit-group">
-                            <div class="query-unit-title">承辦人</div>
+                        <div class="query-unit-group-2-T">
+                            <div class="query-unit-title">地址</div>
                             <div class="query-unit-input">
-                                <div class="query-unit-double-input">
-                                    <div class="columnFour">
-                                    <input type="text" value="" placeholder="請輸入值">
-                                    </div>
-                                    <div class="columnFour">
-                                        <input type="text" value="" placeholder="請輸入值">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="query-unit-group">
-                            <div class="query-unit-title">合約生效日起</div>
-                            <div class="query-unit-input">
-                                <div class="query-unit-double-input">
-                                    <input type="date" value="" placeholder="請輸入值">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="query-unit-group">
-                            <div class="query-unit-title">合約生效日迄</div>
-                            <div class="query-unit-input">
-                                <div class="query-unit-double-input">
-                                    <input type="date" value="" placeholder="請輸入值">
-                                </div>
+                                <input type="text" value="" placeholder="請輸入值">
                             </div>
                         </div>
                     </div>
                     <div class="content-unit">
                         <div class="query-unit-group">
-                            <div class="query-unit-title">審核狀態</div>
+                            <div class="query-unit-title require">國家</div>
                             <div class="query-unit-input">
                                 <select name="" id="">
-                                    <option value="">立案</option>
-                                    <option value="">審閱中</option>
-                                    <option value="">會簽中</option>
-                                    <option value="">審閱完成</option>
-                                    <option value="">會辦完成</option>
-                                    <option value="">申請用印</option>
-                                    <option value="">上傳用印合完成檔</option>
-                                    <option value="">完成合約</option>
+                                    <option value="">台北</option>
+                                    <option value="">新北</option>
                                 </select>
                             </div>
                         </div>
                         <div class="query-unit-group">
-                            <div class="query-unit-title">合約年度</div>
-                            <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
+                            <div class="query-unit-title">城市</div>
+                            <div class="query-unit-input">
+                                <select name="" id="">
+                                    <option value="">台北</option>
+                                    <option value="">新北</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">稅號/統一編號</div>
+                            <div class="query-unit-input"><input type="text" value="" placeholder="123456fu 18"></div>
+                        </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">出生日期</div>
+                            <div class="query-unit-input"><input type="date" value="" placeholder="123456fu 18"></div>
+                        </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">註冊國籍</div>
+                            <div class="query-unit-input"><input type="text" value="" placeholder="123456fu 18"></div>
                         </div>
                     </div>
                 </div>
-                
                 <div class="query-unit-info">
                     <div class="query-unit-infolist">
                         共<span>0</span>項資料
@@ -169,10 +165,9 @@
             <div class="right-clumn-row">
                 <div class="tableInfo">
                     <div class="tableWork">
-                        <button class="active btn btn-add">新增</button>
-                        <button class="btn btn-edit">編輯</button>
-                        <button class="btn btn-edit">刪除</button>
-                        <button class="btn btn-edit unittab-active">匯出年度清冊</button>
+                        <button class="btn btn-edit unittab-active">新增</button>
+                        <button class="btn btn-edit ">編輯</button>
+                        <button class="btn btn-edit ">刪除</button>
                     </div>
                     <div class="tableBody">
                         <div class="tab-frame-1">
@@ -183,7 +178,7 @@
                         </div>
                         <div class="tablePage">
                             <ul>
-                                <li><button class="btn btn-prev disabled">上一頁</button></li>
+                                <li><button class="btn btn-prev">上一頁</button></li>
                                 <li><button class="btn btn-next">下一頁</button></li>
                                 <li class="bulenote">每頁筆數</li>
                                 <li>
@@ -213,26 +208,16 @@
 </html>
 
 <script>
-    let table01Data = [{
-        id: "b1",
-        預計簽約日期: "預計簽約日期",
-        合約期間: "合約期間",
-        合約編號: "編號1",
-        部門: "營業一部",
-        合約名稱: "責任險",
-        承辦人: "承辦人",
-        審閱狀態: "未確認出單",
-    }, 
+    let table01Data = [
     {
-        id: "b2",
-        預計簽約日期: "預計簽約日期",
-        合約期間: "合約期間",
-        合約編號: "編號2",
-        部門: "營業一部",
-        合約名稱: "責任險",
-        承辦人: "承辦人",
-        審閱狀態: "未確認出單",
+        id: "b1",
+        識別碼: "3322119",
+        姓名: "王大衛",
+        英文姓名: "David Wang",
+        生日: "1997/07/07",
+        國籍: "TW",
     }, 
+
 ];
     var table01 = new Tabulator("#table01", {
         data: table01Data,
@@ -257,17 +242,15 @@
                     cell.getRow().toggleSelect();
                 }
             },
-            { title: "預計簽約日期", field: "預計簽約日期",},
-            { title: "合約期間", field: "合約期間" },
-            { title: "合約編號", field: "合約編號",
-            formatter: function(cell, formatterParams, onRendered) {
+            { title: "識別碼", field: "識別碼",
+                formatter: function(cell, formatterParams, onRendered) {
                     return "<a href='#'>" + cell.getValue() + "</a>"
                 },
             },
-            { title: "部門", field: "部門" },
-            { title: "合約名稱", field: "合約名稱"},
-            { title: "承辦人", field: "承辦人" },
-            { title: "審閱狀態", field: "審閱狀態" }
+            { title: "姓名", field: "姓名" },
+            { title: "英文姓名", field: "英文姓名" },
+            { title: "生日", field: "生日" },
+            { title: "國籍", field: "國籍" },
         ],
     });
     // 選擇預設勾選row
