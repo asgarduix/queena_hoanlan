@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>稽核/缺失改善建議-稽核</title>
+    <title>函文管理-系統稽核軌跡</title>
     <!-- Material -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <!-- <link rel="stylesheet" href="/material/material-icons-ie.css">
@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/type-frame.css">
     <link rel="stylesheet" href="css/type-frame-color.css">
     <link rel="stylesheet" href="css/tabulator_ment.css">
+    <!-- 函文管理 / 合約管理 -->
 </head>
 <body>
     <div class="container">
@@ -36,7 +37,7 @@
                 <div class="title">函文管理</div>
             </div>
             <div class="left-clumn-row">
-                <a href="#"><span class="materialSize material-icons-outlined">description</span><div class="secList">合約管理</div></a>
+                <a href="#"  class="unittab-active"><span class="materialSize material-icons-outlined">description</span><div class="secList">合約管理</div></a>
             </div>
             <div class="left-clumn-row">
                 <a href="#"><span class="materialSize material-icons-outlined">list_alt</span><div class="secList">法遵管理</div></a>
@@ -80,66 +81,38 @@
                 <div class="breadCrumb">
                     <span class="materialSize-m-r material-icons-outlined">location_on</span>
                     <!-- &nbsp;不換行空格 -->
-                    <a href="#">函文管理</a>&nbsp;/&nbsp;<a href="#">稽核/缺失改善建議</a> 
+                    <a href="#">函文管理</a>&nbsp;/&nbsp;<a href="#">系統稽核軌跡</a> 
                 </div>
             </div>
             <div class="right-clumn-row">
-                <h1 class="unitH1">稽核/缺失改善建議</h1>
+                <h1 class="unitH1">系統稽核軌跡</h1>
             </div>
-            <div class="title-button-group">
-                <button class="btn-title btn-title-active">稽核</button>
-                <button class="btn-title">結案管理</button>
-            </div>
+            <!-- 頁籤tab -->
+            <!-- <div class="title-button-group">
+                <button class="btn-title btn-title-active">合約</button>
+                <button class="btn-title">批次上傳</button>
+            </div> -->
             <div class="right-clumn-row">
                 <div class="query-unit">
                     <div class="content-unit">
                         <div class="query-unit-group">
-                            <div class="query-unit-title">會審對象</div>
+                            <div class="query-unit-title">查詢區間起</div>
                             <div class="query-unit-input">
-                                <select name="" id="">
-                                    <option value="">營業一部</option>
-                                    <option value="">營業二部</option>
-                                    <option value="">營業三部</option>
-                                    <option value="">通路營運部</option>
-                                    <option value="">綜合企劃部</option>
-                                </select>
+                                <input type="date" value="">
                             </div>
                         </div>
                         <div class="query-unit-group">
-                            <div class="query-unit-title">查核類型</div>
+                            <div class="query-unit-title">查詢區間迄</div>
                             <div class="query-unit-input">
-                                <select name="" id="">
-                                    <option value="">合約</option>
-                                    <option value="">函文</option>
-                                    <option value="">稽核</option>
-                                    <option value="">缺失改善</option>
-                                    <option value="">裁罰案彙整</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="query-unit-group">
-                            <div class="query-unit-title">會審項目</div>
-                            <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
-                        </div>
-                        <div class="query-unit-group">
-                            <div class="query-unit-title">會審日區間</div>
-                            <div class="query-unit-input">
-                                <div class="query-unit-double-input">
-                                    <div class="columnFive-left-45">
-                                    <input type="date" value="" placeholder="請輸入值">
-                                    </div>
-                                    <span class="zigzagLine">～</span>
-                                    <div class="columnFive-left-45">
-                                        <input type="date" value="" placeholder="請輸入值">
-                                    </div>
-                                </div>
+                                <input type="date" value="">
                             </div>
                         </div>
                     </div>
                 </div>
+                
                 <div class="query-unit-info">
                     <div class="query-unit-infolist">
-                        搜尋結果：共<span>0</span>筆
+                        共<span>0</span>項資料
                     </div>
                     <div class="query-unit-infobutton">
                         <button class="btn btn-clear">清除</button>
@@ -151,10 +124,7 @@
             <div class="right-clumn-row">
                 <div class="tableInfo">
                     <div class="tableWork">
-                        <button class="active btn btn-add unittab-active">新增</button>
-                        <button class="btn btn-edit">編輯</button>
-                        <button class="btn btn-edit">刪除</button>
-                        <button class="btn btn-edit">生成查核底稿</button>
+                        <button class="btn btn-edit unittab-active">下載軌跡記錄</button>
                     </div>
                     <div class="tableBody">
                         <div class="tab-frame-1">
@@ -165,7 +135,7 @@
                         </div>
                         <div class="tablePage">
                             <ul>
-                                <li><button class="btn btn-prev">上一頁</button></li>
+                                <li><button class="btn btn-prev disabled">上一頁</button></li>
                                 <li><button class="btn btn-next">下一頁</button></li>
                                 <li class="bulenote">每頁筆數</li>
                                 <li>
@@ -197,15 +167,23 @@
 <script>
     let table01Data = [{
         id: "b1",
-        查核底稿編號: "查核底稿編號001",
-        查核時間: "查核時間",
-        查核標的類型: "作業循環",
-        查核標的名稱: "查核標的名稱",
-        查核作業代號: "查核作業代號",
-        查核作業名稱: "查核作業名稱",
-        查核性質: "查核性質",
-        受查單位: "受查單位",
-        查核人員: "查核人員",
+        日期: "日期",
+        text1: "1",
+        text2: "2",
+        text3: "3",
+        text4: "4",
+        text5: "5",
+        text6: "6",
+    }, 
+    {
+        id: "b1",
+        日期: "日期",
+        text1: "1",
+        text2: "2",
+        text3: "3",
+        text4: "4",
+        text5: "5",
+        text6: "6",
     }, 
 ];
     var table01 = new Tabulator("#table01", {
@@ -231,20 +209,17 @@
                     cell.getRow().toggleSelect();
                 }
             },
-            { title: "查核底稿編號", field: "查核底稿編號",
-            
+            { title: "日期", field: "日期",},
+            { title: "text1", field: "text1" },
+            { title: "text2", field: "text2",
             formatter: function(cell, formatterParams, onRendered) {
                     return "<a href='#'>" + cell.getValue() + "</a>"
                 },
             },
-            { title: "查核時間", field: "查核時" },
-            { title: "查核標的類型", field: "查核標的類型" },
-            { title: "查核標的名稱", field: "查核標的名稱" },
-            { title: "查核作業代號", field: "查核作業代號",},
-            { title: "查核作業名稱", field: "查核作業名稱" },
-            { title: "查核性質", field: "查核性質" },
-            { title: "受查單位", field: "受查單位" },
-            { title: "查核人員", field: "查核人員" },
+            { title: "text3", field: "text3" },
+            { title: "text4", field: "text4"},
+            { title: "text5", field: "text5" },
+            { title: "text6", field: "text6" }
         ],
     });
     // 選擇預設勾選row
