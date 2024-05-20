@@ -718,6 +718,12 @@ box-shadow: 0 0 1px 1px rgba(158, 158, 158, 0.6);
     width: 46%;
 }
 
+.columnFive-left-63{
+    display: inline-flex;
+    justify-content: start;
+    width: 63%;
+}
+
 .columnTen-right{
     display: inline-flex;
     justify-content: center;
