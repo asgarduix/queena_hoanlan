@@ -1907,7 +1907,12 @@ select {
     display:flex;
     background-color: #eeeeee;
     border: 1px solid #333333;
-    margin-top: -1px;
+    /* margin-top: -1px; */
+    border-top: none;
+}
+
+.tab-body .poprow:first-child{
+    border-top: 1px solid #333333;
 }
 
 
