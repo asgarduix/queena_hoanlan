@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>通訊資料比對</title>
+    <title>查詢洗防名單</title>
     <!-- Material -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <!-- <link rel="stylesheet" href="/material/material-icons-ie.css">
@@ -56,13 +56,13 @@
                 <a href="11-wait-frame.html"><span class="materialSize material-icons-outlined">navigate_next</span><div class="secList">待處理保批單</div></a>
             </div>
             <div class="left-clumn-row">
-                <a href="#"><span class="materialSize material-icons-outlined">navigate_next</span><div class="secList">查詢洗防名單</div></a>
+                <a href="#" class="unittab-active"><span class="materialSize material-icons-outlined">navigate_next</span><div class="secList">查詢洗防名單</div></a>
             </div>
             <div class="left-clumn-row">
-                <a href="#"  class="unittab-active"><span class="materialSize material-icons-outlined">navigate_next</span><div class="secList">通訊資料比對</div></a>
+                <a href="#" ><span class="materialSize material-icons-outlined">navigate_next</span><div class="secList">通訊資料比對</div></a>
             </div>
             <div class="left-clumn-row">
-                <a href="#" ><span class="materialSize material-icons-outlined">navigate_next</span><div class="secList">系統稽核軌跡</div></a>
+                <a href="#"><span class="materialSize material-icons-outlined">navigate_next</span><div class="secList">系統稽核軌跡</div></a>
             </div>
         </div>
         <div class="right-clumn">
@@ -97,42 +97,60 @@
                 <div class="breadCrumb">
                     <span class="materialSize-m-r material-icons-outlined">location_on</span>
                     <!-- &nbsp;不換行空格 -->
-                    <a href="#">函文管理</a>&nbsp;/&nbsp;<a href="#">通訊資料比對</a> 
+                    <a href="#">函文管理</a>&nbsp;/&nbsp;<a href="#">查詢洗防名單</a> 
                 </div>
             </div>
             <div class="right-clumn-row">
-                <h1 class="unitH1">通訊資料比對</h1>
+                <h1 class="unitH1">查詢洗防名單</h1>
             </div>
             <div class="right-clumn-row">
                 <div class="query-unit">
                     <div class="content-unit">
                         <div class="query-unit-group">
-                            <div class="query-unit-title require">姓名</div>
+                            <div class="query-unit-title require">客戶名稱</div>
                             <div class="query-unit-input"><input type="text" value="" placeholder="123456fu 18"></div>
                         </div>
                         <div class="query-unit-group">
-                            <div class="query-unit-title">工號</div>
+                            <div class="query-unit-title">關係</div>
                             <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
                         </div>
-                        <div class="query-unit-group">
-                            <div class="query-unit-title">市內電話</div>
+                        <div class="query-unit-group-2-T">
+                            <div class="query-unit-title">地址</div>
                             <div class="query-unit-input">
                                 <input type="text" value="" placeholder="請輸入值">
                             </div>
                         </div>
-                        <div class="query-unit-group">
-                            <div class="query-unit-title">行動電話</div>
-                            <div class="query-unit-input">
-                                <input type="text" value="" placeholder="09xxxxxxxx">
-                            </div>
-                        </div>
                     </div>
                     <div class="content-unit">
-                        <div class="query-unit-group-2-T">
-                            <div class="query-unit-title">e-mail</div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title require">國家</div>
                             <div class="query-unit-input">
-                                <input type="text" value="" placeholder="davidWang@asgard.com.tw">
+                                <select name="" id="">
+                                    <option value="">台北</option>
+                                    <option value="">新北</option>
+                                </select>
                             </div>
+                        </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">城市</div>
+                            <div class="query-unit-input">
+                                <select name="" id="">
+                                    <option value="">台北</option>
+                                    <option value="">新北</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">稅號/統一編號</div>
+                            <div class="query-unit-input"><input type="text" value="" placeholder="123456fu 18"></div>
+                        </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">出生日期</div>
+                            <div class="query-unit-input"><input type="date" value="" placeholder="123456fu 18"></div>
+                        </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">註冊國籍</div>
+                            <div class="query-unit-input"><input type="text" value="" placeholder="123456fu 18"></div>
                         </div>
                     </div>
                 </div>
@@ -188,7 +206,90 @@
             </div>
         </div>
     </div>
-
+    <!-- pop視窗 -->
+    <!-- 新增star -->
+    <div class="blackBackground">
+        <div class="popWindow">
+            <div class="popWindow-header">
+                <p class="popTitle">新增</p>
+                <div class="popDel">
+                    <button>
+                        <span class="material-icons-outlined">clear</span>
+                    </button>
+                </div>
+            </div>
+            <div class="popWindow-body">
+                <div class="pop-unit-label"><span class="materialSize-xs material-icons-outlined">indeterminate_check_box</span>新增</div>
+                <!-- 包裹欄位外框 -->
+                <div class="pop-body-frame">
+                <div class="poprow">
+                    <div class="pop-unit-two">
+                        <div class="pop-unit-title">客戶名稱</div>
+                        <div class="pop-unit-input">
+                            <input type="text" value="" placeholder="請輸入值">
+                        </div>     
+                    </div>
+                    <div class="pop-unit-two">
+                        <div class="pop-unit-title">關係</div>
+                        <div class="pop-unit-input">
+                            <input type="text" value="" placeholder="請輸入值">
+                        </div>    
+                    </div>
+                </div>
+                <div class="poprow">
+                    <div class="pop-unit-two">
+                        <div class="pop-unit-title">地址</div>
+                        <div class="pop-unit-input">
+                            <input type="text" value="" placeholder="請輸入值">
+                        </div>     
+                    </div>
+                    <div class="pop-unit-two">
+                        <div class="pop-unit-title">國家</div>
+                        <div class="pop-unit-input">
+                            <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                        </div>   
+                    </div>
+                </div>
+                <div class="poprow">
+                    <div class="pop-unit-two">
+                        <div class="pop-unit-title">城市</div>
+                        <div class="pop-unit-input">
+                            <input type="text" value="" placeholder="請輸入值">
+                        </div>     
+                    </div>
+                    <div class="pop-unit-two">
+                        <div class="pop-unit-title">稅號/統一編號</div>
+                        <div class="pop-unit-input">
+                            <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                        </div>   
+                    </div>
+                </div>
+                <div class="poprow">
+                    <div class="pop-unit-two">
+                        <div class="pop-unit-title">出生日期</div>
+                        <div class="pop-unit-input">
+                            <input type="date" value="" placeholder="請輸入值">
+                        </div>     
+                    </div>
+                    <div class="pop-unit-two">
+                        <div class="pop-unit-title">註冊國籍</div>
+                        <div class="pop-unit-input">
+                            <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                        </div>   
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="popWindow-footer">
+                <div class="popfooter-button-group">
+                    <button class="btn btn-cancel">返回</button>
+                    <button class="btn btn-sure">儲存</button>
+                    <button class="btn btn-sure">新增</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 新增end -->
 </body>
 </html>
 
@@ -196,11 +297,11 @@
     let table01Data = [
     {
         id: "b1",
+        識別碼: "3322119",
         姓名: "王大衛",
-        工號: "1234567890",
-        市內電話: "0229092554",
-        行動電話: "09xxxxxxxx",
-        email: "davidWang@asgard.com.tw",
+        英文姓名: "David Wang",
+        生日: "1997/07/07",
+        國籍: "TW",
     }, 
 
 ];
@@ -227,15 +328,15 @@
                     cell.getRow().toggleSelect();
                 }
             },
-            { title: "姓名", field: "姓名",
+            { title: "識別碼", field: "識別碼",
                 formatter: function(cell, formatterParams, onRendered) {
                     return "<a href='#'>" + cell.getValue() + "</a>"
                 },
             },
-            { title: "工號", field: "工號" },
-            { title: "市內電話", field: "市內電話" },
-            { title: "行動電話", field: "行動電話" },
-            { title: "email", field: "email" },
+            { title: "姓名", field: "姓名" },
+            { title: "英文姓名", field: "英文姓名" },
+            { title: "生日", field: "生日" },
+            { title: "國籍", field: "國籍" },
         ],
     });
     // 選擇預設勾選row
