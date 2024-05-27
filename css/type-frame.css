@@ -1924,6 +1924,10 @@ select {
     border-top: 1px solid #333333;
 }
 
+.popWindow-body .poprow:first-child{
+    border-top: 1px solid #333333;
+}
+
 .otherPoprow{
     border-top: 1px solid #333333;
 }
