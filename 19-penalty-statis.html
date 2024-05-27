@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>查詢洗防名單</title>
+    <title>函文管理-洗錢防制</title>
     <!-- Material -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <!-- <link rel="stylesheet" href="/material/material-icons-ie.css">
@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/type-frame.css">
     <link rel="stylesheet" href="css/type-frame-color.css">
     <link rel="stylesheet" href="css/tabulator_ment.css">
+    <!-- 函文管理 / 合約管理 -->
 </head>
 <body>
     <div class="container">
@@ -44,7 +45,7 @@
                     arrow_forward_ios</span><div class="secList">函文管理</div></a>
             </div>
             <div class="left-clumn-row">
-                <a href="#"><span class="materialSize material-icons-outlined">
+                <a href="19-penalty-default.html" class="unittab-active"><span class="materialSize material-icons-outlined">
                     arrow_forward_ios</span><div class="secList">裁罰案搜尋</div></a>
             </div>
             <div class="left-clumn-row">
@@ -56,7 +57,7 @@
                     arrow_forward_ios</span><div class="secList">稽核/缺失改善建議</div></a>
             </div>
             <div class="left-clumn-row">
-                <a href="18-moneyLaundering-default.html" class="unittab-active"><span class="materialSize material-icons-outlined">
+                <a href="18-moneyLaundering-default.html"><span class="materialSize material-icons-outlined">
                     arrow_forward_ios</span><div class="secList">洗錢防制</div></a>
             </div>
             <div class="left-clumn-row">
@@ -98,80 +99,43 @@
                 <div class="breadCrumb">
                     <span class="materialSize-m-r material-icons-outlined">location_on</span>
                     <!-- &nbsp;不換行空格 -->
-                    <a href="#">函文管理</a>&nbsp;/&nbsp;<a href="#">查詢洗防名單</a> 
+                    <a href="#">函文管理</a>&nbsp;/&nbsp;<a href="#">洗錢防制</a> 
                 </div>
             </div>
             <div class="right-clumn-row">
-                <h1 class="unitH1">洗錢防制</h1>
+                <h1 class="unitH1">裁罰案搜尋</h1>
             </div>
             <!-- 頁籤tab -->
             <div class="title-button-group">
-                <button class="btn-title" onclick="location.href='18-moneyLaundering-default.html'">匯入洗錢防制</button>
-                <button class="btn-title btn-title-active" onclick="location.href='14-launderinglist-def.html'">洗防對象</button>
-                <button class="btn-title" onclick="location.href='18-moneyLaundering-country.html'">缺失國家/地區</button>
+                <button class="btn-title" onclick="location.href='19-penalty-default.html'">裁罰案彙整歸檔</button>
+                <button class="btn-title btn-title-active" onclick="location.href='19-penalty-statis.html'">裁罰案彙整統計</button>
             </div>
             <div class="right-clumn-row">
                 <div class="query-unit">
                     <div class="content-unit">
                         <div class="query-unit-group">
-                            <div class="query-unit-title">決議制裁名單號</div>
+                            <div class="query-unit-title">年度</div>
                             <div class="query-unit-input">
-                                <select name="" id="">
-                                    <option value="">第1267/1989/2253號</option>
-                                    <option value="">第1988號</option>
-                                    <option value="">第1718號</option>
-                                    <option value="">第2231號</option>
-                                </select>
+                                <input type="date" value="">
                             </div>
                         </div>
                         <div class="query-unit-group">
-                            <div class="query-unit-title require">客戶名稱</div>
-                            <div class="query-unit-input"><input type="text" value="" placeholder="123456fu 18"></div>
-                        </div>
-                        <div class="query-unit-group">
-                            <div class="query-unit-title">關係</div>
-                            <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
-                        </div>
-                        <div class="query-unit-group-2-T">
-                            <div class="query-unit-title">地址</div>
+                            <div class="query-unit-title">類型</div>
                             <div class="query-unit-input">
-                                <input type="text" value="" placeholder="請輸入值">
+                                <input type="text" value="">
                             </div>
                         </div>
-                    </div>
-                    <div class="content-unit">
-                        <div class="query-unit-group">
-                            <div class="query-unit-title require">國家</div>
-                            <div class="query-unit-input">
-                                <select name="" id="">
-                                    <option value="">台北</option>
-                                    <option value="">新北</option>
-                                </select>
+                       
+                            <div class="query-unit-group-2-T">
+                                <div class="query-unit-title">廠商名稱</div>
+                                <div class="query-unit-input">
+                                    <input type="text" value="" placeholder="請輸入廠商名稱">
+                                </div>
                             </div>
-                        </div>
-                        <div class="query-unit-group">
-                            <div class="query-unit-title">城市</div>
-                            <div class="query-unit-input">
-                                <select name="" id="">
-                                    <option value="">台北</option>
-                                    <option value="">新北</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="query-unit-group">
-                            <div class="query-unit-title">稅號/統一編號</div>
-                            <div class="query-unit-input"><input type="text" value="" placeholder="123456fu 18"></div>
-                        </div>
-                        <div class="query-unit-group">
-                            <div class="query-unit-title">出生日期</div>
-                            <div class="query-unit-input"><input type="date" value="" placeholder="123456fu 18"></div>
-                        </div>
-                        <div class="query-unit-group">
-                            <div class="query-unit-title">註冊國籍</div>
-                            <div class="query-unit-input"><input type="text" value="" placeholder="123456fu 18"></div>
-                        </div>
+                        
                     </div>
                 </div>
+                
                 <div class="query-unit-info">
                     <div class="query-unit-infolist">
                         共<span>0</span>項資料
@@ -185,11 +149,9 @@
             <hr>
             <div class="right-clumn-row">
                 <div class="tableInfo">
-                    <div class="tableWork">
-                        <button class="btn btn-edit unittab-active" onclick="location.href='14-launderinglist-add.html'">新增</button>
-                        <button class="btn btn-edit ">編輯</button>
-                        <button class="btn btn-edit ">刪除</button>
-                    </div>
+                    <!-- <div class="tableWork">
+                        <button class="btn btn-edit">匯入制裁名單</button>
+                    </div> -->
                     <div class="tableBody">
                         <div class="tab-frame-1">
                             <ul>
@@ -199,7 +161,7 @@
                         </div>
                         <div class="tablePage">
                             <ul>
-                                <li><button class="btn btn-prev">上一頁</button></li>
+                                <li><button class="btn btn-prev disabled">上一頁</button></li>
                                 <li><button class="btn btn-next">下一頁</button></li>
                                 <li class="bulenote">每頁筆數</li>
                                 <li>
@@ -229,17 +191,18 @@
 </html>
 
 <script>
-    let table01Data = [
+    let table01Data = [{
+        id: "b1",
+        裁罰案彙整標題: "測試",
+        彙整關鍵字: "測試",
+        更新日期: "測試",
+    }, 
     {
         id: "b1",
-        決議制裁名單號:"第1988號",
-        識別碼: "3322119",
-        姓名: "王大衛",
-        英文姓名: "David Wang",
-        生日: "1997/07/07",
-        國籍: "TW",
+        裁罰案彙整標題: "測試",
+        彙整關鍵字: "測試",
+        更新日期: "測試",
     }, 
-
 ];
     var table01 = new Tabulator("#table01", {
         data: table01Data,
@@ -264,17 +227,10 @@
                     cell.getRow().toggleSelect();
                 }
             },
-            { title: "決議制裁名單號", field: "決議制裁名單號"
-            },
-            { title: "識別碼", field: "識別碼",
-                formatter: function(cell, formatterParams, onRendered) {
-                    return "<a href='#'>" + cell.getValue() + "</a>"
-                },
-            },
-            { title: "姓名", field: "姓名" },
-            { title: "英文姓名", field: "英文姓名" },
-            { title: "生日", field: "生日" },
-            { title: "國籍", field: "國籍" },
+            { title: "年度", field: "年度"},
+            { title: "類型", field: "類型" },
+            { title: "廠商名稱", field: "廠商名稱"},
+            { title: "罰鍰", field: "罰鍰"},
         ],
     });
     // 選擇預設勾選row

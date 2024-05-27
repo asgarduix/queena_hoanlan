@@ -1076,7 +1076,7 @@ input[type="date" i] {
     left: 3px;
     border-radius: 3px;
     font-size: .9rem;
-	background:url(../img/arrow_drop_down_black_24dp2.svg) no-repeat right center transparent;
+	background:url(../img/arrow_drop_down_black_24dp2.svg) no-repeat right center ;
 }
 
 .content-unit select {
@@ -1924,7 +1924,7 @@ select {
     border-top: 1px solid #333333;
 }
 
-.popWindow-body .poprow:first-child{
+.pop-body-frame .poprow:first-child{
     border-top: 1px solid #333333;
 }
 
