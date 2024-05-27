@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>layout</title>
+    <title>函文本文-法令函釋</title>
     <!-- Material -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <!-- <link rel="stylesheet" href="/material/material-icons-ie.css">
@@ -268,17 +268,39 @@
                                 <input class="pop-input" type="text" value="" placeholder="請輸入值">
                             </div>     
                         </div>
-                        <div class="pop-unit-four">
-                            <div class="pop-unit-title">作業名稱</div>
+                        <div class="pop-unit-3">
+                            <div class="pop-unit-title">來函單位</div>
                             <div class="pop-unit-input">
-                                <select name="" id="">
-                                    <option value="">金管會-保險局</option>
-                                </select>
+                                <div class="query-unit-double-input">
+                                    <div class="columnFive-left">
+                                        <select name="" id="">
+                                            <option value="">保貸工會</option>
+                                            <option value="">保法中心</option>
+                                            <option value="">保險公司</option>
+                                            <option value="">保險局</option>
+                                            <option value="" selected>其他</option>
+                                        </select>
+                                    </div>
+                                    <!-- 選其他時出現 -->
+                                    <div class="columnTwo">
+                                        <input type="text" value="" placeholder="請輸入值">
+                                    </div>
+                                    <!-- 選保險公司時出現 -->
+                                    <!-- <div class="columnTwo">
+                                        <select name="" id="">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                        </select>
+                                    </div> -->
+                                </div>
                             </div>    
                         </div>
+                        
+                    </div>
+                    <div class="poprow">
                         <div class="pop-unit-two">
                             <div class="pop-unit-title">函文性質</div>
-                            <div class="pop-unit-input-two">
+                            <div class="pop-unit-input">
                                 <ul>
                                     <li><input type="radio" checked><label for="">法令函釋</label></li>
                                     <li><input type="radio"><label for="">爭議案件</label></li>
@@ -288,16 +310,12 @@
                                 </ul>
                             </div>    
                         </div>
-                    </div>
-                    <div class="poprow">
-                        <div class="pop-unit-all">
+                        <div class="pop-unit-two">
                             <div class="pop-unit-title">作業性質</div>
-                            <div class="pop-unit-input-4 pop-unit-input">
+                            <div class="pop-unit-input">
                                 <ul>
-                                    <li><input type="checkbox"><label for="">法令函釋</label></li>
-                                    <li><input type="checkbox"><label for="">爭議案件</label></li>
-                                    <li><input type="checkbox"><label for="">裁罰案彙整</label></li>
-                                    <li><input type="checkbox"><label for="">洗錢防制名單及國家更新</label></li>
+                                    <li><input type="checkbox"><label for="">內控興革</label></li>
+                                    <li><input type="checkbox"><label for="">教育宣導</label></li>
                                     <li><input type="checkbox"><label for="">其他</label></li>
                                     <li><input type="text"></li>
                                 </ul>
@@ -310,7 +328,6 @@
                             <div class="pop-tab-header-2">
                                 <ul>
                                     <li><a href="" class="unittab-active">函文</a></li>
-                                    <li><a href="">上傳附件</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -379,13 +396,13 @@
                                 </div>     
                             </div>
                         </div>
-                        <div class="noteArea">
+                        <!-- <div class="noteArea">
                             <button class="btn pop-btn-add">選擇檔案</button>
                             <span class="noteSmall">(檔案格式：xlsx / 單檔大小不可超過10MB)</span>
                             <div class="noteArea-list">
                                 123456
                             </div>
-                        </div>
+                        </div> -->
                         <div class="poprow">
                             <div class="pop-unit-all">
                                 <div class="pop-unit-title require">備註</div>
@@ -400,8 +417,8 @@
             </div>
             <div class="popWindow-footer">
                 <div class="popfooter-button-group">
-                    <button class="btn btn-cancel">返回</button>
-                    <button class="btn btn-sure">儲存</button>
+                    <button class="btn btn-cancel" onclick="location.href='06-compliance-default.html'">返回</button>
+                    <button class="btn btn-sure" onclick="location.href='06-compliance-default.html'">儲存</button>
                 </div>
             </div>
         </div>

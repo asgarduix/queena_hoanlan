@@ -1449,6 +1449,11 @@ textarea{
     font-size: 0.875rem;
 }
 
+.timeline-btn-add{
+    display: inline-flex;
+    font-size: 0.875rem;
+}
+
 .query-unit{
     border: 1px solid #5A79B5;
     border-top-left-radius: 15px;
@@ -1915,6 +1920,14 @@ select {
     border-top: 1px solid #333333;
 }
 
+.pop-body-frame .poprow:first-child{
+    border-top: 1px solid #333333;
+}
+
+.otherPoprow{
+    border-top: 1px solid #333333;
+}
+
 
 .row-sec-in{
     display:flex;
@@ -2354,11 +2367,12 @@ select {
 
 .tab-frame-1 ul{
     display: inline-flex;
+    height: 50px;
 }
 
 .tab-frame-1 li{
     line-height: 1.2rem;
-    padding: 10px;
+    padding: 5px;
 }
 
 .tab-frame-1 span{
@@ -2420,9 +2434,9 @@ select {
 }
 
 .tab-body-2 li{
-    line-height: 50px;
     padding-left: 15px;
     font-size: 1rem;
+    line-height: 45px;
 }
 
 .tab-body-2 span{
@@ -3260,6 +3274,7 @@ hr.case3{
     display:flex;
     justify-content: start;
     padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .timeline-s-group ul{

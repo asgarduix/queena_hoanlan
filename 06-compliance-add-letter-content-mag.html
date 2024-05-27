@@ -268,17 +268,39 @@
                                 <input class="pop-input" type="text" value="" placeholder="請輸入值">
                             </div>     
                         </div>
-                        <div class="pop-unit-four">
-                            <div class="pop-unit-title">作業名稱</div>
+                        <div class="pop-unit-3">
+                            <div class="pop-unit-title">來函單位</div>
                             <div class="pop-unit-input">
-                                <select name="" id="">
-                                    <option value="">金管會-保險局</option>
-                                </select>
+                                <div class="query-unit-double-input">
+                                    <div class="columnFive-left">
+                                        <select name="" id="">
+                                            <option value="">保貸工會</option>
+                                            <option value="">保法中心</option>
+                                            <option value="">保險公司</option>
+                                            <option value="">保險局</option>
+                                            <option value="" selected>其他</option>
+                                        </select>
+                                    </div>
+                                    <!-- 選其他時出現 -->
+                                    <div class="columnTwo">
+                                        <input type="text" value="" placeholder="請輸入值">
+                                    </div>
+                                    <!-- 選保險公司時出現 -->
+                                    <!-- <div class="columnTwo">
+                                        <select name="" id="">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                        </select>
+                                    </div> -->
+                                </div>
                             </div>    
                         </div>
+                        
+                    </div>
+                    <div class="poprow">
                         <div class="pop-unit-two">
                             <div class="pop-unit-title">函文性質</div>
-                            <div class="pop-unit-input-two">
+                            <div class="pop-unit-input">
                                 <ul>
                                     <li><input type="radio"><label for="">法令函釋</label></li>
                                     <li><input type="radio"><label for="">爭議案件</label></li>
@@ -288,13 +310,11 @@
                                 </ul>
                             </div>    
                         </div>
-                    </div>
-                    <div class="poprow">
-                        <div class="pop-unit-all">
+                        <div class="pop-unit-two">
                             <div class="pop-unit-title">作業性質</div>
-                            <div class="pop-unit-input-4 pop-unit-input">
+                            <div class="pop-unit-input">
                                 <ul>
-                                    <li><input type="checkbox"><label for="">修訂內控</label></li>
+                                    <li><input type="checkbox"><label for="">內控興革</label></li>
                                     <li><input type="checkbox"><label for="">教育宣導</label></li>
                                     <li><input type="checkbox"><label for="">其他</label></li>
                                     <li><input type="text"></li>
@@ -308,23 +328,13 @@
                             <div class="pop-tab-header-2">
                                 <ul>
                                     <li><a href="" class="unittab-active">函文</a></li>
-                                    <li><a href="">上傳附件</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="poprow">
                             <div class="listcheck-button-group">
                                 <!-- <button class="btn-listcheck">函文本文</button> -->
-                                <button class="btn-listcheck active">裁罰案彙整訊息</button>
-                                <button class="btn-listcheck">裁罰案彙整歸檔</button>
-                                <button class="btn-listcheck">裁罰案彙整統計</button>
-                            </div>
-                        </div>
-                        <div class="poprow">
-                            <div class="listcheck-button-group">
-                                <!-- <button class="btn-listcheck">函文本文</button> -->
-                                <button class="pop-btn-fellow active">修訂控制作業程序</button>
-                                <button class="pop-btn-fellow">儲存控制作業程序</button>
+                                <button class="btn-listcheck active">裁罰案彙整訊息</button> 
                             </div>
                         </div>
                         <div class="poprow">
@@ -343,7 +353,13 @@
                             <div class="pop-unit-four">
                                 <div class="pop-unit-title">產業別</div>
                                 <div class="pop-unit-input">
-                                    <input type="text" value="" placeholder="請輸入值">
+                                    <select name="" id="">
+                                        <option value="">產險</option>
+                                        <option value="">壽險</option>
+                                        <option value="">保經</option>
+                                        <option value="">保代</option>
+                                        <option value="">農漁會</option>
+                                    </select>
                                 </div>     
                             </div>
                             <div class="pop-unit-four">
@@ -360,13 +376,7 @@
                                     <input type="date" value="" placeholder="請輸入值">
                                 </div>     
                             </div>
-                            <div class="pop-unit-four">
-                                <div class="pop-unit-title">受裁罰之公司代號</div>
-                                <div class="pop-unit-input">
-                                    <input type="text" value="" placeholder="請輸入值">
-                                </div>    
-                            </div>
-                            <div class="pop-unit-two">
+                            <div class="pop-unit-3">
                                 <div class="pop-unit-title">受裁罰之公司名稱</div>
                                 <div class="pop-unit-input">
                                     <input type="text" value="" placeholder="請輸入值">
@@ -389,8 +399,16 @@
                                 </div>     
                             </div>
                         </div>
-                        <hr>
                         <div class="poprow">
+                            <div class="pop-unit-all">
+                                <div class="pop-unit-title">註記</div>
+                                <div class="pop-unit-input">
+                                    <textarea name="" id="" cols="30" rows="3"></textarea>
+                                </div>     
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="poprow otherPoprow">
                             <div class="pop-unit-four">
                                 <div class="pop-unit-title">裁罰金額</div>
                                 <div class="pop-unit-input">
