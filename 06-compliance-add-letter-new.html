@@ -201,13 +201,13 @@
                 </div>
                 <div class="tab-body fot-searchlist">
                     <div class="poprow">
-                        <div class="pop-unit-four">
+                        <div class="pop-unit-two">
                             <div class="pop-unit-title">函文編號</div>
                             <div class="pop-unit-input">
                                 <input class="pop-input" type="text" value="" placeholder="請輸入值">
                             </div>     
                         </div>
-                        <div class="pop-unit-3">
+                        <div class="pop-unit-two">
                             <div class="pop-unit-title">來函單位</div>
                             <div class="pop-unit-input">
                                 <div class="query-unit-double-input">
@@ -237,7 +237,7 @@
                         
                     </div>
                     <div class="poprow">
-                        <div class="pop-unit-two">
+                        <div class="pop-unit-all">
                             <div class="pop-unit-title">函文性質</div>
                             <div class="pop-unit-input">
                                 <ul>
@@ -249,7 +249,9 @@
                                 </ul>
                             </div>    
                         </div>
-                        <div class="pop-unit-two">
+                    </div>
+                    <div class="poprow">
+                        <div class="pop-unit-all">
                             <div class="pop-unit-title">作業性質</div>
                             <div class="pop-unit-input">
                                 <ul>
@@ -308,6 +310,8 @@
                                 <div class="pop-unit-title">速別</div>
                                 <div class="pop-unit-input">
                                     <select name="" id="">
+                                        <option value="">最速件</option>
+                                        <option value="">速件</option>
                                         <option value="">普通件</option>
                                     </select>
                                 </div>    
@@ -316,7 +320,7 @@
                                 <div class="pop-unit-title">是否需過董事會</div>
                                 <div class="pop-unit-input">
                                     <input type="radio"><label for="Y">是</label>
-                                    <input type="radio"><label for="N">否</label>
+                                    <input type="radio" checked><label for="N">否</label>
                                 </div>    
                             </div>
                         </div>
@@ -367,12 +371,6 @@
                     <div class="pop-unit-label">
                         <span class="materialSize-s material-icons-outlined">indeterminate_check_box</span>會審  
                     </div>
-                    <div class="pop-unit-label">
-                        <ul>
-                            <li><input type="checkbox"><label for="">提交審閱</label></li>
-                            <li><input type="checkbox"><label for="">會辦單位</label></li>
-                        </ul>
-                    </div>  
                     <!-- 包裹欄位外框 -->
                     <!-- 暫留 -->
                     <!-- <div class="sec-pop-body">
@@ -617,9 +615,9 @@
                                     <input type="text">
                                 </div>   
                             </div>
-                            <div class="pop-unit-four">
+                            <div class="pop-unit-two">
                                 <div class="pop-unit-title">提交日</div>
-                                <div class="pop-unit-input-4 pop-unit-input">
+                                <div class="pop-unit-input">
                                     <input type="date">
                                 </div>   
                             </div>
@@ -641,62 +639,175 @@
                             </div>
                             <!-- 新增會辦單位選項 -->
                             <div class="poprow">
-                                <div class="new-item">
-                                    <button class="btn">
-                                    <p>會辦單位-A</p>
-                                    <span class="material-icons-outlined">cancel</span>
+                                <!-- Tab links -->
+                                <div class="linkouter">
+                                    <div class="tab new-item">
+                                    <button class="tablinks btn" onclick="openCity(event, 'AA')">會辦單位-A
+                                        <a class="XS">
+                                            <span class="material-icons-outlined">cancel</span>
+                                        </a>
                                     </button>
+                                    </div>
                                 </div>
-                                <div class="new-item">
-                                    <button class="btn">
-                                    <p>會辦單位-B</p>
-                                    <span class="material-icons-outlined">cancel</span>
+                                <div class="linkouter">
+                                    <div class="tab new-item">
+                                    <button class="tablinks btn" onclick="openCity(event, 'BB')">會辦單位-B
+                                        <a class="XS">
+                                            <span class="material-icons-outlined">cancel</span>
+                                        </a>
                                     </button>
+                                    </div>
+                                </div>
+                                <div class="linkouter">
+                                    <div class="tab new-item">
+                                    <button class="tablinks btn" onclick="openCity(event, 'CC')">會辦單位-C
+                                        <a class="XS">
+                                            <span class="material-icons-outlined">cancel</span>
+                                        </a>
+                                    </button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="poprow">
-                                <div class="pop-unit-two">
-                                    <div class="pop-unit-title">會辦編號</div>
-                                    <div class="pop-unit-input">
-                                        <input class="pop-input" type="text" value="" placeholder="請輸入值">
-                                    </div>     
+                                <!-- Tab content -->
+                                <div id="AA" class="tabcontent">
+                                    <div class="poprow">
+                                        <div class="pop-unit-two">
+                                            <div class="pop-unit-title">會辦編號</div>
+                                            <div class="pop-unit-input">
+                                                <input class="pop-input" type="text" value="" placeholder="系統帶入">
+                                            </div>     
+                                        </div>
+                                        <div class="pop-unit-four">
+                                            <div class="pop-unit-title">會辦單位</div>
+                                            <div class="pop-unit-input">
+                                                <input type="text" value="">
+                                            </div>    
+                                        </div>
+                                        <div class="pop-unit-four">
+                                            <div class="pop-unit-title">會辦日期</div>
+                                            <div class="pop-unit-input">
+                                                <input type="date" value="">
+                                            </div>    
+                                        </div>
+                                    </div>
+                                    <div class="poprow">
+                                        <div class="pop-unit-all">
+                                            <div class="pop-unit-title">會辦備註</div>
+                                            <div class="pop-unit-input">
+                                                <textarea name="" id="" cols="30" rows="3"></textarea>
+                                            </div>     
+                                        </div>
+                                    </div>
+                                    <div class="poprow">
+                                        <div class="pop-unit-all">
+                                            <div class="pop-unit-title">會辦回覆</div>
+                                            <div class="pop-unit-input">
+                                                <textarea name="" id="" cols="30" rows="3"></textarea>
+                                            </div>     
+                                        </div>
+                                    </div>
+                                    <div class="poprow">
+                                        <div class="pop-unit-all">
+                                            <div class="pop-unit-title">備註</div>
+                                            <div class="pop-unit-input">
+                                                <textarea name="" id="" cols="30" rows="3"></textarea>
+                                            </div>     
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="pop-unit-four">
-                                    <div class="pop-unit-title">會辦單位</div>
-                                    <div class="pop-unit-input">
-                                        <input type="text" value="">
-                                    </div>    
+                                <div id="BB" class="tabcontent">
+                                    <div class="poprow">
+                                        <div class="pop-unit-two">
+                                            <div class="pop-unit-title">會辦編號</div>
+                                            <div class="pop-unit-input">
+                                                <input class="pop-input" type="text" value="" placeholder="系統帶入">
+                                            </div>     
+                                        </div>
+                                        <div class="pop-unit-four">
+                                            <div class="pop-unit-title">會辦單位</div>
+                                            <div class="pop-unit-input">
+                                                <input type="text" value="">
+                                            </div>    
+                                        </div>
+                                        <div class="pop-unit-four">
+                                            <div class="pop-unit-title">會辦日期</div>
+                                            <div class="pop-unit-input">
+                                                <input type="date" value="">
+                                            </div>    
+                                        </div>
+                                    </div>
+                                    <div class="poprow">
+                                        <div class="pop-unit-all">
+                                            <div class="pop-unit-title">會辦備註</div>
+                                            <div class="pop-unit-input">
+                                                <textarea name="" id="" cols="30" rows="3"></textarea>
+                                            </div>     
+                                        </div>
+                                    </div>
+                                    <div class="poprow">
+                                        <div class="pop-unit-all">
+                                            <div class="pop-unit-title">會辦回覆</div>
+                                            <div class="pop-unit-input">
+                                                <textarea name="" id="" cols="30" rows="3"></textarea>
+                                            </div>     
+                                        </div>
+                                    </div>
+                                    <div class="poprow">
+                                        <div class="pop-unit-all">
+                                            <div class="pop-unit-title">備註</div>
+                                            <div class="pop-unit-input">
+                                                <textarea name="" id="" cols="30" rows="3"></textarea>
+                                            </div>     
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="pop-unit-four">
-                                    <div class="pop-unit-title">會辦日期</div>
-                                    <div class="pop-unit-input">
-                                        <input type="date" value="">
-                                    </div>    
+                                <div id="CC" class="tabcontent">
+                                    <div class="poprow">
+                                        <div class="pop-unit-two">
+                                            <div class="pop-unit-title">會辦編號</div>
+                                            <div class="pop-unit-input">
+                                                <input class="pop-input" type="text" value="" placeholder="系統帶入">
+                                            </div>     
+                                        </div>
+                                        <div class="pop-unit-four">
+                                            <div class="pop-unit-title">會辦單位</div>
+                                            <div class="pop-unit-input">
+                                                <input type="text" value="">
+                                            </div>    
+                                        </div>
+                                        <div class="pop-unit-four">
+                                            <div class="pop-unit-title">會辦日期</div>
+                                            <div class="pop-unit-input">
+                                                <input type="date" value="">
+                                            </div>    
+                                        </div>
+                                    </div>
+                                    <div class="poprow">
+                                        <div class="pop-unit-all">
+                                            <div class="pop-unit-title">會辦備註</div>
+                                            <div class="pop-unit-input">
+                                                <textarea name="" id="" cols="30" rows="3"></textarea>
+                                            </div>     
+                                        </div>
+                                    </div>
+                                    <div class="poprow">
+                                        <div class="pop-unit-all">
+                                            <div class="pop-unit-title">會辦回覆</div>
+                                            <div class="pop-unit-input">
+                                                <textarea name="" id="" cols="30" rows="3"></textarea>
+                                            </div>     
+                                        </div>
+                                    </div>
+                                    <div class="poprow">
+                                        <div class="pop-unit-all">
+                                            <div class="pop-unit-title">備註</div>
+                                            <div class="pop-unit-input">
+                                                <textarea name="" id="" cols="30" rows="3"></textarea>
+                                            </div>     
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="poprow">
-                                <div class="pop-unit-all">
-                                    <div class="pop-unit-title">會辦備註</div>
-                                    <div class="pop-unit-input">
-                                        <textarea name="" id="" cols="30" rows="3"></textarea>
-                                    </div>     
-                                </div>
-                            </div>
-                            <!-- <div class="noteArea">
-                                <button class="btn pop-btn-add">上傳</button>
-                                <span class="noteSmall">(檔案格式：xlsx / 單檔大小不可超過10MB)</span>
-                                <div class="noteArea-list">
-                                    123456
-                                </div>
-                            </div> -->
-                            <div class="poprow">
-                                <div class="pop-unit-all">
-                                    <div class="pop-unit-title require">備註</div>
-                                    <div class="pop-unit-input">
-                                        <textarea name="" id="" cols="30" rows="3"></textarea>
-                                    </div>     
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -829,4 +940,29 @@
     table01.selectRow(["b1"]);
     // 使用filter能精準指定欄位
     //table.selectRow(table.setFilter("id","=","a1"));
+
+
+    // tab用的js
+    function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+
+  document.getElementById("defaultOpen").click();
+}
 </script>

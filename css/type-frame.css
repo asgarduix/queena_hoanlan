@@ -3785,7 +3785,6 @@ hr.case3{
 .new-item{
     background-color: #ffffff;
     line-height: 25px;
-    padding: 0 10px 0 5px;
     border-right: 1px solid #333333;
     font-size: 14px;
 }
@@ -4067,4 +4066,71 @@ hr.case3{
 .pop-triple-unit-input .w40 input[type=text]  {
     display: inline-flex;
     width: 10%;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+  /* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab button.XS {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 4px 6px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+  /* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+  /* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 0px;
+    border: 1px solid #ccc;
+    border-top: none;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+.tablinks{
+    font-size: 15px;
+}
+
+.linkouter{
+    border: 1px solid #3C83D8;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.linkouter:first-child{
+    margin-left: 3px;
+}
+
+  /* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
