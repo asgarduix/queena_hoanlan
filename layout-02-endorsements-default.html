@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <!-- Material -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/material/material-icons-ie.css">
+    <link rel="stylesheet" href="/material/material-icons.css"> -->
+    <!-- element-plus -->
+    <!-- <link rel="stylesheet" href="/unpkg.com/element-plus/dist/index.css" /> -->
+
+    <!-- tabulator -->
+    <link rel="stylesheet" href="tabulator/tabulator-master/dist/css/tabulator.min.css">
+    <script type="text/javascript" src="tabulator/tabulator-master/dist/js/tabulator.min.js"></script> 
+    <!-- tabulator cdn 使用於github上 -->
+    <link href="https://unpkg.com/tabulator-tables@5.4.3/dist/css/tabulator.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://unpkg.com/tabulator-tables@5.4.3/dist/js/tabulator.min.js"></script> 
+    
+    <!-- 以我的為主 -->
+    <!-- 有外框線 阿寶用 -->
+    <!-- <link rel="stylesheet" href="css/type-frame-border.css"> -->
+    <link rel="stylesheet" href="css/type-frame.css">
+    <link rel="stylesheet" href="css/type-frame-color.css">
+    <link rel="stylesheet" href="css/tabulator_ment.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-clumn">
+            <div class="left-clumn-item_logo">
+                <a href="#"><img src="./img/item_logo.png" alt=""></a>
+            </div>
+            <div class="left-clumn-row">
+                <div class="title">佣金作業</div>
+            </div>
+            <div class="left-clumn-row">
+                <a href="#"><span class="materialSize material-icons-outlined">description</span><div class="secList">要保書作業</div></a>
+            </div>
+            <div class="left-clumn-row">
+                <a href="#"><span class="materialSize material-icons-outlined">list_alt</span><div class="secList">批單及保單作業</div></a>
+            </div>
+            <div class="left-clumn-row">
+                <a href="#"><span class="materialSize material-icons-outlined">paid</span><div class="secList">獎金佣金報表</div></a>
+            </div>
+        </div>
+        <div class="right-clumn">
+            <div class="right-clumn-row">
+                <ul class="lifteflex">
+                    <div class="columnFour">
+                        <div class="workShop">
+                            <ul>
+                                <li><a href="#">佣金作業</a></li>
+                                <li><a href="#">函文管理</a></li>
+                                <li><a href="#">角色權限</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="columnFive-right">
+                        <div class="workName">
+                            <ul>
+                                <li>和安保代：<span>廖家祥</span></li>
+                                <li>行政專員<span class="workCode">A123456</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="columnTen-right">
+                        <div class="logOut">
+                            <button>登出</button>
+                            <span class="materialSize-s material-icons-outlined">logout</span>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <div class="right-clumn-row">
+                <div class="breadCrumb">
+                    <span class="materialSize-m-r material-icons-outlined">location_on</span>
+                    <!-- &nbsp;不換行空格 -->
+                    <a href="#">佣金作業</a>&nbsp;/&nbsp;<a href="#">批單及保單查詢</a> 
+                </div>
+            </div>
+            <div class="right-clumn-row">
+                <h1 class="unitH1">批單及保單查詢</h1>
+            </div>
+            <div class="right-clumn-row">
+                <div class="query-unit">
+                    <div class="content-unit">
+                        <div class="query-unit-group">
+                            <div class="query-unit-title require">投保編號</div>
+                            <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
+                        </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">統一編號/ID</div>
+                            <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
+                        </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">保單號碼</div>
+                            <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
+                        </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">客戶名稱</div>
+                            <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
+                        </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">險種</div>
+                            <div class="query-unit-input">
+                                <select name="" id="">
+                                    <option value="">商業火險</option>
+                                    <option value="">商業動產流動綜合保險</option>
+                                    <option value="">貨物運輸保險</option>
+                                    <option value="">營建機具綜合險</option>
+                                    <option value="">團體傷害保險</option>
+                                    <option value="">公共意外責任險</option>
+                                    <option value="">產品責任險</option>
+                                    <option value="">僱主意外責任險</option>
+                                    <option value="">僱主補償契約</option>
+                                    <option value="">現金保險</option>
+                                    <option value="">員工誠實險保證保險</option>
+                                    <option value="">營造綜合保險</option>
+                                    <option value="">運送人責任保</option>
+                                    <option value="">車險</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-unit">
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">批單日期起</div>
+                            <div class="query-unit-input">
+                                <input type="date" value="" placeholder="請輸入值">
+                            </div>
+                        </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">批單日期迄</div>
+                            <div class="query-unit-input">
+                                <input type="date" value="" placeholder="請輸入值">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="query-unit-info">
+                    <div class="query-unit-infolist">
+                        共<span>0</span>項資料
+                    </div>
+                    <div class="query-unit-infobutton">
+                        <button class="btn btn-clear">清除</button>
+                        <button class="btn btn-search">搜尋</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="right-clumn-row">
+                <div class="tableInfo">
+                    <div class="tableWork">
+                        <button class="active btn btn-add unittab-active">批改</button>
+                        <button class="btn btn-edit">批退</button>
+                        <button class="btn btn-edit">刪除</button>
+                    </div>
+                    <div class="tableBody">
+                        <div class="tab-frame-1">
+                            <ul>
+                                <li><div class="">共<span>3</span>筆</div></li>
+                            </ul>
+                            <div id="table01"></div>
+                        </div>
+                        <div class="tablePage">
+                            <ul>
+                                <li><button class="btn btn-prev disabled">上一頁</button></li>
+                                <li><button class="btn btn-next">下一頁</button></li>
+                                <li class="bulenote">每頁筆數</li>
+                                <li>
+                                    <select name="" id="">
+                                        <option value="">1000</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                </li>
+                                <li class="bulenote">目前頁數</li>
+                                <li>
+                                    <select name="" id="">
+                                        <option value="">1000</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">版權所有 © 和安保險代理人</div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script>
+    let table01Data = [{
+        id: "b1",
+        投保編號: "A222333888",
+        批單號碼: "AAA1234567890",
+        保險公司: "富邦",
+        險別: "商業火險",
+        保單號碼: "A123456789",
+        保費: "1,000,000",
+        客戶名稱: "宏燁資訊股份有限公司",
+        統一編號: "16149963",
+        狀態: "設計狀態文字",
+    },
+    {
+        id: "b1",
+        投保編號: "C135790388",
+        批單號碼: "BBB1234567890",
+        保險公司: "國泰",
+        險別: "團體傷害保險",
+        保單號碼: "B246801214",
+        保費: "2,000,000",
+        客戶名稱: "宏燁資訊股份有限公司",
+        統一編號: "16149963",
+        狀態: "設計狀態文字",
+    },
+];
+    var table01 = new Tabulator("#table01", {
+        data: table01Data,
+        //autoColumns: true,
+        layout: "fitColumns",// 表格風格
+        height: "250px",
+        movableColumns: true,// 移動欄位
+        resizableRows: true,// 可縮放欄位
+        tooltips: true,// 提示
+        tooltipsHeader: true,
+        tooltipGenerationMode: "hover",
+        selectable: false,
+        columns: [{
+                formatter: "rowSelection",
+                titleFormatter: "rowSelection",
+                headerHozAlign: "center",
+                hozAlign: "center",
+                headerSort: false,
+                maxWidth: 30,
+                minWidth: 30,
+                cellClick: function(e, cell) {
+                    cell.getRow().toggleSelect();
+                }
+            },
+            { title: "投保編號", field: "投保編號"},
+            { title: "批單號碼", field: "批單號碼" },
+            { title: "保險公司", field: "保險公司" },
+            { title: "險別", field: "險別" },
+            { title: "保單號碼", field: "保單號碼" },
+            { title: "保費", field: "保費", hozAlign: "right"  },
+            { title: "客戶名稱", field: "客戶名稱" },
+            { title: "統一編號", field: "統一編號" },
+            { title: "狀態", field: "狀態" },
+        ],
+    });
+    // 選擇預設勾選row
+    table01.selectRow(["b1"]);
+    // 使用filter能精準指定欄位
+    //table.selectRow(table.setFilter("id","=","a1"));
+</script>

@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <!-- Material -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/material/material-icons-ie.css">
+    <link rel="stylesheet" href="/material/material-icons.css"> -->
+    <!-- element-plus -->
+    <!-- <link rel="stylesheet" href="/unpkg.com/element-plus/dist/index.css" /> -->
+
+    <!-- tabulator -->
+    <link rel="stylesheet" href="tabulator/tabulator-master/dist/css/tabulator.min.css">
+    <script type="text/javascript" src="tabulator/tabulator-master/dist/js/tabulator.min.js"></script> 
+    <!-- tabulator cdn 使用於github上 -->
+    <link href="https://unpkg.com/tabulator-tables@5.4.3/dist/css/tabulator.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://unpkg.com/tabulator-tables@5.4.3/dist/js/tabulator.min.js"></script> 
+    
+    <!-- 以我的為主 -->
+    <!-- 有外框線 阿寶用 -->
+    <!-- <link rel="stylesheet" href="css/type-frame-border.css"> -->
+    <link rel="stylesheet" href="css/type-frame.css">
+    <link rel="stylesheet" href="css/type-frame-color.css">
+    <link rel="stylesheet" href="css/tabulator_ment.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-clumn">
+            <div class="left-clumn-item_logo">
+                <a href="#"><img src="./img/item_logo.png" alt=""></a>
+            </div>
+            <div class="left-clumn-row">
+                <div class="title">佣金作業</div>
+            </div>
+            <div class="left-clumn-row">
+                <a href="#"><span class="materialSize material-icons-outlined">description</span><div class="secList">要保書作業</div></a>
+            </div>
+            <div class="left-clumn-row">
+                <a href="#"><span class="materialSize material-icons-outlined">list_alt</span><div class="secList">批單及保單作業</div></a>
+            </div>
+            <div class="left-clumn-row">
+                <a href="#"><span class="materialSize material-icons-outlined">paid</span><div class="secList">獎金佣金報表</div></a>
+            </div>
+        </div>
+        <div class="right-clumn">
+            <div class="right-clumn-row">
+                <ul class="lifteflex">
+                    <div class="columnFour">
+                        <div class="workShop">
+                            <ul>
+                                <li><a href="#">佣金作業</a></li>
+                                <li><a href="#">函文管理</a></li>
+                                <li><a href="#">角色權限</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="columnFive-right">
+                        <div class="workName">
+                            <ul>
+                                <li>和安保代：<span>廖家祥</span></li>
+                                <li>行政專員<span class="workCode">A123456</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="columnTen-right">
+                        <div class="logOut">
+                            <button>登出</button>
+                            <span class="materialSize-s material-icons-outlined">logout</span>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <div class="right-clumn-row">
+                <div class="breadCrumb">
+                    <span class="materialSize-m-r material-icons-outlined">location_on</span>
+                    <!-- &nbsp;不換行空格 -->
+                    <a href="#">佣金作業</a>&nbsp;/&nbsp;<a href="#">批單及保單查詢</a> 
+                </div>
+            </div>
+            <div class="right-clumn-row">
+                <h1 class="unitH1">批單及保單查詢</h1>
+            </div>
+            <div class="right-clumn-row">
+                <div class="query-unit">
+                    <div class="content-unit">
+                        <div class="query-unit-group">
+                            <div class="query-unit-title require">投保編號</div>
+                            <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
+                        </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">統一編號/ID</div>
+                            <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
+                        </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">保單號碼</div>
+                            <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
+                        </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">客戶名稱</div>
+                            <div class="query-unit-input"><input type="text" value="" placeholder="請輸入值"></div>
+                        </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">批單日期</div>
+                            <div class="query-unit-input">
+                                <div class="query-unit-double-input">
+                                    <div class="columnFive-left-37">
+                                    <input type="date" value="" placeholder="請輸入值">
+                                    </div>
+                                    <span class="zigzagLine">～</span>
+                                    <div class="columnFive-left-37">
+                                        <input type="date" value="" placeholder="請輸入值">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="content-unit">
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">險種</div>
+                            <div class="query-unit-input">
+                                <select name="" id="">
+                                    <option value="">商業火險</option>
+                                    <option value="">商業動產流動綜合保險</option>
+                                    <option value="">貨物運輸保險</option>
+                                    <option value="">營建機具綜合險</option>
+                                    <option value="">團體傷害保險</option>
+                                    <option value="">公共意外責任險</option>
+                                    <option value="">產品責任險</option>
+                                    <option value="">僱主意外責任險</option>
+                                    <option value="">僱主補償契約</option>
+                                    <option value="">現金保險</option>
+                                    <option value="">員工誠實險保證保險</option>
+                                    <option value="">營造綜合保險</option>
+                                    <option value="">運送人責任保</option>
+                                    <option value="">車險</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="query-unit-info">
+                    <div class="query-unit-infolist">
+                        共<span>0</span>項資料
+                    </div>
+                    <div class="query-unit-infobutton">
+                        <button class="btn btn-clear">清除</button>
+                        <button class="btn btn-search">搜尋</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="right-clumn-row">
+                <div class="tableInfo">
+                    <div class="tableWork">
+                        <button class=" btn btn-add unittab-active">批改</button>
+                        <button class="btn btn-edit">批退</button>
+                    </div>
+                    <div class="tableBody">
+                        <div id="table01"></div>
+                        <div class="tablePage">
+                            <ul>
+                                <li><button class="btn btn-prev">上一頁</button></li>
+                                <li><button class="btn btn-next">下一頁</button></li>
+                                <li class="bulenote">每頁筆數</li>
+                                <li>
+                                    <select name="" id="">
+                                        <option value="">1000</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                </li>
+                                <li class="bulenote">目前頁數</li>
+                                <li>
+                                    <select name="" id="">
+                                        <option value="">1000</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 彈窗開始star -->
+        <!-- pop視窗 -->
+        <div class="blackBackground">
+            <div class="popWindow">
+                <div class="popWindow-header">
+                    <p class="popTitle">保單號碼<span>A123456789</span></p>
+                    <div class="popDel">
+                        <button>
+                            <span class="material-icons-outlined">clear</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="popWindow-body">
+                    <div class="pop-unit-label"><span class="materialSize-xs material-icons-outlined">indeterminate_check_box</span>批改</div>
+                    <!-- 包裹欄位外框 -->
+                    <div class="pop-body-frame">
+                        <div class="poprow">
+                            <div class="pop-unit-two">
+                                <div class="pop-unit-title">批改類型</div>
+                                <div class="pop-unit-input">
+                                    <ul>
+                                        <li><input type="radio" value=""><label>保險公司批改</label></li>
+                                        <li><input type="radio" value=""><label> 和安內部批改</label></li>
+                                    </ul>
+                                </div>    
+                            </div>
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">保單號碼</div>
+                                <div class="pop-unit-input">
+                                    <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                </div>    
+                            </div>
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">保險公司批單號</div>
+                                <div class="pop-unit-input">
+                                    <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="poprow">
+                            <div class="pop-unit-two">
+                                <div class="pop-unit-title">應收/應退保費</div>
+                                <div class="pop-unit-input pop-unit-input-5">
+                                    <ul>
+                                        <li>
+                                            <input type="radio" value=""><label>應收保費</label>
+                                            <input type="text" value="" placeholder="請輸入值">
+                                        </li>
+                                        <li>
+                                            <input type="radio" value=""><label>應退保費</label>
+                                            <input type="text"  value="" placeholder="請輸入值">
+                                        </li>
+                                    </ul>
+                                </div>    
+                            </div>
+                            <div class="pop-unit-two">
+                                <div class="pop-unit-title-two">住所/登記地址</div>
+                                <div class="pop-unit-input-two">
+                                    <input type="text" value="" placeholder="請輸入值">
+                                </div>     
+                            </div>
+                        </div>
+                        <div class="poprow">
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">批單建檔日</div>
+                                <div class="pop-unit-input">
+                                    <input type="date" value="" placeholder="請輸入值">
+                                </div>    
+                            </div>
+                            <div class="pop-unit-two">
+                                <div class="pop-unit-title">更新佣金比例</div>
+                                <div class="pop-unit-input pop-unit-input-last">
+                                    <ul>
+                                        <li><input type="checkbox" value="" name=""><label for="">重新計算承攬人佣金比例 （備註：重新計算承攬人佣金比例）</label> </li>
+                                    </ul>
+                                </div>     
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 隱藏要保書icon star -->
+                    <div class="pop-close-part-icon">
+                        <button>
+                        <span class="materialSize-xs material-icons-outlined">
+                            do_not_disturb_on
+                            </span>隱藏要保書
+                        </button>
+                    </div>
+                    <!-- 隱藏要保書icon end -->
+                    <!-- 隱藏要保書框框star -->
+                    <div class="pop-close-part">
+                    <div class="pop-unit-label">
+                        <span class="materialSize-xs material-icons-outlined">indeterminate_check_box</span>承攬人員
+                    </div>
+                    <!-- 包裹欄位外框 -->
+                    <div class="pop-body-frame">
+                        <div class="poprow">
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">投保編號</div>
+                                <div class="pop-unit-input">
+                                    <input type="text" value="" placeholder="請輸入值">
+                                </div>     
+                            </div>
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">業務來源</div>
+                                <div class="pop-unit-input pop-unit-input-last">
+                                    <ul>
+                                        <li><input type="radio" value=""><label for="">一般件</label></li>
+                                        <li><input type="radio" value=""><label for="">介紹件</label></li>
+                                    </ul>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="pop-button-group">
+                            <button class="pop-btn-add">新增</button>
+                        </div>
+                        <div class="poprow">
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title"><span class="pop-materialSize-xs material-icons-outlined">cancel</span>單位別</div>
+                                <div class="pop-unit-input">
+                                    <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                </div>    
+                            </div>
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">承攬身份</div>
+                                <div class="pop-unit-input">
+                                    <select name="" id="">
+                                        <option value="" selected>請選擇</option>
+                                        <option value="">業務員</option>
+                                        <option value="">服務業代</option>
+                                    </select>
+                                </div>    
+                            </div>
+                            <div class="pop-unit-two">
+                                <div class="pop-unit-title">保險/服務業代</div>
+                                    <div class="pop-unit-input">
+                                        <div class="pop-double-unit-input">
+                                            <div class="columnFive-left">
+                                                <input type="text" value="" placeholder="請輸入值">
+                                                </div>
+                                                <div class="columnTwo">
+                                                <input type="text" value="" placeholder="請輸入值" disabled>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                </div>
+
+                        </div>
+                        <div class="poprow">
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">佣金比例</div>
+                                <div class="pop-unit-input ">
+                                    <div class="pop-double-unit-input">
+                                        <div class="columnTwo">
+                                            <select name="" id="">
+                                                <option value="">請選擇</option>
+                                                <option value="">比例</option>
+                                            </select>
+                                        </div>
+                                        <div class="columnFour">
+                                            <input type="text" value="" placeholder="請輸入值" disabled>
+                                        </div>
+                                        <span class="zigzagLine">%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">薪資狀況</div>
+                                <div class="pop-unit-input">
+                                    <select name="" id="">
+                                        <option value="" selected>請選擇</option>
+                                        <option value="">有底薪</option>
+                                        <option value="">無底薪</option>
+                                    </select>
+                                </div>    
+                            </div>
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">健保身份</div>
+                                <div class="pop-unit-input pop-unit-input-last">
+                                    <ul>
+                                        <li><input type="checkbox" value=""><label for="">二代健保身份</label></li>
+                                    </ul>
+                                </div>    
+                            </div>
+                        </div>
+                        <hr class="pophr">
+                        <div class="poprow">
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title"><span class="pop-materialSize-xs material-icons-outlined">cancel</span>單位別</div>
+                                <div class="pop-unit-input">
+                                    <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                </div>    
+                            </div>
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">承攬身份</div>
+                                <div class="pop-unit-input">
+                                    <select name="" id="">
+                                        <option value="" selected>請選擇</option>
+                                        <option value="">業務員</option>
+                                        <option value="">服務業代</option>
+                                    </select>
+                                </div>    
+                            </div>
+                            <div class="pop-unit-two">
+                                <div class="pop-unit-title">保險/服務業代</div>
+                                    <div class="pop-unit-input">
+                                        <div class="pop-double-unit-input">
+                                            <div class="columnFive-left">
+                                                <input type="text" value="" placeholder="請輸入值">
+                                                </div>
+                                                <div class="columnTwo">
+                                                <input type="text" value="" placeholder="請輸入值" disabled>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                </div>
+
+                        </div>
+                        <div class="poprow">
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">佣金比例</div>
+                                <div class="pop-unit-input ">
+                                    <div class="pop-double-unit-input">
+                                        <div class="columnTwo">
+                                            <select name="" id="">
+                                                <option value="">請選擇</option>
+                                                <option value="">比例</option>
+                                            </select>
+                                        </div>
+                                        <div class="columnFour">
+                                            <input type="text" value="" placeholder="請輸入值" disabled>
+                                        </div>
+                                        <span class="zigzagLine">%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">薪資狀況</div>
+                                <div class="pop-unit-input">
+                                    <select name="" id="">
+                                        <option value="" selected>請選擇</option>
+                                        <option value="">有底薪</option>
+                                        <option value="">無底薪</option>
+                                    </select>
+                                </div>    
+                            </div>
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">健保身份</div>
+                                <div class="pop-unit-input pop-unit-input-last">
+                                    <ul>
+                                        <li><input type="checkbox" value=""><label for="">二代健保身份</label></li>
+                                    </ul>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pop-unit-label"><span class="materialSize-xs material-icons-outlined">indeterminate_check_box</span>基本資料
+                    </div>
+                    <div class="pop-tab">
+                        <div class="pop-tab-header">
+                            <ul>
+                                <li><a href="">要保人資料</a></li>
+                                <li><a href="">被保人(主)資料</a></li>
+                                <li><a href="">被保人(主)資料</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-body">
+                        <div class="poprow">
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">統一編號/ID</div>
+                                <div class="pop-unit-input">
+                                    <input type="text" value="" placeholder="請輸入值">
+                                    <button class="pop-btn-3"><span class="course-materialSize-xs material-icons-outlined" >search</span></button>
+                                </div>     
+                            </div>
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">要保人</div>
+                                <div class="pop-unit-input">
+                                    <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                </div>    
+                            </div>
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">E-mail</div>
+                                <div class="pop-unit-input">
+                                    <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                </div>    
+                            </div>
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">手機號碼</div>
+                                <div class="pop-unit-input">
+                                    <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="poprow">
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">出生日期</div>
+                                <div class="pop-unit-input">
+                                    <input class="pop-input" type="date" value="" placeholder="請輸入值">
+                                </div>     
+                            </div>
+                            <div class="pop-unit-3">
+                                <div class="pop-unit-title">負責人</div>
+                                <div class="pop-unit-input">
+                                    <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                </div>    
+                            </div>
+                            
+                        </div>
+                        <div class="poprow">
+                            <div class="pop-unit-two">
+                                <div class="pop-unit-title-two">住所/登記地址</div>
+                                <div class="pop-unit-input-two">
+                                    <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                </div>     
+                            </div>
+                            <div class="pop-unit-two">
+                                <div class="pop-unit-title-two">聯絡地址</div>
+                                <div class="pop-unit-input-two">
+                                    <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="poprow">
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">聯絡電話</div>
+                                <div class="pop-unit-input">
+                                    <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                </div>     
+                            </div>
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">聯絡窗口</div>
+                                <div class="pop-unit-input">
+                                    <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                </div>    
+                            </div>
+                            <div class="pop-unit-two">
+                                <div class="pop-unit-title-two">國籍</div>
+                                <div class="pop-unit-input-two">
+                                    <ul>
+                                        <li>
+                                            <input type="radio" value=""><label>本國</label>
+                                        </li>
+                                        <li><input type="radio" value=""><label>非本國</label></li>
+                                    </ul>
+                                    <div class="columnFour">
+                                        <input type="text" value="" placeholder="請輸入值" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <!-- 放大鏡按下出現list -->
+                        <div class="search-list">
+                            <div class="search-list-unit">
+                                <ul>
+                                    <a href="#"><li>16149963<br>宏燁資訊股份有限公司<span>(3)</span></li></a>
+                                    <a href=""><li>16149963<br>宏燁資訊股份有限公司有限公司有限公司<span>(3)</span></li></a>
+                                    <a href=""><li>16149963<br>宏燁資訊股份有限公司有限公司有限公司<span>(3)</span></li></a>
+                                    <a href=""><li>16149963<br>宏燁資訊股份有限公司有限公司有限公司<span>(3)</span></li></a>
+                                    <a href=""><li>16149963<br>宏燁資訊股份有限公司有限公司有限公司<span>(3)</span></li></a>
+                                </ul>
+                            </div>
+                        </div>
+                    <div class="pop-unit-label"><span class="materialSize-xs material-icons-outlined">indeterminate_check_box</span>險種及契約資料
+                    </div>
+                    <div class="pop-tab">
+                        <div class="pop-tab-header">
+                            <ul>
+                                <li><a href="" class="unittab-active">契約</a></li>
+                                <li><a href="">附件</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-body">
+                        <div class="poprow">
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">付款日期</div>
+                                <div class="pop-unit-input">
+                                    <input class="pop-input" type="date" value="" placeholder="請輸入值">
+                                </div>     
+                            </div>
+                            <div class="pop-unit-two">
+                                <div class="pop-unit-title">付款方式</div>
+                                <div class="pop-unit-input-two pop-unit-input-last">
+                                    <ul>
+                                        <li><input type="checkbox" value=""><label for="">支票</label></li>
+                                        <li><input type="checkbox" value=""><label for="">信用卡</label></li>
+                                        <li><input type="checkbox" value=""><label for="">匯款</label></li>
+                                        <li><input type="checkbox" value=""><label for="">現金</label></li>
+                                    </ul>
+                                </div>     
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="poprow-nonborder">
+                            <div class="pop-unit-two">
+                                <span class="span-2">火險</span>-<span class="span-2">商業火險</span>  
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="pop-inside-border">
+                            <div class="poprow">
+                                <div class="pop-unit-four">
+                                    <div class="pop-unit-title">保險公司(主)</div>
+                                    <div class="pop-unit-input">
+                                        <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                    </div>     
+                                </div>
+                                <div class="pop-unit-four">
+                                    <div class="pop-unit-title">保單編號(主)</div>
+                                    <div class="pop-unit-input">
+                                        <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                    </div>     
+                                </div>
+                                <div class="pop-unit-four">
+                                    <div class="pop-unit-title">本單保費</div>
+                                    <div class="pop-unit-input">
+                                        <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                    </div>     
+                                </div>
+                                <div class="pop-unit-four">
+                                    <div class="pop-unit-title">佣金率</div>
+                                    <div class="pop-unit-input ">
+                                        <div class="pop-double-unit-input">
+                                            <div class="columnTwo">
+                                                <select name="" id="">
+                                                    <option value="">請選擇</option>
+                                                    <option value="">比例</option>
+                                                </select>
+                                            </div>
+                                            <div class="columnFour">
+                                                <input type="text" value="" placeholder="請輸入值" disabled>
+                                            </div>
+                                            <span class="zigzagLine">%</span>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="poprow">
+                                <div class="pop-unit-two">
+                                    <div class="pop-unit-title">保險起日</div>
+                                    <div class="pop-unit-input">
+                                        <div class="pop-double-unit-input">
+                                            <div class="columnTwo">
+                                                <input type="date" value="" placeholder="請輸入值">
+                                                </div>
+                                                <div class="columnFive-right">
+                                                <input type="text" value="" placeholder="00" disabled="">
+                                                <span>時</span>
+                                            </div>
+                                        </div>
+                                    </div>        
+                                </div>
+                                <div class="pop-unit-two">
+                                    <div class="pop-unit-title">保險迄日</div>
+                                    <div class="pop-unit-input">
+                                        <div class="pop-double-unit-input ">
+                                            <div class="columnTwo">
+                                                <input type="date" value="" placeholder="請輸入值">
+                                                </div>
+                                                <div class="columnFive-right">
+                                                <input type="text" value="" placeholder="00" disabled="">
+                                                <span>時</span>
+                                            </div>
+                                        </div>
+                                    </div>     
+                                </div>
+                            </div>
+                            <div class="poprow">
+                                <div class="pop-unit-all">
+                                    <div class="pop-unit-title-two">備註</div>
+                                    <div class="pop-unit-input-two">
+                                        <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                    </div>     
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="poprow">
+                                <div class="pop-unit-two">
+                                    <div class="pop-unit-title-two">標的種類</div>
+                                    <div class="pop-unit-input-two">
+                                        <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                    </div>     
+                                </div>
+                                <div class="pop-unit-two">
+                                    <div class="pop-unit-title-two">標的名稱</div>
+                                    <div class="pop-unit-input-two">
+                                        <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                    </div>     
+                                </div>
+                            </div>
+                            <div class="poprow">
+                                <div class="pop-unit-two">
+                                    <div class="pop-unit-title-two">標的所在</div>
+                                    <div class="pop-unit-input-two">
+                                        <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                    </div>     
+                                </div>
+                                <div class="pop-unit-two">
+                                    <div class="pop-unit-title-two">處所存放標的</div>
+                                    <div class="pop-unit-input-two">
+                                        <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                    </div>     
+                                </div>
+                            </div>
+                            <div class="poprow">
+                                <div class="pop-unit-two">
+                                    <div class="pop-unit-title-two">標的數量</div>
+                                    <div class="pop-unit-input-two">
+                                        <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                    </div>     
+                                </div>
+                                <div class="pop-unit-two">
+                                    <div class="pop-unit-title-two">備註</div>
+                                    <div class="pop-unit-input-two">
+                                        <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                    </div>     
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="pop-table">
+                                <div class="pop-table-header">
+                                    <ul>
+                                        <li>
+                                            <input class="inputstar" type="checkbox" value=""><label class="pop-table-label">共保件
+                                        </label>
+                                        </li>
+                                        <li>
+                                            <button class="btn pop-table-header-btn">新增</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pop-table-body">
+                                    <div class="pop-body-frame">
+                                        <div class="poprow">
+                                            <div class="pop-unit-four">
+                                                <div class="pop-unit-title"><span class="pop-materialSize-xs material-icons-outlined">cancel</span>保險公司(主)</div>
+                                                <div class="pop-unit-input">
+                                                    <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                                </div>    
+                                            </div>
+                                            <div class="pop-unit-four">
+                                                <div class="pop-unit-title">保單號碼</div>
+                                                <div class="pop-unit-input">
+                                                    <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                                </div>   
+                                            </div>
+                                            <div class="pop-unit-four">
+                                                <div class="pop-unit-title">批單號碼</div>
+                                                <div class="pop-unit-input">
+                                                    <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                                </div>   
+                                                </div>
+                                            <div class="pop-unit-four">
+                                                <div class="pop-unit-title">承保比例</div>
+                                                <div class="pop-unit-input ">
+                                                    <input class="pop-input" type="text" value="" placeholder="請輸入值"><span class="zigzagLine">%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="poprow">
+                                            <div class="pop-unit-four">
+                                                <div class="pop-unit-title">保費</div>
+                                                <div class="pop-unit-input">
+                                                    <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                                </div>    
+                                            </div>
+                                            <div class="pop-unit-four">
+                                                <div class="pop-unit-title">佣金率</div>
+                                                <div class="pop-unit-input pop-unit-input-last">
+                                                    <div class="pop-double-unit-input">
+                                                        <div class="columnTwo">
+                                                            <select name="" id="">
+                                                                <option value="">請選擇</option>
+                                                                <option value="">比例</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="columnFour">
+                                                            <input type="text" value="" placeholder="請輸入值" disabled>
+                                                        </div>
+                                                        <span class="zigzagLine">%</span>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <hr class="pophr">
+                                        <div class="poprow">
+                                            <div class="pop-unit-four">
+                                                <div class="pop-unit-title"><span class="pop-materialSize-xs material-icons-outlined">cancel</span>保險公司(主)</div>
+                                                <div class="pop-unit-input">
+                                                    <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                                </div>    
+                                            </div>
+                                            <div class="pop-unit-four">
+                                                <div class="pop-unit-title">保單號碼</div>
+                                                <div class="pop-unit-input">
+                                                    <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                                </div>   
+                                            </div>
+                                            <div class="pop-unit-four">
+                                                <div class="pop-unit-title">批單號碼</div>
+                                                <div class="pop-unit-input">
+                                                    <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                                </div>   
+                                                </div>
+                                            <div class="pop-unit-four">
+                                                <div class="pop-unit-title">承保比例</div>
+                                                <div class="pop-unit-input ">
+                                                    <input class="pop-input" type="text" value="" placeholder="請輸入值"><span class="zigzagLine">%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="poprow">
+                                            <div class="pop-unit-four">
+                                                <div class="pop-unit-title">保費</div>
+                                                <div class="pop-unit-input">
+                                                    <input class="pop-input" type="text" value="" placeholder="請輸入值">
+                                                </div>    
+                                            </div>
+                                            <div class="pop-unit-four">
+                                                <div class="pop-unit-title">佣金率</div>
+                                                <div class="pop-unit-input  pop-unit-input-last">
+                                                    <div class="pop-double-unit-input">
+                                                        <div class="columnTwo">
+                                                            <select name="" id="">
+                                                                <option value="">請選擇</option>
+                                                                <option value="">比例</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="columnFour">
+                                                            <input type="text" value="" placeholder="請輸入值" disabled>
+                                                        </div>
+                                                        <span class="zigzagLine">%</span>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pop-unit-label"><span class="materialSize-xs material-icons-outlined">indeterminate_check_box</span>批退內容
+                    </div>
+                        <div class="poprow">
+                            <div class="pop-unit-two">
+                                <div class="pop-unit-title">業務人員</div>
+                                <div class="pop-unit-input">
+                                    <div class="pop-triple-unit-input">
+                                        <input type="text"  value="" placeholder="請輸入值">
+                                        <input type="text" value="" placeholder="請輸入值">
+                                        <input type="text" value="" placeholder="請輸入值">
+                                    </div>
+                                </div>     
+                            </div>
+                            <div class="pop-unit-two">
+                                <div class="pop-unit-title">業務人員</div>
+                                <div class="pop-unit-input">
+                                    <div class="pop-triple-unit-input">
+                                        <input type="text"  value="" placeholder="請輸入值">
+                                        <input type="text" value="" placeholder="請輸入值">
+                                        <input type="text" value="" placeholder="請輸入值">
+                                    </div>
+                                </div>     
+                            </div>
+                        </div>
+                        <div class="poprow">
+                            <div class="pop-unit-four">
+                                <div class="pop-unit-title">保費</div>
+                                <div class="pop-unit-input">
+                                    <input type="text" value="" placeholder="請輸入值">
+                                </div>     
+                            </div>
+                            <div class="pop-unit-3">
+                                <div class="pop-unit-title">備註</div>
+                                <div class="pop-unit-input">
+                                    <input type="text" value="" placeholder="請輸入值">
+                                </div>    
+                            </div>
+                            
+                        </div>
+                </div>
+                </div>
+                <!-- 隱藏框框結束end -->
+
+                <!-- footer -->
+                <div class="popWindow-footer">
+                    <div class="popfooter-button-group">
+                        <button class="btn btn-cancel">返回</button>
+                        <button class="btn btn-sure">儲存</button>
+                        <button class="btn btn-sure">確認批改</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- 彈窗結束end -->
+</body>
+</html>
+
+<script>
+    let table01Data = [{
+        id: "b1",
+        投保編號: "A222333888",
+        批單號碼: "AAA1234567890",
+        保險公司: "富邦",
+        險別: "商業火險",
+        保單號碼: "A123456789",
+        保費: "1,000,000",
+        客戶名稱: "宏燁資訊股份有限公司",
+        統一編號: "16149963",
+        狀態: "設計狀態文字",
+    },
+    {
+        id: "b1",
+        投保編號: "C135790388",
+        批單號碼: "BBB1234567890",
+        保險公司: "國泰",
+        險別: "團體傷害保險",
+        保單號碼: "B246801214",
+        保費: "2,000,000",
+        客戶名稱: "宏燁資訊股份有限公司",
+        統一編號: "16149963",
+        狀態: "設計狀態文字",
+    },
+];
+    var table01 = new Tabulator("#table01", {
+        data: table01Data,
+        //autoColumns: true,
+        layout: "fitColumns",// 表格風格
+        height: "250px",
+        movableColumns: true,// 移動欄位
+        resizableRows: true,// 可縮放欄位
+        tooltips: true,// 提示
+        tooltipsHeader: true,
+        tooltipGenerationMode: "hover",
+        selectable: false,
+        rowHeight:30,
+        columns: [{
+                formatter: "rowSelection",
+                titleFormatter: "rowSelection",
+                headerHozAlign: "center",
+                hozAlign: "center",
+                headerSort: false,
+                maxWidth: 30,
+                minWidth: 30,
+                cellClick: function(e, cell) {
+                    cell.getRow().toggleSelect();
+                }
+            },
+            { title: "投保編號", field: "投保編號"},
+            { title: "批單號碼", field: "批單號碼" },
+            { title: "保險公司", field: "保險公司" },
+            { title: "險別", field: "險別" },
+            { title: "保單號碼", field: "保單號碼" },
+            { title: "保費", field: "保費", hozAlign: "right"  },
+            { title: "客戶名稱", field: "客戶名稱" },
+            { title: "統一編號", field: "統一編號" },
+            { title: "狀態", field: "狀態" },
+        ],
+    });
+    // 選擇預設勾選row
+    table01.selectRow(["b1"]);
+    // 使用filter能精準指定欄位
+    //table.selectRow(table.setFilter("id","=","a1"));
+</script>
