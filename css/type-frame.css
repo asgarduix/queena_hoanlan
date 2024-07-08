@@ -1395,6 +1395,17 @@ textarea{
     border-right: 1px solid #111111;
 }
 
+.btn-center-border{
+    display:block;
+    float: right;
+    background-color: #075D8E;
+    padding-right: 10px;
+    border: 1px solid #7E96C4;
+    color: #ffffff;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
 .pop-btn-add{
     border: 1px solid #5A79B5;
     background-color: #5A79B5;
