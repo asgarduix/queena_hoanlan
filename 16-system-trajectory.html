@@ -117,6 +117,27 @@
                 <div class="query-unit">
                     <div class="content-unit">
                         <div class="query-unit-group">
+                            <div class="query-unit-title">員工編號</div>
+                            <div class="query-unit-input">
+                                <input type="text" value="">
+                            </div>
+                        </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">姓名</div>
+                            <div class="query-unit-input">
+                                <input type="text" value="">
+                            </div>
+                        </div>
+                        <div class="query-unit-group">
+                            <div class="query-unit-title">功能</div>
+                            <div class="query-unit-input">
+                                <select name="" id="">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="query-unit-group">
                             <div class="query-unit-title">查詢區間起</div>
                             <div class="query-unit-input">
                                 <input type="date" value="">
@@ -188,23 +209,21 @@
 <script>
     let table01Data = [{
         id: "b1",
-        日期: "日期",
-        text1: "1",
-        text2: "2",
-        text3: "3",
-        text4: "4",
-        text5: "5",
-        text6: "6",
+        IP: "192.168.111.2",
+        功能: "函文",
+        行為: "行為",
+        員工編號: "123",
+        姓名: "王大偉",
+        日期: "2023/07/09 18:99:59",
     }, 
     {
         id: "b1",
-        日期: "日期",
-        text1: "1",
-        text2: "2",
-        text3: "3",
-        text4: "4",
-        text5: "5",
-        text6: "6",
+        IP: "192.168.111.3",
+        功能: "函文",
+        行為: "行為",
+        員工編號: "456",
+        姓名: "陳學貞",
+        日期: "2023/07/19 18:99:59",
     }, 
 ];
     var table01 = new Tabulator("#table01", {
@@ -230,17 +249,16 @@
                     cell.getRow().toggleSelect();
                 }
             },
-            { title: "日期", field: "日期",},
-            { title: "text1", field: "text1" },
-            { title: "text2", field: "text2",
+            { title: "IP", field: "IP",},
+            { title: "功能", field: "功能" },
+            { title: "行為", field: "行為",
             formatter: function(cell, formatterParams, onRendered) {
                     return "<a href='#'>" + cell.getValue() + "</a>"
                 },
             },
-            { title: "text3", field: "text3" },
-            { title: "text4", field: "text4"},
-            { title: "text5", field: "text5" },
-            { title: "text6", field: "text6" }
+            { title: "員工編號", field: "員工編號" },
+            { title: "姓名", field: "姓名"},
+            { title: "日期", field: "日期" },
         ],
     });
     // 選擇預設勾選row
