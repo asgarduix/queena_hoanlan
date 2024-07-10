@@ -390,7 +390,7 @@
                     </div>
                     <hr>
                     <div class="pop-unit-label">
-                        <span class="materialSize-s material-icons-outlined">indeterminate_check_box</span>會審  
+                        <span class="materialSize-s material-icons-outlined">indeterminate_check_box</span>會審 
                     </div>
                     <!-- 包裹欄位外框 -->
                     <!-- 暫留 -->
@@ -718,30 +718,10 @@
                                 </div>
                                 <div id="BB" class="tabcontent">
                                     <div class="poprow">
-                                        <div class="pop-unit-two">
-                                            <div class="pop-unit-title require">會辦編號</div>
-                                            <div class="pop-unit-input">
-                                                <input class="pop-input" type="text" value="" placeholder="系統帶入">
-                                            </div>     
-                                        </div>
-                                        <div class="pop-unit-four">
-                                            <div class="pop-unit-title require">會辦單位</div>
-                                            <div class="pop-unit-input">
-                                                <input type="text" value="">
-                                            </div>    
-                                        </div>
-                                        <div class="pop-unit-four">
-                                            <div class="pop-unit-title require">會辦日期</div>
-                                            <div class="pop-unit-input">
-                                                <input type="date" value="">
-                                            </div>    
-                                        </div>
-                                    </div>
-                                    <div class="poprow">
                                         <div class="pop-unit-all">
                                             <div class="pop-unit-title">會辦備註</div>
                                             <div class="pop-unit-input">
-                                                <textarea name="" id="" cols="30" rows="3"></textarea>
+                                                <textarea name="" id="" cols="30" rows="3" disabled></textarea>
                                             </div>     
                                         </div>
                                     </div>
@@ -749,7 +729,7 @@
                                         <div class="pop-unit-all">
                                             <div class="pop-unit-title">會辦回覆</div>
                                             <div class="pop-unit-input">
-                                                <textarea name="" id="" cols="30" rows="3"></textarea>
+                                                <textarea name="" id="" cols="30" rows="3" disabled></textarea>
                                             </div>     
                                         </div>
                                     </div>
@@ -764,30 +744,10 @@
                                 </div>
                                 <div id="CC" class="tabcontent">
                                     <div class="poprow">
-                                        <div class="pop-unit-two">
-                                            <div class="pop-unit-title require">會辦編號</div>
-                                            <div class="pop-unit-input">
-                                                <input class="pop-input" type="text" value="" placeholder="系統帶入">
-                                            </div>     
-                                        </div>
-                                        <div class="pop-unit-four">
-                                            <div class="pop-unit-title require">會辦單位</div>
-                                            <div class="pop-unit-input">
-                                                <input type="text" value="">
-                                            </div>    
-                                        </div>
-                                        <div class="pop-unit-four">
-                                            <div class="pop-unit-title require">會辦日期</div>
-                                            <div class="pop-unit-input">
-                                                <input type="date" value="">
-                                            </div>    
-                                        </div>
-                                    </div>
-                                    <div class="poprow">
                                         <div class="pop-unit-all">
                                             <div class="pop-unit-title">會辦備註</div>
                                             <div class="pop-unit-input">
-                                                <textarea name="" id="" cols="30" rows="3"></textarea>
+                                                <textarea name="" id="" cols="30" rows="3" disabled></textarea>
                                             </div>     
                                         </div>
                                     </div>
@@ -795,7 +755,7 @@
                                         <div class="pop-unit-all">
                                             <div class="pop-unit-title">會辦回覆</div>
                                             <div class="pop-unit-input">
-                                                <textarea name="" id="" cols="30" rows="3"></textarea>
+                                                <textarea name="" id="" cols="30" rows="3" disabled></textarea>
                                             </div>     
                                         </div>
                                     </div>
@@ -808,7 +768,33 @@
                                         </div>
                                     </div>
                                 </div>
-                            
+                        </div>
+                        
+                    </div>
+                    <hr>
+                    <div class="pop-unit-label">
+                        <span class="materialSize-s material-icons-outlined">indeterminate_check_box</span>會辦附件
+                    </div>
+                    <div class="tab-body">
+                        <hr>
+                        <div class="tab-inside-1">
+                            <div class="poprow">
+                                <div class="poprow-table">
+                                    <!-- 包裹欄位外框 -->
+                                    <ul>
+                                        <li><button class="btn">下載</button></li>
+                                    </ul>
+                                        <div id="table03"></div>
+                                </div>
+                            </div>
+                            <div class="poprow">
+                                <div class="pop-unit-all">
+                                    <div class="pop-unit-title">回覆說明</div>
+                                    <div class="pop-unit-input">
+                                        <textarea name="" id="" cols="30" rows="3"></textarea>
+                                    </div>     
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -893,13 +879,8 @@
 <script>
     let table03Data = [{
         id: "b1",
-        查核項目序號: "查核項目序號",
-        查核項目名稱: "附件-1.pdf",
-        受查單位: "附件-備註標題",
-        查核人員: "附件-備註說明",
-        預計查核開始日: "上傳日期",
-        預計查核結束日: "上傳日期",
-        查核結果: "上傳日期",
+        單位: "單位123",
+        檔案名稱: "附件-1.pdf",
     }, 
 ];
     var table03 = new Tabulator("#table03", {
@@ -925,17 +906,14 @@
                     cell.getRow().toggleSelect();
                 }
             },
-            { title: "查核項目序號", field: "查核項目序號" ,
-            formatter: function(cell, formatterParams, onRendered) {
-                    return "<a href='#'>" + cell.getValue() + "</a>"
-                },
+            { title: "單位", field: "單位" ,
+            // formatter: function(cell, formatterParams, onRendered) {
+            //         return "<a href='#'>" + cell.getValue() + "</a>"
+            //     },
             },
-            { title: "查核項目名稱", field: "查核項目名稱" },
-            { title: "受查單位", field: "受查單位" },
-            { title: "查核人員", field: "查核人員" },
-            { title: "預計查核開始日", field: "預計查核開始日"},
-            { title: "預計查核結束日", field: "預計查核結束日"},
-            { title: "查核結果", field: "查核結果"},
+            { title: "檔案名稱", field: "檔案名稱",widthGrow:3, },
+            { title: "檔案類型", field: "檔案類型" },
+            { title: "說明", field: "說明" },
         ],
     });
     // 選擇預設勾選row

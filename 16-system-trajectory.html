@@ -209,20 +209,20 @@
 <script>
     let table01Data = [{
         id: "b1",
+        員工編號: "123",
+        姓名: "王大偉",
         IP: "192.168.111.2",
         功能: "函文",
         行為: "行為",
-        員工編號: "123",
-        姓名: "王大偉",
         日期: "2023/07/09 18:99:59",
     }, 
     {
         id: "b1",
+        員工編號: "456",
+        姓名: "陳學貞",
         IP: "192.168.111.3",
         功能: "函文",
         行為: "行為",
-        員工編號: "456",
-        姓名: "陳學貞",
         日期: "2023/07/19 18:99:59",
     }, 
 ];
@@ -249,15 +249,15 @@
                     cell.getRow().toggleSelect();
                 }
             },
-            { title: "IP", field: "IP",},
-            { title: "功能", field: "功能" },
-            { title: "行為", field: "行為",
+            { title: "員工編號", field: "員工編號",
             formatter: function(cell, formatterParams, onRendered) {
                     return "<a href='#'>" + cell.getValue() + "</a>"
                 },
             },
-            { title: "員工編號", field: "員工編號" },
             { title: "姓名", field: "姓名"},
+            { title: "IP", field: "IP",},
+            { title: "功能", field: "功能" },
+            { title: "行為", field: "行為",},
             { title: "日期", field: "日期" },
         ],
     });
