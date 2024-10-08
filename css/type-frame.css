@@ -3891,7 +3891,7 @@ hr.case3{
     top: 9rem;
     left: 10rem;
     width: 250px;
-    height: 150px;
+    /* height: 150px; */
     padding: 5px;
     background-color: #eeeeee;
     border-radius: 10px;
@@ -3994,7 +3994,7 @@ hr.case3{
 
 .listBox{
     padding: 3px;
-    height: 8.5rem;
+    /* height: 8.5rem; */
     overflow: auto;
     border-radius: 10px;
 }
