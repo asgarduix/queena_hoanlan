@@ -3897,6 +3897,7 @@ hr.case3{
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 3px;
     border: 1px solid #e2e1e1;
+    z-index: 999;
 }
 
 .pop-listMesg-3{
@@ -3910,6 +3911,7 @@ hr.case3{
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 3px;
     border: 1px solid #e2e1e1;
+    z-index: 999;
 }
 
 .pop-listMesg-4{
@@ -3923,6 +3925,7 @@ hr.case3{
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 3px;
     border: 1px solid #e2e1e1;
+    z-index: 999;
 }
 
 .pop-listMesg-5{
@@ -3936,6 +3939,7 @@ hr.case3{
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 3px;
     border: 1px solid #e2e1e1;
+    z-index: 999;
 }
 
 .pop-listMesg-6{
@@ -3949,6 +3953,7 @@ hr.case3{
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 3px;
     border: 1px solid #e2e1e1;
+    z-index: 999;
 }
 
 .pop-listMesg-7{
@@ -3962,6 +3967,7 @@ hr.case3{
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 3px;
     border: 1px solid #e2e1e1;
+    z-index: 999;
 }
 
 .pop-listMesg-8{
@@ -3975,6 +3981,7 @@ hr.case3{
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 3px;
     border: 1px solid #e2e1e1;
+    z-index: 999;
 }
 
 /* 綠色的線 */
