@@ -4167,7 +4167,7 @@ hr.case3{
 
 .carCheck-left{
     display:inline-flex;
-    width: 50%;
+    width: 45%;
 }
 
 .carCheck-left .pop-body-frame{
@@ -4221,7 +4221,7 @@ ul.carCheck-ul{
 .carCheck-right{
     display:inline-flex;
     flex-direction: column;
-    width: 49%;
+    width: 50%;
     border: 1px solid #000000;
     padding: 10px;
     margin-bottom: 10px;
@@ -4229,7 +4229,7 @@ ul.carCheck-ul{
 
 .carCheck-right .filePic{
     width: 100%;
-    min-height: 700px;
+    min-height: 900px;
     background-color: #333333;
 }
 
