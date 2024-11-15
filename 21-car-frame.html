@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>車險覆核資料查詢</title>
+    <title>車險複核資料查詢</title>
     <!-- Material -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <!-- <link rel="stylesheet" href="/material/material-icons-ie.css">
@@ -66,7 +66,7 @@
                 <a href="16-system-trajectory.html"><span class="materialSize material-icons-outlined">navigate_next</span><div class="secList">系統稽核軌跡</div></a>
             </div>
             <div class="left-clumn-row">
-                <a href="20-picUpload-default.html" class="unittab-active"><span class="materialSize material-icons-outlined">navigate_next</span><div class="secList">拍照覆核</div></a>
+                <a href="20-picUpload-default.html" class="unittab-active"><span class="materialSize material-icons-outlined">navigate_next</span><div class="secList">複核資料查詢</div></a>
             </div>
         </div>
         <div class="right-clumn">
@@ -101,11 +101,11 @@
                 <div class="breadCrumb">
                     <span class="materialSize-m-r material-icons-outlined">location_on</span>
                     <!-- &nbsp;不換行空格 -->
-                    <a href="#">商業保險</a>&nbsp;/&nbsp;<a href="#">車險覆核資料查詢</a> 
+                    <a href="#">商業保險</a>&nbsp;/&nbsp;<a href="#">車險複核資料查詢</a> 
                 </div>
             </div>
             <div class="right-clumn-row">
-                <h1 class="unitH1">覆核資料查詢</h1>
+                <h1 class="unitH1">複核資料查詢</h1>
             </div>
             <div class="right-clumn-row row-shadow">
                 <div class="query-unit">
@@ -134,11 +134,23 @@
                             </div>
                         </div>
                         <div class="query-unit-group">
+                            <div class="query-unit-title">經銷商</div>
+                            <div class="query-unit-input">
+                                    <select name="" id="">
+                                        <option value="">請選擇</option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                    </select>
+                            </div>
+                        </div>
+                        <div class="query-unit-group">
                             <div class="query-unit-title">投保編號</div>
                             <div class="query-unit-input">
                                     <input type="text" value="">
                             </div>
                         </div>
+                    </div>
+                    <div class="content-unit">
                         <div class="query-unit-group">
                             <div class="query-unit-title">新件/續保件</div>
                             <div class="query-unit-input">
@@ -159,13 +171,6 @@
                                 </select>
                             </div>
                         </div>
-                        <!-- <div class="query-unit-group-2-T">
-                            <div class="query-unit-title">選擇檔案</div>
-                            <div class="query-unit-input"> 
-                                <input type="text" value="" placeholder="請輸入值">
-                                <button class="btn btn-search-s">選擇檔案</button>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
                 <div class="query-unit-info">
@@ -224,12 +229,13 @@
 <script>
     let table01Data = [{
         id: "b1",
-        投保編號: "壽險",
-        要保人姓名: "國泰",
-        新續保件: " 續保件",
-        保險公司: "和安",
+        投保編號: "202411040098",
+        要保人姓名: "王自強",
+        新續保件: " 新件",
+        保險公司: "和泰產險",
+        經銷商: "中和營業處",
         牌照號碼: "MAA-1234",
-        狀態: "已過保",
+        狀態: "待查核",
         查核時間: "",
         退回原因: "",
     },
@@ -267,6 +273,7 @@
             { title: "要保人姓名", field: "要保人姓名" },
             { title: "新/續保件", field: "新/續保件" },
             { title: "保險公司", field: "保險公司" },
+            { title: "經銷商", field: "經銷商" },
             { title: "牌照號碼", field: "牌照號碼" },
             { title: "狀態", field: "狀態" },
             { title: "查核時間", field: "查核時間" },

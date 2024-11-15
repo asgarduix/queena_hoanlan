@@ -121,3 +121,18 @@ textarea {
     right:-10px ;
     top: 5px;
 }
+
+/* 20241115新增upload-body-item的ul li */
+.upload-body-item ul{
+    display: block;
+    width: 100%;
+}
+
+.upload-body-item li{
+    width: 100%;
+    padding-left: 15px;
+}
+
+.title-space{
+    padding-left: 15px;
+}
