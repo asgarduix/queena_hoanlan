@@ -136,3 +136,31 @@ textarea {
 .title-space{
     padding-left: 15px;
 }
+
+.bg-red{
+    background-color:#d96b6c ;
+}
+
+.btn-cancel-red {
+    border: 1px solid #d96b6c;
+    background-color: #ffffff;
+    color: #d96b6c;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 1rem;
+    margin: 0 auto;
+    height: 38px;
+    letter-spacing: 4px;
+}
+
+.btn-sure-red{
+    border: 1px solid #d96b6c;
+    background-color: #d96b6c;
+    color: #ffffff;
+	border-radius: 4px;
+    padding:8px 16px;
+    font-size:1rem;
+    margin: 0 auto;
+    height: 38px;
+    letter-spacing: 4px;
+}

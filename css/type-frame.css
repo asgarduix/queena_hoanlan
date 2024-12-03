@@ -1838,6 +1838,16 @@ select {
     border-radius: 15px;
 }
 
+.popWindow-4{
+    border: 2px solid #ABBBD9;
+    background-color: #e2e2e2;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    box-shadow: 0px 3px 3px black;
+    border-radius: 15px;
+}
+
 
 .pop-unit-label{
     font-size: 1rem;
@@ -1936,6 +1946,10 @@ select {
 }
 
 .pop-body-frame .poprow:first-child{
+    border-top: 1px solid #333333;
+}
+
+.popWindow-body .poprow:first-child{
     border-top: 1px solid #333333;
 }
 
@@ -4266,3 +4280,27 @@ ul.carCheck-ul{
     font-weight: 500;
 }
 
+/* 2024tabulator裡面的按鈕 */
+.btn-do{
+    border: 1px solid #B8ACEA;
+    background-color: #716B99;
+    color: #ffffff;
+	border-radius: 4px;
+    padding:1px 10px;
+    font-size: 0.875rem;
+    margin-left: 5px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.btn-do:hover{
+    border: 1px solid #B8ACEA;
+    background-color: #7F7BAD;
+    color: #ffffff;
+	border-radius: 4px;
+    padding:1px 10px;
+    font-size: 0.875rem;
+    margin-left: 5px;
+    height: 25px;
+    line-height: 25px;
+}
